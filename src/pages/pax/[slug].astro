@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { formatDate, aoName } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const all = await getCollection('pax');
+  return all.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const p = entry.data;
+
+const bbAll = (await getCollection('backblasts')).map((e) => e.data);
+const posts = bbAll
+  .filter((bb) => bb.pax.includes(p.f3_name) || bb.q_slug === p.slug)
+  .sort((a, b) => b.date.localeCompare(a.date));
+const qPosts = posts.filter((bb) => bb.q_slug === p.slug);
+---
+
+<Base title={`${p.f3_name} — F3 Lawrence`}>
+  <article>
+    <a href="/leaderboard/" class="font-mono text-xs uppercase text-accent-link hover:underline">← Leaderboard</a>
+    <header class="mt-4 mb-8 border-b border-rule pb-6">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">PAX Profile</p>
+      <h1 class="font-display text-5xl sm:text-6xl leading-[0.95] tracking-tight text-accent-red">{p.f3_name}</h1>
+      <dl class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs">
+        <div><dt class="uppercase text-muted">Posts</dt><dd class="text-ink font-semibold text-xl mt-1">{p.post_count ?? posts.length}</dd></div>
+        <div><dt class="uppercase text-muted">Qs</dt><dd class="text-ink font-semibold text-xl mt-1">{p.q_count ?? qPosts.length}</dd></div>
+        <div><dt class="uppercase text-muted">Earliest</dt><dd class="text-ink mt-1">{p.earliest_post ?? '—'}</dd></div>
+        <div><dt class="uppercase text-muted">Latest</dt><dd class="text-ink mt-1">{p.latest_post ?? '—'}</dd></div>
+      </dl>
+      {p.aos.length > 0 && (
+        <div class="mt-6">
+          <div class="font-mono text-xs uppercase text-muted mb-2">AOs</div>
+          <div class="flex flex-wrap gap-2">
+            {p.aos.map((s) => <span class="font-mono text-xs bg-surface border border-rule px-2 py-1 uppercase">{aoName(s)}</span>)}
+          </div>
+        </div>
+      )}
+    </header>
+
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-3">All posts</h2>
+    <ul class="divide-y divide-rule border-y border-rule">
+      {posts.map((bb, i) => (
+        <li class={`grid grid-cols-[6rem_1fr_auto] items-center gap-3 px-4 py-3 ${i % 2 === 1 ? 'bg-surface-muted' : ''}`}>
+          <span class="font-mono text-xs text-muted">{formatDate(bb.date)}</span>
+          <a href={`/backblasts/${bb.slug}/`} class="font-heading font-semibold hover:text-accent-red">
+            {bb.title}
+            {bb.q_slug === p.slug && <span class="ml-2 font-mono text-xs uppercase text-accent-red">Q</span>}
+          </a>
+          <span class="font-mono text-xs uppercase text-muted">{aoName(bb.ao ?? '')}</span>
+        </li>
+      ))}
+    </ul>
+  </article>
+</Base>

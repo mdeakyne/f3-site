@@ -1,0 +1,82 @@
+---
+import Base from '../../layouts/Base.astro';
+import { site } from '../../lib/data';
+---
+
+<Base title="Sign up to Q — F3 Lawrence">
+  <section class="max-w-2xl">
+    <header class="mb-8 border-b border-rule pb-6">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Step up</p>
+      <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">SIGN UP TO Q</h1>
+      <p class="mt-3 font-heading text-lg text-muted">
+        Pick a date + AO. A nantan confirms via text before it lands on the calendar.
+      </p>
+    </header>
+
+    <form id="q-form" method="post" action="/api/q-signup" class="space-y-5">
+      <div>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">Date</label>
+        <input type="date" name="event_date" required class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
+      </div>
+      <div>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">AO</label>
+        <select name="ao_slug" required class="w-full border border-rule bg-surface px-3 py-2 font-mono">
+          <option value="">— pick one —</option>
+          {site.aos.map((a) => <option value={a.slug}>{a.name}</option>)}
+        </select>
+      </div>
+      <div>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">F3 Name</label>
+        <input type="text" name="f3_name" required class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
+      </div>
+      <div>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">Contact (phone or email)</label>
+        <input type="text" name="contact" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
+      </div>
+      <div>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">Notes (optional)</label>
+        <textarea name="notes" rows="3" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
+      </div>
+
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAC_IJxiHyXYEjP2U"></div>
+
+      <button type="submit" class="bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
+        Request slot
+      </button>
+
+      <div id="form-status" aria-live="polite" class="font-mono text-sm"></div>
+    </form>
+  </section>
+</Base>
+
+<script>
+  // Prefill from querystring (e.g., from Calendar "Claim →" links).
+  const params = new URLSearchParams(window.location.search);
+  const form = document.getElementById('q-form') as HTMLFormElement | null;
+  if (form) {
+    const date = params.get('date');
+    const ao = params.get('ao');
+    if (date) (form.elements.namedItem('event_date') as HTMLInputElement).value = date;
+    if (ao) (form.elements.namedItem('ao_slug') as HTMLSelectElement).value = ao;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const status = document.getElementById('form-status')!;
+      status.textContent = 'Sending …';
+      status.className = 'font-mono text-sm text-muted';
+      const data = new FormData(form);
+      try {
+        const res = await fetch('/api/q-signup', { method: 'POST', body: data });
+        if (!res.ok) throw new Error(await res.text());
+        status.textContent = '✓ Request received. A nantan will confirm via your contact info.';
+        status.className = 'font-mono text-sm text-accent-open font-semibold';
+        form.reset();
+      } catch (err) {
+        status.textContent = `✗ ${(err as Error).message || 'Submission failed. Try again.'}`;
+        status.className = 'font-mono text-sm text-accent-red font-semibold';
+      }
+    });
+  }
+</script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'F3 Lawrence — backblasts, PAX, and Q signup.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bayon&family=Titillium+Web:wght@400;600;700&family=Roboto:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+    />
+    <title>{title}</title>
+  </head>
+  <body class="font-body text-ink bg-paper">
+    <header class="border-b border-rule bg-surface">
+      <div class="mx-auto max-w-site px-6 py-5 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <span class="font-display text-3xl tracking-wide text-accent-red leading-none">F3</span>
+          <span class="font-heading text-lg font-semibold tracking-tight">LAWRENCE</span>
+        </a>
+        <nav class="font-heading text-sm font-semibold tracking-wide uppercase flex gap-6">
+          <a href="/backblasts/" class="hover:text-accent-red">Backblasts</a>
+          <a href="/leaderboard/" class="hover:text-accent-red">Leaderboard</a>
+          <a href="/calendar/" class="hover:text-accent-red">Calendar</a>
+          <a href="/signup/" class="hover:text-accent-red">Sign up to Q</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-site px-6 py-10">
+      <slot />
+    </main>
+
+    <footer class="border-t border-rule bg-surface mt-20">
+      <div class="mx-auto max-w-site px-6 py-8 flex flex-col sm:flex-row justify-between gap-4 text-sm text-muted">
+        <div>
+          <span class="font-display text-accent-red text-xl leading-none">F3</span>
+          <span class="font-heading font-semibold ml-2">LAWRENCE</span>
+        </div>
+        <div class="font-mono text-xs">
+          Fitness · Fellowship · Faith · Free & open to all men.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

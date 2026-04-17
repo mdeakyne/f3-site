@@ -1,0 +1,19 @@
+name = "f3-site"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./dist"
+
+# D1 for Q signups. Create with:
+#   wrangler d1 create f3-signups
+# then paste the returned database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "f3-signups"
+database_id = "b7ac38a1-b139-4f60-a9c8-3dbb99230b17"
+migrations_dir = "migrations"
+
+# Secrets set via: wrangler pages secret put TURNSTILE_SECRET
+# Vars for the Worker:
+[vars]
+TURNSTILE_SITE_KEY = ""
+NOTIFY_EMAIL = "matt.deakyne@creativeplanning.com"

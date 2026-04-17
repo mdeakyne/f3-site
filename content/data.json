@@ -1,0 +1,786 @@
+{
+  "generated_at": "2026-04-17T23:30:54Z",
+  "counts": {
+    "backblasts": 228,
+    "pax": 60,
+    "aos": 2,
+    "since_year": "2023",
+    "latest_post": "2026-03-24"
+  },
+  "aos": [
+    {
+      "slug": "beehive",
+      "name": "beehive"
+    },
+    {
+      "slug": "ad-astra",
+      "name": "ad-astra"
+    }
+  ],
+  "leaderboard": [
+    {
+      "slug": "farmers-only",
+      "f3_name": "Farmers Only",
+      "posts": 205,
+      "qs": 33,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "big-toe",
+      "f3_name": "Big Toe",
+      "posts": 202,
+      "qs": 56,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "404",
+      "f3_name": "404",
+      "posts": 167,
+      "qs": 30,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2024-02-29",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "waco",
+      "f3_name": "Waco",
+      "posts": 122,
+      "qs": 27,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2024-05-02",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "sawdust",
+      "f3_name": "Sawdust",
+      "posts": 78,
+      "qs": 7,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2025-02-25"
+    },
+    {
+      "slug": "flute",
+      "f3_name": "Flute",
+      "posts": 58,
+      "qs": 12,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2024-01-18",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "wreck-it",
+      "f3_name": "Wreck It",
+      "posts": 58,
+      "qs": 1,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2025-06-05",
+      "latest": "2026-03-19"
+    },
+    {
+      "slug": "training-wheels",
+      "f3_name": "Training Wheels",
+      "posts": 57,
+      "qs": 12,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2024-07-30",
+      "latest": "2026-01-06"
+    },
+    {
+      "slug": "dizzy",
+      "f3_name": "Dizzy",
+      "posts": 55,
+      "qs": 9,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2025-04-03",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "toto",
+      "f3_name": "Toto",
+      "posts": 41,
+      "qs": 4,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2025-04-24",
+      "latest": "2026-03-19"
+    },
+    {
+      "slug": "second-string",
+      "f3_name": "Second String",
+      "posts": 31,
+      "qs": 6,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-09-21",
+      "latest": "2024-07-25"
+    },
+    {
+      "slug": "bonnet",
+      "f3_name": "Bonnet",
+      "posts": 21,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2024-01-01",
+      "latest": "2026-03-24"
+    },
+    {
+      "slug": "ariel",
+      "f3_name": "Ariel",
+      "posts": 18,
+      "qs": 7,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2024-02-01"
+    },
+    {
+      "slug": "blackout",
+      "f3_name": "Blackout",
+      "posts": 17,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2024-07-11"
+    },
+    {
+      "slug": "dial-up",
+      "f3_name": "Dial Up",
+      "posts": 17,
+      "qs": 1,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2024-06-27",
+      "latest": "2026-02-10"
+    },
+    {
+      "slug": "plot-twist",
+      "f3_name": "Plot Twist",
+      "posts": 15,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-10-05",
+      "latest": "2024-03-21"
+    },
+    {
+      "slug": "miz",
+      "f3_name": "MIZ",
+      "posts": 13,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2024-01-01"
+    },
+    {
+      "slug": "trainwreck",
+      "f3_name": "Trainwreck",
+      "posts": 12,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2024-10-03"
+    },
+    {
+      "slug": "leaks",
+      "f3_name": "Leaks",
+      "posts": 11,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-31",
+      "latest": "2024-04-25"
+    },
+    {
+      "slug": "kilo",
+      "f3_name": "Kilo",
+      "posts": 10,
+      "qs": 2,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2024-06-27",
+      "latest": "2024-10-03"
+    },
+    {
+      "slug": "soprano",
+      "f3_name": "Soprano",
+      "posts": 9,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2023-11-16"
+    },
+    {
+      "slug": "route44",
+      "f3_name": "Route44",
+      "posts": 9,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-11-23"
+    },
+    {
+      "slug": "siri",
+      "f3_name": "Siri",
+      "posts": 9,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2023-10-26"
+    },
+    {
+      "slug": "seafood",
+      "f3_name": "Seafood",
+      "posts": 8,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2024-02-29",
+      "latest": "2024-05-09"
+    },
+    {
+      "slug": "wuhan",
+      "f3_name": "Wuhan",
+      "posts": 8,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2024-07-11"
+    },
+    {
+      "slug": "pepper",
+      "f3_name": "Pepper",
+      "posts": 7,
+      "qs": 0,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2024-08-27",
+      "latest": "2025-11-06"
+    },
+    {
+      "slug": "concessions",
+      "f3_name": "Concessions",
+      "posts": 6,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-31",
+      "latest": "2023-10-19"
+    },
+    {
+      "slug": "litterbox",
+      "f3_name": "Litterbox",
+      "posts": 6,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2024-01-18",
+      "latest": "2024-06-13"
+    },
+    {
+      "slug": "downrange",
+      "f3_name": "Downrange",
+      "posts": 6,
+      "qs": 0,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2024-11-26",
+      "latest": "2025-06-05"
+    },
+    {
+      "slug": "womens-league",
+      "f3_name": "Womens League",
+      "posts": 5,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-11-09"
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07"
+    },
+    {
+      "slug": "crocs",
+      "f3_name": "Crocs",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2025-10-02",
+      "latest": "2025-12-11"
+    },
+    {
+      "slug": "blanks",
+      "f3_name": "Blanks",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-14"
+    },
+    {
+      "slug": "locks",
+      "f3_name": "Locks",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2024-11-07",
+      "latest": "2024-12-12"
+    },
+    {
+      "slug": "flaps",
+      "f3_name": "Flaps",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2023-10-12"
+    },
+    {
+      "slug": "goulash",
+      "f3_name": "Goulash",
+      "posts": 3,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2026-01-27",
+      "latest": "2026-03-03"
+    },
+    {
+      "slug": "clickbait",
+      "f3_name": "Clickbait",
+      "posts": 3,
+      "qs": 0,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2024-12-03",
+      "latest": "2024-12-10"
+    },
+    {
+      "slug": "medley",
+      "f3_name": "Medley",
+      "posts": 3,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2026-02-03",
+      "latest": "2026-03-10"
+    },
+    {
+      "slug": "billboard",
+      "f3_name": "Billboard",
+      "posts": 3,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2024-07-02",
+      "latest": "2024-07-30"
+    },
+    {
+      "slug": "peanuts",
+      "f3_name": "Peanuts",
+      "posts": 2,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-31",
+      "latest": "2023-09-07"
+    },
+    {
+      "slug": "castaway",
+      "f3_name": "Castaway",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-17"
+    },
+    {
+      "slug": "waterboy",
+      "f3_name": "Waterboy",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-10-19",
+      "latest": "2023-10-26"
+    },
+    {
+      "slug": "spare-tire",
+      "f3_name": "Spare Tire",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2024-11-05",
+      "latest": "2024-12-10"
+    },
+    {
+      "slug": "fng",
+      "f3_name": "FNG",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "beehive",
+        "ad-astra"
+      ],
+      "earliest": "2025-07-08",
+      "latest": "2025-09-11"
+    },
+    {
+      "slug": "squirts",
+      "f3_name": "Squirts",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-24",
+      "latest": "2023-09-07"
+    },
+    {
+      "slug": "moist",
+      "f3_name": "Moist",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2023-08-17"
+    },
+    {
+      "slug": "queen-bee",
+      "f3_name": "Queen Bee",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-09-07",
+      "latest": "2023-09-07"
+    },
+    {
+      "slug": "clipless",
+      "f3_name": "Clipless",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2024-05-30",
+      "latest": "2024-05-30"
+    },
+    {
+      "slug": "long-game",
+      "f3_name": "Long Game",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10"
+    },
+    {
+      "slug": "beaker",
+      "f3_name": "Beaker",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2024-08-20",
+      "latest": "2024-08-20"
+    },
+    {
+      "slug": "diesel",
+      "f3_name": "Diesel",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-11-09",
+      "latest": "2023-11-09"
+    },
+    {
+      "slug": "glee-club",
+      "f3_name": "Glee Club",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-09-07",
+      "latest": "2023-09-07"
+    },
+    {
+      "slug": "side-show",
+      "f3_name": "Side Show",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-11-16",
+      "latest": "2023-11-16"
+    },
+    {
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10"
+    },
+    {
+      "slug": "loofah",
+      "f3_name": "Loofah",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10"
+    },
+    {
+      "slug": "baldtire",
+      "f3_name": "Baldtire",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2024-05-30",
+      "latest": "2024-05-30"
+    },
+    {
+      "slug": "bucky",
+      "f3_name": "Bucky",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2025-01-23",
+      "latest": "2025-01-23"
+    },
+    {
+      "slug": "bumble",
+      "f3_name": "Bumble",
+      "posts": 0,
+      "qs": 1,
+      "aos": [],
+      "earliest": null,
+      "latest": null
+    },
+    {
+      "slug": "hiccup",
+      "f3_name": "Hiccup",
+      "posts": 0,
+      "qs": 0,
+      "aos": [],
+      "earliest": null,
+      "latest": null
+    },
+    {
+      "slug": "casio",
+      "f3_name": "Casio",
+      "posts": 0,
+      "qs": 0,
+      "aos": [],
+      "earliest": null,
+      "latest": null
+    }
+  ],
+  "latest_backblasts": [
+    {
+      "slug": "2026-03-24-keep-it-simple",
+      "title": "Keep it simple",
+      "date": "2026-03-24",
+      "ao": "beehive",
+      "q": "Flute",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-19-keep-pushing",
+      "title": "Keep Pushing",
+      "date": "2026-03-19",
+      "ao": "ad-astra",
+      "q": "Big Toe",
+      "total_pax": 3,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-19-this-is-my-coupon",
+      "title": "This is my Coupon",
+      "date": "2026-03-19",
+      "ao": "ad-astra",
+      "q": "",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-17-partner-up",
+      "title": "Partner Up",
+      "date": "2026-03-17",
+      "ao": "beehive",
+      "q": "404",
+      "total_pax": 3,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-12-emoms",
+      "title": "EMOMs",
+      "date": "2026-03-12",
+      "ao": "ad-astra",
+      "q": "Big Toe",
+      "total_pax": 5,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-10-trying-to-control-what-i-can-t-control",
+      "title": "Trying to control what I can't control.",
+      "date": "2026-03-10",
+      "ao": "beehive",
+      "q": "Farmers Only",
+      "total_pax": 4,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-05-still-undecided",
+      "title": "Still Undecided",
+      "date": "2026-03-05",
+      "ao": "ad-astra",
+      "q": "Waco",
+      "total_pax": 3,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-03-03-dealers-choice",
+      "title": "Dealers Choice",
+      "date": "2026-03-03",
+      "ao": "beehive",
+      "q": "Wreck It",
+      "total_pax": 5,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-02-26-new-kids-on-the-block",
+      "title": "New Kids on the Block",
+      "date": "2026-02-26",
+      "ao": "ad-astra",
+      "q": "Big Toe",
+      "total_pax": 5,
+      "fngs": 1
+    },
+    {
+      "slug": "2026-02-24-whole-parts-whole",
+      "title": "Whole Parts Whole",
+      "date": "2026-02-24",
+      "ao": "beehive",
+      "q": "Farmers Only",
+      "total_pax": 6,
+      "fngs": 1
+    }
+  ]
+}

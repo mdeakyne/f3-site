@@ -1,0 +1,80 @@
+---
+import Base from '../layouts/Base.astro';
+import { site, formatDate, aoName } from '../lib/data';
+
+const latest = site.latest_backblasts.slice(0, 8);
+const topPax = site.leaderboard.slice(0, 5);
+---
+
+<Base title="F3 Lawrence — backblasts, PAX, Q signup">
+  <section class="mb-16">
+    <p class="font-mono text-xs uppercase tracking-widest text-muted mb-3">
+      Since {site.counts.since_year} · {site.counts.backblasts} backblasts · {site.counts.pax} PAX
+    </p>
+    <h1 class="font-display text-6xl sm:text-8xl leading-[0.9] tracking-tight text-accent-red mb-4">
+      F3 LAWRENCE
+    </h1>
+    <p class="font-heading text-xl sm:text-2xl font-semibold max-w-2xl text-ink">
+      Free workouts for men. Peer-led, outdoors, rain or shine.
+      Fitness, Fellowship, Faith.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="/signup/" class="inline-block bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
+        Sign up to Q
+      </a>
+      <a href="/calendar/" class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-ink hover:text-surface">
+        See the calendar
+      </a>
+    </div>
+  </section>
+
+  <section class="grid sm:grid-cols-3 gap-6 mb-20">
+    <div class="border-l-4 border-accent-red bg-surface p-6">
+      <div class="font-mono text-xs uppercase tracking-widest text-muted">Backblasts</div>
+      <div class="font-display text-5xl text-ink mt-1">{site.counts.backblasts}</div>
+    </div>
+    <div class="border-l-4 border-accent-red bg-surface p-6">
+      <div class="font-mono text-xs uppercase tracking-widest text-muted">PAX</div>
+      <div class="font-display text-5xl text-ink mt-1">{site.counts.pax}</div>
+    </div>
+    <div class="border-l-4 border-accent-red bg-surface p-6">
+      <div class="font-mono text-xs uppercase tracking-widest text-muted">AOs</div>
+      <div class="font-display text-5xl text-ink mt-1">{site.counts.aos}</div>
+    </div>
+  </section>
+
+  <section class="mb-20">
+    <div class="flex items-baseline justify-between mb-4 border-b border-rule pb-2">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight">Latest backblasts</h2>
+      <a href="/backblasts/" class="font-mono text-xs uppercase text-accent-link hover:underline">All {site.counts.backblasts} →</a>
+    </div>
+    <ul class="divide-y divide-rule border-b border-rule">
+      {latest.map((bb, i) => (
+        <li class={`flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 px-4 py-4 ${i % 2 === 1 ? 'bg-surface-muted' : ''}`}>
+          <span class="font-mono text-xs text-muted w-24 shrink-0">{formatDate(bb.date)}</span>
+          <a href={`/backblasts/${bb.slug}/`} class="font-heading font-semibold hover:text-accent-red flex-1">{bb.title}</a>
+          <span class="font-mono text-xs uppercase text-muted">{aoName(bb.ao)}</span>
+          <span class="font-mono text-xs text-muted w-20 text-right">Q: {bb.q || '—'}</span>
+          <span class="font-mono text-xs text-muted w-10 text-right">{bb.total_pax ?? '—'} pax</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="mb-20">
+    <div class="flex items-baseline justify-between mb-4 border-b border-rule pb-2">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight">Top PAX</h2>
+      <a href="/leaderboard/" class="font-mono text-xs uppercase text-accent-link hover:underline">Full leaderboard →</a>
+    </div>
+    <ul class="divide-y divide-rule border-b border-rule">
+      {topPax.map((p, i) => (
+        <li class={`flex items-center gap-4 px-4 py-4 ${i % 2 === 1 ? 'bg-surface-muted' : ''}`}>
+          <span class="font-display text-3xl text-accent-red w-10">{i + 1}</span>
+          <a href={`/pax/${p.slug}/`} class="font-heading font-semibold hover:text-accent-red flex-1">{p.f3_name}</a>
+          <span class="font-mono text-xs text-muted w-20 text-right">{p.posts} posts</span>
+          <span class="font-mono text-xs text-muted w-16 text-right">{p.qs} Qs</span>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>

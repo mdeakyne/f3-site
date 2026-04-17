@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+
+// Placeholder calendar: grid of the next 8 weeks with AO rotation.
+// Replaced in Phase 4 by parsing `07 - F3/Q Schedule/YYYY-MM.md` tables.
+const today = new Date();
+const weeks: { date: string; ao: string; q: string | null; status: 'open' | 'pending' | 'claimed' }[] = [];
+const AOS = ['ad-astra', 'beehive'];
+for (let i = 0; i < 56; i++) {
+  const d = new Date(today);
+  d.setDate(today.getDate() + i);
+  const day = d.getDay();
+  if (day !== 1 && day !== 3 && day !== 6) continue; // Mon/Wed/Sat
+  const iso = d.toISOString().slice(0, 10);
+  weeks.push({
+    date: iso,
+    ao: AOS[weeks.length % AOS.length],
+    q: null,
+    status: 'open',
+  });
+}
+---
+
+<Base title="Q Calendar — F3 Lawrence">
+  <header class="mb-8 border-b border-rule pb-6">
+    <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Schedule</p>
+    <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">Q CALENDAR</h1>
+    <p class="mt-3 font-heading text-lg text-muted">
+      Next 8 weeks. Claim an open slot via <a href="/signup/" class="text-accent-link underline">Sign up to Q</a>.
+    </p>
+  </header>
+
+  <ul class="divide-y divide-rule border-y border-rule">
+    {weeks.map((w, i) => (
+      <li class={`grid grid-cols-[6rem_1fr_8rem_5rem] items-center gap-3 px-4 py-4 ${i % 2 === 1 ? 'bg-surface-muted' : ''}`}>
+        <span class="font-mono text-xs text-muted">{w.date}</span>
+        <span class="font-heading font-semibold uppercase">{w.ao}</span>
+        <span class="font-mono text-xs">
+          {w.q
+            ? `Q: ${w.q}`
+            : <span class="text-accent-open font-semibold">OPEN</span>}
+        </span>
+        <a href={`/signup/?date=${w.date}&ao=${w.ao}`} class="font-mono text-xs text-accent-link hover:underline text-right">Claim →</a>
+      </li>
+    ))}
+  </ul>
+</Base>

@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0B0B0B;
+  --color-paper: #F7F5F0;
+  --color-surface: #FFFFFF;
+  --color-surface-muted: #F0EDE6;
+  --color-rule: #D8D3C7;
+  --color-muted: #5C5A55;
+
+  --color-accent-red: #AD0C02;
+  --color-accent-red-bright: #E93D3D;
+  --color-accent-slate: #2C3345;
+  --color-accent-open: #1A7F37;
+  --color-accent-link: #1D4ED8;
+
+  --font-display: "Bayon", system-ui, sans-serif;
+  --font-heading: "Titillium Web", system-ui, sans-serif;
+  --font-body: "Roboto", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+
+  --container-site: 72rem;
+}
+
+html {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
+
+body {
+  min-height: 100dvh;
+}
