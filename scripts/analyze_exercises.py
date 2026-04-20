@@ -565,6 +565,161 @@ def extract_exercises_from_body(body: str) -> list[str]:
     return exercises
 
 
+# Classification: (category, type)
+# category: "arms" | "legs" | "cardio" | "mary"
+# type:     "block" | "bodyweight"
+CLASSIFICATIONS: dict[str, tuple[str, str]] = {
+    # ── ARMS / bodyweight ────────────────────────────────────────────────────
+    "merkin":               ("arms", "bodyweight"),
+    "hand-release merkin":  ("arms", "bodyweight"),
+    "diamond merkin":       ("arms", "bodyweight"),
+    "incline merkin":       ("arms", "bodyweight"),
+    "spiderman merkin":     ("arms", "bodyweight"),
+    "superman merkin":      ("arms", "bodyweight"),
+    "inchworm merkin":      ("arms", "bodyweight"),
+    "walk-out merkin":      ("arms", "bodyweight"),
+    "paused merkin":        ("arms", "bodyweight"),
+    "tricep dip":           ("arms", "bodyweight"),
+    "shoulder taps":        ("arms", "bodyweight"),
+    "arm circle":           ("arms", "bodyweight"),
+    "sun god":              ("arms", "bodyweight"),
+    "michael phelps":       ("arms", "bodyweight"),
+    "abe vigoda":           ("arms", "bodyweight"),
+    "windmill":             ("arms", "bodyweight"),
+    "shoulder pretzel":     ("arms", "bodyweight"),
+    "inchworm":             ("arms", "bodyweight"),
+    # ── ARMS / block ─────────────────────────────────────────────────────────
+    "curl":                 ("arms", "block"),
+    "overhead press":       ("arms", "block"),
+    "row":                  ("arms", "block"),
+    "upright row":          ("arms", "block"),
+    "bent over row":        ("arms", "block"),
+    "standing row":         ("arms", "block"),
+    "bent row":             ("arms", "block"),
+    "shoulder press":       ("arms", "block"),
+    "curl press":           ("arms", "block"),
+    "thruster":             ("arms", "block"),
+    "block merkin":         ("arms", "block"),
+    "block swings":         ("arms", "block"),
+    "around the world":     ("arms", "block"),
+    "piano man":            ("arms", "block"),
+    "big toe smash":        ("arms", "block"),
+    "shoulder boulder":     ("arms", "block"),
+    "elf on the shelf":     ("arms", "block"),
+    "walls of jericho":     ("arms", "block"),
+    "tricep press":         ("arms", "block"),
+    "curls for girls":      ("arms", "block"),
+    "x-factor":             ("arms", "block"),
+    "xy":                   ("mary", "block"),
+    "welshdragon":          ("arms", "block"),   # block overhead rotational
+    "welsh dragon":         ("arms", "block"),
+    # ── LEGS / bodyweight ────────────────────────────────────────────────────
+    "squat":                ("legs", "bodyweight"),
+    "air squat":            ("legs", "bodyweight"),
+    "deep squat":           ("legs", "bodyweight"),
+    "slow squat":           ("legs", "bodyweight"),
+    "cossack squat":        ("legs", "bodyweight"),
+    "blo-sack squats":      ("legs", "bodyweight"),
+    "squat jump":           ("legs", "bodyweight"),
+    "lunge":                ("legs", "bodyweight"),
+    "walking lunge":        ("legs", "bodyweight"),
+    "lateral lunge":        ("legs", "bodyweight"),
+    "reverse lunge":        ("legs", "bodyweight"),
+    "jumping lunge":        ("legs", "bodyweight"),
+    "calf raise":           ("legs", "bodyweight"),
+    "hip bridge":           ("legs", "bodyweight"),
+    "glute bridge":         ("legs", "bodyweight"),
+    "glute bridge march":   ("legs", "bodyweight"),
+    "jane fonda":           ("legs", "bodyweight"),
+    "single leg squat":     ("legs", "bodyweight"),
+    "split jack":           ("legs", "bodyweight"),
+    "lateral squat walk":   ("legs", "bodyweight"),
+    "toy soldiers":         ("legs", "bodyweight"),
+    # ── LEGS / block ─────────────────────────────────────────────────────────
+    "heavy squat":          ("legs", "block"),
+    "goblet squat":         ("legs", "block"),
+    "deadlift":             ("legs", "block"),
+    "romanian deadlift":    ("legs", "block"),
+    "good morning":         ("legs", "block"),
+    # ── CARDIO / bodyweight ──────────────────────────────────────────────────
+    "burpee":               ("cardio", "bodyweight"),
+    "side straddle hop":    ("cardio", "bodyweight"),
+    "jumping jack":         ("cardio", "bodyweight"),
+    "smurf jack":           ("cardio", "bodyweight"),
+    "high knee":            ("cardio", "bodyweight"),
+    "run":                  ("cardio", "bodyweight"),
+    "jog":                  ("cardio", "bodyweight"),
+    "lap":                  ("cardio", "bodyweight"),
+    "sprint":               ("cardio", "bodyweight"),
+    "indian run":           ("cardio", "bodyweight"),
+    "bear crawl":           ("cardio", "bodyweight"),
+    "broad jump":           ("cardio", "bodyweight"),
+    "broad jump burpee":    ("cardio", "bodyweight"),
+    "power skip":           ("cardio", "bodyweight"),
+    "mountain climber":     ("cardio", "bodyweight"),
+    "imperial walker":      ("cardio", "bodyweight"),
+    "life alert":           ("cardio", "bodyweight"),
+    "dynamo lap":           ("cardio", "bodyweight"),
+    "wushu bounce":         ("cardio", "bodyweight"),
+    "thread":               ("cardio", "bodyweight"),
+    "ssh half arms":        ("cardio", "bodyweight"),
+    "burn down side shuttle hops": ("cardio", "bodyweight"),
+    "zebra kicks":          ("cardio", "bodyweight"),
+    # ── CARDIO / block ───────────────────────────────────────────────────────
+    "murder bunny":         ("cardio", "block"),
+    "burpees over coupon":  ("cardio", "block"),
+    "burpees block jump overs": ("cardio", "block"),
+    "weighted mosey to gazebo": ("cardio", "block"),
+    # ── MARY / bodyweight ────────────────────────────────────────────────────
+    "flutter kick":         ("mary", "bodyweight"),
+    "american hammer":      ("mary", "bodyweight"),
+    "sit-up":               ("mary", "bodyweight"),
+    "big boy sit-up":       ("mary", "bodyweight"),
+    "wwii sit-up":          ("mary", "bodyweight"),
+    "wwiii sit-up":         ("mary", "bodyweight"),
+    "lbc":                  ("mary", "bodyweight"),
+    "v-up":                 ("mary", "bodyweight"),
+    "plank jack":           ("mary", "bodyweight"),
+    "side plank hip dip":   ("mary", "bodyweight"),
+    "scissor lift":         ("mary", "bodyweight"),
+    "heels to heaven":      ("mary", "bodyweight"),
+    "dead bug":             ("mary", "bodyweight"),
+    "alternating dead bug": ("mary", "bodyweight"),
+    "freddy mercury":       ("mary", "bodyweight"),
+    "grass puller":         ("mary", "bodyweight"),
+    "toe touch":            ("mary", "bodyweight"),
+    "leg raise":            ("mary", "bodyweight"),
+    "plank":                ("mary", "bodyweight"),
+    "bird dog":             ("mary", "bodyweight"),
+    "russian twist":        ("mary", "bodyweight"),
+    "windmill":             ("mary", "bodyweight"),
+    "side plank":           ("mary", "bodyweight"),
+    "toe tickler":          ("mary", "bodyweight"),
+    "zebra kick":           ("mary", "bodyweight"),
+    "leg lift":             ("mary", "bodyweight"),
+    "piano man -":          ("mary", "bodyweight"),
+    # ── MARY / block ─────────────────────────────────────────────────────────
+    "heavy freddy":         ("mary", "block"),
+}
+
+CATEGORY_LABELS = {
+    "arms":   "Arms",
+    "legs":   "Legs",
+    "cardio": "Cardio / Movement",
+    "mary":   "Mary (Core / Abs)",
+}
+
+TYPE_LABELS = {
+    "block":      "With Block",
+    "bodyweight": "Bodyweight",
+}
+
+
+def classify(exercise: str) -> tuple[str, str]:
+    """Return (category, type) for an exercise, or ('other', 'bodyweight') if unknown."""
+    return CLASSIFICATIONS.get(exercise, ("other", "bodyweight"))
+
+
 def normalize_exercise(exercise: str) -> str:
     """Apply canonical name mapping."""
     # Try exact match
@@ -641,14 +796,65 @@ def write_report(counter: Counter, files_processed: int, files_with_exercises: i
         "",
         "---",
         "",
-        "## Exercise Rankings",
+        "## By Category & Type",
         "",
-        "| Rank | Exercise | Times Done |",
-        "| ---- | -------- | ---------- |",
+        "> Categories: **Arms** · **Legs** · **Cardio / Movement** · **Mary (Core / Abs)**  ",
+        "> Types: **With Block** (coupon) · **Bodyweight**",
+        "",
     ]
 
+    # Build grouped structure
+    from collections import defaultdict
+    grouped: dict[str, dict[str, list[tuple[str, int]]]] = defaultdict(lambda: defaultdict(list))
+    unclassified: list[tuple[str, int]] = []
+
+    for exercise, count in counter.most_common():
+        cat, typ = classify(exercise)
+        if cat == "other":
+            unclassified.append((exercise, count))
+        else:
+            grouped[cat][typ].append((exercise, count))
+
+    category_order = ["arms", "legs", "cardio", "mary"]
+    type_order = ["block", "bodyweight"]
+
+    for cat in category_order:
+        cat_label = CATEGORY_LABELS[cat]
+        cat_total = sum(c for typ_dict in grouped[cat].values() for _, c in typ_dict)
+        lines += [
+            f"### {cat_label}",
+            f"",
+            f"_Total instances: {cat_total}_",
+            "",
+        ]
+        for typ in type_order:
+            if not grouped[cat][typ]:
+                continue
+            typ_label = TYPE_LABELS[typ]
+            lines += [
+                f"**{typ_label}**",
+                "",
+                "| Exercise | Times Done |",
+                "| -------- | ---------- |",
+            ]
+            for exercise, count in sorted(grouped[cat][typ], key=lambda x: -x[1]):
+                lines.append(f"| {exercise.title()} | {count} |")
+            lines.append("")
+
+    # Full ranked table
+    lines += [
+        "---",
+        "",
+        "## Full Rankings (All Exercises)",
+        "",
+        "| Rank | Exercise | Category | Type | Times Done |",
+        "| ---- | -------- | -------- | ---- | ---------- |",
+    ]
     for rank, (exercise, count) in enumerate(counter.most_common(), start=1):
-        lines.append(f"| {rank} | {exercise.title()} | {count} |")
+        cat, typ = classify(exercise)
+        cat_label = CATEGORY_LABELS.get(cat, "—")
+        typ_label = TYPE_LABELS.get(typ, "—")
+        lines.append(f"| {rank} | {exercise.title()} | {cat_label} | {typ_label} | {count} |")
 
     lines.extend([
         "",
