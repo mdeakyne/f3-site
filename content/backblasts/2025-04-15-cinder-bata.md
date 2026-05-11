@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-04-15-cinder-bata.md
 - Waco
 - Farmers Only
 - Flute
-- 404
+- "404"
 - Bivouac
 
 **Warm-up:**
