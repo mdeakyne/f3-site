@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { site, aoName } from '../../lib/data';
+import { site, aoName, formatDateShort } from '../../lib/data';
 
 // Load backblasts and rebuild posts-by-PAX for each time window.
 const allBB = (await getCollection('backblasts')).map((e) => e.data);
@@ -12,6 +12,8 @@ const yearStart = `${today.getFullYear()}-01-01`;
 function tally(filterFrom: string | null) {
   const posts = new Map<string, number>();
   const qs = new Map<string, number>();
+  const earliest = new Map<string, string>();
+  const latest = new Map<string, string>();
   const nameBySlug = new Map<string, string>();
   for (const p of site.leaderboard) nameBySlug.set(p.slug, p.f3_name);
 
@@ -24,6 +26,12 @@ function tally(filterFrom: string | null) {
       const slug = slugify(name);
       nameBySlug.set(slug, name);
       posts.set(slug, (posts.get(slug) ?? 0) + 1);
+      if (bb.date) {
+        const e = earliest.get(slug);
+        if (!e || bb.date < e) earliest.set(slug, bb.date);
+        const l = latest.get(slug);
+        if (!l || bb.date > l) latest.set(slug, bb.date);
+      }
     }
     if (bb.q_slug) {
       qs.set(bb.q_slug, (qs.get(bb.q_slug) ?? 0) + 1);
@@ -38,17 +46,14 @@ function tally(filterFrom: string | null) {
       f3_name: nameBySlug.get(slug) ?? slug,
       posts: count,
       qs: qs.get(slug) ?? 0,
+      first: earliest.get(slug) ?? null,
+      last: latest.get(slug) ?? null,
     }))
     .sort((a, b) => b.posts - a.posts || b.qs - a.qs);
   return rows;
 }
 
-const allTime = site.leaderboard.map((p) => ({
-  slug: p.slug,
-  f3_name: p.f3_name,
-  posts: p.posts,
-  qs: p.qs,
-}));
+const allTime = tally(null);
 const thisYear = tally(yearStart);
 const thisMonth = tally(monthStart);
 
@@ -89,8 +94,10 @@ const scopes = [
             <tr class="font-mono text-xs uppercase text-muted">
               <th class="text-left py-2 px-4 w-12">#</th>
               <th class="text-left py-2 px-4">F3 Name</th>
-              <th class="text-right py-2 px-4 w-24">Posts</th>
-              <th class="text-right py-2 px-4 w-20">Qs</th>
+              <th class="text-right py-2 px-4 w-20">Posts</th>
+              <th class="text-right py-2 px-4 w-16">Qs</th>
+              <th class="text-right py-2 px-4 w-28">First post</th>
+              <th class="text-right py-2 px-4 w-28">Last post</th>
             </tr>
           </thead>
           <tbody>
@@ -102,6 +109,8 @@ const scopes = [
                 </td>
                 <td class="py-3 px-4 font-mono text-right">{p.posts}</td>
                 <td class="py-3 px-4 font-mono text-right">{p.qs}</td>
+                <td class="py-3 px-4 font-mono text-right text-muted">{p.first ? formatDateShort(p.first) : '—'}</td>
+                <td class="py-3 px-4 font-mono text-right text-muted">{p.last ? formatDateShort(p.last) : '—'}</td>
               </tr>
             ))}
           </tbody>
