@@ -1,0 +1,316 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const POOL = {
+  arms: [
+    { name: "Curl",                 type: "block" },
+    { name: "Overhead Press",       type: "block" },
+    { name: "Row",                  type: "block" },
+    { name: "Upright Row",          type: "block" },
+    { name: "Bent Over Row",        type: "block" },
+    { name: "Thruster",             type: "block" },
+    { name: "Piano Man",            type: "block" },
+    { name: "Block Swings",         type: "block" },
+    { name: "Curl Press",           type: "block" },
+    { name: "Around The World",     type: "block" },
+    { name: "Merkin",               type: "bodyweight" },
+    { name: "Arm Circle",           type: "bodyweight" },
+    { name: "Michael Phelps",       type: "bodyweight" },
+    { name: "Tricep Dip",           type: "bodyweight" },
+    { name: "Shoulder Taps",        type: "bodyweight" },
+    { name: "Sun God",              type: "bodyweight" },
+    { name: "Hand-Release Merkin",  type: "bodyweight" },
+    { name: "Inchworm",             type: "bodyweight" },
+  ],
+  legs: [
+    { name: "Heavy Squat",          type: "block" },
+    { name: "Deadlift",             type: "block" },
+    { name: "Goblet Squat",         type: "block" },
+    { name: "Good Morning",         type: "block" },
+    { name: "Squat",                type: "bodyweight" },
+    { name: "Lunge",                type: "bodyweight" },
+    { name: "Calf Raise",           type: "bodyweight" },
+    { name: "Cossack Squat",        type: "bodyweight" },
+    { name: "Walking Lunge",        type: "bodyweight" },
+    { name: "Deep Squat",           type: "bodyweight" },
+    { name: "Hip Bridge",           type: "bodyweight" },
+    { name: "Jane Fonda",           type: "bodyweight" },
+    { name: "Reverse Lunge",        type: "bodyweight" },
+    { name: "Squat Jump",           type: "bodyweight" },
+    { name: "Jumping Lunge",        type: "bodyweight" },
+  ],
+  cardio: [
+    { name: "Murder Bunny",         type: "block" },
+    { name: "Burpee",               type: "bodyweight" },
+    { name: "Side Straddle Hop",    type: "bodyweight" },
+    { name: "Bear Crawl",           type: "bodyweight" },
+    { name: "Imperial Walker",      type: "bodyweight" },
+    { name: "Jumping Jack",         type: "bodyweight" },
+    { name: "High Knee",            type: "bodyweight" },
+    { name: "Mountain Climber",     type: "bodyweight" },
+    { name: "Indian Run",           type: "bodyweight" },
+    { name: "Smurf Jack",           type: "bodyweight" },
+    { name: "Broad Jump",           type: "bodyweight" },
+    { name: "Power Skip",           type: "bodyweight" },
+    { name: "Life Alert",           type: "bodyweight" },
+  ],
+  mary: [
+    { name: "XY",                   type: "block" },
+    { name: "Heavy Freddy",         type: "block" },
+    { name: "Flutter Kick",         type: "bodyweight" },
+    { name: "American Hammer",      type: "bodyweight" },
+    { name: "Sit-Up",               type: "bodyweight" },
+    { name: "Scissor Lift",         type: "bodyweight" },
+    { name: "Freddy Mercury",       type: "bodyweight" },
+    { name: "Grass Puller",         type: "bodyweight" },
+    { name: "Heels To Heaven",      type: "bodyweight" },
+    { name: "Big Boy Sit-Up",       type: "bodyweight" },
+    { name: "Leg Raise",            type: "bodyweight" },
+    { name: "Dead Bug",             type: "bodyweight" },
+    { name: "LBC",                  type: "bodyweight" },
+    { name: "V-Up",                 type: "bodyweight" },
+    { name: "Plank Jack",           type: "bodyweight" },
+    { name: "Bird Dog",             type: "bodyweight" },
+    { name: "Windmill",             type: "bodyweight" },
+  ],
+};
+
+const CATEGORIES = [
+  { id: "arms",   label: "Arms",              sub: "Upper body" },
+  { id: "legs",   label: "Legs",              sub: "Lower body" },
+  { id: "cardio", label: "Cardio / Movement", sub: "Get moving" },
+  { id: "mary",   label: "Mary",              sub: "Core & abs" },
+] as const;
+---
+
+<Base title="Exercise Picker — F3 Lawrence">
+
+  <header class="mb-10 border-b border-rule pb-6">
+    <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Q Toolkit</p>
+    <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">EXERCISE PICKER</h1>
+    <p class="mt-3 font-heading text-lg text-muted">
+      5 exercises per category. Shuffle to swap in others. Click to select for your workout.
+    </p>
+    <div class="mt-5 flex flex-wrap gap-3 items-center">
+      <button
+        id="shuffle-all"
+        class="font-heading font-semibold uppercase tracking-wide text-sm px-5 py-2 border border-ink hover:bg-ink hover:text-surface transition-colors"
+      >
+        Shuffle All
+      </button>
+      <button
+        id="clear-all"
+        class="font-heading font-semibold uppercase tracking-wide text-sm px-5 py-2 border border-rule text-muted hover:border-ink hover:text-ink transition-colors"
+      >
+        Clear Selection
+      </button>
+      <span id="selected-count" class="font-mono text-xs text-muted hidden">
+        <span id="count-num">0</span> selected
+      </span>
+    </div>
+  </header>
+
+  <div class="space-y-12">
+    {CATEGORIES.map((cat) => (
+      <section data-category={cat.id}>
+        <div class="flex items-baseline justify-between mb-4 border-b border-rule pb-3">
+          <div>
+            <h2 class="font-display text-3xl sm:text-4xl leading-none tracking-tight text-ink uppercase">
+              {cat.label}
+            </h2>
+            <p class="font-mono text-xs uppercase tracking-widest text-muted mt-1">{cat.sub}</p>
+          </div>
+          <button
+            data-shuffle={cat.id}
+            class="font-heading font-semibold uppercase tracking-wide text-xs px-3 py-1.5 border border-rule text-muted hover:border-ink hover:text-ink transition-colors"
+          >
+            Shuffle
+          </button>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-5 gap-3"
+          data-grid={cat.id}
+        >
+          {/* Cards rendered by JS — SSR placeholder shows nothing special */}
+        </div>
+      </section>
+    ))}
+  </div>
+
+  <div id="workout-summary" class="hidden mt-14 border-t border-rule pt-8">
+    <p class="font-mono text-xs uppercase tracking-widest text-muted mb-3">Selected Workout</p>
+    <div id="summary-list" class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-1 font-heading font-semibold text-sm"></div>
+  </div>
+
+</Base>
+
+<script define:vars={{ POOL, CATEGORIES }}>
+  const PER_CAT = 5;
+
+  // State: currently displayed exercises per category
+  const displayed = {};
+  // State: selected exercise keys (catId:exerciseName)
+  const selected = new Set();
+
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function pickFive(catId) {
+    const pool = POOL[catId];
+    displayed[catId] = shuffle(pool).slice(0, PER_CAT);
+  }
+
+  function renderCard(catId, ex) {
+    const key = `${catId}:${ex.name}`;
+    const isSelected = selected.has(key);
+    const isBlock = ex.type === "block";
+
+    const card = document.createElement("button");
+    card.dataset.key = key;
+    card.className = [
+      "relative text-left p-4 border transition-colors",
+      isSelected
+        ? "border-accent-red bg-accent-red text-surface"
+        : "border-rule hover:border-ink bg-surface",
+    ].join(" ");
+
+    const badge = document.createElement("span");
+    badge.className = [
+      "absolute top-2 right-2 font-mono text-[10px] uppercase tracking-widest px-1.5 py-0.5",
+      isSelected
+        ? "bg-surface/20 text-surface"
+        : isBlock
+        ? "bg-surface-muted text-accent-slate"
+        : "bg-surface-muted text-muted",
+    ].join(" ");
+    badge.textContent = isBlock ? "Block" : "BW";
+
+    const name = document.createElement("span");
+    name.className = "block font-heading font-semibold text-sm leading-snug pr-8 mt-3";
+    name.textContent = ex.name;
+
+    card.appendChild(badge);
+    card.appendChild(name);
+
+    card.addEventListener("click", () => {
+      if (selected.has(key)) {
+        selected.delete(key);
+      } else {
+        selected.add(key);
+      }
+      renderGrid(catId);
+      updateSummary();
+    });
+
+    return card;
+  }
+
+  function renderGrid(catId) {
+    const grid = document.querySelector(`[data-grid="${catId}"]`);
+    if (!grid) return;
+    grid.innerHTML = "";
+    for (const ex of displayed[catId]) {
+      grid.appendChild(renderCard(catId, ex));
+    }
+  }
+
+  function updateSummary() {
+    const count = selected.size;
+    const countEl = document.getElementById("count-num");
+    const badge = document.getElementById("selected-count");
+    const summary = document.getElementById("workout-summary");
+    const list = document.getElementById("summary-list");
+
+    if (countEl) countEl.textContent = String(count);
+    badge?.classList.toggle("hidden", count === 0);
+    summary?.classList.toggle("hidden", count === 0);
+
+    if (!list) return;
+    list.innerHTML = "";
+
+    // Group selected by category
+    for (const cat of CATEGORIES) {
+      const catKeys = [...selected].filter((k) => k.startsWith(`${cat.id}:`));
+      if (catKeys.length === 0) continue;
+
+      const section = document.createElement("div");
+      section.className = "mb-4";
+
+      const heading = document.createElement("p");
+      heading.className = "font-mono text-xs uppercase tracking-widest text-muted mb-1";
+      heading.textContent = cat.label;
+      section.appendChild(heading);
+
+      for (const key of catKeys) {
+        const exName = key.split(":").slice(1).join(":");
+        const ex = POOL[cat.id].find((e) => e.name === exName);
+        const row = document.createElement("p");
+        row.className = "font-heading font-semibold text-ink";
+        row.textContent = `${exName}${ex?.type === "block" ? " ◆" : ""}`;
+        section.appendChild(row);
+      }
+      list.appendChild(section);
+    }
+  }
+
+  function init() {
+    for (const cat of CATEGORIES) {
+      pickFive(cat.id);
+      renderGrid(cat.id);
+    }
+    updateSummary();
+  }
+
+  // Shuffle individual category
+  document.querySelectorAll("[data-shuffle]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const catId = btn.dataset.shuffle;
+      // Remove selections for cards that are being shuffled away
+      for (const key of [...selected]) {
+        if (key.startsWith(`${catId}:`)) {
+          const exName = key.split(":").slice(1).join(":");
+          const stillShowing = displayed[catId]?.some((e) => e.name === exName);
+          if (!stillShowing) selected.delete(key);
+        }
+      }
+      pickFive(catId);
+      // Re-remove any now-missing selections after new pick
+      for (const key of [...selected]) {
+        if (key.startsWith(`${catId}:`)) {
+          const exName = key.split(":").slice(1).join(":");
+          if (!displayed[catId].some((e) => e.name === exName)) {
+            selected.delete(key);
+          }
+        }
+      }
+      renderGrid(catId);
+      updateSummary();
+    });
+  });
+
+  // Shuffle all
+  document.getElementById("shuffle-all")?.addEventListener("click", () => {
+    selected.clear();
+    for (const cat of CATEGORIES) {
+      pickFive(cat.id);
+      renderGrid(cat.id);
+    }
+    updateSummary();
+  });
+
+  // Clear selection
+  document.getElementById("clear-all")?.addEventListener("click", () => {
+    selected.clear();
+    for (const cat of CATEGORIES) renderGrid(cat.id);
+    updateSummary();
+  });
+
+  init();
+</script>
