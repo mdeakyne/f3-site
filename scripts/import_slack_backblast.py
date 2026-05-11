@@ -206,6 +206,8 @@ def yaml_str(s: str) -> str:
         return "''"
     if any(c in s for c in ':#{}[]|>&*!,?-'):
         return f"'{s.replace(chr(39), chr(39)+chr(39))}'"
+    if s.lstrip('-').replace('.', '', 1).isdigit():
+        return f"'{s}'"
     return s
 
 def write_backblast(fields: dict) -> str:
