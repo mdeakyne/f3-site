@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { site, aoName } from '../../lib/data';
+import { site, formatDateShort } from '../../lib/data';
 
 // Load backblasts and rebuild posts-by-PAX for each time window.
 const allBB = (await getCollection('backblasts')).map((e) => e.data);
@@ -9,9 +9,22 @@ const today = new Date();
 const monthStart = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-01`;
 const yearStart = `${today.getFullYear()}-01-01`;
 
-function tally(filterFrom: string | null) {
+interface ScopeRow {
+  slug: string;
+  f3_name: string;
+  posts: number;
+  qs: number;
+  earliest: string | null;
+  latest: string | null;
+  latest_q: string | null;
+}
+
+function tally(filterFrom: string | null): ScopeRow[] {
   const posts = new Map<string, number>();
   const qs = new Map<string, number>();
+  const earliest = new Map<string, string>();
+  const latest = new Map<string, string>();
+  const latestQ = new Map<string, string>();
   const nameBySlug = new Map<string, string>();
   for (const p of site.leaderboard) nameBySlug.set(p.slug, p.f3_name);
 
@@ -20,34 +33,50 @@ function tally(filterFrom: string | null) {
 
   for (const bb of allBB) {
     if (filterFrom && bb.date < filterFrom) continue;
+    const posted = new Set<string>();
     for (const name of bb.pax) {
       const slug = slugify(name);
       nameBySlug.set(slug, name);
-      posts.set(slug, (posts.get(slug) ?? 0) + 1);
+      posted.add(slug);
     }
-    if (bb.q_slug) {
-      qs.set(bb.q_slug, (qs.get(bb.q_slug) ?? 0) + 1);
-    } else if (bb.q) {
-      const slug = slugify(bb.q);
-      qs.set(slug, (qs.get(slug) ?? 0) + 1);
+    let qSlug = bb.q_slug ?? '';
+    if (!qSlug && bb.q) qSlug = slugify(bb.q);
+    if (qSlug) {
+      posted.add(qSlug);
+      if (bb.q && !nameBySlug.has(qSlug)) nameBySlug.set(qSlug, bb.q);
+      qs.set(qSlug, (qs.get(qSlug) ?? 0) + 1);
+      const prevQ = latestQ.get(qSlug);
+      if (!prevQ || bb.date > prevQ) latestQ.set(qSlug, bb.date);
+    }
+    for (const slug of posted) {
+      posts.set(slug, (posts.get(slug) ?? 0) + 1);
+      const e = earliest.get(slug);
+      if (!e || bb.date < e) earliest.set(slug, bb.date);
+      const l = latest.get(slug);
+      if (!l || bb.date > l) latest.set(slug, bb.date);
     }
   }
-  const rows = Array.from(posts.entries())
+  return Array.from(posts.entries())
     .map(([slug, count]) => ({
       slug,
       f3_name: nameBySlug.get(slug) ?? slug,
       posts: count,
       qs: qs.get(slug) ?? 0,
+      earliest: earliest.get(slug) ?? null,
+      latest: latest.get(slug) ?? null,
+      latest_q: latestQ.get(slug) ?? null,
     }))
     .sort((a, b) => b.posts - a.posts || b.qs - a.qs);
-  return rows;
 }
 
-const allTime = site.leaderboard.map((p) => ({
+const allTime: ScopeRow[] = site.leaderboard.map((p) => ({
   slug: p.slug,
   f3_name: p.f3_name,
   posts: p.posts,
   qs: p.qs,
+  earliest: p.earliest,
+  latest: p.latest,
+  latest_q: p.latest_q,
 }));
 const thisYear = tally(yearStart);
 const thisMonth = tally(monthStart);
@@ -89,8 +118,11 @@ const scopes = [
             <tr class="font-mono text-xs uppercase text-muted">
               <th class="text-left py-2 px-4 w-12">#</th>
               <th class="text-left py-2 px-4">F3 Name</th>
-              <th class="text-right py-2 px-4 w-24">Posts</th>
-              <th class="text-right py-2 px-4 w-20">Qs</th>
+              <th class="text-right py-2 px-4 w-20">Posts</th>
+              <th class="text-right py-2 px-4 w-16">Qs</th>
+              <th class="hidden md:table-cell text-right py-2 px-4 w-24">Earliest</th>
+              <th class="hidden md:table-cell text-right py-2 px-4 w-24">Latest</th>
+              <th class="hidden md:table-cell text-right py-2 px-4 w-24">Latest Q</th>
             </tr>
           </thead>
           <tbody>
@@ -99,9 +131,17 @@ const scopes = [
                 <td class="py-3 px-4 font-display text-2xl text-accent-red">{idx + 1}</td>
                 <td class="py-3 px-4 font-heading font-semibold">
                   <a href={`/pax/${p.slug}/`} class="hover:text-accent-red">{p.f3_name}</a>
+                  <div class="md:hidden font-mono text-xs font-normal text-muted mt-1">
+                    {p.earliest && <span>First {formatDateShort(p.earliest)}</span>}
+                    {p.latest && <span class="ml-3">Last {formatDateShort(p.latest)}</span>}
+                    {p.latest_q && <span class="ml-3">Last Q {formatDateShort(p.latest_q)}</span>}
+                  </div>
                 </td>
                 <td class="py-3 px-4 font-mono text-right">{p.posts}</td>
                 <td class="py-3 px-4 font-mono text-right">{p.qs}</td>
+                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.earliest ? formatDateShort(p.earliest) : '—'}</td>
+                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.latest ? formatDateShort(p.latest) : '—'}</td>
+                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.latest_q ? formatDateShort(p.latest_q) : '—'}</td>
               </tr>
             ))}
           </tbody>

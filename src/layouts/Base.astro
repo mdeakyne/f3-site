@@ -26,12 +26,12 @@ const { title, description = 'F3 Lawrence — backblasts, PAX, and Q signup.' } 
   </head>
   <body class="font-body text-ink bg-paper">
     <header class="border-b border-rule bg-surface">
-      <div class="mx-auto max-w-site px-6 py-5 flex items-center justify-between">
+      <div class="mx-auto max-w-site px-6 py-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
         <a href="/" class="flex items-center gap-3">
           <span class="font-display text-3xl tracking-wide text-accent-red leading-none">F3</span>
           <span class="font-heading text-lg font-semibold tracking-tight">LAWRENCE</span>
         </a>
-        <nav class="font-heading text-sm font-semibold tracking-wide uppercase flex gap-6">
+        <nav class="font-heading text-sm font-semibold tracking-wide uppercase flex flex-wrap gap-x-5 gap-y-2">
           <a href="/backblasts/" class="hover:text-accent-red">Backblasts</a>
           <a href="/leaderboard/" class="hover:text-accent-red">Leaderboard</a>
           <a href="/exercises/" class="hover:text-accent-red">Exercises</a>

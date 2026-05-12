@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T20:19:45Z",
+  "generated_at": "2026-05-12T01:19:41Z",
   "counts": {
     "backblasts": 240,
     "pax": 61,
@@ -19,6 +19,19 @@
   ],
   "leaderboard": [
     {
+      "slug": "big-toe",
+      "f3_name": "Big Toe",
+      "posts": 216,
+      "qs": 59,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2026-05-07",
+      "latest_q": "2026-04-21"
+    },
+    {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
       "posts": 216,
@@ -28,43 +41,34 @@
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-05-07"
-    },
-    {
-      "slug": "big-toe",
-      "f3_name": "Big Toe",
-      "posts": 214,
-      "qs": 59,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2026-05-07"
+      "latest": "2026-05-07",
+      "latest_q": "2026-04-14"
     },
     {
       "slug": "404",
       "f3_name": "404",
       "posts": 174,
-      "qs": 31,
+      "qs": 32,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-04-30"
+      "latest": "2026-04-30",
+      "latest_q": "2026-04-28"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 134,
+      "posts": 136,
       "qs": 34,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-05-07"
+      "latest": "2026-05-07",
+      "latest_q": "2026-05-05"
     },
     {
       "slug": "sawdust",
@@ -76,7 +80,8 @@
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2025-02-25"
+      "latest": "2025-02-25",
+      "latest_q": "2025-01-23"
     },
     {
       "slug": "wreck-it",
@@ -88,31 +93,34 @@
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-05-07"
+      "latest": "2026-05-07",
+      "latest_q": "2026-03-03"
     },
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 64,
+      "posts": 65,
       "qs": 13,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-05-07"
+      "latest": "2026-05-07",
+      "latest_q": "2026-05-07"
     },
     {
       "slug": "flute",
       "f3_name": "Flute",
-      "posts": 58,
+      "posts": 59,
       "qs": 13,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-01-18",
-      "latest": "2026-03-24"
+      "latest": "2026-03-24",
+      "latest_q": "2026-03-24"
     },
     {
       "slug": "training-wheels",
@@ -124,7 +132,8 @@
         "beehive"
       ],
       "earliest": "2024-07-30",
-      "latest": "2026-01-06"
+      "latest": "2026-01-06",
+      "latest_q": "2025-11-11"
     },
     {
       "slug": "toto",
@@ -136,7 +145,8 @@
         "beehive"
       ],
       "earliest": "2025-04-24",
-      "latest": "2026-05-07"
+      "latest": "2026-05-07",
+      "latest_q": "2026-04-07"
     },
     {
       "slug": "second-string",
@@ -147,7 +157,8 @@
         "ad-astra"
       ],
       "earliest": "2023-09-21",
-      "latest": "2024-07-25"
+      "latest": "2024-07-25",
+      "latest_q": "2024-07-11"
     },
     {
       "slug": "bonnet",
@@ -159,18 +170,20 @@
         "beehive"
       ],
       "earliest": "2024-01-01",
-      "latest": "2026-04-28"
+      "latest": "2026-04-28",
+      "latest_q": null
     },
     {
       "slug": "ariel",
       "f3_name": "Ariel",
-      "posts": 18,
+      "posts": 19,
       "qs": 8,
       "aos": [
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2024-02-01"
+      "latest": "2024-02-01",
+      "latest_q": "2024-02-01"
     },
     {
       "slug": "dial-up",
@@ -182,7 +195,8 @@
         "beehive"
       ],
       "earliest": "2024-06-27",
-      "latest": "2026-02-12"
+      "latest": "2026-02-12",
+      "latest_q": "2025-10-21"
     },
     {
       "slug": "blackout",
@@ -193,7 +207,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-17",
-      "latest": "2024-07-11"
+      "latest": "2024-07-11",
+      "latest_q": "2023-10-12"
     },
     {
       "slug": "casio",
@@ -205,7 +220,8 @@
         "beehive"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-05-07"
+      "latest": "2026-05-07",
+      "latest_q": null
     },
     {
       "slug": "plot-twist",
@@ -216,7 +232,8 @@
         "ad-astra"
       ],
       "earliest": "2023-10-05",
-      "latest": "2024-03-21"
+      "latest": "2024-03-21",
+      "latest_q": "2024-02-29"
     },
     {
       "slug": "miz",
@@ -227,7 +244,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2024-01-01"
+      "latest": "2024-01-01",
+      "latest_q": "2023-09-21"
     },
     {
       "slug": "trainwreck",
@@ -238,7 +256,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2024-10-03"
+      "latest": "2024-10-03",
+      "latest_q": "2023-09-14"
     },
     {
       "slug": "leaks",
@@ -249,7 +268,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-31",
-      "latest": "2024-04-25"
+      "latest": "2024-04-25",
+      "latest_q": null
     },
     {
       "slug": "kilo",
@@ -260,18 +280,20 @@
         "ad-astra"
       ],
       "earliest": "2024-06-27",
-      "latest": "2024-10-03"
+      "latest": "2024-10-03",
+      "latest_q": "2024-09-19"
     },
     {
       "slug": "route44",
       "f3_name": "Route44",
-      "posts": 9,
+      "posts": 10,
       "qs": 1,
       "aos": [
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-11-23"
+      "latest": "2023-11-23",
+      "latest_q": "2023-10-05"
     },
     {
       "slug": "soprano",
@@ -282,7 +304,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-17",
-      "latest": "2023-11-16"
+      "latest": "2023-11-16",
+      "latest_q": "2023-10-26"
     },
     {
       "slug": "siri",
@@ -293,7 +316,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-17",
-      "latest": "2023-10-26"
+      "latest": "2023-10-26",
+      "latest_q": null
     },
     {
       "slug": "seafood",
@@ -304,7 +328,8 @@
         "ad-astra"
       ],
       "earliest": "2024-02-29",
-      "latest": "2024-05-09"
+      "latest": "2024-05-09",
+      "latest_q": "2024-04-18"
     },
     {
       "slug": "wuhan",
@@ -315,7 +340,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2024-07-11"
+      "latest": "2024-07-11",
+      "latest_q": null
     },
     {
       "slug": "pepper",
@@ -327,7 +353,8 @@
         "beehive"
       ],
       "earliest": "2024-08-27",
-      "latest": "2025-11-06"
+      "latest": "2025-11-06",
+      "latest_q": null
     },
     {
       "slug": "concessions",
@@ -338,7 +365,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-31",
-      "latest": "2023-10-19"
+      "latest": "2023-10-19",
+      "latest_q": "2023-10-19"
     },
     {
       "slug": "litterbox",
@@ -349,7 +377,8 @@
         "ad-astra"
       ],
       "earliest": "2024-01-18",
-      "latest": "2024-06-13"
+      "latest": "2024-06-13",
+      "latest_q": null
     },
     {
       "slug": "downrange",
@@ -361,7 +390,8 @@
         "beehive"
       ],
       "earliest": "2024-11-26",
-      "latest": "2025-06-05"
+      "latest": "2025-06-05",
+      "latest_q": null
     },
     {
       "slug": "medley",
@@ -373,7 +403,8 @@
         "beehive"
       ],
       "earliest": "2026-02-03",
-      "latest": "2026-05-05"
+      "latest": "2026-05-05",
+      "latest_q": null
     },
     {
       "slug": "womens-league",
@@ -384,7 +415,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-11-09"
+      "latest": "2023-11-09",
+      "latest_q": null
     },
     {
       "slug": "blanks",
@@ -395,7 +427,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-09-14"
+      "latest": "2023-09-14",
+      "latest_q": null
     },
     {
       "slug": "captain-kirk",
@@ -406,7 +439,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-09-07"
+      "latest": "2023-09-07",
+      "latest_q": null
     },
     {
       "slug": "flaps",
@@ -417,7 +451,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-17",
-      "latest": "2023-10-12"
+      "latest": "2023-10-12",
+      "latest_q": null
     },
     {
       "slug": "locks",
@@ -429,7 +464,8 @@
         "beehive"
       ],
       "earliest": "2024-11-07",
-      "latest": "2024-12-12"
+      "latest": "2024-12-12",
+      "latest_q": null
     },
     {
       "slug": "crocs",
@@ -441,7 +477,8 @@
         "beehive"
       ],
       "earliest": "2025-10-02",
-      "latest": "2025-12-11"
+      "latest": "2025-12-11",
+      "latest_q": null
     },
     {
       "slug": "billboard",
@@ -452,7 +489,8 @@
         "beehive"
       ],
       "earliest": "2024-07-02",
-      "latest": "2024-07-30"
+      "latest": "2024-07-30",
+      "latest_q": null
     },
     {
       "slug": "clickbait",
@@ -464,7 +502,8 @@
         "beehive"
       ],
       "earliest": "2024-12-03",
-      "latest": "2024-12-10"
+      "latest": "2024-12-10",
+      "latest_q": null
     },
     {
       "slug": "goulash",
@@ -475,7 +514,8 @@
         "beehive"
       ],
       "earliest": "2026-01-27",
-      "latest": "2026-03-03"
+      "latest": "2026-03-03",
+      "latest_q": null
     },
     {
       "slug": "peanuts",
@@ -486,7 +526,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-31",
-      "latest": "2023-09-07"
+      "latest": "2023-09-07",
+      "latest_q": "2023-09-07"
     },
     {
       "slug": "castaway",
@@ -497,7 +538,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-08-17"
+      "latest": "2023-08-17",
+      "latest_q": null
     },
     {
       "slug": "squirts",
@@ -508,7 +550,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-24",
-      "latest": "2023-09-07"
+      "latest": "2023-09-07",
+      "latest_q": null
     },
     {
       "slug": "waterboy",
@@ -519,7 +562,8 @@
         "ad-astra"
       ],
       "earliest": "2023-10-19",
-      "latest": "2023-10-26"
+      "latest": "2023-10-26",
+      "latest_q": null
     },
     {
       "slug": "spare-tire",
@@ -530,7 +574,8 @@
         "beehive"
       ],
       "earliest": "2024-11-05",
-      "latest": "2024-12-10"
+      "latest": "2024-12-10",
+      "latest_q": null
     },
     {
       "slug": "fng",
@@ -542,7 +587,8 @@
         "beehive"
       ],
       "earliest": "2025-07-08",
-      "latest": "2025-09-11"
+      "latest": "2025-09-11",
+      "latest_q": null
     },
     {
       "slug": "hiccup",
@@ -554,7 +600,8 @@
         "beehive"
       ],
       "earliest": "2026-02-26",
-      "latest": "2026-03-03"
+      "latest": "2026-03-03",
+      "latest_q": null
     },
     {
       "slug": "gypsy",
@@ -566,7 +613,20 @@
         "beehive"
       ],
       "earliest": "2026-04-21",
-      "latest": "2026-04-23"
+      "latest": "2026-04-23",
+      "latest_q": null
+    },
+    {
+      "slug": "bumble",
+      "f3_name": "Bumble",
+      "posts": 1,
+      "qs": 1,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": "2023-08-10"
     },
     {
       "slug": "breakfast-pizza",
@@ -577,18 +637,8 @@
         "ad-astra"
       ],
       "earliest": "2026-03-19",
-      "latest": "2026-03-19"
-    },
-    {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
-      "posts": 1,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-08-10"
+      "latest": "2026-03-19",
+      "latest_q": "2026-03-19"
     },
     {
       "slug": "loofah",
@@ -599,7 +649,20 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-08-10"
+      "latest": "2023-08-10",
+      "latest_q": null
+    },
+    {
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": null
     },
     {
       "slug": "long-game",
@@ -610,7 +673,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-10",
-      "latest": "2023-08-10"
+      "latest": "2023-08-10",
+      "latest_q": null
     },
     {
       "slug": "moist",
@@ -621,7 +685,8 @@
         "ad-astra"
       ],
       "earliest": "2023-08-17",
-      "latest": "2023-08-17"
+      "latest": "2023-08-17",
+      "latest_q": null
     },
     {
       "slug": "queen-bee",
@@ -632,7 +697,8 @@
         "ad-astra"
       ],
       "earliest": "2023-09-07",
-      "latest": "2023-09-07"
+      "latest": "2023-09-07",
+      "latest_q": null
     },
     {
       "slug": "glee-club",
@@ -643,7 +709,8 @@
         "ad-astra"
       ],
       "earliest": "2023-09-07",
-      "latest": "2023-09-07"
+      "latest": "2023-09-07",
+      "latest_q": null
     },
     {
       "slug": "diesel",
@@ -654,7 +721,8 @@
         "ad-astra"
       ],
       "earliest": "2023-11-09",
-      "latest": "2023-11-09"
+      "latest": "2023-11-09",
+      "latest_q": null
     },
     {
       "slug": "side-show",
@@ -665,7 +733,8 @@
         "ad-astra"
       ],
       "earliest": "2023-11-16",
-      "latest": "2023-11-16"
+      "latest": "2023-11-16",
+      "latest_q": null
     },
     {
       "slug": "clipless",
@@ -676,7 +745,8 @@
         "ad-astra"
       ],
       "earliest": "2024-05-30",
-      "latest": "2024-05-30"
+      "latest": "2024-05-30",
+      "latest_q": null
     },
     {
       "slug": "baldtire",
@@ -687,7 +757,8 @@
         "ad-astra"
       ],
       "earliest": "2024-05-30",
-      "latest": "2024-05-30"
+      "latest": "2024-05-30",
+      "latest_q": null
     },
     {
       "slug": "beaker",
@@ -698,7 +769,8 @@
         "beehive"
       ],
       "earliest": "2024-08-20",
-      "latest": "2024-08-20"
+      "latest": "2024-08-20",
+      "latest_q": null
     },
     {
       "slug": "bucky",
@@ -709,7 +781,8 @@
         "ad-astra"
       ],
       "earliest": "2025-01-23",
-      "latest": "2025-01-23"
+      "latest": "2025-01-23",
+      "latest_q": null
     },
     {
       "slug": "honeystinger",
@@ -720,7 +793,8 @@
         "ad-astra"
       ],
       "earliest": "2026-04-30",
-      "latest": "2026-04-30"
+      "latest": "2026-04-30",
+      "latest_q": null
     }
   ],
   "latest_backblasts": [
@@ -756,7 +830,7 @@
       "title": "Falcon",
       "date": "2026-04-28",
       "ao": "beehive",
-      "q": 404,
+      "q": "404",
       "total_pax": 9,
       "fngs": 0
     },

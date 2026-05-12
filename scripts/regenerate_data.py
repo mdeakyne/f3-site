@@ -39,7 +39,9 @@ def parse_frontmatter(path: str) -> dict:
         list_items = []
         j = i + 1
         while j < len(lines) and lines[j].startswith('- '):
-            item = lines[j][2:].strip().strip("'")
+            item = lines[j][2:].strip()
+            if len(item) >= 2 and item[0] == item[-1] and item[0] in ("'", '"'):
+                item = item[1:-1]
             list_items.append(item)
             j += 1
 
@@ -49,7 +51,7 @@ def parse_frontmatter(path: str) -> dict:
             continue
 
         # Scalar
-        if val.startswith("'") and val.endswith("'"):
+        if len(val) >= 2 and val[0] == val[-1] and val[0] in ("'", '"'):
             val = val[1:-1]
         elif val == 'null':
             val = None
@@ -94,6 +96,7 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
     aos_by_slug: dict[str, set] = defaultdict(set)
     earliest_by_slug: dict[str, str] = {}
     latest_by_slug: dict[str, str] = {}
+    latest_q_by_slug: dict[str, str] = {}
     name_by_slug: dict[str, str] = {}
 
     # Seed canonical names from PAX profiles
@@ -103,18 +106,29 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
     for bb in bbs:
         date = bb.get('date', '')
         ao = bb.get('ao', '')
-        pax_list = bb.get('pax', [])
-        q_slug = bb.get('q_slug', '')
-        q_name = bb.get('q', '')
+        pax_list = bb.get('pax', []) or []
+        q_slug = bb.get('q_slug') or ''
+        q_name = bb.get('q') or ''
 
         if not q_slug and q_name:
             q_slug = slugify(q_name)
 
+        # Build a set of slugs who posted at this BB (pax + Q, deduped).
+        # In F3 convention the Q sometimes is, sometimes isn't, in the pax
+        # roster; either way they posted.
+        posted_slugs: set[str] = set()
         for name in pax_list:
             if not name:
                 continue
             slug = slugify(name)
             name_by_slug[slug] = name
+            posted_slugs.add(slug)
+        if q_slug:
+            posted_slugs.add(q_slug)
+            if q_name and q_slug not in name_by_slug:
+                name_by_slug[q_slug] = q_name
+
+        for slug in posted_slugs:
             posts_by_slug[slug] += 1
             if ao:
                 aos_by_slug[slug].add(ao)
@@ -126,6 +140,8 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
 
         if q_slug:
             qs_by_slug[q_slug] += 1
+            if date and (q_slug not in latest_q_by_slug or date > latest_q_by_slug[q_slug]):
+                latest_q_by_slug[q_slug] = date
 
     # Build leaderboard rows
     leaderboard = []
@@ -140,6 +156,7 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
             'aos': sorted(aos_by_slug.get(slug, set())),
             'earliest': earliest_by_slug.get(slug),
             'latest': latest_by_slug.get(slug),
+            'latest_q': latest_q_by_slug.get(slug),
         })
     leaderboard.sort(key=lambda r: (-r['posts'], -r['qs']))
 
