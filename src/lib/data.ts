@@ -22,6 +22,7 @@ export interface LeaderboardRow {
   aos: string[];
   earliest: string | null;
   latest: string | null;
+  latest_q: string | null;
 }
 
 export interface LatestBackblast {
