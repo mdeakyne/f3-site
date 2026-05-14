@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-12T01:37:45Z",
+  "generated_at": "2026-05-14T21:40:32Z",
   "counts": {
-    "backblasts": 240,
+    "backblasts": 242,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-05-07"
+    "latest_post": "2026-05-13"
   },
   "aos": [
     {
@@ -21,54 +21,54 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 216,
+      "posts": 218,
       "qs": 59,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-05-07",
+      "latest": "2026-05-13",
       "latest_q": "2026-04-21"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 216,
+      "posts": 218,
       "qs": 34,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-05-07",
+      "latest": "2026-05-13",
       "latest_q": "2026-04-14"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 174,
+      "posts": 176,
       "qs": 32,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-04-30",
+      "latest": "2026-05-13",
       "latest_q": "2026-04-28"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 136,
-      "qs": 34,
+      "posts": 138,
+      "qs": 35,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-05-07",
-      "latest_q": "2026-05-05"
+      "latest": "2026-05-13",
+      "latest_q": "2026-05-13"
     },
     {
       "slug": "sawdust",
@@ -86,14 +86,14 @@
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 75,
+      "posts": 77,
       "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-05-07",
+      "latest": "2026-05-13",
       "latest_q": "2026-03-03"
     },
     {
@@ -138,15 +138,15 @@
     {
       "slug": "toto",
       "f3_name": "Toto",
-      "posts": 48,
-      "qs": 5,
+      "posts": 50,
+      "qs": 6,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-24",
-      "latest": "2026-05-07",
-      "latest_q": "2026-04-07"
+      "latest": "2026-05-13",
+      "latest_q": "2026-05-12"
     },
     {
       "slug": "second-string",
@@ -199,6 +199,19 @@
       "latest_q": "2025-10-21"
     },
     {
+      "slug": "casio",
+      "f3_name": "Casio",
+      "posts": 18,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-02-24",
+      "latest": "2026-05-13",
+      "latest_q": null
+    },
+    {
       "slug": "blackout",
       "f3_name": "Blackout",
       "posts": 17,
@@ -209,19 +222,6 @@
       "earliest": "2023-08-17",
       "latest": "2024-07-11",
       "latest_q": "2023-10-12"
-    },
-    {
-      "slug": "casio",
-      "f3_name": "Casio",
-      "posts": 17,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-02-24",
-      "latest": "2026-05-07",
-      "latest_q": null
     },
     {
       "slug": "plot-twist",
@@ -357,6 +357,19 @@
       "latest_q": null
     },
     {
+      "slug": "medley",
+      "f3_name": "Medley",
+      "posts": 7,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-02-03",
+      "latest": "2026-05-12",
+      "latest_q": null
+    },
+    {
       "slug": "concessions",
       "f3_name": "Concessions",
       "posts": 6,
@@ -391,19 +404,6 @@
       ],
       "earliest": "2024-11-26",
       "latest": "2025-06-05",
-      "latest_q": null
-    },
-    {
-      "slug": "medley",
-      "f3_name": "Medley",
-      "posts": 6,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-02-03",
-      "latest": "2026-05-05",
       "latest_q": null
     },
     {
@@ -628,18 +628,6 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "long-game",
-      "f3_name": "Long Game",
-      "posts": 1,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-08-10",
-      "latest_q": null
-    },
-    {
       "slug": "loofah",
       "f3_name": "Loofah",
       "posts": 1,
@@ -654,6 +642,18 @@
     {
       "slug": "lost-found",
       "f3_name": "Lost & Found",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": null
+    },
+    {
+      "slug": "long-game",
+      "f3_name": "Long Game",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -798,6 +798,24 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-05-13-7-of-diamonds",
+      "title": "7 of Diamonds",
+      "date": "2026-05-13",
+      "ao": "ad-astra",
+      "q": "Waco",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-05-12-d-day-80th-anniversary",
+      "title": "D Day 80th Anniversary",
+      "date": "2026-05-12",
+      "ao": "beehive",
+      "q": "Toto",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
       "slug": "2026-05-07-some-is-better-than-none",
       "title": "Some is better than none",
       "date": "2026-05-07",
@@ -867,24 +885,6 @@
       "ao": "beehive",
       "q": "Farmers Only",
       "total_pax": 5,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-04-09-nothing-too-fancy",
-      "title": "Nothing too fancy",
-      "date": "2026-04-09",
-      "ao": "ad-astra",
-      "q": "Dizzy",
-      "total_pax": 8,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-04-07-run-ruck-walk-better-together",
-      "title": "Run/Ruck/Walk better together!",
-      "date": "2026-04-07",
-      "ao": "beehive",
-      "q": "Toto",
-      "total_pax": 6,
       "fngs": 0
     }
   ]
