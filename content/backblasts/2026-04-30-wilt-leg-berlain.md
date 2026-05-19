@@ -12,10 +12,10 @@ pax:
 - Medley
 - Casio
 - Big Toe
-- HoneyStinger
+- HoneyStinger (Downrange)
 - Waco
 total_pax: 8
-fngs: 1
+fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-30-wilt-leg-berlain.md
 ---
 
