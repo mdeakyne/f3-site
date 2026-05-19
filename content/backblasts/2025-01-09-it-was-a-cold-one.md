@@ -11,7 +11,7 @@ pax:
 - Waco
 - Big Toe
 total_pax: 4
-fngs: null
+fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-01-09-it-was-a-cold-one.md
 ---
 

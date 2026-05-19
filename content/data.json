@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-14T21:47:48Z",
+  "generated_at": "2026-05-19T14:31:18Z",
   "counts": {
-    "backblasts": 242,
+    "backblasts": 243,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-05-13"
+    "latest_post": "2026-05-19"
   },
   "aos": [
     {
@@ -21,54 +21,54 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 218,
-      "qs": 59,
+      "posts": 219,
+      "qs": 60,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-05-13",
-      "latest_q": "2026-04-21"
+      "latest": "2026-05-19",
+      "latest_q": "2026-05-19"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 218,
+      "posts": 219,
       "qs": 34,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-05-13",
+      "latest": "2026-05-19",
       "latest_q": "2026-04-14"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 176,
+      "posts": 177,
       "qs": 32,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-05-13",
+      "latest": "2026-05-19",
       "latest_q": "2026-04-28"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 138,
+      "posts": 139,
       "qs": 35,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-05-13",
-      "latest_q": "2026-05-13"
+      "latest": "2026-05-19",
+      "latest_q": "2026-05-14"
     },
     {
       "slug": "sawdust",
@@ -86,27 +86,27 @@
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 77,
+      "posts": 78,
       "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-05-13",
+      "latest": "2026-05-19",
       "latest_q": "2026-03-03"
     },
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 65,
+      "posts": 66,
       "qs": 13,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-05-07",
+      "latest": "2026-05-19",
       "latest_q": "2026-05-07"
     },
     {
@@ -138,14 +138,14 @@
     {
       "slug": "toto",
       "f3_name": "Toto",
-      "posts": 50,
+      "posts": 51,
       "qs": 6,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-24",
-      "latest": "2026-05-13",
+      "latest": "2026-05-19",
       "latest_q": "2026-05-12"
     },
     {
@@ -186,6 +186,19 @@
       "latest_q": "2024-02-01"
     },
     {
+      "slug": "casio",
+      "f3_name": "Casio",
+      "posts": 19,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-02-24",
+      "latest": "2026-05-19",
+      "latest_q": null
+    },
+    {
       "slug": "dial-up",
       "f3_name": "Dial Up",
       "posts": 18,
@@ -197,19 +210,6 @@
       "earliest": "2024-06-27",
       "latest": "2026-02-12",
       "latest_q": "2025-10-21"
-    },
-    {
-      "slug": "casio",
-      "f3_name": "Casio",
-      "posts": 18,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-02-24",
-      "latest": "2026-05-13",
-      "latest_q": null
     },
     {
       "slug": "blackout",
@@ -419,18 +419,6 @@
       "latest_q": null
     },
     {
-      "slug": "captain-kirk",
-      "f3_name": "Captain Kirk",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -440,6 +428,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-14",
+      "latest_q": null
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07",
       "latest_q": null
     },
     {
@@ -628,8 +628,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -640,8 +640,8 @@
       "latest_q": null
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -798,9 +798,18 @@
   ],
   "latest_backblasts": [
     {
-      "slug": "2026-05-13-7-of-diamonds",
+      "slug": "2026-05-19-mini-murph",
+      "title": "Mini-Murph",
+      "date": "2026-05-19",
+      "ao": "beehive",
+      "q": "Big Toe",
+      "total_pax": 8,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-05-14-7-of-diamonds",
       "title": "7 of Diamonds",
-      "date": "2026-05-13",
+      "date": "2026-05-14",
       "ao": "ad-astra",
       "q": "Waco",
       "total_pax": 7,
@@ -840,7 +849,7 @@
       "ao": "ad-astra",
       "q": "Waco",
       "total_pax": 8,
-      "fngs": 0
+      "fngs": 1
     },
     {
       "slug": "2026-04-28-falcon",
@@ -867,7 +876,7 @@
       "ao": "beehive",
       "q": "Big Toe",
       "total_pax": 7,
-      "fngs": 0
+      "fngs": 1
     },
     {
       "slug": "2026-04-16-one-side-at-a-time",
@@ -876,15 +885,6 @@
       "ao": "ad-astra",
       "q": "404",
       "total_pax": 4,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-04-14-getting-back-into-it",
-      "title": "Getting back into it",
-      "date": "2026-04-14",
-      "ao": "beehive",
-      "q": "Farmers Only",
-      "total_pax": 5,
       "fngs": 0
     }
   ]

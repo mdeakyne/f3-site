@@ -10,7 +10,7 @@ pax:
 - Farmers Only
 - '404'
 total_pax: 3
-fngs: null
+fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-20-when-do-i-get-to-put-the-cold-gear-away.md
 ---
 

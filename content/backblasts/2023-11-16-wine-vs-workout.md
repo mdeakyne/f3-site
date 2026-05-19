@@ -17,7 +17,7 @@ pax:
 - Ariel
 - Leaks
 total_pax: 10
-fngs: null
+fngs: 1
 vault_path: 07 - F3/Backblasts/2023/2023-11-16-wine-vs-workout.md
 ---
 

@@ -12,7 +12,7 @@ pax:
 - Flute
 - Waco
 total_pax: 5
-fngs: null
+fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-06-i-hope-this-winter-never-ends.md
 ---
 
