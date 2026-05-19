@@ -80,6 +80,10 @@ MANUAL_OVERRIDES = {
     '2023-08-31-bear-one-anothers-burdens.md': 2,
     # Breakfast Pizza Q'd this workout as a downrange visitor; Casio already named.
     '2026-03-19-this-is-my-coupon.md': 0,
+    # Casio attended earlier workouts before his official first post.
+    # His actual FNG entry was Partner Up (3/17); 2/24 was pre-name attendance.
+    '2026-02-24-whole-parts-whole.md': 0,
+    '2026-03-17-partner-up.md': 1,
 }
 
 
