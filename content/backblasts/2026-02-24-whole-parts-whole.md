@@ -15,7 +15,7 @@ pax:
 - Wreck It
 - Casio
 total_pax: 8
-fngs: 0
+fngs: 1
 vault_path: 07 - F3/Backblasts/2026/2026-02-24-whole-parts-whole.md
 ---
 

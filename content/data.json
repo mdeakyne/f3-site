@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T16:40:14Z",
+  "generated_at": "2026-05-19T16:41:07Z",
   "counts": {
     "backblasts": 243,
     "pax": 61,
@@ -419,18 +419,6 @@
       "latest_q": null
     },
     {
-      "slug": "blanks",
-      "f3_name": "Blanks",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-14",
-      "latest_q": null
-    },
-    {
       "slug": "captain-kirk",
       "f3_name": "Captain Kirk",
       "posts": 4,
@@ -440,6 +428,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-07",
+      "latest_q": null
+    },
+    {
+      "slug": "blanks",
+      "f3_name": "Blanks",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-14",
       "latest_q": null
     },
     {
@@ -640,8 +640,8 @@
       "latest_q": null
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -652,8 +652,8 @@
       "latest_q": null
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
