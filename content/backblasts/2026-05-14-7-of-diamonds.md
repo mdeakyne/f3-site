@@ -1,7 +1,7 @@
 ---
-slug: 2026-05-13-7-of-diamonds
+slug: 2026-05-14-7-of-diamonds
 title: 7 of Diamonds
-date: '2026-05-13'
+date: '2026-05-14'
 ao: ad-astra
 q: Waco
 q_slug: waco
@@ -15,7 +15,7 @@ pax:
 - Waco
 total_pax: 7
 fngs: 0
-vault_path: 07 - F3/Backblasts/2026/2026-05-13-7-of-diamonds.md
+vault_path: 07 - F3/Backblasts/2026/2026-05-14-7-of-diamonds.md
 ---
 
 **Backblast: 7 of Diamonds**
