@@ -12,7 +12,7 @@ pax:
 - Farmers Only
 - Bonnet
 total_pax: 5
-fngs: 1
+fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-01-22-tower-of-power.md
 ---
 

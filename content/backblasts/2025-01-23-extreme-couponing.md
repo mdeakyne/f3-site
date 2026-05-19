@@ -13,7 +13,7 @@ pax:
 - Bucky
 - Farmers Only
 total_pax: 6
-fngs: 0
+fngs: 1
 vault_path: 07 - F3/Backblasts/2025/2025-01-23-extreme-couponing.md
 ---
 

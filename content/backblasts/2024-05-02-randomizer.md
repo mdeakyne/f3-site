@@ -14,7 +14,7 @@ pax:
 - Litterbox
 - '404'
 total_pax: 7
-fngs: 0
+fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-05-02-randomizer.md
 ---
 

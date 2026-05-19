@@ -15,7 +15,7 @@ pax:
 - HoneyStinger
 - Waco
 total_pax: 8
-fngs: 0
+fngs: 1
 vault_path: 07 - F3/Backblasts/2026/2026-04-30-wilt-leg-berlain.md
 ---
 

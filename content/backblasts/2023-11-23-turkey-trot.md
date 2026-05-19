@@ -12,7 +12,7 @@ pax:
 - Blackout
 - Route44
 total_pax: 5
-fngs: null
+fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-11-23-turkey-trot.md
 ---
 
