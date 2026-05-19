@@ -8,8 +8,11 @@ ROOT = os.path.join(os.path.dirname(__file__), '..')
 BACKBLASTS_DIR = os.path.join(ROOT, 'content', 'backblasts')
 
 
+def strip_annotations(name: str) -> str:
+    return re.sub(r'\s*\(.*?\)\s*$', '', name).strip()
+
 def slugify(name: str) -> str:
-    s = name.lower().strip()
+    s = strip_annotations(name).lower()
     s = re.sub(r"'", '', s)
     s = re.sub(r'[^a-z0-9]+', '-', s)
     return s.strip('-')
@@ -57,15 +60,31 @@ def parse_frontmatter(text: str) -> dict:
     return result
 
 
+def is_downrange(name: str) -> bool:
+    return 'downrange' in name.lower()
+
+
 def pax_slugs(fm: dict) -> set[str]:
     slugs = set()
     for name in (fm.get('pax') or []):
-        if name:
+        if name and not is_downrange(name):
             slugs.add(slugify(name))
     q_slug = fm.get('q_slug') or (slugify(fm['q']) if fm.get('q') else None)
     if q_slug:
         slugs.add(q_slug)
     return slugs
+
+
+# Founding backblasts where not all first-appearances were true FNGs.
+# The manually-set counts reflect actual new-to-F3 attendees, not founding members.
+MANUAL_OVERRIDES = {
+    '2023-08-10-through-difficulty.md': 7,
+    '2023-08-17-better-together.md': 4,
+    '2023-08-31-bear-one-anothers-burdens.md': 2,
+    # Breakfast Pizza Q'd this workout as a downrange visitor; Casio already named.
+    '2026-03-19-this-is-my-coupon.md': 0,
+
+}
 
 
 def main():
@@ -99,11 +118,11 @@ def main():
     for fname, path, text, fm in backblasts:
         date = fm.get('date', '')
         slugs = pax_slugs(fm)
-        calculated = sum(1 for s in slugs if first_seen.get(s) == date)
+        calculated = MANUAL_OVERRIDES.get(fname, sum(1 for s in slugs if first_seen.get(s) == date))
 
         current = fm.get('fngs')
         if current != calculated:
-            if current not in (0, None) and current != calculated:
+            if current not in (0, None) and current != calculated and fname not in MANUAL_OVERRIDES:
                 mismatches.append((fname, current, calculated))
             # Rewrite fngs line in frontmatter
             new_text = re.sub(

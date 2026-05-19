@@ -10,7 +10,7 @@ pax:
 - Big Toe
 - Downrange
 total_pax: 3
-fngs: 1
+fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-11-26-emom-routines.md
 ---
 

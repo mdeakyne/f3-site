@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T14:31:18Z",
+  "generated_at": "2026-05-19T16:46:35Z",
   "counts": {
     "backblasts": 243,
     "pax": 61,
@@ -419,18 +419,6 @@
       "latest_q": null
     },
     {
-      "slug": "blanks",
-      "f3_name": "Blanks",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-14",
-      "latest_q": null
-    },
-    {
       "slug": "captain-kirk",
       "f3_name": "Captain Kirk",
       "posts": 4,
@@ -440,6 +428,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-07",
+      "latest_q": null
+    },
+    {
+      "slug": "blanks",
+      "f3_name": "Blanks",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-14",
       "latest_q": null
     },
     {
@@ -592,7 +592,7 @@
     },
     {
       "slug": "gypsy",
-      "f3_name": "Gypsy",
+      "f3_name": "Gypsy (Downrange)",
       "posts": 2,
       "qs": 0,
       "aos": [
@@ -628,8 +628,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "long-game",
+      "f3_name": "Long Game",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -652,8 +652,8 @@
       "latest_q": null
     },
     {
-      "slug": "long-game",
-      "f3_name": "Long Game",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -724,8 +724,8 @@
       "latest_q": null
     },
     {
-      "slug": "clipless",
-      "f3_name": "Clipless",
+      "slug": "baldtire",
+      "f3_name": "Baldtire",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -736,8 +736,8 @@
       "latest_q": null
     },
     {
-      "slug": "baldtire",
-      "f3_name": "Baldtire",
+      "slug": "clipless",
+      "f3_name": "Clipless",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -761,7 +761,7 @@
     },
     {
       "slug": "bucky",
-      "f3_name": "Bucky",
+      "f3_name": "Bucky (Downrange)",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -785,7 +785,7 @@
     },
     {
       "slug": "honeystinger",
-      "f3_name": "HoneyStinger",
+      "f3_name": "HoneyStinger (Downrange)",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -849,7 +849,7 @@
       "ao": "ad-astra",
       "q": "Waco",
       "total_pax": 8,
-      "fngs": 1
+      "fngs": 0
     },
     {
       "slug": "2026-04-28-falcon",
@@ -876,7 +876,7 @@
       "ao": "beehive",
       "q": "Big Toe",
       "total_pax": 7,
-      "fngs": 1
+      "fngs": 0
     },
     {
       "slug": "2026-04-16-one-side-at-a-time",

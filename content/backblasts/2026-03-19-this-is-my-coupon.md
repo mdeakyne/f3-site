@@ -14,9 +14,8 @@ pax:
 - Farmers Only
 - Wreck It
 - Casio
-- Breakfast Pizza
 total_pax: 9
-fngs: 1
+fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-19-this-is-my-coupon.md
 ---
 
