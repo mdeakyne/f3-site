@@ -8,8 +8,11 @@ ROOT = os.path.join(os.path.dirname(__file__), '..')
 BACKBLASTS_DIR = os.path.join(ROOT, 'content', 'backblasts')
 
 
+def strip_annotations(name: str) -> str:
+    return re.sub(r'\s*\(.*?\)\s*$', '', name).strip()
+
 def slugify(name: str) -> str:
-    s = name.lower().strip()
+    s = strip_annotations(name).lower()
     s = re.sub(r"'", '', s)
     s = re.sub(r'[^a-z0-9]+', '-', s)
     return s.strip('-')
