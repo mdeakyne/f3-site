@@ -10,8 +10,7 @@ pax:
 - '404'
 - Medley
 - Farmers Only
-- Casio
-total_pax: 5
+total_pax: 4
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-10-trying-to-control-what-i-can-t-control.md
 ---

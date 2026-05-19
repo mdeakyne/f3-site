@@ -13,9 +13,8 @@ pax:
 - '404'
 - Farmers Only
 - Wreck It
-- Casio
-total_pax: 8
-fngs: 1
+total_pax: 7
+fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-24-whole-parts-whole.md
 ---
 

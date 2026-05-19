@@ -12,8 +12,7 @@ pax:
 - Wreck It
 - Big Toe
 - Hiccup
-- Casio
-total_pax: 7
+total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-26-new-kids-on-the-block.md
 ---

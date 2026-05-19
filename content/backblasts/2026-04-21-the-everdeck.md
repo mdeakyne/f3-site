@@ -11,10 +11,10 @@ pax:
 - Dizzy
 - "404"
 - Farmers Only
-- Gypsy
+- Gypsy (Downrange)
 - Big Toe
 total_pax: 7
-fngs: 1
+fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-21-the-everdeck.md
 ---
 

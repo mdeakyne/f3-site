@@ -12,8 +12,7 @@ pax:
 - Big Toe
 - Wreck It
 - Hiccup
-- Casio
-total_pax: 7
+total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-03-dealers-choice.md
 ---
