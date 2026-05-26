@@ -7,7 +7,7 @@ q: Waco
 q_slug: waco
 pax:
 - Toto
-- "404"
+- '404'
 - Casio
 - Farmers Only
 - Big Toe

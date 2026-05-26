@@ -7,7 +7,7 @@ q: Big Toe
 q_slug: big-toe
 pax:
 - Waco
-- "404"
+- '404'
 - Casio
 - Toto
 - Farmers Only
