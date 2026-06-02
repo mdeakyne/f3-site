@@ -10,7 +10,7 @@ pax:
 - Waco
 - Wreckit
 - Dizzy
-- 404
+- '404'
 - Big Toe
 total_pax: 6
 fngs: 1
