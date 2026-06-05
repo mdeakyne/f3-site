@@ -1,0 +1,116 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const aoEntries = (await getCollection('aos')).sort(
+  (a, b) => (a.data.order ?? 0) - (b.data.order ?? 0),
+);
+
+// Per-AO activity, derived from the backblast archive.
+const backblasts = await getCollection('backblasts');
+function statsFor(slug: string) {
+  const bbs = backblasts.filter((b) => b.data.ao === slug);
+  const withPax = bbs.filter((b) => typeof b.data.total_pax === 'number');
+  const avg = withPax.length
+    ? Math.round(withPax.reduce((s, b) => s + (b.data.total_pax ?? 0), 0) / withPax.length)
+    : null;
+  const last = bbs
+    .map((b) => b.data.date)
+    .sort()
+    .at(-1) ?? null;
+  return { count: bbs.length, avg, last };
+}
+
+const isSet = (v?: string) => !!v && !v.startsWith('TODO');
+function directionsUrl(query?: string, address?: string) {
+  const q = isSet(query) ? query : isSet(address) ? address : null;
+  return q ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}` : null;
+}
+---
+
+<Base title="Locations — F3 Lawrence" description="Where and when F3 Lawrence meets. Free, peer-led workouts for men, rain or shine.">
+  <header class="mb-10 border-b border-rule pb-6">
+    <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Find a workout</p>
+    <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">LOCATIONS</h1>
+    <p class="mt-3 font-heading text-lg text-muted max-w-2xl">
+      Two AOs in Lawrence. No registration, no fee — just show up a few minutes
+      early and introduce yourself as an FNG. New here?
+      <a href="/" class="text-accent-link underline">Read this first.</a>
+    </p>
+  </header>
+
+  <div class="space-y-12">
+    {aoEntries.map((ao) => {
+      const s = statsFor(ao.data.slug);
+      const dir = directionsUrl(ao.data.map_query, ao.data.address);
+      return (
+        <section class="border border-rule bg-surface">
+          {ao.data.photo && (
+            <img src={ao.data.photo} alt={`${ao.data.name} workout`} class="w-full h-56 object-cover" />
+          )}
+          <div class="p-6 sm:p-8">
+            <div class="flex flex-wrap items-baseline justify-between gap-2 border-b border-rule pb-4 mb-4">
+              <h2 class="font-display text-4xl tracking-tight text-accent-red leading-none">{ao.data.name}</h2>
+              <span class="font-mono text-xs uppercase text-muted">
+                {s.count} backblasts{s.avg ? ` · ~${s.avg} PAX typical` : ''}
+              </span>
+            </div>
+
+            {ao.data.meaning && isSet(ao.data.meaning) && (
+              <p class="text-muted mb-5 max-w-2xl">{ao.data.meaning}</p>
+            )}
+
+            <dl class="grid sm:grid-cols-2 gap-x-8 gap-y-4 font-heading">
+              <div>
+                <dt class="font-mono text-xs uppercase text-muted mb-1">When</dt>
+                <dd class="font-semibold">
+                  {ao.data.days.length ? ao.data.days.join(' · ') : 'TBD'}
+                  {isSet(ao.data.time) ? ` — ${ao.data.time}` : ''}
+                </dd>
+              </div>
+              <div>
+                <dt class="font-mono text-xs uppercase text-muted mb-1">Where</dt>
+                <dd class="font-semibold">
+                  {isSet(ao.data.address) ? ao.data.address : 'Address coming soon'}
+                  {isSet(ao.data.parking) && (
+                    <span class="block font-body font-normal text-sm text-muted mt-1">{ao.data.parking}</span>
+                  )}
+                </dd>
+              </div>
+              {isSet(ao.data.style) && (
+                <div>
+                  <dt class="font-mono text-xs uppercase text-muted mb-1">Workout</dt>
+                  <dd class="font-semibold">{ao.data.style}</dd>
+                </div>
+              )}
+              {isSet(ao.data.site_q) && (
+                <div>
+                  <dt class="font-mono text-xs uppercase text-muted mb-1">Site Q</dt>
+                  <dd class="font-semibold">{ao.data.site_q}</dd>
+                </div>
+              )}
+            </dl>
+
+            {isSet(ao.data.what_to_expect) && (
+              <p class="text-muted mt-5 max-w-2xl">{ao.data.what_to_expect}</p>
+            )}
+
+            <div class="mt-6 flex flex-wrap gap-3">
+              {dir && (
+                <a href={dir} target="_blank" rel="noopener" class="inline-block bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-5 py-2.5 hover:bg-accent-red-bright">
+                  Get directions
+                </a>
+              )}
+              <a href="/contact/" class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-5 py-2.5 hover:bg-ink hover:text-surface">
+                Tell us you're coming
+              </a>
+              <a href={`/backblasts/?ao=${ao.data.slug}`} class="inline-block font-mono text-xs uppercase text-accent-link self-center hover:underline">
+                Recent workouts →
+              </a>
+            </div>
+          </div>
+        </section>
+      );
+    })}
+  </div>
+</Base>

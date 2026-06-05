@@ -2,48 +2,146 @@
 import Base from '../layouts/Base.astro';
 import { site, formatDate, aoName } from '../lib/data';
 
-const latest = site.latest_backblasts.slice(0, 8);
+const latest = site.latest_backblasts.slice(0, 6);
 const topPax = site.leaderboard.slice(0, 5);
+
+const principles = [
+  ['Free', 'Always free of charge. No dues, no membership, ever.'],
+  ['Open to all men', 'Every age, every fitness level. If you can show up, you belong.'],
+  ['Outdoors', 'Rain or shine, heat or cold. We post in the gloom.'],
+  ['Peer-led', 'A different man leads (Qs) each workout. No trainers, no certification.'],
+  ['Ends in a COT', 'Every workout closes with a Circle of Trust — names, count, and what matters.'],
+];
+
+const objections = [
+  ['"I need to get in shape first."',
+   'Would you get drunk before going to a bar to meet your buddies? Every exercise is scalable — go as hard or as easy as you need. You get in shape by showing up.'],
+  ['"I already have a gym membership."',
+   "F3 isn't a gym. It's free, it's outdoors, and it's a group of men who'll notice when you're not there. You won't find that on a treadmill."],
+  ["\"I'm too old / too busy.\"",
+   "PAX range from teens to their 70s. It's 45 minutes, finished before sunrise — you're home before the day even starts."],
+  ["\"I don't know anyone.\"",
+   'Neither did any of us on day one. Show up, say you\'re an FNG (Friendly New Guy), and you\'ll be welcomed by name — and given one of your own.'],
+];
 ---
 
-<Base title="F3 Lawrence — backblasts, PAX, Q signup">
+<Base title="F3 Lawrence — free workouts for men in Lawrence, KS" description="Free, peer-led, outdoor workouts for men in Lawrence, KS. Rain or shine. No registration, no fee. Just show up.">
+  <!-- HERO -->
   <section class="mb-16">
     <p class="font-mono text-xs uppercase tracking-widest text-muted mb-3">
-      Since {site.counts.since_year} · {site.counts.backblasts} backblasts · {site.counts.pax} PAX
+      Lawrence, Kansas · Since {site.counts.since_year}
     </p>
     <h1 class="font-display text-6xl sm:text-8xl leading-[0.9] tracking-tight text-accent-red mb-4">
       F3 LAWRENCE
     </h1>
     <p class="font-heading text-xl sm:text-2xl font-semibold max-w-2xl text-ink">
-      Free workouts for men. Peer-led, outdoors, rain or shine.
-      Fitness, Fellowship, Faith.
+      Free, peer-led workouts for men. Outdoors, rain or shine.
+      No registration, no fee — just show up.
+    </p>
+    <p class="mt-3 font-heading text-lg text-muted max-w-2xl">
+      Fitness · Fellowship · Faith. Every fitness level welcome.
     </p>
     <div class="mt-8 flex flex-wrap gap-3">
-      <a href="/signup/" class="inline-block bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
-        Sign up to Q
+      <a href="/locations/" class="inline-block bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
+        Find a workout
       </a>
-      <a href="/calendar/" class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-ink hover:text-surface">
-        See the calendar
+      <a href="/contact/" class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-ink hover:text-surface">
+        Join F3 Lawrence
       </a>
     </div>
   </section>
 
-  <section class="grid sm:grid-cols-3 gap-6 mb-20">
-    <div class="border-l-4 border-accent-red bg-surface p-6">
-      <div class="font-mono text-xs uppercase tracking-widest text-muted">Backblasts</div>
-      <div class="font-display text-5xl text-ink mt-1">{site.counts.backblasts}</div>
-    </div>
-    <div class="border-l-4 border-accent-red bg-surface p-6">
-      <div class="font-mono text-xs uppercase tracking-widest text-muted">PAX</div>
-      <div class="font-display text-5xl text-ink mt-1">{site.counts.pax}</div>
-    </div>
-    <div class="border-l-4 border-accent-red bg-surface p-6">
-      <div class="font-mono text-xs uppercase tracking-widest text-muted">AOs</div>
-      <div class="font-display text-5xl text-ink mt-1">{site.counts.aos}</div>
+  <!-- WHAT IS F3 -->
+  <section class="mb-16 border-l-4 border-accent-red pl-6 max-w-3xl">
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-3">What is F3?</h2>
+    <p class="text-lg text-ink mb-3">
+      F3 is a national network of free, peer-led workouts for men. Our mission is
+      <strong>to plant, grow, and serve small workout groups for the invigoration of male
+      community leadership.</strong>
+    </p>
+    <p class="font-heading font-semibold text-muted">
+      The credo: leave no man behind, but leave no man where you found him.
+    </p>
+  </section>
+
+  <!-- 5 CORE PRINCIPLES -->
+  <section class="mb-16">
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">The 5 core principles</h2>
+    <ol class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+      {principles.map(([name, desc], i) => (
+        <li class="border border-rule bg-surface p-5">
+          <div class="font-display text-3xl text-accent-red leading-none mb-2">{i + 1}</div>
+          <div class="font-heading font-bold uppercase tracking-tight mb-1">{name}</div>
+          <p class="text-sm text-muted">{desc}</p>
+        </li>
+      ))}
+    </ol>
+  </section>
+
+  <!-- OBJECTIONS -->
+  <section class="mb-16">
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">Think it's not for you?</h2>
+    <div class="grid sm:grid-cols-2 gap-6">
+      {objections.map(([q, a]) => (
+        <div>
+          <p class="font-heading font-bold text-ink mb-1">{q}</p>
+          <p class="text-muted">{a}</p>
+        </div>
+      ))}
     </div>
   </section>
 
-  <section class="mb-20">
+  <!-- WHAT TO EXPECT -->
+  <section class="mb-16 bg-surface border border-rule p-6 sm:p-8">
+    <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4">Your first workout</h2>
+    <div class="grid sm:grid-cols-2 gap-8">
+      <div>
+        <h3 class="font-mono text-xs uppercase tracking-widest text-muted mb-2">What to expect</h3>
+        <ul class="space-y-1 text-ink list-disc pl-5">
+          <li>Show up ~5 minutes early; say you're an FNG.</li>
+          <li>~45 minutes, peer-led, scalable to any level.</li>
+          <li>You'll earn a nickname after your first post.</li>
+          <li>Stick around for the Circle of Trust — and coffee.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-mono text-xs uppercase tracking-widest text-muted mb-2">What to bring</h3>
+        <ul class="space-y-1 text-ink list-disc pl-5">
+          <li>Workout clothes for the weather + good shoes.</li>
+          <li>Water, and gloves if you'd rather.</li>
+          <li>An open mind and a positive attitude.</li>
+          <li>A friend, if you've got one. (Optional.)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="/locations/" class="inline-block bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-5 py-2.5 hover:bg-accent-red-bright">
+        See where & when
+      </a>
+      <a href="/contact/" class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-5 py-2.5 hover:bg-ink hover:text-surface">
+        Request a Slack invite
+      </a>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="grid sm:grid-cols-3 gap-6 mb-16">
+    <div class="border-l-4 border-accent-red bg-surface p-6">
+      <div class="font-display text-5xl text-ink">{site.counts.backblasts}</div>
+      <div class="font-mono text-xs uppercase tracking-widest text-muted mt-1">workouts logged</div>
+    </div>
+    <div class="border-l-4 border-accent-red bg-surface p-6">
+      <div class="font-display text-5xl text-ink">{site.counts.pax}</div>
+      <div class="font-mono text-xs uppercase tracking-widest text-muted mt-1">men posted</div>
+    </div>
+    <div class="border-l-4 border-accent-red bg-surface p-6">
+      <div class="font-display text-5xl text-ink">{site.counts.aos}</div>
+      <div class="font-mono text-xs uppercase tracking-widest text-muted mt-1">AOs, rain or shine</div>
+    </div>
+  </section>
+
+  <!-- LATEST BACKBLASTS -->
+  <section class="mb-16">
     <div class="flex items-baseline justify-between mb-4 border-b border-rule pb-2">
       <h2 class="font-heading text-2xl font-bold uppercase tracking-tight">Latest backblasts</h2>
       <a href="/backblasts/" class="font-mono text-xs uppercase text-accent-link hover:underline">All {site.counts.backblasts} →</a>
@@ -61,7 +159,8 @@ const topPax = site.leaderboard.slice(0, 5);
     </ul>
   </section>
 
-  <section class="mb-20">
+  <!-- TOP PAX -->
+  <section class="mb-16">
     <div class="flex items-baseline justify-between mb-4 border-b border-rule pb-2">
       <h2 class="font-heading text-2xl font-bold uppercase tracking-tight">Top PAX</h2>
       <a href="/leaderboard/" class="font-mono text-xs uppercase text-accent-link hover:underline">Full leaderboard →</a>

@@ -12,8 +12,9 @@ database_name = "f3-signups"
 database_id = "b7ac38a1-b139-4f60-a9c8-3dbb99230b17"
 migrations_dir = "migrations"
 
-# Secrets set via: wrangler pages secret put TURNSTILE_SECRET
-# Vars for the Worker:
+# Secrets (NOT committed) set via wrangler:
+#   wrangler pages secret put TURNSTILE_SECRET   --project-name f3-site
+#   wrangler pages secret put SLACK_WEBHOOK_URL  --project-name f3-site
+# Public vars only below — never put the webhook URL or emails here.
 [vars]
 TURNSTILE_SITE_KEY = ""
-NOTIFY_EMAIL = "matt.deakyne@creativeplanning.com"

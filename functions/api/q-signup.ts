@@ -2,13 +2,15 @@
 //
 // Accepts multipart/form-data or URL-encoded form submission from the signup
 // page, validates the Turnstile token, rate-limits by IP hash, inserts into
-// D1, and sends a notification email via MailChannels. Matt promotes approved
-// rows into the vault weekly via `nob pull-signups`.
+// D1, and posts a notification into Slack (#admin) for approval via an incoming
+// webhook. Matt promotes approved rows into the vault weekly via
+// `nob pull-signups`. The webhook URL lives in a Cloudflare secret
+// (SLACK_WEBHOOK_URL); see docs/slack-webhook-setup.md.
 
 interface Env {
   DB: D1Database;
   TURNSTILE_SECRET: string;
-  NOTIFY_EMAIL: string;
+  SLACK_WEBHOOK_URL: string;
 }
 
 interface D1Database {
@@ -63,7 +65,7 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
     .run();
 
   ctx.waitUntil(
-    sendEmail(env.NOTIFY_EMAIL, {
+    postToSlack(env.SLACK_WEBHOOK_URL, {
       event_date,
       ao_slug,
       f3_name,
@@ -93,34 +95,31 @@ async function sha256(input: string): Promise<string> {
     .join('');
 }
 
-async function sendEmail(to: string, s: {
+async function postToSlack(webhookUrl: string, s: {
   event_date: string;
   ao_slug: string;
   f3_name: string;
   contact: string;
   notes: string;
 }): Promise<void> {
-  const body = [
-    `New Q signup request for F3 Lawrence:`,
-    ``,
-    `  Date:    ${s.event_date}`,
-    `  AO:      ${s.ao_slug}`,
-    `  F3 Name: ${s.f3_name}`,
-    `  Contact: ${s.contact || '—'}`,
-    `  Notes:   ${s.notes || '—'}`,
-    ``,
-    `Promote via: nob pull-signups`,
+  if (!webhookUrl) return;
+  // NOTE: to @-mention the Q in Slack we'd need their Slack member ID
+  // (e.g. <@U012ABC>) — display names can't be tagged via an incoming webhook.
+  // See docs/slack-webhook-setup.md for how to add an F3-name → member-ID map.
+  const text = [
+    `*New Q signup — needs approval* :calendar:`,
+    `*Q:* ${s.f3_name}`,
+    `*Date:* ${s.event_date}`,
+    `*AO:* ${s.ao_slug}`,
+    `*Contact:* ${s.contact || '—'}`,
+    `*Notes:* ${s.notes || '—'}`,
+    `_Promote via_ \`nob pull-signups\``,
   ].join('\n');
 
-  await fetch('https://api.mailchannels.net/tx/v1/send', {
+  await fetch(webhookUrl, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({
-      personalizations: [{ to: [{ email: to }] }],
-      from: { email: 'noreply@f3lawrence.com', name: 'F3 Lawrence' },
-      subject: `Q signup: ${s.f3_name} — ${s.event_date} (${s.ao_slug})`,
-      content: [{ type: 'text/plain', value: body }],
-    }),
+    body: JSON.stringify({ text }),
   });
 }
 
