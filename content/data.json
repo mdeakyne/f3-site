@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-02T18:08:44Z",
+  "generated_at": "2026-06-05T11:48:54Z",
   "counts": {
-    "backblasts": 247,
+    "backblasts": 248,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-06-02"
+    "latest_post": "2026-06-04"
   },
   "aos": [
     {
@@ -21,27 +21,27 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 223,
+      "posts": 224,
       "qs": 61,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-06-02",
+      "latest": "2026-06-04",
       "latest_q": "2026-06-02"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 222,
+      "posts": 223,
       "qs": 35,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-06-02",
+      "latest": "2026-06-04",
       "latest_q": "2026-05-26"
     },
     {
@@ -71,6 +71,19 @@
       "latest_q": "2026-05-28"
     },
     {
+      "slug": "wreck-it",
+      "f3_name": "Wreck It",
+      "posts": 79,
+      "qs": 1,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2025-06-05",
+      "latest": "2026-06-04",
+      "latest_q": "2026-03-03"
+    },
+    {
       "slug": "sawdust",
       "f3_name": "Sawdust",
       "posts": 78,
@@ -84,30 +97,17 @@
       "latest_q": "2025-01-23"
     },
     {
-      "slug": "wreck-it",
-      "f3_name": "Wreck It",
-      "posts": 78,
-      "qs": 1,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2025-06-05",
-      "latest": "2026-05-19",
-      "latest_q": "2026-03-03"
-    },
-    {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 70,
-      "qs": 13,
+      "posts": 71,
+      "qs": 14,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-06-02",
-      "latest_q": "2026-05-07"
+      "latest": "2026-06-04",
+      "latest_q": "2026-06-04"
     },
     {
       "slug": "flute",
@@ -176,14 +176,14 @@
     {
       "slug": "casio",
       "f3_name": "casio",
-      "posts": 22,
+      "posts": 23,
       "qs": 0,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-06-02",
+      "latest": "2026-06-04",
       "latest_q": null
     },
     {
@@ -419,18 +419,6 @@
       "latest_q": null
     },
     {
-      "slug": "captain-kirk",
-      "f3_name": "Captain Kirk",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -440,6 +428,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-14",
+      "latest_q": null
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07",
       "latest_q": null
     },
     {
@@ -689,8 +689,8 @@
       "latest_q": null
     },
     {
-      "slug": "queen-bee",
-      "f3_name": "Queen Bee",
+      "slug": "glee-club",
+      "f3_name": "Glee Club",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -701,8 +701,8 @@
       "latest_q": null
     },
     {
-      "slug": "glee-club",
-      "f3_name": "Glee Club",
+      "slug": "queen-bee",
+      "f3_name": "Queen Bee",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -737,8 +737,8 @@
       "latest_q": null
     },
     {
-      "slug": "baldtire",
-      "f3_name": "Baldtire",
+      "slug": "clipless",
+      "f3_name": "Clipless",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -749,8 +749,8 @@
       "latest_q": null
     },
     {
-      "slug": "clipless",
-      "f3_name": "Clipless",
+      "slug": "baldtire",
+      "f3_name": "Baldtire",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -810,6 +810,15 @@
     }
   ],
   "latest_backblasts": [
+    {
+      "slug": "2026-06-04-thank-you-sir-may-i-have-another",
+      "title": "Thank You Sir, May I Have Another?",
+      "date": "2026-06-04",
+      "ao": "ad-astra",
+      "q": "Dizzy",
+      "total_pax": 5,
+      "fngs": 0
+    },
     {
       "slug": "2026-06-02-cindy-500",
       "title": "Cindy 500",
@@ -889,15 +898,6 @@
       "ao": "beehive",
       "q": "Waco",
       "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-04-30-wilt-leg-berlain",
-      "title": "Wilt Leg-berlain",
-      "date": "2026-04-30",
-      "ao": "ad-astra",
-      "q": "Waco",
-      "total_pax": 8,
       "fngs": 0
     }
   ]
