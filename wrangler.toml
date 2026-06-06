@@ -15,6 +15,7 @@ migrations_dir = "migrations"
 # Secrets (NOT committed) set via wrangler:
 #   wrangler pages secret put TURNSTILE_SECRET   --project-name f3-site
 #   wrangler pages secret put SLACK_WEBHOOK_URL  --project-name f3-site
-# Public vars only below — never put the webhook URL or emails here.
-[vars]
-TURNSTILE_SITE_KEY = ""
+#
+# The Turnstile *site key* is public and lives in src/lib/config.ts (it's baked
+# into the static HTML at build time, which wrangler vars can't reach). The
+# Functions only need the two secrets above — no [vars] required.

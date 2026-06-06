@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { site } from '../../lib/data';
+import { TURNSTILE_SITE_KEY } from '../../lib/config';
 ---
 
 <Base title="Join F3 Lawrence" description="Request an invite to the F3 Lawrence Slack and come post with us. Free, peer-led workouts for men in Lawrence, KS.">
@@ -37,7 +38,7 @@ import { site } from '../../lib/data';
         <textarea name="message" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
       </div>
 
-      <div class="cf-turnstile" data-sitekey="0x4AAAAAAC_IJxiHyXYEjP2U"></div>
+      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY}></div>
 
       <button type="submit" class="bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
         Send it
