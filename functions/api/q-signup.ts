@@ -1,20 +1,15 @@
 // Cloudflare Pages Function: POST /api/q-signup
 //
 // Accepts multipart/form-data or URL-encoded form submission from the signup
-// page, validates the Turnstile token, rate-limits by IP hash, inserts into
-// D1, and posts a notification into Slack (#admin) for approval via an incoming
-// webhook. Matt promotes approved rows into the vault weekly via
-// `nob pull-signups`. The webhook URL lives in a Cloudflare secret
+// page, filters spam with an invisible honeypot + timing check, rate-limits by
+// IP hash, inserts into D1, and posts a notification into Slack (#admin) for
+// approval via an incoming webhook. Matt promotes approved rows into the vault
+// weekly via `nob pull-signups`. The webhook URL lives in a Cloudflare secret
 // (SLACK_WEBHOOK_URL); see docs/slack-webhook-setup.md.
 
 interface Env {
   DB: D1Database;
-  TURNSTILE_SECRET: string;
   SLACK_WEBHOOK_URL: string;
-  // LOCAL DEV ONLY: set to "true" in .dev.vars to skip Turnstile verification
-  // when testing. Never set this in the production Pages project — without it,
-  // Turnstile is always enforced.
-  TURNSTILE_DISABLED?: string;
 }
 
 interface D1Database {
@@ -31,10 +26,8 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   const ip = request.headers.get('CF-Connecting-IP') ?? 'unknown';
   const form = await request.formData();
 
-  const token = String(form.get('cf-turnstile-response') ?? '');
-  if (env.TURNSTILE_DISABLED !== 'true' && !(await verifyTurnstile(token, ip, env.TURNSTILE_SECRET))) {
-    return json({ error: 'Turnstile check failed.' }, 400);
-  }
+  // Silently accept-and-drop obvious bots so they don't retry.
+  if (looksLikeBot(form)) return json({ ok: true });
 
   const event_date = String(form.get('event_date') ?? '').trim();
   const ao_slug = String(form.get('ao_slug') ?? '').trim();
@@ -81,15 +74,13 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   return json({ ok: true });
 };
 
-async function verifyTurnstile(token: string, ip: string, secret: string): Promise<boolean> {
-  if (!secret || !token) return false;
-  const body = new URLSearchParams({ secret, response: token, remoteip: ip });
-  const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
-    method: 'POST',
-    body,
-  });
-  const data = (await res.json()) as { success: boolean };
-  return Boolean(data.success);
+// Honeypot: a hidden field humans never fill. Timing: a form submitted within
+// 2s of load is almost certainly scripted.
+function looksLikeBot(form: FormData): boolean {
+  if (String(form.get('company') ?? '').trim() !== '') return true;
+  const loadedAt = Number(form.get('loaded_at'));
+  if (Number.isFinite(loadedAt) && Date.now() - loadedAt < 2000) return true;
+  return false;
 }
 
 async function sha256(input: string): Promise<string> {

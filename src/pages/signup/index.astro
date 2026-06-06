@@ -2,7 +2,6 @@
 import Base from '../../layouts/Base.astro';
 import { site } from '../../lib/data';
 import { getCollection } from 'astro:content';
-import { TURNSTILE_SITE_KEY } from '../../lib/config';
 
 const aoEntries = (await getCollection('aos')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name),
@@ -80,7 +79,11 @@ const datesByAo = Object.fromEntries(
         <textarea name="notes" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
       </div>
 
-      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY}></div>
+      {/* Spam trap — must stay empty; hidden from people. */}
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+        <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+      </div>
+      <input type="hidden" name="loaded_at" />
 
       <button type="submit" class="bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
         Request slot
@@ -102,6 +105,7 @@ const datesByAo = Object.fromEntries(
   const form = document.getElementById('q-form') as HTMLFormElement | null;
 
   if (form) {
+    (form.elements.namedItem('loaded_at') as HTMLInputElement).value = String(Date.now());
     const aoSel = form.elements.namedItem('ao_slug') as HTMLSelectElement;
     const dateSel = form.elements.namedItem('event_date') as HTMLSelectElement;
     const nameSel = form.elements.namedItem('f3_name') as HTMLSelectElement;
@@ -176,5 +180,3 @@ const datesByAo = Object.fromEntries(
     });
   }
 </script>
-
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>

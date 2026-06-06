@@ -1,7 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { site } from '../../lib/data';
-import { TURNSTILE_SITE_KEY } from '../../lib/config';
 ---
 
 <Base title="Join F3 Lawrence" description="Request an invite to the F3 Lawrence Slack and come post with us. Free, peer-led workouts for men in Lawrence, KS.">
@@ -38,7 +37,11 @@ import { TURNSTILE_SITE_KEY } from '../../lib/config';
         <textarea name="message" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
       </div>
 
-      <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY}></div>
+      {/* Spam trap — must stay empty; hidden from people. */}
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+        <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
+      </div>
+      <input type="hidden" name="loaded_at" />
 
       <button type="submit" class="bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
         Send it
@@ -56,6 +59,7 @@ import { TURNSTILE_SITE_KEY } from '../../lib/config';
 <script>
   const form = document.getElementById('contact-form') as HTMLFormElement | null;
   if (form) {
+    (form.elements.namedItem('loaded_at') as HTMLInputElement).value = String(Date.now());
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const status = document.getElementById('form-status')!;
@@ -74,5 +78,3 @@ import { TURNSTILE_SITE_KEY } from '../../lib/config';
     });
   }
 </script>
-
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
