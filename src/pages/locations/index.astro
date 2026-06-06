@@ -2,8 +2,8 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
-const aoEntries = (await getCollection('aos')).sort(
-  (a, b) => (a.data.order ?? 0) - (b.data.order ?? 0),
+const aoEntries = (await getCollection('aos')).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name),
 );
 
 // Per-AO activity, derived from the backblast archive.
@@ -14,17 +14,14 @@ function statsFor(slug: string) {
   const avg = withPax.length
     ? Math.round(withPax.reduce((s, b) => s + (b.data.total_pax ?? 0), 0) / withPax.length)
     : null;
-  const last = bbs
-    .map((b) => b.data.date)
-    .sort()
-    .at(-1) ?? null;
-  return { count: bbs.length, avg, last };
+  return { count: bbs.length, avg };
 }
 
 const isSet = (v?: string) => !!v && !v.startsWith('TODO');
-function directionsUrl(query?: string, address?: string) {
-  const q = isSet(query) ? query : isSet(address) ? address : null;
-  return q ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}` : null;
+function directionsUrl(mapUrl?: string, address?: string) {
+  if (isSet(mapUrl)) return mapUrl;
+  if (isSet(address)) return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(address!)}`;
+  return null;
 }
 ---
 
@@ -42,7 +39,7 @@ function directionsUrl(query?: string, address?: string) {
   <div class="space-y-12">
     {aoEntries.map((ao) => {
       const s = statsFor(ao.data.slug);
-      const dir = directionsUrl(ao.data.map_query, ao.data.address);
+      const dir = directionsUrl(ao.data.map_url, ao.data.address);
       return (
         <section class="border border-rule bg-surface">
           {ao.data.photo && (
@@ -56,7 +53,7 @@ function directionsUrl(query?: string, address?: string) {
               </span>
             </div>
 
-            {ao.data.meaning && isSet(ao.data.meaning) && (
+            {isSet(ao.data.meaning) && (
               <p class="text-muted mb-5 max-w-2xl">{ao.data.meaning}</p>
             )}
 
@@ -64,7 +61,7 @@ function directionsUrl(query?: string, address?: string) {
               <div>
                 <dt class="font-mono text-xs uppercase text-muted mb-1">When</dt>
                 <dd class="font-semibold">
-                  {ao.data.days.length ? ao.data.days.join(' · ') : 'TBD'}
+                  {isSet(ao.data.day) ? ao.data.day : 'TBD'}
                   {isSet(ao.data.time) ? ` — ${ao.data.time}` : ''}
                 </dd>
               </div>
@@ -72,28 +69,25 @@ function directionsUrl(query?: string, address?: string) {
                 <dt class="font-mono text-xs uppercase text-muted mb-1">Where</dt>
                 <dd class="font-semibold">
                   {isSet(ao.data.address) ? ao.data.address : 'Address coming soon'}
-                  {isSet(ao.data.parking) && (
-                    <span class="block font-body font-normal text-sm text-muted mt-1">{ao.data.parking}</span>
-                  )}
                 </dd>
               </div>
-              {isSet(ao.data.style) && (
+              {isSet(ao.data.workout_type) && (
                 <div>
                   <dt class="font-mono text-xs uppercase text-muted mb-1">Workout</dt>
-                  <dd class="font-semibold">{ao.data.style}</dd>
+                  <dd class="font-semibold">{ao.data.workout_type}</dd>
                 </div>
               )}
               {isSet(ao.data.site_q) && (
                 <div>
                   <dt class="font-mono text-xs uppercase text-muted mb-1">Site Q</dt>
-                  <dd class="font-semibold">{ao.data.site_q}</dd>
+                  <dd class="font-semibold">
+                    {isSet(ao.data.site_q_slug)
+                      ? <a href={`/pax/${ao.data.site_q_slug}/`} class="text-accent-link hover:underline">{ao.data.site_q}</a>
+                      : ao.data.site_q}
+                  </dd>
                 </div>
               )}
             </dl>
-
-            {isSet(ao.data.what_to_expect) && (
-              <p class="text-muted mt-5 max-w-2xl">{ao.data.what_to_expect}</p>
-            )}
 
             <div class="mt-6 flex flex-wrap gap-3">
               {dir && (
@@ -113,4 +107,14 @@ function directionsUrl(query?: string, address?: string) {
       );
     })}
   </div>
+
+  <section class="mt-12 bg-surface border border-rule p-6 sm:p-8 max-w-3xl">
+    <h2 class="font-heading text-xl font-bold uppercase tracking-tight mb-3">Your first time</h2>
+    <p class="text-muted">
+      Show up about five minutes early and tell someone you're an FNG (Friendly
+      New Guy). It's ~45 minutes, peer-led, and every exercise is scalable — go
+      as hard or as easy as you need. Bring water and dress for the weather.
+      Stick around afterward for the Circle of Trust. That's it.
+    </p>
+  </section>
 </Base>

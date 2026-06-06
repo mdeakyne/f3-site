@@ -35,26 +35,21 @@ const aos = defineCollection({
   schema: z.object({
     slug: z.string(),
     name: z.string(),
-    // Optional flavor: what the AO name means / its story.
-    meaning: z.string().optional(),
-    // Where to physically show up.
-    address: z.string().optional(),
-    parking: z.string().optional(),
-    // Used to build the "Get directions" link. Falls back to `address`.
-    map_query: z.string().optional(),
-    // When it meets. `days` drives the schedule line; `time` is start time.
-    days: z.array(z.string()).default([]),
+    // When it meets.
+    day: z.string().optional(),
     time: z.string().optional(),
+    // Where to physically show up + the directions link.
+    address: z.string().optional(),
+    map_url: z.string().optional(),
     // Bootcamp / running / ruck / etc.
-    style: z.string().optional(),
+    workout_type: z.string().optional(),
     // Site Q (point man) — F3 name only, no contact info on the public site.
     site_q: z.string().optional(),
-    // First-timer reassurance specific to this AO.
-    what_to_expect: z.string().optional(),
+    site_q_slug: z.string().optional(),
+    // Optional flavor: what the AO name means / its story.
+    meaning: z.string().optional(),
     // Optional hero photo for the AO card, relative to /public.
     photo: z.string().optional(),
-    // Sort order on the locations page (lower = first).
-    order: z.number().default(0),
   }),
 });
 
