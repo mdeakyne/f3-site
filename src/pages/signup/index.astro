@@ -67,10 +67,13 @@ const datesByAo = Object.fromEntries(
       </div>
       <div>
         <label class="font-mono text-xs uppercase text-muted block mb-1">F3 Name</label>
-        <select name="f3_name" required class="w-full border border-rule bg-surface px-3 py-2 font-mono">
+        <select name="f3_name" id="f3-name" required class="w-full border border-rule bg-surface px-3 py-2 font-mono">
           <option value="">— pick your name —</option>
           {pax.map((p) => <option value={p.f3_name}>{p.f3_name}</option>)}
+          <option value="__other__">Other / not listed (downrange, FNG…)</option>
         </select>
+        <input type="text" name="f3_name_other" id="f3-other" maxlength="80" placeholder="Type the F3 name"
+               class="hidden mt-2 w-full border border-rule bg-surface px-3 py-2 font-mono" />
       </div>
       <div>
         <label class="font-mono text-xs uppercase text-muted block mb-1">Notes (optional)</label>
@@ -101,6 +104,17 @@ const datesByAo = Object.fromEntries(
   if (form) {
     const aoSel = form.elements.namedItem('ao_slug') as HTMLSelectElement;
     const dateSel = form.elements.namedItem('event_date') as HTMLSelectElement;
+    const nameSel = form.elements.namedItem('f3_name') as HTMLSelectElement;
+    const nameOther = document.getElementById('f3-other') as HTMLInputElement;
+
+    function toggleOther() {
+      const isOther = nameSel.value === '__other__';
+      nameOther.classList.toggle('hidden', !isOther);
+      nameOther.required = isOther;
+      if (!isOther) nameOther.value = '';
+    }
+    nameSel.addEventListener('change', toggleOther);
+    toggleOther();
 
     function populateDates(slug: string, selected?: string) {
       dateSel.innerHTML = '';
@@ -134,10 +148,22 @@ const datesByAo = Object.fromEntries(
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const status = document.getElementById('form-status')!;
+      const data = new FormData(form);
+      if (nameSel.value === '__other__') {
+        const other = nameOther.value.trim();
+        if (!other) {
+          status.textContent = '✗ Type the F3 name.';
+          status.className = 'font-mono text-sm text-accent-red font-semibold';
+          return;
+        }
+        data.set('f3_name', other);
+      }
+      data.delete('f3_name_other');
+
       status.textContent = 'Sending …';
       status.className = 'font-mono text-sm text-muted';
       try {
-        const res = await fetch('/api/q-signup', { method: 'POST', body: new FormData(form) });
+        const res = await fetch('/api/q-signup', { method: 'POST', body: data });
         if (!res.ok) throw new Error(await res.text());
         status.textContent = '✓ Request received. A nantan will confirm before it lands on the calendar.';
         status.className = 'font-mono text-sm text-accent-open font-semibold';
