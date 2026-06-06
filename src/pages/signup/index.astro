@@ -1,7 +1,44 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { site } from '../../lib/data';
+import { getCollection } from 'astro:content';
 import { TURNSTILE_SITE_KEY } from '../../lib/config';
+
+const aoEntries = (await getCollection('aos')).sort((a, b) =>
+  a.data.name.localeCompare(b.data.name),
+);
+
+// PAX dropdown, sorted by most Qs (then posts, then name).
+const pax = [...site.leaderboard].sort(
+  (a, b) => b.qs - a.qs || b.posts - a.posts || a.f3_name.localeCompare(b.f3_name),
+);
+
+// Upcoming dates per AO, restricted to that AO's meeting weekday.
+const DOW: Record<string, number> = {
+  Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6,
+};
+const WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function fmt(d: Date) {
+  const value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  return { value, label: `${WD[d.getDay()]} · ${MON[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}` };
+}
+function upcoming(dayName: string | undefined, n = 10) {
+  const target = dayName ? DOW[dayName] : undefined;
+  const out: { value: string; label: string }[] = [];
+  if (target === undefined) return out;
+  const d = new Date();
+  d.setHours(12, 0, 0, 0);
+  while (d.getDay() !== target) d.setDate(d.getDate() + 1);
+  for (let i = 0; i < n; i++) {
+    out.push(fmt(new Date(d)));
+    d.setDate(d.getDate() + 7);
+  }
+  return out;
+}
+const datesByAo = Object.fromEntries(
+  aoEntries.map((ao) => [ao.data.slug, upcoming(ao.data.day)]),
+);
 ---
 
 <Base title="Sign up to Q — F3 Lawrence">
@@ -10,33 +47,34 @@ import { TURNSTILE_SITE_KEY } from '../../lib/config';
       <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Step up</p>
       <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">SIGN UP TO Q</h1>
       <p class="mt-3 font-heading text-lg text-muted">
-        Pick a date + AO. A nantan confirms via text before it lands on the calendar.
+        Pick your AO and an open date. A nantan confirms before it lands on the calendar.
       </p>
     </header>
 
     <form id="q-form" method="post" action="/api/q-signup" class="space-y-5">
       <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">Date</label>
-        <input type="date" name="event_date" required class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
-      </div>
-      <div>
         <label class="font-mono text-xs uppercase text-muted block mb-1">AO</label>
         <select name="ao_slug" required class="w-full border border-rule bg-surface px-3 py-2 font-mono">
           <option value="">— pick one —</option>
-          {site.aos.map((a) => <option value={a.slug}>{a.name}</option>)}
+          {aoEntries.map((ao) => <option value={ao.data.slug}>{ao.data.name} ({ao.data.day}s)</option>)}
+        </select>
+      </div>
+      <div>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">Date</label>
+        <select name="event_date" required disabled class="w-full border border-rule bg-surface px-3 py-2 font-mono">
+          <option value="">— pick an AO first —</option>
         </select>
       </div>
       <div>
         <label class="font-mono text-xs uppercase text-muted block mb-1">F3 Name</label>
-        <input type="text" name="f3_name" required class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
-      </div>
-      <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">Contact (phone or email)</label>
-        <input type="text" name="contact" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
+        <select name="f3_name" required class="w-full border border-rule bg-surface px-3 py-2 font-mono">
+          <option value="">— pick your name —</option>
+          {pax.map((p) => <option value={p.f3_name}>{p.f3_name}</option>)}
+        </select>
       </div>
       <div>
         <label class="font-mono text-xs uppercase text-muted block mb-1">Notes (optional)</label>
-        <textarea name="notes" rows="3" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
+        <textarea name="notes" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
       </div>
 
       <div class="cf-turnstile" data-sitekey={TURNSTILE_SITE_KEY}></div>
@@ -50,28 +88,61 @@ import { TURNSTILE_SITE_KEY } from '../../lib/config';
   </section>
 </Base>
 
+<script type="application/json" id="dates-data" set:html={JSON.stringify(datesByAo)}></script>
+
 <script>
-  // Prefill from querystring (e.g., from Calendar "Claim →" links).
+  type DateOpt = { value: string; label: string };
+  const datesByAo: Record<string, DateOpt[]> = JSON.parse(
+    document.getElementById('dates-data')!.textContent || '{}',
+  );
   const params = new URLSearchParams(window.location.search);
   const form = document.getElementById('q-form') as HTMLFormElement | null;
+
   if (form) {
-    const date = params.get('date');
+    const aoSel = form.elements.namedItem('ao_slug') as HTMLSelectElement;
+    const dateSel = form.elements.namedItem('event_date') as HTMLSelectElement;
+
+    function populateDates(slug: string, selected?: string) {
+      dateSel.innerHTML = '';
+      const list = datesByAo[slug] || [];
+      if (!list.length) {
+        dateSel.disabled = true;
+        const o = document.createElement('option');
+        o.value = '';
+        o.textContent = '— pick an AO first —';
+        dateSel.appendChild(o);
+        return;
+      }
+      dateSel.disabled = false;
+      for (const d of list) {
+        const o = document.createElement('option');
+        o.value = d.value;
+        o.textContent = d.label;
+        if (d.value === selected) o.selected = true;
+        dateSel.appendChild(o);
+      }
+    }
+
+    aoSel.addEventListener('change', () => populateDates(aoSel.value));
+
+    // Prefill from querystring (e.g., Calendar "Claim →" links).
     const ao = params.get('ao');
-    if (date) (form.elements.namedItem('event_date') as HTMLInputElement).value = date;
-    if (ao) (form.elements.namedItem('ao_slug') as HTMLSelectElement).value = ao;
+    const date = params.get('date');
+    if (ao) aoSel.value = ao;
+    populateDates(aoSel.value, date || undefined);
 
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const status = document.getElementById('form-status')!;
       status.textContent = 'Sending …';
       status.className = 'font-mono text-sm text-muted';
-      const data = new FormData(form);
       try {
-        const res = await fetch('/api/q-signup', { method: 'POST', body: data });
+        const res = await fetch('/api/q-signup', { method: 'POST', body: new FormData(form) });
         if (!res.ok) throw new Error(await res.text());
-        status.textContent = '✓ Request received. A nantan will confirm via your contact info.';
+        status.textContent = '✓ Request received. A nantan will confirm before it lands on the calendar.';
         status.className = 'font-mono text-sm text-accent-open font-semibold';
         form.reset();
+        populateDates(aoSel.value);
       } catch (err) {
         status.textContent = `✗ ${(err as Error).message || 'Submission failed. Try again.'}`;
         status.className = 'font-mono text-sm text-accent-red font-semibold';
