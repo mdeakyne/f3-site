@@ -38,6 +38,32 @@ SLACK_WEBHOOK_URL=https://hooks.slack.com/services/T000/B000/XXXX
 TURNSTILE_SECRET=your-turnstile-secret
 ```
 
+## 3b. Test the Slack wiring locally (without fighting Turnstile)
+
+Turnstile is awkward to exercise on `localhost`. To test the form → Slack path
+locally, skip Turnstile with a **local-only** flag — it lives only in your
+gitignored `.dev.vars` and is never set in production, so verification stays
+enforced on the live site.
+
+`.dev.vars` (repo root):
+```
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/.../...   # your real webhook
+TURNSTILE_DISABLED=true
+```
+
+Then:
+```sh
+npm run build
+npm run preview            # wrangler pages dev — http://localhost:8788
+```
+Submit `/contact/` (and `/signup/`) → the message should land in #admin for
+real. When done, delete the flag (or the whole `.dev.vars`).
+
+> Want the Turnstile widget itself to render cleanly on localhost too? Add an
+> `.env` with Cloudflare's always-pass **test site key**:
+> `PUBLIC_TURNSTILE_SITE_KEY=1x00000000000000000000AA` and rebuild. (Optional —
+> the bypass above already lets the form submit regardless.)
+
 ## 4. Verify
 
 Submit the form on `/contact/` (and `/signup/`) in preview or production. You

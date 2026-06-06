@@ -11,6 +11,10 @@ interface Env {
   DB: D1Database;
   TURNSTILE_SECRET: string;
   SLACK_WEBHOOK_URL: string;
+  // LOCAL DEV ONLY: set to "true" in .dev.vars to skip Turnstile verification
+  // when testing. Never set this in the production Pages project — without it,
+  // Turnstile is always enforced.
+  TURNSTILE_DISABLED?: string;
 }
 
 interface D1Database {
@@ -28,7 +32,7 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
   const form = await request.formData();
 
   const token = String(form.get('cf-turnstile-response') ?? '');
-  if (!(await verifyTurnstile(token, ip, env.TURNSTILE_SECRET))) {
+  if (env.TURNSTILE_DISABLED !== 'true' && !(await verifyTurnstile(token, ip, env.TURNSTILE_SECRET))) {
     return json({ error: 'Turnstile check failed.' }, 400);
   }
 
