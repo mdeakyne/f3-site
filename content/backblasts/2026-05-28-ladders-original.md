@@ -12,7 +12,7 @@ pax:
 - Dizzy
 - '404'
 - casio
-- Wreckit
+- Wreck It
 total_pax: 7
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-05-28-ladders-original.md
@@ -22,7 +22,7 @@ Backblast: Ladders - Original
 Where: #ao-ad-astra
 When: 5/28/2026 @ 5:30AM
 Q: Waco
-PAX: Farmers Only, Big Toe, Dizzy, 404, casio, Wreckit
+PAX: Farmers Only, Big Toe, Dizzy, 404, casio, Wreck It
 
 **Warmup:**
 - SSH Burndown - 5 down

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T11:48:54Z",
+  "generated_at": "2026-06-07T14:00:32Z",
   "counts": {
     "backblasts": 248,
     "pax": 61,
@@ -73,7 +73,7 @@
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 79,
+      "posts": 82,
       "qs": 1,
       "aos": [
         "ad-astra",
@@ -531,19 +531,6 @@
       "latest_q": null
     },
     {
-      "slug": "wreckit",
-      "f3_name": "Wreckit",
-      "posts": 3,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-05-26",
-      "latest": "2026-06-02",
-      "latest_q": null
-    },
-    {
       "slug": "peanuts",
       "f3_name": "Peanuts",
       "posts": 2,
@@ -641,8 +628,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "long-game",
+      "f3_name": "Long Game",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -665,8 +652,8 @@
       "latest_q": null
     },
     {
-      "slug": "long-game",
-      "f3_name": "Long Game",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [

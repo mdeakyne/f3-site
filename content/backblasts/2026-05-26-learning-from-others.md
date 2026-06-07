@@ -8,7 +8,7 @@ q_slug: farmers-only
 pax:
 - Farmers Only
 - Waco
-- Wreckit
+- Wreck It
 - Dizzy
 - '404'
 - Big Toe
@@ -21,7 +21,7 @@ Backblast: Learning from Others
 Where: #ao-beehive
 When: 5/26/26
 Q: Farmers Only
-PAX: Waco, Wreckit, Dizzy, 404, Big Toe
+PAX: Waco, Wreck It, Dizzy, 404, Big Toe
 
 Warmup:
 - 10 arm circles
