@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-07T14:02:15Z",
+  "generated_at": "2026-06-10T13:12:28Z",
   "counts": {
-    "backblasts": 248,
+    "backblasts": 249,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-06-04"
+    "latest_post": "2026-06-09"
   },
   "aos": [
     {
@@ -21,66 +21,66 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 224,
-      "qs": 61,
+      "posts": 225,
+      "qs": 62,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-06-04",
-      "latest_q": "2026-06-02"
+      "latest": "2026-06-09",
+      "latest_q": "2026-06-09"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 223,
+      "posts": 224,
       "qs": 35,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-06-04",
+      "latest": "2026-06-09",
       "latest_q": "2026-05-26"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 180,
+      "posts": 181,
       "qs": 33,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-05-28",
+      "latest": "2026-06-09",
       "latest_q": "2026-05-21"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 143,
+      "posts": 144,
       "qs": 36,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-06-02",
+      "latest": "2026-06-09",
       "latest_q": "2026-05-28"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 82,
+      "posts": 83,
       "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-06-04",
+      "latest": "2026-06-09",
       "latest_q": "2026-03-03"
     },
     {
@@ -99,14 +99,14 @@
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 71,
+      "posts": 72,
       "qs": 14,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-06-04",
+      "latest": "2026-06-09",
       "latest_q": "2026-06-04"
     },
     {
@@ -419,18 +419,6 @@
       "latest_q": null
     },
     {
-      "slug": "captain-kirk",
-      "f3_name": "Captain Kirk",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -440,6 +428,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-14",
+      "latest_q": null
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07",
       "latest_q": null
     },
     {
@@ -798,6 +798,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-06-09-push-and-pull",
+      "title": "Push and Pull",
+      "date": "2026-06-09",
+      "ao": "beehive",
+      "q": "Big Toe",
+      "total_pax": 6,
+      "fngs": 0
+    },
+    {
       "slug": "2026-06-04-thank-you-sir-may-i-have-another",
       "title": "Thank You Sir, May I Have Another?",
       "date": "2026-06-04",
@@ -875,15 +884,6 @@
       "date": "2026-05-07",
       "ao": "ad-astra",
       "q": "Dizzy",
-      "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-05-05-musical-chairs",
-      "title": "Musical Chairs",
-      "date": "2026-05-05",
-      "ao": "beehive",
-      "q": "Waco",
       "total_pax": 7,
       "fngs": 0
     }
