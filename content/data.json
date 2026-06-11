@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-11T16:41:00Z",
+  "generated_at": "2026-06-11T19:03:34Z",
   "counts": {
-    "backblasts": 249,
+    "backblasts": 250,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-06-09"
+    "latest_post": "2026-06-11"
   },
   "aos": [
     {
@@ -21,15 +21,15 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 225,
-      "qs": 62,
+      "posts": 226,
+      "qs": 63,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-06-09",
-      "latest_q": "2026-06-09"
+      "latest": "2026-06-11",
+      "latest_q": "2026-06-11"
     },
     {
       "slug": "farmers-only",
@@ -47,40 +47,40 @@
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 181,
+      "posts": 182,
       "qs": 33,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-06-09",
+      "latest": "2026-06-11",
       "latest_q": "2026-05-21"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 144,
+      "posts": 145,
       "qs": 36,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-06-09",
+      "latest": "2026-06-11",
       "latest_q": "2026-05-28"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 83,
+      "posts": 84,
       "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-06-09",
+      "latest": "2026-06-11",
       "latest_q": "2026-03-03"
     },
     {
@@ -99,14 +99,14 @@
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 72,
+      "posts": 73,
       "qs": 14,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-06-09",
+      "latest": "2026-06-11",
       "latest_q": "2026-06-04"
     },
     {
@@ -175,15 +175,15 @@
     },
     {
       "slug": "casio",
-      "f3_name": "casio",
-      "posts": 23,
+      "f3_name": "Casio",
+      "posts": 24,
       "qs": 0,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-06-04",
+      "latest": "2026-06-11",
       "latest_q": null
     },
     {
@@ -419,6 +419,19 @@
       "latest_q": null
     },
     {
+      "slug": "goulash",
+      "f3_name": "Goulash",
+      "posts": 5,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-01-27",
+      "latest": "2026-06-11",
+      "latest_q": null
+    },
+    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -478,18 +491,6 @@
       ],
       "earliest": "2025-10-02",
       "latest": "2025-12-11",
-      "latest_q": null
-    },
-    {
-      "slug": "goulash",
-      "f3_name": "Goulash",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "beehive"
-      ],
-      "earliest": "2026-01-27",
-      "latest": "2026-06-02",
       "latest_q": null
     },
     {
@@ -628,8 +629,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -652,8 +653,8 @@
       "latest_q": null
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -798,6 +799,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-06-11-leg-bata",
+      "title": "Leg-bata",
+      "date": "2026-06-11",
+      "ao": "ad-astra",
+      "q": "Big Toe",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
       "slug": "2026-06-09-push-and-pull",
       "title": "Push and Pull",
       "date": "2026-06-09",
@@ -875,15 +885,6 @@
       "date": "2026-05-12",
       "ao": "beehive",
       "q": "Toto",
-      "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-05-07-some-is-better-than-none",
-      "title": "Some is better than none",
-      "date": "2026-05-07",
-      "ao": "ad-astra",
-      "q": "Dizzy",
       "total_pax": 7,
       "fngs": 0
     }
