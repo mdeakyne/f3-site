@@ -16,25 +16,34 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-11-changing-seasons.md
 ---
 
+**Backblast:** changing seasons  
+**Where:** #ao-beehive  
+**When:** 03.11.25 @ 05:30  
+**Q:** @Flute  
+**Count:** 6  
+**FNG:** 1  
+**PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
 
-Backblast:  changing seasonsWhere: #ao-beehiveWhen: 03.11.25 @ 05:30Q: @FluteCount: 6FNG: 1PAX: [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)Warm-up:
+**Warm-up:**
 
 - Side straddle hops (20 on a 4 count)
 - Squat jumps
 - Sun gods
 
-The Thang: everyone pick a station, 1 min work, light pole jog, go to the next station, rinse and repeat. (We completed 2 rounds).
+**The Thang:**
 
-1. Tricep dip
-2. DB snatch
-3. One legged squat (Bulgarians)
-4. Hand release Americans
-5. Curls
-6. Shoulder press
-7. Reverse lunge
-8. Sprint (3 parking spots, jog back)
+everyone pick a station, 1 min work, light pole jog, go to the next station, rinse and repeat. (We completed 2 rounds).
 
-Mary:
+- 1. Tricep dip
+- 2. DB snatch
+- 3. One legged squat (Bulgarians)
+- 4. Hand release Americans
+- 5. Curls
+- 6. Shoulder press
+- 7. Reverse lunge
+- 8. Sprint (3 parking spots, jog back)
+
+**Mary:**
 
 - 20 XYs (4 count)
 - 20 WW2s

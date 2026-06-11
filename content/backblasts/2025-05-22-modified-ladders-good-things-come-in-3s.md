@@ -17,33 +17,45 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-05-22-modified-ladders-good-things-come-in-3s.md
 ---
 
+**Backblast:** Modified Ladders (Good things come in 3's)  
+**When:** 05/22/2025 @ 05:30  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**Q:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)  
+**PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) [@Airball](https://f3lawrence.slack.com/team/U08SCS8FRAP)  
+**Count:** 6
 
-Backblast:  Modified Ladders (Good things come in 3's)When: 05/22/2025 @ 05:30
-Where:  [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)Q: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)PAX: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) [@Airball](https://f3lawrence.slack.com/team/U08SCS8FRAP)Count: 6Warmup:10 - SSH (4 count)10 - Windmills (4 count)5 - Wave of 'Murkin'sThe Thang: (Modified ladders)
+**Warmup:**
 
+- 10 - SSH (4 count)
+- 10 - Windmills (4 count)
+- 5 - Wave of 'Murkin's
+
+**The Thang:**
+
+- (Modified ladders)
 - 3 rungs
 - Run to 1st cone, job back, 3 reps of exercise
 - Run to 2nd cone, jog back, 6 reps of exercise
 - Run to 3rd cone, job back, 9 reps of exercise
 - Run to 2nd cone, jog back, 6 reps of exercise
 - Run to 1st cone, job back, 3 reps of exercise
-- Repeat for Each Exercise (note, rep count for up/down ladder is 27 reps)
 
-Exercises:
+Repeat for Each Exercise (note, rep count for up/down ladder is 27 reps)
 
+- Exercises:
 - Round 1
-    - Thrusters
-    - Flutter Kicks (4cnt)
-    - Squats (Heavy)
+- Thrusters
+- Flutter Kicks (4cnt)
+- Squats (Heavy)
 - Round 2
-    - Blockee's
-    - LBC
-    - Lunges (each leg)
+- Blockee's
+- LBC
+- Lunges (each leg)
 - Round 3
-    - Imperial Blockers
-    - X-Factor (each side)
-    - Captain Morgan Squats (each side)
+- Imperial Blockers
+- X-Factor (each side)
+- Captain Morgan Squats (each side)
 - Bonus Round (moving exercise to each cone, jog back)
-    - Bear Crawl
-    - Lunge Walk
-    - Crab Walk
+- Bear Crawl
+- Lunge Walk
+- Crab Walk

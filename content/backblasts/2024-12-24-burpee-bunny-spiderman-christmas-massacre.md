@@ -16,9 +16,20 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-12-24-burpee-bunny-spiderman-christmas-massacre.md
 ---
 
+**Backblast:** Its a Burpee Bunny Spiderman Christmas Massacre  
+**Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
+**When:** 12/24/24 @0530  
+**Q:** [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)  
+**PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)Warmup:
 
-Backblast: Its a Burpee Bunny Spiderman Christmas MassacreWhere: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)When: 12/24/24 @0530Q: [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)PAX:[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)**Warmup**:
+Stretching on your own
 
-- Stretching on your own
+**The Thang:**
 
-**The Thang:Round 1: Murder Bunny X4   -20 yard Murder Bunny with 5 Spiderman Push ups with Murder bunnies back.Round 2: Death by Blockees (EMOM)12...11.10..9..8..7..6..5..4..3..2..1..Round 3: Superman Pushup Ladder w/ sprint6..5..4..3..2..1..Round 4: Marry-4-Count XYs 20-WWII situps  20**
+Round 1: Murder Bunny X4   -20 yard Murder Bunny with 5 Spiderman Push ups with Murder bunnies back.
+
+- Round 2: Death by Blockees (EMOM)
+
+12...11.10..9..8..7..6..5..4..3..2..1..Round 3: Superman Pushup Ladder w/ sprint
+
+- 6..5..4..3..2..1..Round 4: Marry-4-Count XYs 20-WWII situps  20

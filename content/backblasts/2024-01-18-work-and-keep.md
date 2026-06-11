@@ -19,34 +19,38 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2024/2024-01-18-work-and-keep.md
 ---
 
+**Backblast:** Work and Keep  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 01/18/24 @0530  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ) [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)  
+**FNG:** 2 @Flute @Kitty Litter  
+**Count:** 8
 
-**Backblast: Work and Keep**
-Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-When: 01/18/24 @0530
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-PAX: [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ) [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
-FNG: 2 @Flute @Kitty Litter
-Count: 8
 Coupon: BYOC
-Coffeeteria: Yep
-Warmup (4 count):
 
+**Coffeeteria:**
+
+Yep
+
+**Warmup:**
+
+- (4 count):
 - Side Shuttle Hops (Jumping Jacks) x20
 - Michael Phelps x20
 - Toe Tickler x20
 - Shoulder Pretzel x20
 - Imperial Walker x20
 
-The Thang:Incinerator (x10, 9, 8...)
+**The Thang:**
 
+- Incinerator (x10, 9, 8...)
 - Goblet Squat
 - Toe Smash
 - Bent Row
 - Curl
 - Around the world
 - Overhead press
-
-Partner 2x:
-
+- Partner 2x:
 - One partner Farmer Cary to 10 Incline Pushups
 - Second partner: Plank taps, Situps

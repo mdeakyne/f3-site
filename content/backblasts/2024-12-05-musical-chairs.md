@@ -16,3 +16,5 @@ total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-12-05-musical-chairs.md
 ---
+
+

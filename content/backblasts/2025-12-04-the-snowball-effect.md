@@ -17,33 +17,39 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-12-04-the-snowball-effect.md
 ---
 
+**Backblast:** The Snowball Effect  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 12/4/25  
+**Q:** [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32)  
+**PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) @wrekcit @dialup @crocsWarm
 
-Backblast: The Snowball EffectWhere: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)When: 12/4/25Q: [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32)PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) @wrekcit @dialup @crocs**WarmUp**:
-
+- Up:
 - 20 Arm Circles, small/big, forwards/backwards
 - 10 Michael Phelps
 - 3 sets Piano Man left, middle, right
 - 10 SSH
 - Jog 2 laps
 
-**The Thang**:
+**The Thang:**
 
 - Snowball Effect 12 mins w/ rabbit
-    - 5 Blockees - Compound
-    - 10 Squats - Legs
-    - 15 overhead press - Compound
-    - 20 Lunges - Legs
-    - 25 Curls - Arms
+- 5 Blockees - Compound
+- 10 Squats - Legs
+- 15 overhead press - Compound
+- 20 Lunges - Legs
+- 25 Curls - Arms
 - Relay 12 mins
-    - Call the exercise workout / run down and back 2x Next person calls the exercise workout / run
-    - SSH Burndown, Rows, Thrusters, LBCs, Curls, Calf Raises
+
+Call the exercise workout / run down and back 2x Next person calls the exercise workout / run
+
+- SSH Burndown, Rows, Thrusters, LBCs, Curls, Calf Raises
 - Grinder
-    - 30 second squat hold
-    - 15 squats
-    - 30 second lunges left
-    - 15 lunges left
-    - 30 second lunges right
-    - 15 lunges right
-    - 20 Imperial Blockers
-    - 20 rows
+- 30 second squat hold
+- 15 squats
+- 30 second lunges left
+- 15 lunges left
+- 30 second lunges right
+- 15 lunges right
+- 20 Imperial Blockers
+- 20 rows
 - Cool down run around the park ~400m

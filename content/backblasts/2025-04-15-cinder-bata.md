@@ -17,15 +17,11 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-04-15-cinder-bata.md
 ---
 
-**Where:** Beehive AO
+**Where:** Beehive AO  
+**When:** 05:30 AM  
+**Q:** Big Toe  
+**PAX:** Waco
 
-**When:** 05:30 AM
-
-**Q:** Big Toe
-
-**PAX:**
-
-- Waco
 - Farmers Only
 - Flute
 - 404
@@ -39,8 +35,9 @@ vault_path: 07 - F3/Backblasts/2025/2025-04-15-cinder-bata.md
 - 5 Jumps
 - 4, 3, 2, 1
 
-**The Thang (Tabata with jumping exercises between rounds):**
+**The Thang:**
 
+- (Tabata with jumping exercises between rounds):
 - Overhead Press
 - Block Swings
 - Curls
@@ -50,10 +47,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-04-15-cinder-bata.md
 - Around the World
 - Calf Raises
 - Sit Ups
-
-Finished with "Just Keep Swimming" Flutter Kicks
-
-**Prayer Requests:**
-
+- Finished with "Just Keep Swimming" Flutter Kicks
+- Prayer Requests:
 - 404's son is starting to put weight on his leg
 - Flute's upcoming travels and family leadership

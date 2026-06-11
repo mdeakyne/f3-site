@@ -16,18 +16,18 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-11-23-turkey-trot.md
 ---
 
+**Backblast:**  
+**AO:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**Q:** [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)  
+**PAX:** [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1), [@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC)  
+**Count:** 5
 
-Backblast:
-AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-Q: [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)
-PAX: [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1), [@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC)
-Count: 5
-Warm up:
+**Warm up:**
 
 - Stretch OYO
 - Lap
 
-The Thang:
+**The Thang:**
 
 - Lap, Stadium
 - Repeat
@@ -40,7 +40,5 @@ The Thang:
 - Ballet Planks x20
 - Sprint/Walk
 - Repeat
-
-Cool Down:
-
+- Cool Down:
 - Yack

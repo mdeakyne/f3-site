@@ -17,39 +17,29 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-07-22-christmas-in-july.md
 ---
 
+**Backblast:** Christmas in July  
+**Where:** #ao-beehive  
+**When:** 07-22-2025 @ 05:30  
+**Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
+**PAX:** @Wreckit,
 
-Backblast: Christmas in July
+- [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
+- ,
+- [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+- ,
+- [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
+- ,
+- [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 
-Where: #ao-beehive
+**The Thang:**
 
-When: 07-22-2025 @ 05:30
+White elephant tabata
 
-Q:
+Each pax either draws an exercise, or chooses an already drawn exercise from someone else to steal and that pax draws a new one. Everyone does their exercise for 4 rounds of tabata (1/2 a song), and then new exercises are drown
 
-[@404](https://f3lawrence.slack.com/team/U07G685DW2K)
+**Mary:**
 
-PAX: @Wreckit,
-
-[@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
-
-,
-
-[@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-
-,
-
-[@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
-
-,
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-The Thang: White elephant tabataEach pax either draws an exercise, or chooses an already drawn exercise from someone else to steal and that pax draws a new one. Everyone does their exercise for 4 rounds of tabata (1/2 a song), and then new exercises are drownMary
-
-15 side plank dips on each side
-
-20 alternating dead bug
-
-20 heels to heaven
-
-20 American hammer on a 2 count
+- 15 side plank dips on each side
+- 20 alternating dead bug
+- 20 heels to heaven
+- 20 American hammer on a 2 count

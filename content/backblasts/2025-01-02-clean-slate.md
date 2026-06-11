@@ -15,19 +15,18 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-01-02-clean-slate.md
 ---
 
-
-## Backblast: Clean Slate
+- ## Backblast: Clean Slate
 
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-When: 01/02/2025
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
+
+- When: 01/02/2025
+- Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 
 PAX: [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-The Thang:
+**The Thang:**
 
-20 sets of 25 exercises:
-
+- 20 sets of 25 exercises:
 - 25 burpees
 - 25 lbcs
 - 25 ssh
@@ -48,5 +47,4 @@ The Thang:
 - 25 WWII sit ups
 - 25 sun gods
 - 25 toe touches
-
-Ended on a 6 minute Indian Run.
+- Ended on a 6 minute Indian Run.

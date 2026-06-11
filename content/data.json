@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T19:03:34Z",
+  "generated_at": "2026-06-11T19:11:52Z",
   "counts": {
     "backblasts": 250,
     "pax": 61,
@@ -629,6 +629,18 @@
       "latest_q": "2026-03-19"
     },
     {
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": null
+    },
+    {
       "slug": "loofah",
       "f3_name": "Loofah",
       "posts": 1,
@@ -643,18 +655,6 @@
     {
       "slug": "long-game",
       "f3_name": "Long Game",
-      "posts": 1,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-08-10",
-      "latest_q": null
-    },
-    {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [

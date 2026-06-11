@@ -19,15 +19,19 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-01-20-bent-out-of-shape-preflight-mix-airplane.md
 ---
 
+**Backblast:** Bent Out of Shape - Preflight Mix ✈Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
+**When:** 1/20/26 @0530  
+**Q:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)  
+**Pax:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), :wreck-it-ralph:, [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0), [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), @bonnet, [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-Backblast: Bent Out of Shape - Preflight Mix ✈Where: [**#ao-beehive**](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)When: 1/20/26 @0530Q: [**@Waco**](https://f3lawrence.slack.com/team/U0727KRQT5J)Pax: [**@Big Toe**](https://f3lawrence.slack.com/team/U05LQM40U4R), :wreck-it-ralph:, [**@404**](https://f3lawrence.slack.com/team/U07G685DW2K), [**@Flute**](https://f3lawrence.slack.com/team/U05NB7H88J0), [**@Dizzy**](https://f3lawrence.slack.com/team/U08N6V1HF32), @bonnet, [**@Farmers Only**](https://f3lawrence.slack.com/team/U05NHFL431A)Warmup:
+**Warmup:**
 
 - SSH Burndown Starting at 6
 - Arm Circles (5/5/5/5)
 - Piano Man 5 on 4 count
 - Stretch to toes
 
-The Thang:
+**The Thang:**
 
 - 95' of moving exercise
 - blocks at one end, pads at the other. Exercise

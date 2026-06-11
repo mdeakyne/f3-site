@@ -17,8 +17,12 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-11-18-theres-always-a-dumbass.md
 ---
 
-
-Backblast: There’s always a DumbassWhere: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)When: 11/18/25 @ 05:30Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), @Dial-upCount: 6**The Warmup:**
+**Backblast:** There’s always a Dumbass  
+**Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
+**When:** 11/18/25 @ 05:30  
+**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
+**PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), @Dial-up  
+**Count:** 6The Warmup:
 
 - Grass Pullers (middle, left, right)
 - Michael Phelps
@@ -26,16 +30,15 @@ Backblast: There’s always a DumbassWhere: [#ao-beehive](https://f3lawrence.sl
 - Imperial Storm Kickers
 - Traveling Side Shuttle Hops
 
-**The Thang:**Cones of Confusion:  sprint to the first, second, third, etc.
+**The Thang:**
 
+- Cones of Confusion:  sprint to the first, second, third, etc.
 - 10 Mericans & 1 Burpee
 - 10 Deep Squats & 1 Burpee
 - 10 Wide Mericans & 1 Burpee
 - 10 Side Shuttle Hops & 1 Burpee
 - 10 Shoulder Taps & 1 Burpee
-
-All About the Benjamins
-
+- All About the Benjamins
 - 25 Curls
 - 25 Walking Lunges
 - 25 Squats
@@ -45,10 +48,11 @@ All About the Benjamins
 - 25 Mountain Climber
 - 25 Walking Lunges
 
-**Mary**:
+**Mary:**
 
 - 10 Freddy Mercury
 - 10 Calf Raises
 - 15 Heavy Flutter Kicks
 - 10 LBCs
-- 10 on each leg - One Legged Hops (in honor of [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
+
+10 on each leg - One Legged Hops (in honor of [@404](https://f3lawrence.slack.com/team/U07G685DW2K)

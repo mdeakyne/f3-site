@@ -16,15 +16,14 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-11-21-big-toe-bata.md
 ---
 
+**Backblast:** Big Toe-bata  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 11/21/24 @0530  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** [@Locks](https://f3lawrence.slack.com/team/U08165103B3) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-Backblast: Big Toe-bata
-Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-When: 11/21/24 @0530
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-PAX: [@Locks](https://f3lawrence.slack.com/team/U08165103B3) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
-Tabata: 20 Seconds on 10 seconds off.
-Go between harder / weighted and lighter / body wieght
-
+- Tabata: 20 Seconds on 10 seconds off.
+- Go between harder / weighted and lighter / body wieght
 - Jumping jacks.
 - Heavy squats | air squats
 - Overhead press | dips

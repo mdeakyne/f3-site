@@ -16,9 +16,14 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-05-27-what-am-i-doing-here-take-2.md
 ---
 
+**Backblast:** What am I doing here? Take 2  
+**Where:** #ao-beehive  
+**When:** 05/27/25 @0530  
+**Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
+**PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) @…The Thang:
 
-Backblast: What am I doing here? Take 2Where: #ao-beehiveWhen: 05/27/25 @0530Q: [@404](https://f3lawrence.slack.com/team/U07G685DW2K)PAX: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) @…The Thang:Laddered Stations6 stations, 6 exercises
-
+- Laddered Stations
+- 6 stations, 6 exercises
 - 10 Burpees
 - 15 Overhead Press
 - 20 Single-Leg Squats

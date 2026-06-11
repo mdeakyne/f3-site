@@ -16,26 +16,26 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-06-i-hope-this-winter-never-ends.md
 ---
 
-
-**Backblast:** I hope this winter never ends!
-**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-**When:** 03-06-2025 @ 05:30
-**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-**Count:** 5
+**Backblast:** I hope this winter never ends!  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 03-06-2025 @ 05:30  
+**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
+**Count:** 5  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
 
-Warm-up: OYO
+**Warm-up:**
 
-The Thang: 10&1 aka Confusing Cones
+OYO
 
+**The Thang:**
+
+- 10&1 aka Confusing Cones
 - 10 shoulder taps & 1 burpee
 - 10 side shuttle hops & 1 burpee
 - 10 deep squats & 1 burpee
 - 10 'Mericans & 1 burpee
 - 10 lunges & 1 burpee
-
-Incinerators: Starting at 10, 9, 8
-
+- Incinerators: Starting at 10, 9, 8
 - overhead press
 - scissor lifts
 - blockends

@@ -14,16 +14,20 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-12-14-todays-problem.md
 ---
 
+**Backblast:**  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 12/14/23 @0530  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** [@Mountain Goat](https://f3lawrence.slack.com/team/U067UGQHVHD) [@Taps (KC)](https://f3lawrence.slack.com/team/U068MEMLGAV) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-Backblast:
-Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-When: 12/14/23 @0530
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-PAX: [@Mountain Goat](https://f3lawrence.slack.com/team/U067UGQHVHD) [@Taps (KC)](https://f3lawrence.slack.com/team/U068MEMLGAV) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-Coffeeteria: Yes“
-Todays Problem”
+**Coffeeteria:**
 
-- Warm up exercises and F3 values.
+- Yes“
+- Todays Problem”
+
+**Warm up:**
+
+- exercises and F3 values.
 - 20x 4 count : SSH
 - 20x 4 Imperial walkers
 - 20x 4 ~~Abe Vigolio~~ baby arm circles

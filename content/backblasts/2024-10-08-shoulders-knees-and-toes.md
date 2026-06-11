@@ -17,49 +17,36 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-10-08-shoulders-knees-and-toes.md
 ---
 
+- Back
+- Blast: Shoulders Knees and Toes
+- When: 10/08/24 0500
+- Q:
+- [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
+- PAX:
+- [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
+- [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+- [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+- [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
+- [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-BackBlast: Shoulders Knees and Toes
-
-When: 10/08/24 0500
-
-Q:
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-PAX:
-
-[@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
-
-[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-
-[@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-
-[@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
-
-[@404](https://f3lawrence.slack.com/team/U07G685DW2K)
-
-Warm up:
+**Warm up:**
 
 Indian Run one full loop
-The Thang:
 
-Top Gun
-15 minutes
+**The Thang:**
 
-10 Curls, Rows, Deadlifts, Press, Squat, Lunge with block.
+- Top Gun
+- 15 minutes
+- 10 Curls, Rows, Deadlifts, Press, Squat, Lunge with block.
+- Every 1.5 minutes, timer goes off an you do 3 burpees.
+- Partner relay:
+- 1: Bear Crawl / 30 Shoulder - Knee - Toe Merkins (10 each)
+- 2: Crab Walk / 20 Burpees
+- 3: Walking Lunge / 40 Air Squats
 
-Every 1.5 minutes, timer goes off an you do 3 burpees.Partner relay:
+**Mary:**
 
-1: Bear Crawl / 30 Shoulder - Knee - Toe Merkins (10 each)
-
-2: Crab Walk / 20 Burpees
-
-3: Walking Lunge / 40 Air SquatsMary:
-
-20 Jane Fonda
-
-20 Freddie Mercury
-
-20 WWII situps
-
-20 Flutter Kicks
+- 20 Jane Fonda
+- 20 Freddie Mercury
+- 20 WWII situps
+- 20 Flutter Kicks

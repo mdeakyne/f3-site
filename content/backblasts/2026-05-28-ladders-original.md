@@ -18,32 +18,32 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-05-28-ladders-original.md
 ---
 
-Backblast: Ladders - Original
-Where: #ao-ad-astra
-When: 5/28/2026 @ 5:30AM
-Q: Waco
-PAX: Farmers Only, Big Toe, Dizzy, 404, casio, Wreck It
+**Backblast:** Ladders - Original  
+**Where:** #ao-ad-astra  
+**When:** 5/28/2026 @ 5:30AM  
+**Q:** Waco  
+**PAX:** Farmers Only, Big Toe, Dizzy, 404, casio, Wreck It
 
 **Warmup:**
+
 - SSH Burndown - 5 down
 - Arm Circles (you know the drills)
 - Cherry Pickers (10 on 4cnt)
 - Piano Man (10 on 4cnt)
-
-**Ladder: 7 rungs**
+- Ladder: 7 rungs
 - Sprint out to the first run, then jog back.
 - Complete that ladder number of exercises below
 - Once completed 7 rungs, (28 reps), Mosey one parking lot lap.
-- Repeat with next exercise for 30 minutes or until the music stops.
 
-**Example:**
+Repeat with next exercise for 30 minutes or until the music stops.
+
+- Example:
 - Sprint out rung 1, jog back, 1 Merkin
 - Sprint out rung 2, jog back, 2 Merkin
 - …
 - Sprint out rung 7, jog back, 7 Merkin
 - Move to next exercise
-
-**Exercises:**
+- Exercises:
 - Thrusters
 - Blockees
 - Heels 2 Heaven (plus 3 Merkins on every rung)
@@ -53,4 +53,5 @@ PAX: Farmers Only, Big Toe, Dizzy, 404, casio, Wreck It
 - Burpees
 
 **Mary:**
-- PAX choice around the circle to time.
+
+PAX choice around the circle to time.

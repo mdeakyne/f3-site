@@ -17,49 +17,28 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-19-maddys-birthday-mile.md
 ---
 
+- Back Blast:  Maddy's Birthday Mile
+- Where:
+- [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
+- When: 09/019/24 @05:30
+- Q:
+- [@Kilo](https://f3lawrence.slack.com/team/U07AC924ZEG)
+- PAX:
+- [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+- [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+- [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
+- [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
+- [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
+- Count: 6
 
-Back Blast:  Maddy's Birthday Mile
+**The Thang:**
 
-Where:
-
-[#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-
-When: 09/019/24 @05:30
-
-Q:
-
-[@Kilo](https://f3lawrence.slack.com/team/U07AC924ZEG)
-
-PAX:
-
-[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-
-[@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-
-[@404](https://f3lawrence.slack.com/team/U07G685DW2K)
-
-[@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-Count: 6
-
-The Thang:
-
-4 Laps, 4 Stations, 20 reps at each station
-
-Station 1 - Upright Rows
-
-Station 2 - Jumping Jacks
-
-Station 3 - 'merkins
-
-Station 4 - Plank until 6Ladder
-
-Overhead Press
-
-Curls
-
-Squats
-
-Sit Ups
+- 4 Laps, 4 Stations, 20 reps at each station
+- Station 1 - Upright Rows
+- Station 2 - Jumping Jacks
+- Station 3 - 'merkins
+- Station 4 - Plank until 6Ladder
+- Overhead Press
+- Curls
+- Squats
+- Sit Ups

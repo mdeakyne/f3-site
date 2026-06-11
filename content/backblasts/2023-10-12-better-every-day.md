@@ -19,21 +19,24 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-10-12-better-every-day.md
 ---
 
+**Backblast:** “Better Every Day”  
+**Date:** 10/12/23  
+**AO:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**Q:** [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1)  
+**PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4) @Soprano [@Flaps](https://f3lawrence.slack.com/team/U05QV5D88DN) [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Trainwreck](https://f3lawrence.slack.com/team/U05L16J4AUS)  
+**FNGs:** 0  
+**COUNT:** 8
 
-Backblast: “Better Every Day”
-Date: 10/12/23
-AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-Q: [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1)
-PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4) @Soprano [@Flaps](https://f3lawrence.slack.com/team/U05QV5D88DN) [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Trainwreck](https://f3lawrence.slack.com/team/U05L16J4AUS)
-FNGs: 0
-COUNT: 8
+**Warm Up:**
 
-Warm Up•   Welcome and Disclaimers, 5 core Principles•   Stretch OYO•   Motivators x3 Movements - Down from 10
+•   Welcome and Disclaimers, 5 core Principles•   Stretch OYO•   Motivators x3 Movements - Down from 10
 
-The Thang
+**The Thang:**
 
 - Partner Relay
-- Partner 1 - Double Farmer's Carry to end of Parking Lot, 20 Merkins, Farmer's Carry back.
+
+Partner 1 - Double Farmer's Carry to end of Parking Lot, 20 Merkins, Farmer's Carry back.
+
 - Partner 2 - Bank 200 Air Squats
 - Incinerator - Down from 10
 - OH Press
@@ -41,7 +44,5 @@ The Thang
 - Squat
 - Row
 - Merkin
-
-Cool Down/Mary
-
+- Cool Down/Mary
 - Sharing is Caring 1x15

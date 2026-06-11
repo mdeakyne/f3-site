@@ -22,62 +22,37 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2023/2023-10-05-concentration-is-key.md
 ---
 
+**Backblast:** “Concentration is Key”  
+**Date:** 10/5/23  
+**AO:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**Q:** [@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC)  
+**PAX:** [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1)
 
-**Backblast:**
+- [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
+- [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)
+- [@Concessions](https://f3lawrence.slack.com/team/U05PWBTJV1Q)
+- [@Joe Lippert](https://f3lawrence.slack.com/team/U05N1RB4S85)
+- (Womens
+- Leauge)
+- [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+- [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4)
+- [@Siri](https://f3lawrence.slack.com/team/U05LDRFFEHX)
+- @Soprano @Leaks
+- FNGs: 1,
+- @Plot Twist
+- COUNT:
+- 11
 
-“Concentration is Key”
+**Warm Up:**
 
-**Date:**10/5/23
-
-**AO:**[#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-
-**Q:**[@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC)
-
-**PAX:**
-
-[@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1)
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-[@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)
-
-[@Concessions](https://f3lawrence.slack.com/team/U05PWBTJV1Q)
-
-[@Joe Lippert](https://f3lawrence.slack.com/team/U05N1RB4S85)
-
-(WomensLeauge)
-
-[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-
-[@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4)
-
-[@Siri](https://f3lawrence.slack.com/team/U05LDRFFEHX)
-
-@Soprano @Leaks
-
-**FNGs: 1,**
-
-@Plot Twist
-
-**COUNT:**
-
-11
-
-**Warm Up**
-
-- 
-
-Welcome and Disclaimers, 5 core Principles
-
+- Welcome and Disclaimers, 5 core Principles
 - Stretch together
 - Weighted mosey to gazebo
 
-**The Thang**
+**The Thang:**
 
-- 
-
-Diamond Push Ups, 4x10
-
+- Diamond Push Ups, 4x10
 - Single arm Rows, 4x10• Concentration curls, 4x8
 - Concentration rows, 4x8• Dips, 4x8
-- Down Unders, 4x8• Concentration Curls, Failure +5 assisted past failure reps 2x• Weighted Mosey to parking lot.• 1:30 plank.
+
+Down Unders, 4x8• Concentration Curls, Failure +5 assisted past failure reps 2x• Weighted Mosey to parking lot.• 1:30 plank.

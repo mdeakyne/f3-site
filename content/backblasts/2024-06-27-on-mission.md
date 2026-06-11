@@ -18,20 +18,26 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2024/2024-06-27-on-mission.md
 ---
 
+**Backblast:** On Mission  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @404 [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @Kilo @Dial Up  
+**Count:** 7
 
-Backblast: On Mission
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-PAX: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @404 [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @Kilo @Dial Up
-Count: 7
-Warm Up:Indian Run (3 laps)SSHMountain ClimbersBurpeesThe Thang:Firefighter (ladder + incinerator)
+**Warm Up:**
 
+- Indian Run (3 laps)SSHMountain Climbers
+- Burpees
+
+**The Thang:**
+
+- Firefighter (ladder + incinerator)
 - Big Toe Smash
 - Around the World
 - Rows for Bros
 - Curls for Girls
 - Overhead Press
 
-Mary:
+**Mary:**
 
 - 20 Block passes
 - 20 Leg Raises

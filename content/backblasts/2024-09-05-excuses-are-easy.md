@@ -15,21 +15,22 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-05-excuses-are-easy.md
 ---
 
+- Back Blast: It’s easy to make excuses.
 
-Back Blast: It’s easy to make excuses.
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-When: 09/05/24 @05:30
-Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)Count:4The Thang    
-Welsh Dragon
 
+- When: 09/05/24 @05:30
+- Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+
+PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
+
+- Count:4The Thang
+- Welsh Dragon
 - 4 Bear Crawls
 - 1 Merican
 - 1 Plank Jack
 - 1 Should tap
-
-Repeat and add 1 to the exercises       10&1
-
+- Repeat and add 1 to the exercises       10&1
 - 10 Jumping Jack and 1 burpee
 - 10 Deep Squats and 1 burpee
 - 10 Smurf Jacks and 1 burpee
