@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-25-cinderblock-grinder.md
 ---
 
+
 Backblast:
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
 When:3/25/25 @ 05:30
@@ -31,5 +32,3 @@ The Thang: EMOM x5
 - 15 Jumping Lunges
 - 15 rows
 - 60 second plank
-
-COT:[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) shared difficult family situation. Discussed consistency in the small things.

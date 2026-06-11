@@ -26,6 +26,7 @@ fngs: 4
 vault_path: 07 - F3/Backblasts/2023/2023-08-17-better-together.md
 ---
 
+
 **Backblast!** 
 “Better Together”
 **DATE**: 2023-08-17
@@ -64,7 +65,3 @@ vault_path: 07 - F3/Backblasts/2023/2023-08-17-better-together.md
 - Whack-a-Mary
 - Partners, 30 x 1
 - Flutter kick to pick up 6
-
-**COT:**“Better Together” Being better together is the key, because we can compete without pride getting in the way. This is the secret sauce to making doing hard things fun again. You may be stronger, smarter, better than me at what we’re doing, but because you’re giving your all I’m going to too. We’re always better together, no matter our ability. Prayed for the PAX.Relocated to south parking lot at Holcom Park. Shorter BD today to allow for half of PAX starting work at 6:50a.  (edited)
-
-IMG_2481

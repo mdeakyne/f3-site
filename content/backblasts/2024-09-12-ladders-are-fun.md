@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-12-ladders-are-fun.md
 ---
 
+
 Ladders are fun
 
 Where:
@@ -76,4 +77,4 @@ The Thang:5: Blockees (Block burpees)
 
 25,30
 
-30Back and forth shoulder carry block between each set.CoT: We keep adding, even as other responsibilities pile up. There is a time coming where we will not be responsible for as much. Keep pushing and living where you are at, while keeping the end state in mind.
+30Back and forth shoulder carry block between each set.

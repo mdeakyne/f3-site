@@ -20,6 +20,7 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2024/2024-05-30-going-in-circles.md
 ---
 
+
 **Backblast:** Sometimes it feels like we’re running around in circles.
 **Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When:** 05-30-24 @ 0530
@@ -34,5 +35,3 @@ The Thang:  Run the Bases One partner does 5 ‘Mericans at each base while th
 - Scissor Lifts
 - Upright Rows
 - Squatts
-
-**CoT:** Sawdust is traveling to Oregon for his brother’s wedding.Big Toe is doing the F3 rucking event in KC this weekend.  Then traveling to New York for work.Sometimes is feels like we are running around and now getting anywhere like running the bases or staring at a spreadsheet trying to figure out a formula.  But running helps get you in shape and completing a spreadsheet formula helps to learn what works and what doesn’t.  It all part of the journey when we learn and grow.

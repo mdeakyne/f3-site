@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-12-11-low-and-slow.md
 ---
 
+
 20 Arm Circles10 Michael PhelpsThe Thang:Straight leg raises, 30 each. 4-count cadence, one count to raise, and 3 to lower-Toe Up
 
 - Toe 45 degrees away from your body
@@ -35,4 +36,4 @@ Mary
 - 10 American Hammer
 - 10 Heels to heaven
 
-Repeat to time (4x)CoT:Leaning into the advent theme of waiting as I progress through each step in the recovery protocol.[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) Traveling to NJ for a wedding, and starting a new Job in January
+Repeat to time (4x)

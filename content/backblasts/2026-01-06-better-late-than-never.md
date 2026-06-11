@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-01-06-better-late-than-never.md
 ---
 
+
 Backblast: Better late than never
 
 Where: #ao-beehive
@@ -77,19 +78,3 @@ The thang: Emom
 30 calf raises
 
 Repeat a total of 4 times
-
-COT:
-
-Last week restarted a routine of reading Psalms and praying with kids at bedtime after about a year and a half of regularly intending to get back into it. Whatever habits you've been meaning to restart or start for the first time, it's not too late.
-
-Welcome back
-
-[**@Toto**](https://f3lawrence.slack.com/team/U08QXDW8W6M)
-
-,
-
-[**@TrainingWheels**](https://f3lawrence.slack.com/team/U07GM1HUYBD)
-
-Big toe off and running at a new job
-
-Training wheels wife flying solo next month while he is traveling

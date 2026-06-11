@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-07-09-more-than-you-think.md
 ---
 
+
 Backblast: More than you think
 
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z) 
@@ -44,4 +45,4 @@ The Thang
 11. 10 Burpees
 12. 10 Block Swings
 
-Mary20 Flutter Kicks20 WWIII Sit-ups20 Shoulder Taps20 Freddy mercury20 American hammerCoT:We are called to do more than we think we can handle. Moving into that and encouraging our brothers in that is how growth happens.Sawdust moving towards wedding.Billboard recovered from Covid.Big Toe got that door fixed. Out two weeks, trusting others.
+Mary20 Flutter Kicks20 WWIII Sit-ups20 Shoulder Taps20 Freddy mercury20 American hammer

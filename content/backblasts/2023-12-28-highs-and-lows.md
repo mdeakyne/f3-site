@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-12-28-highs-and-lows.md
 ---
 
+
 **Backblast**! “Highs and Lows”
 
 > Where:
@@ -70,6 +71,4 @@ vault_path: 07 - F3/Backblasts/2023/2023-12-28-highs-and-lows.md
 **Mary:**
 
 > 10 Situps
-> 
-
-**COT**: “Highs and Lows”. We are going to fluctuate between the good times and the bad times our whole lives, but God will pursue us regardless. We have a responsibility to stay on the gas and pursue God and life in all times.
+>

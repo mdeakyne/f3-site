@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-04-04-first-follower.md
 ---
 
+
 **Backblast:** First Follower
 **Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When:** 4-4-2024 @0530
@@ -42,5 +43,3 @@ Coupon:** BYOC
 - 20 London bridges
 - 10 leg lifts
 - side plank for 30 secs each side
-
-**CoT:** Being the first follower is being the man to encourage and support another man when he steps out in faith or feels called. It’s essentially being there for one another and being prepared to show up when needed. This also reflects our walk with God, in the sense that we should be willing to buy in and go forward with whatever God calls us to.

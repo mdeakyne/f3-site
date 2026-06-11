@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-09-18-ladders-3rd-degree-burn.md
 ---
 
+
 Backblast: Ladders - Third Degree Burn
 
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -58,5 +59,3 @@ The Thang:
 10. ~~Merkins~~
 11. ~~Good Mornings (heavy)~~
 12. ~~V-ups~~
-
-COT: Managing the ups and downs of busy life, leaning in to focus and progress, and trying to attenuate the noise and down times.  Praying for [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)’s Godson, in the hospital, waiting on outcomes. And also for a smooth weekend wedding for [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M)’s family down in Branson.

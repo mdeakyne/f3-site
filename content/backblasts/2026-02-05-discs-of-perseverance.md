@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-05-discs-of-perseverance.md
 ---
 
+
 **Backblast: Discs of Perseverance**
 **Where:** #ao-ad-astra
 **When:** 02-05-26
@@ -39,10 +40,3 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-05-discs-of-perseverance.md
 6. 35 Calf Raises
 
 Props to @Big Toe for finishing back at the first station right on time.
-
-**COT:**
-@404 Neighbor Mr. Cooper likely in his final days with pneumonia and multiple cancers found in his lungs. Friend Paul about to begin treatment for prostate cancer.
-
-@Big Toe workload at new job picking up.
-
-@Toto friend Brad recovering from successful thyroid surgery, and brother in law continuing treatment for prostate cancer.

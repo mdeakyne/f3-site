@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-01-04-keep-it-simple.md
 ---
 
+
 Backblast: Keep it Simple
 
 > Where:
@@ -65,5 +66,3 @@ The Thang: Tabata (4 minutes : 20 seconds on, 10 seconds rest)
 9. ~~Thunderstruck → Chest squeeze press.~~
 10. ~~Uptown Funk → Handstand around the world.~~
 11. Final Countdown → Plank Shoulder Taps
-
-CoT: Simple is not easy. We tend to complicate things, and make good / lesser things into ultimate things. As you pursue goals in 2024, keep them simple so they are explainable and accountable.

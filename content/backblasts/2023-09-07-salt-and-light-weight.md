@@ -29,6 +29,7 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2023/2023-09-07-salt-and-light-weight.md
 ---
 
+
 **Backblast!** 
 “Salt and LIGHT WEIGHT”
 **DATE**: 2023-09-7
@@ -55,5 +56,3 @@ vault_path: 07 - F3/Backblasts/2023/2023-09-07-salt-and-light-weight.md
 - Paused Air Squats, 20
 - Tom Brady, 20 per side
 - Paused Merkins, 20
-
-**COT:**We’re called and created to live as salt and light in the world. Each of us function as cities set on hills, and God will draw people into allegiance to Himself and His Kingdom through our lives. No excuses, no holding back, nobody else can carry that responsibility for you. What an opportunity and a privilege!**Coffeeteria**: Yes, with breakfast and time blessing [@Peanuts](https://f3lawrence.slack.com/team/U05P50FGJP7) before he ships out for the Navy.**PAX Award OTD:** @Soprano“One in the Chamber”

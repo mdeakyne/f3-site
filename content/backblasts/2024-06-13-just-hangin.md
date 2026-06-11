@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-06-13-just-hangin.md
 ---
 
+
 **Super late Backblast**: Just Hangin
 **Where**: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When**: 06/13/24 @0530
@@ -35,5 +36,3 @@ vault_path: 07 - F3/Backblasts/2024/2024-06-13-just-hangin.md
 - 20 bicycles
 - 20 London bridge
 - 20 situps
-
-**COT**: Just HanginI just wanted to remind people to enjoy time with others. Jesus fellowshipped with His people. He was out and about and worked hard, but at the end of the day He recouped with His disciples. This is just a reminder to spend time with good God fearing men in your life. We are not meant to do life alone.

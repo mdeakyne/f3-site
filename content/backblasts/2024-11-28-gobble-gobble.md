@@ -14,6 +14,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-11-28-gobble-gobble.md
 ---
 
+
 Backblast: Gobble Gobble
 
 Where:
@@ -47,4 +48,3 @@ Blockins
 Curls
 
 Dips
-COT: I signed up to Q so that I couldn’t back out. Sometimes we need external motivation to do the things that we know we need to do, and we can be the ones to set up that external motivation. When my alarm went off, I didn’t want to wake up, but knew that there were guys who would be counting on me to lead

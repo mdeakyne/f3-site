@@ -14,6 +14,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-01-21-cold-is-a-mindset.md
 ---
 
+
 # Backblast: Cold is a mindset
 
 Where: #ao-beehive
@@ -41,7 +42,3 @@ Repeat another 4 times with:
 - Shoulder taps (2-count)
 - American hammer (2-count, no block)
 - Jog another loop
-
-## COT:
-
-Continuing to lift up Jordan family

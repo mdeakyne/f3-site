@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-09-nothing-too-fancy.md
 ---
 
+
 **Backblast: Nothing too fancy**
 **Where:** #ao-ad-astra
 **When:** 04/09/2026 @5:30AM
@@ -59,5 +60,3 @@ Flutter kicks
 Narrow pushups
 X factor
 Freddie Mercury
-
-**COT:** nothing too fancy. Glad to get another Q in and getting back in the groove. Casio secured a solid Lincoln Continental.

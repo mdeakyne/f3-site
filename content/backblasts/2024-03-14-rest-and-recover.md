@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-03-14-rest-and-recover.md
 ---
 
+
 Apparently my Back Blast didn't go through on my phone:
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 03-14-2024
@@ -28,5 +29,3 @@ The Thang:Tabata -
 - Clean and Curl and Press / (Heavy) Squat
 - Bear Crawl / Tower of Power
 - Farmers Cary with Lunges / Situps
-
-CoT: Rest is important. We serve a God that calls us to rest in him. We have seasons of work and seasons of rest. Encourage those men who chose to rest today, as they deal with things we can't always see. Engage and help carry the load.

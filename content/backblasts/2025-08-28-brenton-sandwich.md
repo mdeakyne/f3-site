@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-28-brenton-sandwich.md
 ---
 
+
 Backblast: Brenton Sandwich
 
 Where: #ao-ad-astra
@@ -66,4 +67,4 @@ Big Boi Sit-ups
 
 Format21-15-9 Style
 
-Do 21 reps of each exercise and 400m run, then 15 reps of each exercise and 400m run, then 9 reps of each exercise and 400m run.Ran out of time and ended up with an open top sammich.CoT: prayers for Minneapolis victims/first responders. Pepper: MiL. Broker dealer changes. Redemptive suffering.  Give your suffering up for an intention/purpose.Note. Operator error on name age and nickname! Sorry!Have a relaxing Labor Day weekend
+Do 21 reps of each exercise and 400m run, then 15 reps of each exercise and 400m run, then 9 reps of each exercise and 400m run.Ran out of time and ended up with an open top sammich.

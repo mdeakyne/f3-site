@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-19-deck-of-many-things.md
 ---
 
+
 Backblast: Deck of Many Things
 
 Where:
@@ -60,6 +61,4 @@ PAX vote False, Q False: Q 15 burpeesSome tricked us, but we caught Waco.Final:
 
 Hold horse pose 1 minute.
 
-1 minute plank with pushup countdown.CoT:
-
-The Joker is the f3 term for the voice inside that says "Take a break", or "Cut those corners". The group exists to call out jokers in each other and ourselves and to keep us all showing up and growing.
+1 minute plank with pushup countdown.

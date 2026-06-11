@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-02-15-better-together.md
 ---
 
+
 **Backblast**
 
 Better Together
@@ -60,6 +61,4 @@ Warmup:
 
 • 10 mericans & 1 burpee
 
-• 10 cross jacks & 1 burpeeCOT:  Better Together
-
-Whether it’s working on a project at work or putting together a workout, it’s sometimes good to have ideas from others.  They can point out things you need to know but weren’t aware of them, see things from another point of view, or make suggestions to improve.  We are better together than alone.
+• 10 cross jacks & 1 burpee

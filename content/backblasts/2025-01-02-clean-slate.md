@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-01-02-clean-slate.md
 ---
 
+
 ## Backblast: Clean Slate
 
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -49,7 +50,3 @@ The Thang:
 - 25 toe touches
 
 Ended on a 6 minute Indian Run.
-
-CoT: All the work you did in 2024 is over. You start with a clean slate. We are now 500 reps in, many many more to go. If you focus on a big event for your goal, often it feels far away and out of reach. Progress is just 'have I done it yet'. Instead focus on showing up and doing the work, and the numbers will follow.
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R): Dry January, so far so good on day 2.

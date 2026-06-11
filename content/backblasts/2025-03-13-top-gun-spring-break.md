@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-13-top-gun-spring-break.md
 ---
 
+
 Backblast: Top Gun Spring Break
 
 Where:
@@ -57,5 +58,3 @@ Top Gun:
 10 Deadlift
 
 20 minutes, followed by Circle of Mary.
-
-COT: Spring break is a break—or is it? Maybe it's just another opportunity to serve and lead. Got some stories to share tomorrow.

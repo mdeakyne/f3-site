@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-10-10-emom-habits.md
 ---
 
+
 Back Blast:  Emom, habits
 
 Where:
@@ -57,4 +58,4 @@ Emom loop x 4
 
 25 Overhead Press
 
-30 Calf RaisesCoT: Good habits can be easy to loose, but don't have to stay lost. Wherever we are slipping or have lost habits we would like to keep, it's not too late to pick them back up. Specifically would like to re-ininitate evening/bedtime routine with kids reading Psalms and praying that died out last Summer.My younger 3 were around when I was trying to time exercises when figuring out counts, and they all wanted to jump in (edited)
+30 Calf Raises

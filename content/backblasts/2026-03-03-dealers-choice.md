@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-03-dealers-choice.md
 ---
 
+
 **Backblast: Dealers Choice**
 **Where:** #ao-beehive
 **When:** 3/3/26 @0530
@@ -35,5 +36,3 @@ Using the exercise sheet, all pax draw a card, and do that exercise. 2's are wil
 
 **Mary:**
 Flutters till the end.
-
-**CoT:** Keeping @Bonnet and family in our prayers for their recent loss.

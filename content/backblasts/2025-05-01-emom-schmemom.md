@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-05-01-emom-schmemom.md
 ---
 
+
 Backblast: Emom Schmemom
 Where: #ao-ad-astra
 When: 05-01-25
@@ -39,8 +40,3 @@ Emom loop 3 times
 - 25 Overhead Press (Missed the first time, dropped to 10 during the 3rd loop)
 - 30 Calf Raises
 - 20 Tripep Dips
-
-COT:
-Patience/flexibility are typically strengths for me, but have not come as easily between a nighttime interfering with sleep and a buildup of kids all being difficult in new and different ways
-
-Farmers Only's son is about to go on his first boy scout campout without him

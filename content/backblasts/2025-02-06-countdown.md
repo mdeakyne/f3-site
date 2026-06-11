@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-02-06-countdown.md
 ---
 
+
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 
 When: 02/05/25 @0530
@@ -51,5 +52,3 @@ Mary:
 - American Hammer
 
 (Had to skip a little Mary to end on time)
-
-CoT: We are all at different places in the countdown. Dial up is set to have another kid shortly. Federal employees are confused and unsure what will happen.

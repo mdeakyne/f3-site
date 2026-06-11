@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-21-the-everdeck.md
 ---
 
+
 **BackBlast: TheEverDeck**
 **Where:** #ao-beehive
 **When:** 4/21/26 @0530
@@ -95,5 +96,3 @@ Mary:
 10 Hammer
 10 XYs
 10 Heels to Heaven
-
-CoT: Feedback on the workout. School coming to an end.

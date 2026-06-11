@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-26-new-kids-on-the-block.md
 ---
 
+
 **Backblast: New Kids on the Block**
 **Where:** #ao-ad-astra
 **When:** 02/26/26
@@ -51,8 +52,3 @@ Situps
 Hip Bridges
 Dead Bug
 Bird Dog
-
-**CoT:**
-Sick people - @404's wife.
-Waco's shoulders.
-@Big Toe feeling heavy.

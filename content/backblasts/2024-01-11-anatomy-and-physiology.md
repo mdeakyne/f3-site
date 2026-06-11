@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-01-11-anatomy-and-physiology.md
 ---
 
+
 **Backblast** “Anatomy and Physiology”
 
 > Where:
@@ -49,6 +50,4 @@ vault_path: 07 - F3/Backblasts/2024/2024-01-11-anatomy-and-physiology.md
 **Warmup**: Michael Phelps, Toe Tickler, Shoulder Pretzel, Flexor Pull**The Thang:**
 
 > Mosey to Gazebo
-> 
-
-**COT**: “Anatomy and Physiology”In building muscle through weight training, there are a few key variables: speed, angle, and load on every exercise. Speed is the foundation, and slower is always better. This lets you focus on the specific muscle group you’re working, and you can improve the other variables from there. Know your body, establish that mind-muscle connection, and get stronger. This same slow and focused approach applies to anything we want to improve in our lives. Use it.Coffeeteria’d.
+>

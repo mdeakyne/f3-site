@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-05-08-love-the-suck.md
 ---
 
+
 **Backblast: Love the Suck**
 🗓️ **Date:** 05/08/25
 📍 **AO:** Ad Astra👟 
@@ -53,5 +54,3 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-08-love-the-suck.md
 - Crawl Bear → 10 Werkins
 - Bear Crawl → 10 Diamond Merkins
 - Crawl Bear → 10 HR Merkins
-
-**COT (Circle of Trust):** Our culture calls us to comfort. Love discomfort. Seek it out. That's the direction of growth. [@404](https://f3lawrence.slack.com/team/U07G685DW2K) setting boundaries with MIL and celebrating his son being cleared for sports.

@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-05-20-its-up-to-flute.md
 ---
 
+
 Backblast: It's up to
 
 [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
@@ -70,10 +71,4 @@ Burpees.Cooldown:
 
 10 Arm circles backward.
 
-10 Shoulder tapsCoT:
-
-Keep pressing on, even when things are hard and you feel gasses. Look for opportunities to step in and serve.
-
-Dizzy : Thankful for the group.
-
-Everyone: Thankful flute didn't show up this time around.
+10 Shoulder taps

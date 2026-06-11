@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-10-12-better-every-day.md
 ---
 
+
 Backblast: “Better Every Day”
 Date: 10/12/23
 AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -44,5 +45,3 @@ The Thang
 Cool Down/Mary
 
 - Sharing is Caring 1x15
-
-COT:Better Every Day means giving intentional effort to our Faith, Finances, Fitness, Relationships, Work, or any other area of life each and every day. The goal is to get better little by little and not be swayed or tempted by the shortcuts that the world may throw at us.Coffeeteria: Yes.

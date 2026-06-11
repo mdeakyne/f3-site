@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-05-infinity-loop.md
 ---
 
+
 Backblast: Infinity Loop
 
 Where: #ao-beehive
@@ -54,8 +55,4 @@ Red- Start with 10 front Raises then Imperial blockers March to Blue
 
 Blue-Rifle Carry back to RedQ is first rabbit. Picks next designated rabbit. Can’t pick same person twice. Once rabbit completes rifle carry back the round resets on a 30 second rest then pax starts back at the first exercise.Mary
 
-Moby - Flower (Leg Raises to up and down hold on down)COT: I am coming back after some time off and traveling to the same old work and routine. Sometimes it feels like you are on an endless grind of the same work.
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-got his first eggs from his chickens!Glad to have everyone back this week.
+Moby - Flower (Leg Raises to up and down hold on down)

@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-04-17-turn-it-up-to.md
 ---
 
+
 Backblast: Turn it up to
 
 Where: #ao-ad-astra
@@ -43,6 +44,4 @@ The thang:
 
 11s
 
-Run to the end of the parking lot and do 11 burpees, run back and do one hodor. Repeat doing 10 burpees and 2 hodors, then 9 burpees and 3 hodors, etc. until the last round doing 1 burpee and 11 hodors.Second set using lunges and scorpion dry docks until time (a little over half way)COT:
-
-Working on patience waiting for Noah to start making progress trusting his left leg after being cleared to put weight on itMother in law's big move next door is a week from Saturday
+Run to the end of the parking lot and do 11 burpees, run back and do one hodor. Repeat doing 10 burpees and 2 hodors, then 9 burpees and 3 hodors, etc. until the last round doing 1 burpee and 11 hodors.Second set using lunges and scorpion dry docks until time (a little over half way)

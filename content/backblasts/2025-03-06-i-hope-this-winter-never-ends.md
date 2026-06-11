@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-06-i-hope-this-winter-never-ends.md
 ---
 
+
 **Backblast:** I hope this winter never ends!
 **Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When:** 03-06-2025 @ 05:30
@@ -40,5 +41,3 @@ Incinerators: Starting at 10, 9, 8
 - blockends
 - upright rows
 - dips
-
-COT: Despite the title, I do want this winter to end. There are moments in life when we face challenging times, and when we're in the middle of them, it feels like they'll never end. However, they always do. I'm reminded of the saying, "Tough times never last, but tough people do." Big Toe is in the middle of selecting candidates for his work. Flute just hired an intern. Waco is figuring out what he wants to do for his next chapter in life.

@@ -20,6 +20,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-03-21-sometimes-the-small-things-do-matter.md
 ---
 
+
 **Backblast:**  Sometimes ****the small things do matter
 **Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When:** 3/21/2024 &05:30
@@ -48,5 +49,4 @@ vault_path: 07 - F3/Backblasts/2024/2024-03-21-sometimes-the-small-things-do-mat
 - Life alerts
 - Leg lifts
 
-> CoT:  Sometimes the small things do matter because they can lead to bigger and more impressive things.  Earlier this week I went to vote in the primary but because we already know who is running for president, it not a big deal.  But when I gave the volunteer my drivers license, she told me that it expired and that turned out to be a big deal.  And so when was supposed to be a small thing and should be done in two seconds lead to something much bigger that took up part of my afternoon.
 >

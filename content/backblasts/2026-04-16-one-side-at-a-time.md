@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-16-one-side-at-a-time.md
 ---
 
+
 **Backblast: One (side) at a time**
 **Where:** #ao-ad-astra
 **When:** 04/16/2026 @5:30AM
@@ -41,9 +42,3 @@ Tabata, one-sided exercises. Half a song on one side, half on the other, with a 
 - Side Plank leg lift
 - Half song (4 cycles) WWIII situps, other half thrusters
 - 2 cycles American Hammer to hit time
-
-**COT:**
-It is good to be able to leverage strengths to compensate for weaknesses, but also good to isolate and work weaknesses on their own.
-
-Dizzy- Brooklyn Marie starting to sleep through the night.
-Big Toe- Navigating new freedoms/boundaries as kids get older.

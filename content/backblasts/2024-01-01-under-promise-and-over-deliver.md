@@ -18,6 +18,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-01-01-under-promise-and-over-deliver.md
 ---
 
+
 **Backblast** “Under-promise and Over-deliver”
 
 > Where:
@@ -63,6 +64,4 @@ vault_path: 07 - F3/Backblasts/2024/2024-01-01-under-promise-and-over-deliver.md
 **Cool Down:**
 
 > 3-Speed
-> 
-
-**COT**: “Under-promise and Over-deliver”The plan for this year: under-promise and over-deliver. Focus on habits and processes, not outcomes and big resolutions. We establish a reputation within ourselves with every goal we set and either meet or fall short of. Why not under-promise and over-deliver to ourselves this year and see what’s
+>

@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-09-04-amrap-loops.md
 ---
 
+
 Backblast: AMRAP LOOPS
 
 Where: #ao-ad-astra
@@ -66,5 +67,3 @@ Home Base:
 
 Completed 2 rounds in 40 minutes.
 No time for Mary.
-
-COT: Man in the Glass — don't worry about others and don't cheat yourself. It's you against you.

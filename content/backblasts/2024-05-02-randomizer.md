@@ -18,6 +18,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-05-02-randomizer.md
 ---
 
+
 Backblast: Randomizer
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 05/02/24 0530
@@ -32,8 +33,4 @@ The Thang:
 - Rotate through exercises until back to og spot.
 - Repeat x4.
 
-Stretching.CoT:
-
-- Big Toe had to replace another major appliance.
-- Sawdust getting married Oct. 5th
-- Litterbox daughter graduating, unsure of next steps.
+Stretching.

@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-05-19-mini-murph.md
 ---
 
+
 **Backblast: Mini-Murph**
 **Where:** #ao-beehive
 **When:** 05/19/26 @0530
@@ -49,6 +50,3 @@ Mary
 • 3x 10s Hollow Body Hold
 • 10 Heel Press Stretch
 • 10 XYs
-
-COT: @Big Toe rereading Q-source. Trying to eat right. Trying to stay accountable to the scale and the tape.
-@404 son healing up. @Big Toe got through a week, getting through another week. @Toto big backpacking trip. @Farmers Only traveling Thursday to Chicago.

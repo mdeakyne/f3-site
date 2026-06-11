@@ -17,6 +17,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2025/2025-09-11-classic-tabata.md
 ---
 
+
 Backblast: "Classic" Tabata
 
 Where:
@@ -62,5 +63,3 @@ Heavy Squat
 Burpees
 
 Calf Raises
-
-CoT: Prayer for the murder of Charlie Kirk, Dizzy and Big Toe getting back into Rucking, That we as men would work to serve and engage each other, our families and our communities.

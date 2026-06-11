@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-11-23-turkey-trot.md
 ---
 
+
 Backblast:
 AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 Q: [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)
@@ -43,5 +44,3 @@ The Thang:
 Cool Down:
 
 - Yack
-
-COT: Yes.
