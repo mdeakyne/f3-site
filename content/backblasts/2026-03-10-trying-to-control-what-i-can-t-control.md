@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-10-trying-to-control-what-i-can-t-control.md
 ---
 
+
 **Backblast: Trying to control what I can't control.**
 **Where:** #ao-beehive
 **When:** 3/10/26 @0530
@@ -49,12 +50,3 @@ Cones of Confusion (or 10&1 but without the 1)
 5 Mike Tyson's
 20 American Hammers
 15 Bird Dogs
-
-**CoT:**
-I have been stressed lately about things that I don't have control over. My wife reminded me to stop worrying about them and to take time to pray and put my trust in God because he has control over everything.
-
-@404 Thankful that @404 is back and the flu is over at his house. They decided to add to the family by getting a puppy.
-
-@Bonnet continue to send thoughts and prayers to he and his family.
-
-@Waco wishing him best of luck with his firefighter exam.

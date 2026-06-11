@@ -22,6 +22,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2023/2023-09-21-harder-than-last-time.md
 ---
 
+
 **Backblast!** 
 “Harder than last time.
 ”**DATE**: 2023-09-21
@@ -46,5 +47,3 @@ vault_path: 07 - F3/Backblasts/2023/2023-09-21-harder-than-last-time.md
 .
 
 - Indian Run, at speed
-
-**COT:**It’s all about working harder and improving every time you go after something. Doesn’t mean it’s more difficult, but it does mean we are always aiming to improve.**Coffeeteria**: Yes.

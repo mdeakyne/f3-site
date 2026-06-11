@@ -20,6 +20,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-02-wow-part-2-chain-gang.md
 ---
 
+
 **Backblast: WoW Part 2 - Chain Gang**
 **Where:** #ao-ad-astra
 **When:** 04/02/2026 @5:30AM
@@ -70,5 +71,3 @@ Block 3 — Cardio + Pull (Modified)
 Block 4 — Finisher - Everyone Rifle Carries Block - Quick Walk
 - Blockees × 5
 10 Burpees to Time.
-
-**COT:** Lots of aches and pains, everyone trying to get healed up to move to the next adventure. Example from the workout, sometimes we try something new, some of it works, some of it doesn't, but we learn each time. We take it back to the drawing board and work out the kinks, and try again. Nature of the Game.

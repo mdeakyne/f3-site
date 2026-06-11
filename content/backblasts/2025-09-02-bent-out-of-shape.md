@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-09-02-bent-out-of-shape.md
 ---
 
+
 **Backblast**: Bent out of Shape 🤸‍♂️ 🦴
 **Where**: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
 **When**: 09/2/2025 @ 05:30
@@ -58,5 +59,3 @@ The Thang:
 🧎‍♂️ Walk Out Pushup x10
 
 Repeat to Time
-
-COT: Good to be back with a group of guys all pulling for a common goal. Support for [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) as he explores what the future of work looks like for him. [@404](https://f3lawrence.slack.com/team/U07G685DW2K) started up BBBS - so far so good.

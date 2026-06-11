@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-10-31-gaga-lloween.md
 ---
 
+
 Backblast: Gaga-lloween
 
 Where:
@@ -42,6 +43,3 @@ PAX:
 The Thang:
 
 Several rounds of Gagaball - with Waco testing out "Just 10 reps" punishments.
-CoT:
-
-Life gives you a lot of setbacks. Forgot bacon, got bacon. It was frozen, thawed it. Brought coffee, spilled all over the car. Do what you can to keep going - lean on the people around you.

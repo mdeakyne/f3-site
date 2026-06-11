@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-11-27-turkey-games.md
 ---
 
+
 Backblast: Turkey Games
 
 Q:
@@ -53,6 +54,4 @@ Round 3: 10 burpeesRound 3: UltimateDrop: 5 merkins.
 
 Interception: 5 burpees.
 
-Score: 20 SSH.CoT: Happy Turkey DayVideo:
-
-[https://photos.app.goo.gl/U1NZFidj2SezfAFU9](https://photos.app.goo.gl/U1NZFidj2SezfAFU9)
+Score: 20 SSH.

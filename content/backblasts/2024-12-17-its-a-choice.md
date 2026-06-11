@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-12-17-its-a-choice.md
 ---
 
+
 Backblast: It's a ChoiceWhere: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)When: 12/17/24 @0530Q: [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)PAX:[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K)**Warmup**:
 
 - 10 4 count SSH
@@ -29,5 +30,3 @@ Backblast: It's a ChoiceWhere: [#ao-beehive](https://f3lawrence.slack.com/archi
 - 15 Jumping Lunges
 - 15 rows
 - 60 second plank
-
-COT: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) got a lingering cough and is hoping to avoid going to the doctor. [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD) Thankful for the group and ability to show up and mess it up.

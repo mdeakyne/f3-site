@@ -24,6 +24,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-09-14-one-does-not-simply.md
 ---
 
+
 **Backblast!** “One does not simply…”
 **DATE**: 2023-09-14
 **AO**: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -44,5 +45,3 @@ vault_path: 07 - F3/Backblasts/2023/2023-09-14-one-does-not-simply.md
 - Army crawl line, last PAX does 5 Blockees then takes the lead
 - Incinerator Relay, down from 7
 - HS, Blockee, Partner Carry down/back
-
-**COT:**Hard decisions are made simple when we have faith, trust God, and do them together.**Coffeeteria**: Yes.

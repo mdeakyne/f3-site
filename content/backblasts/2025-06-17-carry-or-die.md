@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-06-17-carry-or-die.md
 ---
 
+
 Carry or die
 
 Where: #ao-beehive
@@ -48,9 +49,3 @@ Exercise:
 Mary:
 
 Various
-
-COT:
-
-Decide what to carry and to not carry. Release that which you cannot control. [@404](https://f3lawrence.slack.com/team/U07G685DW2K) prayers for surgery in coming months.
-
-Thanks for hanging with my first Q!

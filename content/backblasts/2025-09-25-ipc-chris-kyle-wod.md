@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-09-25-ipc-chris-kyle-wod.md
 ---
 
+
 Backblast: IPC - Chris Kyle WOD
 
 When: 09/25/25 @ 0530
@@ -32,28 +33,3 @@ The Thang:
 40 Decline Push-ups
 Every 5 mins: Run 25 yds, 5 burpees, run back.
 Go for 40 minutes.
-
-CoT: This is named after Chris Kyle. He served 4 tours (# exercises) and had 160 confirmed kills (# reps). [Chris Kyle WOD – IPC 2025 – Week 3 - F3 Greenwood](https://f3greenwood.org/all/ironpax-challenge/chris-kyle-wod-ipc-2025-week-3)
-
-To enter your reps, do so here:
-[IronPAX Challenge Weekly Submission](https://docs.google.com/forms/d/e/1FAIpQLSdLvI4x8L0jbypKukQVe4VbpW_2MspM94YA7scZvVmDJpBjHg/viewform)
-
-We are part of something greater than ourselves. This group pushes us as individuals, just as the F3 community pushes our group.
-
-Toto had a great wedding.
-Big Toe has a wedding this weekend.
-Celebrating Dial Up coming twice this week! (edited)
-
-**F3 Greenwood**
-
-[**Chris Kyle WOD – IPC 2025 – Week 3 - F3 Greenwood**](https://f3greenwood.org/all/ironpax-challenge/chris-kyle-wod-ipc-2025-week-3)
-
-We hope you all enjoyed the 8 Track from F3 Cleveland. SO, we've had a skinny runner friendly workout with Feeks and last week we returned to our roots with a more normal bootcamp type workout, so, this week, we bring one for the Clydesdales among us. This week, we give you the Chris Kyle […]
-
-**Written by**
-
-ericmevans
-
-**Est. reading time**
-
-3 minutes

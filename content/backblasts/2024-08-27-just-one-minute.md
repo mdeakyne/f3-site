@@ -17,6 +17,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-08-27-just-one-minute.md
 ---
 
+
 Backblast:  Just one minute
 Where: #ao-beehive
 When: 08-27-24 @ 05:30
@@ -44,8 +45,3 @@ Mary:
 
 - 20 XYs (4 count)
 - 20 Freddie Mercury (4 count)
-
-CoT:
-
-- Sawdust has all of the life transitions going on now or coming soon.
-- Flute shared about the start of the semester at KU.

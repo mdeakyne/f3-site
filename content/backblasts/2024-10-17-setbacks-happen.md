@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-10-17-setbacks-happen.md
 ---
 
+
 Backblast:  Setbacks Happen
 Where: #ao-ad-astra
 When: 10-17-2024 @ 05:30
@@ -40,6 +41,3 @@ The Mary
 20 Freddy Mercurys
 20 Jane Fondas
 20 Flutter kicks
-
-Cot:  @Big Toe reminded us that we have accomplished a lot since we started meeting.  He has been going through the history on slack and organizing it into an easy to us webpage.  And it looks great!
-Setbacks will happen.  For example when I went on vacation, I ate too much and didn’t exercise enough.  But I am getting back into my routine with the help of the group.

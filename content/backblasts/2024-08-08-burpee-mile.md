@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-08-08-burpee-mile.md
 ---
 
+
 Back Blast: Burpee Mile
 
 Where:
@@ -65,6 +66,4 @@ Elf on the shelf
 
 Cossack squat (both sides)
 
-XY’sCOT:
-
-Run your race. The guy next to you might be running the same race and going in the same direction, but don’t lose focus on the things you’ve been called to be responsible to. The performance of the guy next to you should lead to neither pride nor despair/shame.Sawdust: shared about stress related to wedding planning.Next Thursday will be Kilo’s virgin Q!
+XY’s

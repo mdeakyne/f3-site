@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-05-22-modified-ladders-good-things-come-in-3s.md
 ---
 
+
 Backblast:  Modified Ladders (Good things come in 3's)When: 05/22/2025 @ 05:30
 Where:  [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)Q: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)PAX: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) [@Airball](https://f3lawrence.slack.com/team/U08SCS8FRAP)Count: 6Warmup:10 - SSH (4 count)10 - Windmills (4 count)5 - Wave of 'Murkin'sThe Thang: (Modified ladders)
 
@@ -46,10 +47,3 @@ Exercises:
     - Bear Crawl
     - Lunge Walk
     - Crab Walk
-
-COT:
-
-- Purpose. What is it, where can we find it? The F3 stance on Faith (purpose):
-    - **Faith (The Dynamite):** This refers to a broader sense of purpose, a recognition that there is something more important than individual desires, and a commitment to addressing it.
-- [@Airball](https://f3lawrence.slack.com/team/U08SCS8FRAP) mention of writing things down, and striving to define a purpose together with family.
-    - In this vain - attached are the sticky notes on my fridge, I see everyday on my way to nourishment (ignore the mileage costs to each common destination, that is for "others" in the family)

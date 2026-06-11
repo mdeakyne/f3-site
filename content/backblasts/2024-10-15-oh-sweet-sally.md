@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-10-15-oh-sweet-sally.md
 ---
 
+
 Back Blast: Oh! Sweet Sally.
 
 When: 10/15/24
@@ -48,12 +49,4 @@ Listening to “Bring Sally Up” we will complete each movement 2x in order. G
 
 3) Over head press
 
-4) Glute BridgesCoT:
-
-[@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
-
-family camping trip in Arkansas. Hoping for functional van!
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-taking lead on migrating all lost data from the two sites into a new website.
+4) Glute Bridges

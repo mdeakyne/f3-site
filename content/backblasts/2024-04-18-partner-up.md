@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-04-18-partner-up.md
 ---
 
+
 Backblast: Partner up!
 
 Where: #ao-ad-astra
@@ -61,4 +62,4 @@ partner 1: shoulder front raises 15
 
 partner 2: Mike Tyson's (until partner is back)
 
-joint exercise: Leg raises 30sharks and meadows for the last 10 min.CoT: As we move along in our journey of life as God inteded, it can sometimes be tough. Therefore, as we do so we should seek "partners" that can help us in our life and walk with Christ. It is easier to share that load with somebody than to try and do it by yourself.
+joint exercise: Leg raises 30sharks and meadows for the last 10 min.

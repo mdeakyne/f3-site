@@ -22,6 +22,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2023/2023-10-05-concentration-is-key.md
 ---
 
+
 **Backblast:**
 
 “Concentration is Key”
@@ -80,11 +81,3 @@ Diamond Push Ups, 4x10
 - Single arm Rows, 4x10• Concentration curls, 4x8
 - Concentration rows, 4x8• Dips, 4x8
 - Down Unders, 4x8• Concentration Curls, Failure +5 assisted past failure reps 2x• Weighted Mosey to parking lot.• 1:30 plank.
-
-**COT:**
-
-Life throws many things at us. And it’s easy to split our attention and try to do EVERYTHING all at once. But it’s important to remember that concentration and intentionality bring us more and better results. Especially in our relationship with Christ. Give God your whole attention and be intentional in your relationship with HIM, and see the positive results in all other areas of your life.
-
-**Coffeeteria:**
-
-Yes.

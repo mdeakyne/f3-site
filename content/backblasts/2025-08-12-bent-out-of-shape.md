@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-12-bent-out-of-shape.md
 ---
 
+
 **Backblast**: Bent out of Shape 🤸‍♂️ 🦴
 
 **Where**: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
@@ -56,8 +57,3 @@ The Thang:
 🧎‍♂️ Walk Out Pushup x10
 
 Repeat to Time
-
-COT: Working on weaknesses. Sometimes it makes sense to pick an area and just start, see how bad it really is, and push through. Calibrate, try again. Many kids have their first days of school. Remember this is you against you. We're here to support each other as you make yourself better alongside other men—not to compete.
-
-Bonus: If you need to work on ground movements, check out MovesMethod YouTube Channel
-[https://www.youtube.outube.com/@Movesmethod](https://www.youtube.com/@Movesmethod)

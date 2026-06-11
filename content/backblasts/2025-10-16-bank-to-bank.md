@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-10-16-bank-to-bank.md
 ---
 
+
 Backblast: Bank to Bank
 
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -49,7 +50,3 @@ Cover the 6 at all points.
 - American Hammer (20)
 - Flutter Kicks (20)
 - Shoulder Taps (20)
-
-**CoT:** It's okay to be the one who needs a pickup. Showing up matters. Ask for help and let others contribute.
-
-First time I got blisters on my hands.

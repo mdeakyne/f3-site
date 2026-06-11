@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-07-15-theres-something-about-mary.md
 ---
 
+
 # There's Something About Mary
 
 **AO:** Beehive
@@ -115,9 +116,3 @@ Start at 5 reps, add 2 each round:
 **Goal:** Climb as high as you can before time is called.
 
 ---
-
-## COT
-
-In an effort to maintain balance, sometimes we need to dive into something that we haven't done in a while. Tear off the Band-Aid, find the weak spots so we can strengthen them little by little.
-
-'s son is in CO at camp (Boy Scouts). Week of kid-free adult time and hopefully a safe trip to CO to meet up for parents day!

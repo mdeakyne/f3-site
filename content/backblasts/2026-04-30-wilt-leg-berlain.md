@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-30-wilt-leg-berlain.md
 ---
 
+
 **Backblast: Wilt Leg-berlain**
 **Where:** #ao-ad-astra
 **When:** 04/30/2026 @5:30AM
@@ -58,4 +59,3 @@ Use ~100 feet of open space (field, parking lot, etc.). Each movement pair total
 • 5 Squats
 • 5 Plank Jacks
 • 5 Glute Bridges
-COT: Thoughts and Prayers go out to @Farmers Only and his mom, @Big Toe has some friends starting their battle with cancer, keeping their family in our prayers, and also for @Bonnet's Daughter, after a fall at the dentist. Also, thanks for @Casio's niece who is settling back into the groove at home w/ baby, sig-o, and a reliable TownCar.

@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-04-01-supersets.md
 ---
 
+
 Backblast:
 
 Where:
@@ -72,4 +73,4 @@ LungesThe Thang: SuperTuesday
 
 •	9 (per leg) Bulgarian Squats
 
-•	15 Good MorningsCOT: Some things were shared and I forgot. Feel free to comment what you shared 🙂
+•	15 Good Mornings

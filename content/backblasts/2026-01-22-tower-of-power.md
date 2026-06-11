@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-01-22-tower-of-power.md
 ---
 
+
 **Backblast: Tower of Power**
 **Where:** #ao-ad-astra
 **When:** 01/22/26
@@ -44,12 +45,3 @@ Once everyone has done each station twice, fast-walk (I can't run yet) a half lo
 - Squats
 - Bear Crawl
 - Heels to Heaven
-
-**COT:**
-FNG Tanner going to Russia next week
-
-Dizzy's wife due soon
-
-404 managing various kids emotional needs
-
-My phone froze after the circle, so just the video for this one

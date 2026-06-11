@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-10-you-asked-for-it.md
 ---
 
+
 Backblast: You asked for it!
 Q: [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
 PAX: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
@@ -37,4 +38,4 @@ Warm up:Static stretches (I don’t know good names for these!)
 - Bank 100 thrusters - other partner bear crawls
 - Bank 100 elf on the shelf - other partner murder bunnies
 
-Mary:Jane Fonda (20 on 4 count)CoT:You asked for it! Usually the way that God produces the growth that we desire is through situations that are uncomfortable and may not be what we thought we were asking for. With a God who is in control, nothing is wasted. He is producing fruit especially through hardship.[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) has two interviews this week![@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) is feeling discouraged with the work of building a committed community within Cru
+Mary:Jane Fonda (20 on 4 count)

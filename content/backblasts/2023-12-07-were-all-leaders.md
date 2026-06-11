@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-12-07-were-all-leaders.md
 ---
 
+
 Late backblast.
 
 PAX: Leaks,
@@ -37,7 +38,3 @@ Theme: We're all leaders
 Big Toe lead warm ups.
 
 We all went around and lead one exercise at a time until we were done.
-
-CoT: There isn't just one man leading and everyone else following. We are all called to lead and meant to lead. When whoever volunteered to lead isn't able, you must be able to pick up the slack as a man or as a team.
-
-Coffeeteria: Yes. Thank you Big Toe.

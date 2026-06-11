@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-05-still-undecided.md
 ---
 
+
 **Backblast: Still Undecided**
 **Where:** #ao-ad-astra
 **When:** 03/05/2026
@@ -37,5 +38,3 @@ Rounds are 5 minutes. At the round all PAX run a large loop, and then resume the
 - 10 OH press
 - 5 blockers
 - 10 heavy squats
-
-**COT:** I'll be out next Tuesday doing Fire 1 and Hazmat skills testing in KCK. Not optimistic about testing with strangers, on unknown equipment, with no pretest walk down own prep. Just looking for peace on that.

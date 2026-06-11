@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-06-19-welcome-back-flute.md
 ---
 
+
 Backblast: ~~what goes up~~ Wilt Chamberlain
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 06-19-2025 @ 0530
@@ -38,10 +39,3 @@ Round 1 (With Rifle Carries between):**
 - 100 Calf Raises
 - 100 Side-Straddle Hops
 - 100 Big Boys *(time ran short — not completed)*
-
-CoT:
-[@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) was back with us, and I upheld my promise to share the feeling of the last wilt chamberlain with him. Here's hoping the emergencies are over, and his summer gets back to routine.
-
-[@404](https://f3lawrence.slack.com/team/U07G685DW2K) Oldest is trying to figure out school. Being in the world, but not of the world. Asking for wisdom.
-
-I'm not sure which is bothering me more today: My shoulders or my legs.

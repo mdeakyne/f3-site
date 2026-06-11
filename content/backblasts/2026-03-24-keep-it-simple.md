@@ -20,6 +20,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-24-keep-it-simple.md
 ---
 
+
 **Backblast: Keep it simple**
 **Where:** #ao-beehive
 **When:** 3/24/26 @0530
@@ -54,8 +55,3 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-24-keep-it-simple.md
 - 15 Freddy Mercury
 - 10 WWIII
 - 20 flutter kicks
-
-**CoT:**
-Shoutout to Waco, Big Toe, and 404 for getting people here!
-Dizzy- lack of sleep, but still came! Prayers for energy and for daughter's health.
-Bonnet- feels like they can't catch a break. Hard season of life.

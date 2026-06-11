@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-01-29-just-10-reps-revisit.md
 ---
 
+
 **Backblast: Just 10 reps - revisit**
 **Where:** #ao-ad-astra
 **When:** 01-29-26
@@ -53,5 +54,3 @@ Repeat Movement round and Slow Motion round until time.
     - Dead Lift
     - Heavy Squat
     - Dry Docks
-
-**COT:** Keeping @Dizzy in our prayers as he prepares to welcome the new addition this weekend. @Big Toe in search of the dependable steed for a 2 car family, and @404's neighbor battling pneumonia as an older person, all in need of our thoughts and prayers.

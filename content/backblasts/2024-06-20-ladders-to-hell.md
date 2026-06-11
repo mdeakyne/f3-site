@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-06-20-ladders-to-hell.md
 ---
 
+
 **Backblast: Ladders to Hell
 Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When:** 06-20-24 @ 0530
@@ -60,5 +61,3 @@ PAX:** [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) [@Waco](https:/
 4. Last man squating - call out (inclined diamond pushups) 10x
 5. ~~Plank to failure~~
 6. ~~10 sit-ups~~
-
-**COT:**Run your own race. Make sure the ladder you climbing is leaning on a wall you care about............

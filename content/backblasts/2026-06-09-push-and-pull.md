@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-06-09-push-and-pull.md
 ---
 
+
 Backblast: Push and Pull
 Where: #ao-beehive
 When: 06/09/26 0530
@@ -57,8 +58,3 @@ Mary:
 10 Freddy Mercury
 10 American Hammer (2 count)
 5 WWIII situps
-
-CoT:
-Competition pushes us, Cooperation pulls us. This group has a push and pull helping us to keep consistent and show up.
-404's M (Main relationship) is suffering a few health issues. Hoping doctors can provide a path forward.
-Waco's shoulder, that it would heal.

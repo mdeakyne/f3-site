@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-12-02-running-in-a-winter-wonderland.md
 ---
 
+
 Backblast: Running in a Winter WonderlandWhere: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)When: 12/0225 @ 05:30Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)PAX: @Waco, @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32),Count: 4**The Warmup**:
 
 - 5 Burn down side shuttle hops
@@ -32,4 +33,4 @@ Backblast: Running in a Winter WonderlandWhere: [#ao-beehive](https://f3lawrenc
 - 7 Curls
 - 7 Thrusters
 
-Leroy Jenkins5 side shuttle hops and then sprint to the other side of the parking lot and back.**COT**:  It was a cold morning but we were able to push each other to work together in the snow to get it done.[@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) and family spent part of Thanksgiving holiday remembering his brother-in- law.(Due to technical difficulties with the cold weather, my phone did not take the video.)
+Leroy Jenkins5 side shuttle hops and then sprint to the other side of the parking lot and back.

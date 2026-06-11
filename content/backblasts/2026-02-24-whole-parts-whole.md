@@ -19,6 +19,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2026/2026-02-24-whole-parts-whole.md
 ---
 
+
 **Backblast: Whole Parts Whole**
 **Where:** #ao-beehive
 **When:** 2/24/26 @0530
@@ -59,9 +60,3 @@ Shoulder taps
 American hammer
 Side planks
 Jane Fondas
-
-**CoT:** I was reminded that if we focus on one area like work too much, then other parts might be neglected like family, or rest. But with me, I have been feeling down because of my Mom is in a nursing home. As much as I've been trying to not let it affect the other parts like work it's been tough lately.
-
-Prayers to @Toto's brother-in-law's brother.
-And prayers to @Big Toe's father-in-law.
-Sending strength to @404 and family to get over the flu.

@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-04-25-slow-and-steady.md
 ---
 
+
 **Backblast:** Slow and Steady
 **Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **When:** 04-25-24 @0530
@@ -41,5 +42,3 @@ vault_path: 07 - F3/Backblasts/2024/2024-04-25-slow-and-steady.md
 - 20 situps
 - 20 russian twists
 - 30 second plank
-
-**COT:** Slow and Steady”Better is the end of a thing than the beginning thereof: and the patient in spirit is better than the proud in spirit.“‭‭Ecclesiastes‬ ‭7‬:‭8‬ ‭KJV‬‬”And let us not be weary in well doing: for in due season we shall reap, if we faint not. As we have therefore opportunity, let us do good unto all men, especially unto them who are of the household of faith.“‭‭Galatians‬ ‭6‬:‭9‬-‭10‬ ‭KJV‬‬”For we are saved by hope: but hope that is seen is not hope: for what a man seeth, why doth he yet hope for? But if we hope for that we see not, then do we with patience wait for it.“‭‭Romans‬ ‭8‬:‭24‬-‭25‬ ‭KJV‬‬God has been working on my patience and presentness. I often get lost in the future and the hopes of times to come, but by the grace of God I want to get better at being here now. My encouragement is to stay strong in the present and continue to seek God in all aspects trusting that He is leading you to better than hopes could dream up. Our hopes may not be realized any time soon, but we know that our God provides and loves us. Continue on, slow and steady.

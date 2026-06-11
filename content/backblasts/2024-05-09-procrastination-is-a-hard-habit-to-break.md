@@ -20,6 +20,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-05-09-procrastination-is-a-hard-habit-to-break.md
 ---
 
+
 **Backblast:** Procrastination ****is a hard habit to break.
 **Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 **Q**: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
@@ -42,5 +43,3 @@ Incinerators
 - Shoulder boulders
 - Life alerts
 - Flutter kicks
-
-COT: Second String completed his first half marathon.  Flute is officiating his first wedding.  Seafood is moving on to the next chapter in his life in KC.  We wish him well.Procrastination is a hard habit and I seem to do it with new things or things that I don’t like to do. For example, I am doing a presentation about my ancestor that was in the civil war to a group of civil war enthusiasts.  Even though I’ve know about it for months, I haven’t started and it’s due to a couple of weeks.

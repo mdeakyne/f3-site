@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-11-21-big-toe-bata.md
 ---
 
+
 Backblast: Big Toe-bata
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 11/21/24 @0530
@@ -33,5 +34,3 @@ Go between harder / weighted and lighter / body wieght
 - Hole curls | far grip curls.
 - Shoulder taps | London bridges
 - Jumping jacks.
-
-CoT: 20th Q this year! Keep showing up and doing the work.

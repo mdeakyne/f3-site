@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-12-16-musical-chairs.md
 ---
 
+
 Warmup:
 
 - Grass Pullers
@@ -52,5 +53,3 @@ The Stations:
     - Bonnie Blairs 20 / Squats 20
 - Station 6
     - Flutter Kicks 4cnt x 20 / Heels to Heaven 20
-
-COT: Keeping [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) and his mom in our prayers as they are in a stable period, also [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) as he transitions to a new company and has a long break coming up.  It was also great to see [@404](https://f3lawrence.slack.com/team/U07G685DW2K) without his walking stick today, the road to recovery seems to be going well.

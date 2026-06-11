@@ -21,6 +21,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2023/2023-11-16-wine-vs-workout.md
 ---
 
+
 AO:
 
 [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -78,4 +79,4 @@ Starting from 10:
 
 Downward Dog
 
-Greatest Stretch on EarthCOT:  Wine vs WorkoutWith wine or Jager bombs,  you can feel the effects right way.  However with exercise it takes awhile to notice the benefits.  And it’s easy to get discouraged.  But working out with a group makes it easier to stay on track.
+Greatest Stretch on Earth

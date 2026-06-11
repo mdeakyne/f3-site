@@ -21,7 +21,6 @@ For each channel, read the recent message history. Identify messages that are **
 - A title line starting with "Backblast:"
 - Where, When, Q, PAX fields
 - Workout description
-- COT (Circle of Trust) notes
 
 ## Step 3 — Determine which backblasts are missing
 
@@ -50,7 +49,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/YYYY/YYYY-MM-DD-slugified-title.md
 ---
 
-(body of backblast from Slack, cleaned up — remove Slack user ID mentions like <@U123>, replace with display names)
+(body of backblast from Slack, cleaned up — remove Slack user ID mentions like <@U123>, replace with display names; stop before any COT/Circle of Trust section and do not include it)
 ```
 
 Rules:

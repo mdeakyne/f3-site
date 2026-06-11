@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-19-this-is-my-coupon.md
 ---
 
+
 **Backblast: This is my Coupon**
 **Where:** #ao-ad-astra
 **When:** 03/19/2026
@@ -57,8 +58,3 @@ PAX-led Mary while @Breakfast Pizza held in a Splash Merlot!
 
 **ANNOUNCEMENTS:**
 Avoid drinking coffee on an empty stomach before a BD! Breathing during the EXO also helps!
-
-**COT:**
-Shared a page from "The Daily Stoic" and discussed its personal relevance.
-*The best retreat is in here, not out there.*
-"People seek retreats for themselves in the country, by the sea, or in the mountains. You are very much in the habit of yearning for those same things. But this is entirely the trait of a base person, when you can, at any moment, find such retreat in yourself. For nowhere can you find more peaceful and less busy retreat than in your own soul - especially if on close inspection it is filled with ease, which I say is nothing more than being well-ordered. Treat yourself often to this retreat and be renewed." - Marcus Aurelius, Meditations, 4.3.1
