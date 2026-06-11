@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-12-just-5-reps-oops-all-blockees.md
 ---
 
+
 **Backblast: Just 5 reps Oops all Blockees**
 **Where:** #ao-ad-astra
 **When:** 02/12/26
@@ -55,5 +56,3 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-12-just-5-reps-oops-all-blockees.md
 - 10 LBCs
 - 10 American Hammer
 - 10 Big boys
-
-**CoT:** That sickos would get healthy. Celebrating Dizzy return. Both 404 and Dial Up moving towards kids with tubes in their ears.

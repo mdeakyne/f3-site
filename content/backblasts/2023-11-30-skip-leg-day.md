@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-11-30-skip-leg-day.md
 ---
 
+
 Backblast:
 AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 11/30/23
@@ -48,6 +49,3 @@ Partner:Deep push ups and bear crawl.3x around the gazebo.
 Mosey back to grass
 
 Cool down: Ariel led stretches.
-
-CoT: "The body has many parts that work together for the whole"
-Coffeeteria : Yes (edited)

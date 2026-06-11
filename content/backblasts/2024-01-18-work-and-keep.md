@@ -19,6 +19,7 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2024/2024-01-18-work-and-keep.md
 ---
 
+
 **Backblast: Work and Keep**
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 01/18/24 @0530
@@ -49,5 +50,3 @@ Partner 2x:
 
 - One partner Farmer Cary to 10 Incline Pushups
 - Second partner: Plank taps, Situps
-
-CoT: We are called to Work and Keep. Work - make new things and help them grow. Keep - maintain the things and protect them.Look for ways to do this within F3, as well as with Families, Careers and our Faith

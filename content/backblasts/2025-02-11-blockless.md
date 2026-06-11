@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-02-11-blockless.md
 ---
 
+
 Backblast: Blockless
 
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
@@ -47,5 +48,3 @@ PAX call it
 - American Hammer
 - Plank
 - WWII Situp
-
-CoT: Government employees, Marriages, Showing Up, Hiring people

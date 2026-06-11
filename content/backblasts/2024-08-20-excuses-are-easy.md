@@ -18,6 +18,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-08-20-excuses-are-easy.md
 ---
 
+
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
 When: 08-20-24@05:30
 Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
@@ -45,5 +46,3 @@ PAX:  [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](h
 - The Mary
 - 25 Flutter kicks
 - 20 Freddie Mercuries
-
-CoT:  Sawdust’s fiancée got a new van.Big Toe’s family to trying to get a routine for the new school year.  This is difficult because of some concerns at school.  Taps reminded us that the Fitness in F3 is the least important.  That it is good to have the group as we go through struggles from time to time. And when we are going through tough times, it is good to have others to lean on.

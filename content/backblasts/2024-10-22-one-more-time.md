@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-10-22-one-more-time.md
 ---
 
+
 Backblast: One more time
 When: 10/22/24
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
@@ -48,5 +49,3 @@ Emom: 10 mins2x
 - 10 rows
 
 Sped up the last 5 set of 10 to on the 30 seconds, to finish in time.
-
-CoT:The different ways we spend our time have a different feel. You may be doing as much as you can, or just trying to get to a count, but often we feel like we are struggling to put up one more after awhile. Hopefully F3 is empowering you to put in the next rep. Show up for your spouse, your kids, your job, your friends - even when you are tired, even when it's hard. Put in that one more rep, and keep training to be able to show up for others even more. (edited)

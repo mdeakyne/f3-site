@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-07-10-tabata-heavy-and-light.md
 ---
 
+
 Backblast: Tabata
 
 Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
@@ -68,5 +69,3 @@ The Thang:
 - *Heavy:* Hand-Release Merkins
 
 Mary to finish.
-
-CoT: There's rhythms to life, and if you aren't in the heavy set right now... it's coming. (edited)

@@ -19,6 +19,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2026/2026-02-03-rinse-and-repeat.md
 ---
 
+
 **Backblast: Rinse and Repeat**
 **Where:** #ao-beehive
 **When:** 02/03/26 @ 05:30
@@ -44,5 +45,3 @@ The Walls of Jericho
 
 Leroy Jenkins
 5 Squats and then sprint to the other side of the parking lot and back.
-
-**COT:** It was a good reminder that while we can make plans, something can come up and you have to adapt and over come. Sending our best to @Dizzy and his new addition to the family. @Big Toe got a new car. Sending our prayer to Brad, @Toto's friend. Sending prayers for a safe trip to Russia to @Goulash.

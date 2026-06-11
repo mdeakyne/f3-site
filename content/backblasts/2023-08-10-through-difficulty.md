@@ -25,6 +25,7 @@ fngs: 7
 vault_path: 07 - F3/Backblasts/2023/2023-08-10-through-difficulty.md
 ---
 
+
 **Backblast!** “Through Difficulty”
 **DATE**: 2023-08-10
 **AO**: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -75,5 +76,3 @@ FNGs: 7; [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) @Long Game 
 - 10 x 2, 2 is 1
 - Plank
 - 60s x 2
-
-**COT:**“Ad, Per Aspera” is a fitting credo. Doing hard things like this together makes us trustworthy and capable as leaders doing the impossible here in this crazy city - for our friends, families, and community at large. Prayed for the PAX.Discussed moving the AO to the large parking lot on the east side of Holcom Park.

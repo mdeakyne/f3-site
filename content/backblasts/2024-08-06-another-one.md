@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-08-06-another-one.md
 ---
 
+
 Backblast: Another One
 
 Where:
@@ -63,14 +64,4 @@ Burpees
 
 WW II situps
 
-BurpeesCoT: MABA - Make America burpee again. Doing burpees is practicing falling down and getting back up. We will always be knocked down, and having men around us spurring us on to get back up is what F3 is all about.
-
-[@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-
-son has tried goat and is enjoying himself in Indonesia.
-
-[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-
-is figuring out the move in, and dealing with an exploded car... but moving forward on wedding plans.
-
-Parents have school coming up.
+Burpees

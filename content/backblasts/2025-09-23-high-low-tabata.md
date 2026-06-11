@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-09-23-high-low-tabata.md
 ---
 
+
 Backblast: High/Low Tabata
 
 Where: #ao-beehive
@@ -45,8 +46,3 @@ One Tabata with two cycles on each exercise
 - Heels to Heaven
 - Alternating Dead Bug
 - WW III Situps
-
-COT:
-Seeking balance. As we continue to consider starting the foster care process, where do we have capacity to serve more, and where do we need to be prudent about what we can sustain in the long run?
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) traveling out to CO for a wedding

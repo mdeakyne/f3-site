@@ -14,6 +14,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-12-14-todays-problem.md
 ---
 
+
 Backblast:
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 12/14/23 @0530
@@ -39,5 +40,3 @@ Todays Problem”
 - ~~Happy: Heavy Squats~~
 - Final Count Down: Berkins | Left, Right, Center
 - Cool down :Skipped (out of time)
-
-CoT: Small choices add up. If you see something needs done, do it today. Make it today's problem

@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-03-tabata-with-a-twist.md
 ---
 
+
 Backblast: Tabata with a twist
 
 Q:
@@ -89,12 +90,4 @@ Grass pullers
 
 Seal claps.
 
-Overhead clapsCoT: Transition is hard. Feels like starting all over again.
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-Trying to find routine again.
-
-[@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
-
-Cru starting up.
+Overhead claps

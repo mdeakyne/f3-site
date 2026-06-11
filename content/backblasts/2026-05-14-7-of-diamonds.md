@@ -18,6 +18,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-05-14-7-of-diamonds.md
 ---
 
+
 **Backblast: 7 of Diamonds**
 **Where:** #ao-ad-astra
 **When:** 5/13/2026 @5:30AM
@@ -70,5 +71,3 @@ This creates constant directional changes and keeps the legs under tension throu
 • Overhead Press × 15
 • Dead Bugs × 10
 • Bird Dogs × 10
-
-COT: @Big Toe's brother's bday is today, praying for peace for both of them w/ their current relationship status. Also, happy for all out new grads, hoping they have a wonderful week and weekend, but also get to their next chapters safely with all the festivities.

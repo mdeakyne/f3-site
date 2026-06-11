@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-19-maddys-birthday-mile.md
 ---
 
+
 Back Blast:  Maddy's Birthday Mile
 
 Where:
@@ -61,14 +62,4 @@ Curls
 
 Squats
 
-Sit UpsCoT:
-
-[@Kilo](https://f3lawrence.slack.com/team/U07AC924ZEG)
-
-daughter's first birthday is 9/20 and all are very excited!
-
-[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-
-has new job and wedding all at once.
-
-Continued prayers for our country/state/community's youth and our schools
+Sit Ups

@@ -25,6 +25,7 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2023/2023-08-31-bear-one-anothers-burdens.md
 ---
 
+
 **Backblast!** “Bear one another’s burdens.
 ”**DATE**: 2023-08-31
 **AO**: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -52,6 +53,3 @@ vault_path: 07 - F3/Backblasts/2023/2023-08-31-bear-one-anothers-burdens.md
 - Whack-a-Mary, 20 x 2
 - Paused Merkins, 15
 - Yoga Flow, OYO
-
-**COT:**“Bear one another’s burdens, and so fulfill the law of Christ.” A burden shared is carried more easily, even as the weight increases. Every man around this circle has carried weight for somebody else in hard times. Look and ask to do so, and bring what you’re carrying to the men around you.
-**Coffeeteria**: Yes

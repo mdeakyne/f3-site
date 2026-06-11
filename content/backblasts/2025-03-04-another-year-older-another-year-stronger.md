@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-04-another-year-older-another-year-stronger.md
 ---
 
+
 Backblast: Another year older...another year stronger
 
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
@@ -35,9 +36,3 @@ Waco Ladders
 6. Scissor Lift
 7. Rows
 8. Lateral Walking Squat
-
-COT:
-
-A few days late, but roughly my 1-year F3iversary. I didn't feel like I was at a particular deficit for any of the Fs, but have really enjoyed and felt the benefit of this time to come together a couple times a week, work up a sweat (or work enough to stay warm), pray, share, and get to know you all more through it.
-
-The Saturday Noah broke his leg was obviously traumatic for him, but also emotionally difficult for me, and I can still feel the wear from that day and the next few. Trying to be honest with myself and others about how I'm feeling, and make sure I'm making time/space to recoup.

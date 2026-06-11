@@ -15,6 +15,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-17-partner-up.md
 ---
 
+
 **Backblast: Partner Up**
 **Where:** #ao-beehive
 **When:** 3/17/26 @0530
@@ -43,7 +44,3 @@ One partner works on the exercises while the other jogs to the far end of the pa
 - 20 X-factors
 - 20 Heels to heaven
 - 20 Dead bugs
-
-**CoT:**
-@Big Toe heavy load at work.
-Group from Grace down at Children's Haven International in Reynosa, Mexico this week.

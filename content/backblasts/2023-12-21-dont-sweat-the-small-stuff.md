@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-12-21-dont-sweat-the-small-stuff.md
 ---
 
+
 Where:[#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 
 When:  12-21-23 @0530
@@ -59,6 +60,4 @@ Shoulder Boulders
 
 Upright Rows
 
-Sit-ups        
-
-Cot:  “Don’t Sweat the Small Stuff”. It easy to get caught up worrying about the small things that don’t matter and loose track of what’s really important.
+Sit-ups

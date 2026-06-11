@@ -19,6 +19,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2025/2025-06-05-out-of-control.md
 ---
 
+
 Backblast: Out of Control!
 
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
@@ -50,5 +51,3 @@ Leroy Jenkins:
 - 5 side shuttle hops
 - Sprint to the end of parking lot
 - Do this throughout
-
-CoT:   My wife and I were talking about our 401k.  We can control what we contribute to it but we have no control what the market does once it's invested.  This is similar to "Leroy Jenkins". I can control we I say it but I can't control when others say it.  And the same applies about some things in life. While we can control some things,  we also have to be prepared for the things we can't control. [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M) talked about his nieces wedding and there are things she doesn't have control over.[@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) mentioned his situation with his business[@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) talked about an author (can't remember the name)

@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-04-10-following-the-leader.md
 ---
 
+
 # Backblast: Following the Leader
 
 Where: #ao-ad-astra
@@ -56,13 +57,3 @@ Set 3:
 • Thrusters
 • Tricep Dips
 • Scissor Lifts
-
-## COT:
-
-We are all following and leading in different ways and at different times. Where are you leading those who are following you, and where are you being led by others?
-
-### Announcements & Prayer Requests:
-
-- Big Toe taking time off work to assemble a chicken coop; hoping that can provide rest in its own way with a break from daily work, and that assembly goes smoothly.
-- Noah has been cleared to start putting weight on his leg, and has made some progress getting over the mental challenge of using the walker to go through a normal walking motion with some weight on his healing leg.
-- Dizzy looking to build healthier habits. Hope to keep seeing you around

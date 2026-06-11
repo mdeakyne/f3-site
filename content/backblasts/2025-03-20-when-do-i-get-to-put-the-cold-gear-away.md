@@ -14,6 +14,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-03-20-when-do-i-get-to-put-the-cold-gear-away.md
 ---
 
+
 ## Backblast: When do I get to put this cold gear away
 
 Where: #ao-beehive
@@ -43,7 +44,3 @@ Instructions:
     - 5th station: last 5 exercises
     - 4th station: last 4 exercises
     - Continue until doing just dips at the 1st station
-
-### COT
-
-Working through a period where feels like work is only being added, and ready for the part where some things start to drop off (and ready to put this cold gear away).

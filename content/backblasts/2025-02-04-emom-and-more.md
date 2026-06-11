@@ -16,6 +16,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-02-04-emom-and-more.md
 ---
 
+
 Backblast: EMOM and More
 
 Where: #ao-beehive
@@ -45,7 +46,3 @@ Between Loops:
 
 Finisher:
 American hammer, no block, 15 each side
-
-COT:
-• Busy time of year with 3 kids on sports teams. Trying not to get lost in the hustle and bustle
-• [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)'s wife, Grace, struggling with feelings of isolation

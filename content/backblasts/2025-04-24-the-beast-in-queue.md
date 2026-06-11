@@ -17,6 +17,7 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2025/2025-04-24-the-beast-in-queue.md
 ---
 
+
 # Backblast: The Beast in Queue
 
 ## Details
@@ -46,7 +47,3 @@ Coffee: ☕
 ### The Thang
 
 Listed in Picture. The Beast meets a Queue. Successive rounds of 6 exercises, rotating on a 3 station ladder.
-
-### COT
-
-BigToe - new team member starts, hopefully sharing the load quickly and getting up to speed.

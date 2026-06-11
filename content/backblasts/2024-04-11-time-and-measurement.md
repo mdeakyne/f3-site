@@ -19,6 +19,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-04-11-time-and-measurement.md
 ---
 
+
 Backblast: Time and Measurement
 Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 When: 04-11-2024 @0530
@@ -35,5 +36,3 @@ Tabata (8x 20s on | 10 s off):
 - Overhead press
 - Merkins
 - Atlas squat / goblet squat
-
-CoT: We want to measure so much of our lives. How many reps did we do? Unclear. Did we get beatdown. Absolutely. Be present - stop counting and keep going.

@@ -17,6 +17,7 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-12-09-keep-it-moving.md
 ---
 
+
 Backblast: Keep it moving
 
 Where:
@@ -63,8 +64,4 @@ X Factor
 
 Burpees
 
-WWIII Situps.CoT:
-
-Advent season. Slow down and simplify.
-
-404 : 9 year old having extreme emotions. Patience and support for that.
+WWIII Situps.
