@@ -18,57 +18,32 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-12-28-highs-and-lows.md
 ---
 
+**Backblast:** “Highs and Lows”  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 
-**Backblast**! “Highs and Lows”
+- When 12/27/23
+- Q
+- [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
+- PAX
+- [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)
+- [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+- [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1)
+- [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+- [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ)
+- @Leaks
+- Count
 
-> Where:
-> 
-> 
-> [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-> 
-> **When 12/27/23**
-> 
-> **Q**
-> 
-> [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
-> 
-> **PAX**
-> 
-> [@Ariel](https://f3lawrence.slack.com/team/U05LD9C5S0Z)
-> 
-> [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-> 
-> [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1)
-> 
-> [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-> 
-> [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ)
-> @Leaks
-> 
-> **Count**
-> 
+**Warmup:**
 
-**Warmup**: Stretching OYO**The Thang:**
-
-> 3 focuses with 6 1 minute rounds
-> 
-
-**First 6 rounds**
-
-> Choice of Americans, Americans on knees, or Mike Tysons
-> 
-
-**Second 6 rounds**
-
-> Choice of Reverse lunges, Squat, or Murder Bunnies
-> 
-
-**Third 6 rounds**
-
-> Choice of Shoulder raises, Bicep curls, or Burpees
-> 
+- Stretching OYOThe Thang:
+- 3 focuses with 6 1 minute rounds
+- First 6 rounds
+- Choice of Americans, Americans on knees, or Mike Tysons
+- Second 6 rounds
+- Choice of Reverse lunges, Squat, or Murder Bunnies
+- Third 6 rounds
+- Choice of Shoulder raises, Bicep curls, or Burpees
 
 **Mary:**
 
-> 10 Situps
->
+10 Situps

@@ -16,44 +16,37 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-04-10-following-the-leader.md
 ---
 
-
-# Backblast: Following the Leader
-
-Where: #ao-ad-astra
-When: 04-10-25
-Q: [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
-Coupon: :coupon:
-Coffee: ☕
-Count: 5
-
-## PAX:
-
+- # Backblast: Following the Leader
+- Where: #ao-ad-astra
+- When: 04-10-25
+- Q: [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
+- Coupon: :coupon:
+- Coffee: ☕
+- Count: 5
+- ## PAX:
 - [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 - [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
 - [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 - @Dizzy
-
-## The Thang:
+- ## The Thang:
 
 3 sets of 5 Stations. First station does an exercise to a count, and then jogs to the flags and back. Other stations do their exercise until the first station is finished, and then everyone rotates
 
-Set 1:
-• 50 lunges
-• Curls
-• Burpee
-• Freddy Mercury
-• Overhead Press
-
-Set 2:
-• 50 Merkins
-• American Hammer (no weight)
-• Upright Rows
-• Heavy Squats
-• Bear Crawl
-
-Set 3:
-• 50 Situps
-• Calf Raises
-• Thrusters
-• Tricep Dips
-• Scissor Lifts
+- Set 1:
+- 50 lunges
+- Curls
+- Burpee
+- Freddy Mercury
+- Overhead Press
+- Set 2:
+- 50 Merkins
+- American Hammer (no weight)
+- Upright Rows
+- Heavy Squats
+- Bear Crawl
+- Set 3:
+- 50 Situps
+- Calf Raises
+- Thrusters
+- Tricep Dips
+- Scissor Lifts

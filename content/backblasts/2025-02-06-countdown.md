@@ -15,26 +15,24 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-02-06-countdown.md
 ---
 
-
-Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-
-When: 02/05/25 @0530
-
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-PAX: [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 02/05/25 @0530  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
 The thang:
-Warmup:
-11, 10, 9,...2, 1
-SSH
-SSH half arms
-SSH no arms
-Hops
 
-The Thang:
-Incinerator 11 ... 1
+**Warmup:**
 
+- 11, 10, 9,...2, 1
+- SSH
+- SSH half arms
+- SSH no arms
+- Hops
+
+**The Thang:**
+
+- Incinerator 11 ... 1
 - OP
 - Curl
 - Around the world
@@ -42,13 +40,12 @@ Incinerator 11 ... 1
 - Big toe smash
 - Block Swings
 
-Mary:
-11 ... 1
+**Mary:**
 
+- 11 ... 1
 - Merkins
 - Air Squats
 - WWII Situps
 - XYs
 - American Hammer
-
-(Had to skip a little Mary to end on time)
+- (Had to skip a little Mary to end on time)

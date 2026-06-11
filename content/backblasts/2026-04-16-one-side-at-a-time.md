@@ -15,24 +15,24 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-16-one-side-at-a-time.md
 ---
 
-
-**Backblast: One (side) at a time**
-**Where:** #ao-ad-astra
-**When:** 04/16/2026 @5:30AM
-**Q:** @404
+**Backblast:** One (side) at a time  
+**Where:** #ao-ad-astra  
+**When:** 04/16/2026 @5:30AM  
+**Q:** @404  
 **PAX:** @Big Toe @Farmers Only @Dizzy
 
-**The Warmup:**
+- The Warmup:
 - 30 seconds each:
-    - Bonny Blair
-    - Jump Front to back
-    - High knees
-    - Butt kicks
+- Bonny Blair
+- Jump Front to back
+- High knees
+- Butt kicks
 - Piano Man - 10 x 4 count
 - Arm Circles (The usual)
+- The thang:
 
-**The thang:**
 Tabata, one-sided exercises. Half a song on one side, half on the other, with a compound pivot at the end:
+
 - One-arm overhead press
 - One-leg dead lift
 - One-arm row

@@ -17,33 +17,38 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-12-just-5-reps-oops-all-blockees.md
 ---
 
+**Backblast:** Just 5 reps Oops all Blockees  
+**Where:** #ao-ad-astra  
+**When:** 02/12/26  
+**Q:** @Big Toe  
+**PAX:** @Wreckit, @Waco, @404, @Dizzy, @Dial
 
-**Backblast: Just 5 reps Oops all Blockees**
-**Where:** #ao-ad-astra
-**When:** 02/12/26
-**Q:** @Big Toe
-**PAX:** @Wreckit, @Waco, @404, @Dizzy, @DialUp
+Up
 
-**Warm up:** 5 burn down jumping jacks.
+**Warm up:**
+
+5 burn down jumping jacks.
 
 **The Thang:**
+
 - 5 blockees : 5, 4, 3, 2, 1 OPs
 - 5 blockees: 5, 4, 3, 2, 1 Heavy Squat
 - 5 blockees: 5, 4, 3, 2, 1 Blockins
 - 5 blockees: 5, 4, 3, 2, 1 Groiners
-
 - 5 burpees : 5, 4, 3, 2, 1 hops
 - 5 burpees: 5, 4, 3, 2, 1 Squat
 - 5 burpees: 5, 4, 3, 2, 1 Merkins
 - 5 burpees: 5, 4, 3, 2, 1 Groiners
 
 **Banks:**
+
 - 50 OPs, Rifle carry movement.
 - 100 Heavy Squat, lunges.
 - 100 Merkins, bear crawl.
 - 100 Groiners, murder bunny.
 
 **Mary:**
+
 - 10 Flutter Kick
 - 10 Freddy Mercury
 - 10 WW III situps

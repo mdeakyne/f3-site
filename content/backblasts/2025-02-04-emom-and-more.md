@@ -16,19 +16,15 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-02-04-emom-and-more.md
 ---
 
-
-Backblast: EMOM and More
-
-Where: #ao-beehive
-When: 02/04/25 @0530
-
-Q: [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
-
-PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+**Backblast:** EMOM and More  
+**Where:** #ao-beehive  
+**When:** 02/04/25 @0530  
+**Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
+**PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
 
 **The Thang:**
-Every Minute On The Minute (EMOM) Loop (3 times)
 
+- Every Minute On The Minute (EMOM) Loop (3 times)
 - 12 Shoulder-Knees-Toes Merkins
 - 20 Dead Lifts
 - 10 Burpees
@@ -38,11 +34,11 @@ Every Minute On The Minute (EMOM) Loop (3 times)
 - 12 Cossack Squats
 - 25 Overhead Press
 - 30 Calf Raises
+- Between Loops:
 
-Between Loops:
-• After first loop: murder bunny from one island in the parking lot down to the next and back
-• After second loop: lateral walking squat down and back
-• After third loop: bear crawl down and back
+After first loop: murder bunny from one island in the parking lot down to the next and back
 
-Finisher:
-American hammer, no block, 15 each side
+- After second loop: lateral walking squat down and back
+- After third loop: bear crawl down and back
+- Finisher:
+- American hammer, no block, 15 each side

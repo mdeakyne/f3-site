@@ -16,25 +16,19 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-06-17-carry-or-die.md
 ---
 
-
-Carry or die
-
-Where: #ao-beehive
-
-When: 06-17-2025 @ 05:30
-
-Q: @toto
+- Carry or die
+- Where: #ao-beehive
+- When: 06-17-2025 @ 05:30
+- Q: @toto
 
 PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-Count: 5
+- Count: 5
 
-Warmup:
+**Warmup:**
 
 - Lap around the islands
-
-Exercise:
-
+- Exercise:
 - Front Carry: 40 steps
 - Suitcase/side carry, left arm: 40 steps
 - Suitcase/side carry, right arm: 40 steps
@@ -43,9 +37,8 @@ Exercise:
 - Walking lunge: 10 on each leg
 - Merkins: 20
 - Bent over row: 20
+- 7 rounds. Last was double
 
-7 rounds. Last was double
-
-Mary:
+**Mary:**
 
 Various

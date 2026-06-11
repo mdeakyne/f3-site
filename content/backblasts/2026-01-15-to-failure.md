@@ -14,3 +14,5 @@ total_pax: 4
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-01-15-to-failure.md
 ---
+
+

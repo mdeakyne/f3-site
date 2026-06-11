@@ -19,34 +19,33 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-05-19-mini-murph.md
 ---
 
-
-**Backblast: Mini-Murph**
-**Where:** #ao-beehive
-**When:** 05/19/26 @0530
-**Q:** @Big Toe
+**Backblast:** Mini-Murph  
+**Where:** #ao-beehive  
+**When:** 05/19/26 @0530  
+**Q:** @Big Toe  
 **PAX:** @Waco @404 @casio @Toto @Farmers Only @wreckit @Dizzy
 
-The Thang:
-800 meter run
+**The Thang:**
 
-10x
-• 10 Merkins
-• 15 Rows
-• 20 Squats
+- 800 meter run
+- 10x
+- 10 Merkins
+- 15 Rows
+- 20 Squats
+- 800 meter run
 
-800 meter run
+**Mary:**
 
-Mary
-• 30 Calf Raises
-• 10 Side Plank Raises
-• 10 American Hammers
-• 10 Narrow Block Merkins
-• 20 Heavy Freddys
-• 10 Dead Bugs
-• 10 Bird Dogs
-• 15 Heels to Heaven
-• 15 Curl Press
-• 10 Big Boys
-• 3x 10s Hollow Body Hold
-• 10 Heel Press Stretch
-• 10 XYs
+- 30 Calf Raises
+- 10 Side Plank Raises
+- 10 American Hammers
+- 10 Narrow Block Merkins
+- 20 Heavy Freddys
+- 10 Dead Bugs
+- 10 Bird Dogs
+- 15 Heels to Heaven
+- 15 Curl Press
+- 10 Big Boys
+- 3x 10s Hollow Body Hold
+- 10 Heel Press Stretch
+- 10 XYs

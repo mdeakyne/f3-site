@@ -18,19 +18,18 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-02-01-birthday-bash.md
 ---
 
+**Backblast:** Birthday Bash  
+**When:** 02/01/2024
 
-**Backblast:**Birthday Bash
-When: 02/01/2024
-**Warmup:**Stretching
+**Warmup:**
 
+- Stretching
 - Toe Tickler
 - Frog Man
 - Hurdle Forward
 - Hurdle Back
 - IT
-
-**BD:**
-
+- BD:
 - Heavy Squat Front Raise 12, 10
 - Lunges 12, 10
 - Heavy Curb Calf Raise 15 x 2

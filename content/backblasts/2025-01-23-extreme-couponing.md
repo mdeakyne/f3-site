@@ -17,18 +17,12 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-01-23-extreme-couponing.md
 ---
 
-PreBlast*
-
-Pre-blast
-
-EXTREME COUPONING
-
-You know where
-
-You know when
-
-You know who
-
-SAWDUST IS BACK
-
-No backblast posted currently. 3 coupons a person. Fun times.
+- Pre
+- Blast*
+- Pre-blast
+- EXTREME COUPONING
+- You know where
+- You know when
+- You know who
+- SAWDUST IS BACK
+- No backblast posted currently. 3 coupons a person. Fun times.

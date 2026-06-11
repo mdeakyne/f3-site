@@ -25,20 +25,26 @@ fngs: 2
 vault_path: 07 - F3/Backblasts/2023/2023-08-31-bear-one-anothers-burdens.md
 ---
 
+**Backblast:** “Bear one another’s burdens.
 
-**Backblast!** “Bear one another’s burdens.
-”**DATE**: 2023-08-31
-**AO**: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-**VQ**: [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-**PAX**: [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4) [@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Trainwreck](https://f3lawrence.slack.com/team/U05L16J4AUS) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1) [@Siri](https://f3lawrence.slack.com/team/U05LDRFFEHX) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Captain Kirk](https://f3lawrence.slack.com/team/U05PY6G82QY) [@Flaps](https://f3lawrence.slack.com/team/U05QV5D88DN) [@Peanuts](https://f3lawrence.slack.com/team/U05P50FGJP7)
-**FNGs**: 2; [@Concessions](https://f3lawrence.slack.com/team/U05PWBTJV1Q) @Leaks
-**COUNT**: 15
-**Warm Up**
+- ”DATE: 2023-08-31
+
+AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
+
+- VQ: [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+
+PAX: [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4) [@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Trainwreck](https://f3lawrence.slack.com/team/U05L16J4AUS) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1) [@Siri](https://f3lawrence.slack.com/team/U05LDRFFEHX) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Captain Kirk](https://f3lawrence.slack.com/team/U05PY6G82QY) [@Flaps](https://f3lawrence.slack.com/team/U05QV5D88DN) [@Peanuts](https://f3lawrence.slack.com/team/U05P50FGJP7)
+
+FNGs: 2; [@Concessions](https://f3lawrence.slack.com/team/U05PWBTJV1Q) @Leaks
+
+- COUNT: 15
+
+**Warm Up:**
 
 - Welcome and Disclaimers, 5 Core Principles
 - Stretch, OYO
 
-**The Thang**
+**The Thang:**
 
 - Burden Relay, 2 lengths
 - Double coupon HS, double parking lot sprint
@@ -47,8 +53,9 @@ vault_path: 07 - F3/Backblasts/2023/2023-08-31-bear-one-anothers-burdens.md
 - Mixed Bag, 2 lengths
 - lunge, bear crawl, sprint
 
-**Mary/Cool Down**
+**Mary:**
 
+- /Cool Down
 - Sharing is Caring, 20 x 2
 - Whack-a-Mary, 20 x 2
 - Paused Merkins, 15

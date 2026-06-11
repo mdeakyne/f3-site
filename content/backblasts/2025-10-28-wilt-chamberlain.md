@@ -18,30 +18,37 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-10-28-wilt-chamberlain.md
 ---
 
+**Backblast:** Why am I so stupid today?  
+**Where:** #ao-beehive  
+**When:** 10/07/2025 @ 05:30  
+**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
+**PAX:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), @404, @Dial-Up
 
-Backblast: Why am I so stupid today?Where: #ao-beehiveWhen: 10/07/2025 @ 05:30Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)PAX: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), @404, @Dial-UpWarmup:
+**Warmup:**
 
 - Grass pullers starting with middle, left, and right
 - Micheal Phelps
 - Arm circles
 
-The Thang:
+**The Thang:**
 
 - Walls of Jericho (or Waco)
-    - seven exercises with seven reps
-        - overhead press
-        - Lunges
-        - Thrusters
-        - Calf raises
-        - Bent over rows
-        - Curls
-        - Heavy squats
+- seven exercises with seven reps
+- overhead press
+- Lunges
+- Thrusters
+- Calf raises
+- Bent over rows
+- Curls
+- Heavy squats
 - Leroy Jenkins throughout
-    - `5 side shuttle hops`
-    - `Sprint to the end of parking lot and back`
+- `5 side shuttle hops`
+- `Sprint to the end of parking lot and back`
+- Repeat
 
-RepeatMary:One Tabata with two cycles on each exercise
+**Mary:**
 
+- One Tabata with two cycles on each exercise
 - American Hammer
 - Heels to Heaven
 - Alternating Dead Bug

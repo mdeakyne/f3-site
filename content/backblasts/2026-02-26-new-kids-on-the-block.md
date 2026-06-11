@@ -18,37 +18,38 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-26-new-kids-on-the-block.md
 ---
 
-
-**Backblast: New Kids on the Block**
-**Where:** #ao-ad-astra
-**When:** 02/26/26
-**Q:** @Big Toe
-**PAX:** @Farmers Only @Waco @Wreckit @404
+**Backblast:** New Kids on the Block  
+**Where:** #ao-ad-astra  
+**When:** 02/26/26  
+**Q:** @Big Toe  
+**PAX:** @Farmers Only @Waco @Wreckit @404  
 **FNGs:** @Hiccup @Casio
 
 **Warmup:**
-Arm circles: 20
-Michael Phelps: 20
-Picking cherries: 20
-Abe Vigolla: 20
-Imperial walker: 20
 
-Burn down SSH: 8 count
-5 burpees after each round.
+- Arm circles: 20
+- Michael Phelps: 20
+- Picking cherries: 20
+- Abe Vigolla: 20
+- Imperial walker: 20
+- Burn down SSH: 8 count
+- 5 burpees after each round.
 
 **The Thang:**
-OP
-Curls
-Scissor
-Blockin
-Around the world
-Toe smash
-Squat
-Calf raises
+
+- OP
+- Curls
+- Scissor
+- Blockin
+- Around the world
+- Toe smash
+- Squat
+- Calf raises
 
 **Mary:**
-American Hammer
-Situps
-Hip Bridges
-Dead Bug
-Bird Dog
+
+- American Hammer
+- Situps
+- Hip Bridges
+- Dead Bug
+- Bird Dog

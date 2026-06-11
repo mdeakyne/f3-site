@@ -18,14 +18,16 @@ fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-08-20-excuses-are-easy.md
 ---
 
+**Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
+**When:** 08-20-24@05:30  
+**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
+**Count:** 9  
+**FNG:** 1  
+**PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Taps (KC)](https://f3lawrence.slack.com/team/U068MEMLGAV), [@Mountain Goat](https://f3lawrence.slack.com/team/U067UGQHVHD), @Beaker, @Bonnet
 
-Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
-When: 08-20-24@05:30
-Q: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-Count: 9
-FNG: 1
-PAX:  [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Taps (KC)](https://f3lawrence.slack.com/team/U068MEMLGAV), [@Mountain Goat](https://f3lawrence.slack.com/team/U067UGQHVHD), @Beaker, @BonnetThe Thang:   The Rotation
+**The Thang:**
 
+- The Rotation
 - 10 stations and 10 exercises
 - High Tower
 - Curls
@@ -43,6 +45,8 @@ PAX:  [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](h
 - 1 Plank jack
 - 1 shoulder tap
 - repeat and add 1 until 5
-- The Mary
+
+**The Mary:**
+
 - 25 Flutter kicks
 - 20 Freddie Mercuries

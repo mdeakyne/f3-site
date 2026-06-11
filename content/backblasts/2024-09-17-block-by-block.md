@@ -16,14 +16,14 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-17-block-by-block.md
 ---
 
+**Backblast:** Block by Block  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)  
+**Count:** 5  
+**Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
+**When:** 09/17/2024 0530
 
-Backblast: Block by Block
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-PAX: [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
-Count: 5
-Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
-When: 09/17/2024 0530
-Warmup:
+**Warmup:**
 
 - SSH
 - Arm circles
@@ -33,8 +33,9 @@ Warmup:
 - Forward Claps
 - Imperial Walkers
 
-The Thang: Fireman: 1 → 7 → 1
+**The Thang:**
 
+- Fireman: 1 → 7 → 1
 - Overhead Press
 - Burpees
 - Curl
@@ -42,8 +43,9 @@ The Thang: Fireman: 1 → 7 → 1
 - Row
 - Burpees
 
-Mary (x2):
+**Mary:**
 
+- (x2):
 - Freddie Mercury x 15
 - Flutter Kick x 15
 - Life Alert x 15

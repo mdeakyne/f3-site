@@ -19,51 +19,33 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-08-08-burpee-mile.md
 ---
 
+- Back Blast: Burpee Mile
+- Where:
+- [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
+- When: 08/08/24
+- Q:
+- [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
+- PAX:
+- [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
+- [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
+- [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
+- [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+- @training wheels
+- [@Kilo](https://f3lawrence.slack.com/team/U07AC924ZEG)
+- @404
+- Count: 8
 
-Back Blast: Burpee Mile
+**The Thang:**
 
-Where:
+- Burpee Mile
+- 12 burpees followed by .25 mile run.
+- When back to blocks, plank until 6 is in
+- 4 rounds
+- 12 burpees to finish
 
-[#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
+Incinerator - heating up - start at 1, keep going until time (made it to 8)
 
-When: 08/08/24
-
-Q:
-
-[@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
-
-PAX:
-
-[@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-
-[@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
-
-[@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-
-[@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-
-@training wheels
-
-[@Kilo](https://f3lawrence.slack.com/team/U07AC924ZEG)
-
-@404
-
-Count: 8The Thang:
-
-Burpee Mile
-
-12 burpees followed by .25 mile run.
-
-When back to blocks, plank until 6 is in
-
-4 rounds
-
-12 burpees to finishIncinerator - heating up - start at 1, keep going until time (made it to 8)
-
-Thrusters
-
-Elf on the shelf
-
-Cossack squat (both sides)
-
-XY’s
+- Thrusters
+- Elf on the shelf
+- Cossack squat (both sides)
+- XY’s

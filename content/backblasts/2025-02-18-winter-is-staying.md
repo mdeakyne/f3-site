@@ -13,10 +13,9 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-02-18-winter-is-staying.md
 ---
 
-Preblast: Winter is staying...
+- Preblast: Winter is staying...
 
 Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
 
-When: 02/18/2025 0530
-
-PAX: Farmers and Big Toe
+- When: 02/18/2025 0530
+- PAX: Farmers and Big Toe

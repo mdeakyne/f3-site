@@ -18,16 +18,22 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-04-04-first-follower.md
 ---
 
+**Backblast:** First Follower  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 4-4-2024 @0530  
+**Q:** [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)  
+**PAX:** [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) @404 @Seafood [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)  
+**Count:** 7
 
-**Backblast:** First Follower
-**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-**When:** 4-4-2024 @0530
-**Q:** [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
-**PAX:** [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) @404 @Seafood [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-**Count:7
-Coupon:** BYOC
-**Coffeeteria:** Yes
-**Warmup:** OYO**The Thang:** Circuit performed at the pace of the man doing the americans, one man per exercise at a time
+Coupon: BYOC
+
+**Coffeeteria:**
+
+Yes
+
+**Warmup:**
+
+OYOThe Thang: Circuit performed at the pace of the man doing the americans, one man per exercise at a time
 
 - 50 americans then run to middle light
 - plank

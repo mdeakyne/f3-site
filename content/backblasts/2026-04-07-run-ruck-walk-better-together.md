@@ -17,20 +17,21 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-04-07-run-ruck-walk-better-together.md
 ---
 
-
-**Backblast: Run/Ruck/Walk better together!**
-**Where:** #ao-beehive
-**When:** 4/7/26 @0530
-**Q:** @Toto
+**Backblast:** Run/Ruck/Walk better together!  
+**Where:** #ao-beehive  
+**When:** 4/7/26 @0530  
+**Q:** @Toto  
 **PAX:** @Big Toe, @Casio, @Farmers Only, @Waco, @Wreck-it
 
-**WarmUp:**
+- Warm
+- Up:
 - Quad stretch 15 sec each
 - Plank walk ups 50 steps at V
 - Hip release stretch
 
 **The Thang:**
-(x3)
+
+- (x3)
 - Full parking lot jog/ruck
 - 20 goblet squat 15 sec rest
 - Power skips 20 skips up and back

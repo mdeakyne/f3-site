@@ -20,16 +20,23 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-03-21-sometimes-the-small-things-do-matter.md
 ---
 
+**Backblast:** Sometimes the small things do matter  
+**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**When:** 3/21/2024 &05:30  
+**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
+**PAX:** @seafood, @bonnet, [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0), @404  
+**Count:** 9
 
-**Backblast:**  Sometimes ****the small things do matter
-**Where:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-**When:** 3/21/2024 &05:30
-**Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-**PAX:** @seafood, @bonnet, [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0), @404
-**Count:** 9
-**Coupon:** BYOC
-**Coffeeteria:** yes
-**Warmup:** OYO
+Coupon: BYOC
+
+**Coffeeteria:**
+
+yes
+
+**Warmup:**
+
+OYO
+
 **The Thang:**
 
 - Light Poles 10&1
@@ -42,11 +49,9 @@ vault_path: 07 - F3/Backblasts/2024/2024-03-21-sometimes-the-small-things-do-mat
 - Cow Bells
 - Sit-ups
 
-> The Mary:
-> 
+**The Mary:**
+
 - Reverse Incinerators
 - Swim kicks
 - Life alerts
 - Leg lifts
-
->

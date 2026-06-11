@@ -17,13 +17,13 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2023/2023-11-02-the-least-of-these.md
 ---
 
+**AO:** [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)  
+**Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
+**PAX:** @Soprano, [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
+**FNGs:** 0  
+**COUNT:** 5
 
-AO: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
-Q: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
-PAX: @Soprano, [@M-I-Z](https://f3lawrence.slack.com/team/U05KUGFM1M4), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
-FNGs: 0
-COUNT: 5
-Warm Up
+**Warm Up:**
 
 - Welcome and Disclaimers,
 - 5 core Principles
@@ -32,8 +32,9 @@ Warm Up
 - 10 arm circles (reverse)
 - 20 Shoulder taps
 - 20 Michael Phelps
+- Tabata Block Workout
 
-Tabata Block WorkoutTabata is 20 seconds on 10 seconds off. You vs you. 8 sets, 4:00 each.
+Tabata is 20 seconds on 10 seconds off. You vs you. 8 sets, 4:00 each.
 
 - Curls. Low, High, Full.
 - Tricep Press.

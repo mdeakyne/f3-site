@@ -16,13 +16,14 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.md
 ---
 
-Backblast: Thank You Sir, May I Have Another?
-Where: #ao-ad-astra
-When: 06/04/2026 @ 5:30AM
-Q: Dizzy
-PAX: Farmers Only, Big Toe, Dizzy, casio, Wreck It
+**Backblast:** Thank You Sir, May I Have Another?  
+**Where:** #ao-ad-astra  
+**When:** 06/04/2026 @ 5:30AM  
+**Q:** Dizzy  
+**PAX:** Farmers Only, Big Toe, Dizzy, casio, Wreck It
 
 **Warmup:**
+
 - Arm Circles 5 forward, 5 back, 5 big, 5 back
 - Michael Phelps x10
 - Imperial Walkers x10
@@ -32,7 +33,7 @@ PAX: Farmers Only, Big Toe, Dizzy, casio, Wreck It
 
 **The Thang:**
 
-6 rounds:
+- 6 rounds:
 - 5 Burpees
 - 10 Pushups
 - 15 Situps
@@ -41,7 +42,9 @@ PAX: Farmers Only, Big Toe, Dizzy, casio, Wreck It
 
 Exercise gratitude in our lives — repeat (thank you sir, may I have another)
 
-**Mary:** 2 rounds peer led, 10 rep max
+**Mary:**
+
+- 2 rounds peer led, 10 rep max
 - Flutter Kicks
 - Heels to Heaven
 - Hollow Body Hold x25 seconds
@@ -53,9 +56,8 @@ Exercise gratitude in our lives — repeat (thank you sir, may I have another)
 - Hollow Body Hold
 - Plank Shoulder Taps
 - WW3 Sit-ups
-
-+5 Burpees for good measure.
+- +5 Burpees for good measure.
 
 Thinking a lot about expressing gratitude in life and not focusing on the negative as much. There is something to be said for just having a routine and doing it!
 
-Safe travels to casio / Farmers Only on trips to CO this week.
+- Safe travels to casio / Farmers Only on trips to CO this week.

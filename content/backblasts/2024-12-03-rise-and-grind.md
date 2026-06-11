@@ -15,3 +15,5 @@ total_pax: 5
 fngs: 1
 vault_path: 07 - F3/Backblasts/2024/2024-12-03-rise-and-grind.md
 ---
+
+

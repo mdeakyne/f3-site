@@ -16,24 +16,24 @@ total_pax: 6
 vault_path: 07 - F3/Backblasts/2026/2026-05-26-learning-from-others.md
 ---
 
+**Backblast:** Learning from Others  
+**Where:** #ao-beehive  
+**When:** 5/26/26  
+**Q:** Farmers Only  
+**PAX:** Waco, Wreck It, Dizzy, 404, Big Toe
 
-Backblast: Learning from Others
-Where: #ao-beehive
-When: 5/26/26
-Q: Farmers Only
-PAX: Waco, Wreck It, Dizzy, 404, Big Toe
+**Warmup:**
 
-Warmup:
 - 10 arm circles
 - 10 reverse arm circles
 - 10 Michael Phelps
 - Piano man
 
-The Thang: Incinerators plus 1
+**The Thang:**
 
-Starting at 10 plus 1 lap, 9 plus 1 lap. Etc….
-
-Incinerators:
+- Incinerators plus 1
+- Starting at 10 plus 1 lap, 9 plus 1 lap. Etc….
+- Incinerators:
 - Overhead press
 - Curls
 - Squats
@@ -42,7 +42,8 @@ Incinerators:
 - Run one lap
 - Repeat starting at 9
 
-The Mary:
+**The Mary:**
+
 - Freddy Mercury
 - Heels to heaven
 - Side planks

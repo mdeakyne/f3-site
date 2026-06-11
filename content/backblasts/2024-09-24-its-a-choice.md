@@ -15,14 +15,16 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2024/2024-09-24-its-a-choice.md
 ---
 
+**Backblast:** it’s a choice  
+**Q:** [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)  
+**PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)  
+**Count:** 4  
+**Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
+**When:** 09/24/2024 0530
 
-Backblast: it’s a choice
-Q: [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
-PAX: [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
-Count: 4Where: [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
-When: 09/24/2024 0530
-The Thang: EMOM x3
+**The Thang:**
 
+- EMOM x3
 - 10 Burpees
 - 20 Blockies
 - 15 Overhead Squats
