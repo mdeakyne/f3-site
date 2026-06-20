@@ -88,7 +88,7 @@ const scopes = [
 ];
 ---
 
-<Base title="Leaderboard — F3 Lawrence">
+<Base title="Leaderboard · F3 Lawrence">
   <header class="mb-8 border-b border-rule pb-6">
     <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Standings</p>
     <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">LEADERBOARD</h1>
@@ -139,9 +139,9 @@ const scopes = [
                 </td>
                 <td class="py-3 px-4 font-mono text-right">{p.posts}</td>
                 <td class="py-3 px-4 font-mono text-right">{p.qs}</td>
-                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.earliest ? formatDateShort(p.earliest) : '—'}</td>
-                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.latest ? formatDateShort(p.latest) : '—'}</td>
-                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.latest_q ? formatDateShort(p.latest_q) : '—'}</td>
+                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.earliest ? formatDateShort(p.earliest) : '-'}</td>
+                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.latest ? formatDateShort(p.latest) : '-'}</td>
+                <td class="hidden md:table-cell py-3 px-4 font-mono text-xs text-right text-muted">{p.latest_q ? formatDateShort(p.latest_q) : '-'}</td>
               </tr>
             ))}
           </tbody>

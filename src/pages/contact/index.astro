@@ -22,13 +22,13 @@ import { site } from '../../lib/data';
         <input type="text" name="name" required maxlength="80" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
       </div>
       <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">How should we reach you? <span class="text-muted">(Slack, email, phone — your call)</span></label>
+        <label class="font-mono text-xs uppercase text-muted block mb-1">How should we reach you? <span class="text-muted">(Slack, email, or phone)</span></label>
         <input type="text" name="reach" maxlength="200" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
       </div>
       <div>
         <label class="font-mono text-xs uppercase text-muted block mb-1">Which AO are you eyeing?</label>
         <select name="ao" class="w-full border border-rule bg-surface px-3 py-2 font-mono">
-          <option value="">— no preference —</option>
+          <option value="">No preference</option>
           {site.aos.map((a) => <option value={a.name}>{a.name}</option>)}
         </select>
       </div>
@@ -37,7 +37,7 @@ import { site } from '../../lib/data';
         <textarea name="message" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
       </div>
 
-      {/* Spam trap — must stay empty; hidden from people. */}
+      {/* Spam trap: must stay empty; hidden from people. */}
       <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
         <label>Company<input type="text" name="company" tabindex="-1" autocomplete="off" /></label>
       </div>
@@ -51,7 +51,7 @@ import { site } from '../../lib/data';
     </form>
 
     <p class="mt-8 font-mono text-xs text-muted">
-      No spam, no list. This goes straight to our leadership — that's it.
+      No spam, no list. This goes straight to our leadership. That's it.
     </p>
   </section>
 </Base>
@@ -68,7 +68,7 @@ import { site } from '../../lib/data';
       try {
         const res = await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
         if (!res.ok) throw new Error(await res.text());
-        status.textContent = "✓ Got it. Big Toe will be in touch soon — welcome aboard.";
+        status.textContent = "✓ Got it. Big Toe will be in touch soon. Welcome aboard.";
         status.className = 'font-mono text-sm text-accent-open font-semibold';
         form.reset();
       } catch (err) {

@@ -11,7 +11,7 @@ const sorted = all
 const years = Array.from(new Set(sorted.map((bb) => bb.date.slice(0, 4)))).sort((a, b) => b.localeCompare(a));
 ---
 
-<Base title={`Backblasts — F3 Lawrence (${sorted.length})`}>
+<Base title={`Backblasts · F3 Lawrence (${sorted.length})`}>
   <header class="mb-10 border-b border-rule pb-6">
     <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Archive</p>
     <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">BACKBLASTS</h1>
@@ -36,8 +36,8 @@ const years = Array.from(new Set(sorted.map((bb) => bb.date.slice(0, 4)))).sort(
                 )}
               </span>
               <span class="hidden sm:block font-mono text-xs uppercase text-muted">{aoName(bb.ao ?? '')}</span>
-              <span class="hidden sm:block font-mono text-xs text-muted">Q: {bb.q || '—'}</span>
-              <span class="font-mono text-xs text-muted text-right">{bb.total_pax ?? '—'} pax</span>
+              <span class="hidden sm:block font-mono text-xs text-muted">Q: {bb.q || '-'}</span>
+              <span class="font-mono text-xs text-muted text-right">{bb.total_pax ?? '-'} pax</span>
             </li>
           ))}
         </ul>

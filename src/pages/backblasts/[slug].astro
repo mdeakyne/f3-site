@@ -16,7 +16,7 @@ const { Content } = await render(entry);
 const bb = entry.data;
 ---
 
-<Base title={`${bb.title} — F3 Lawrence`}>
+<Base title={`${bb.title} · F3 Lawrence`}>
   <article class="max-w-3xl">
     <a href="/backblasts/" class="font-mono text-xs uppercase text-accent-link hover:underline">← All backblasts</a>
 
@@ -28,11 +28,11 @@ const bb = entry.data;
       <dl class="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 font-mono text-xs">
         <div>
           <dt class="uppercase text-muted">Q</dt>
-          <dd class="text-ink font-semibold mt-1">{bb.q || '—'}</dd>
+          <dd class="text-ink font-semibold mt-1">{bb.q || '-'}</dd>
         </div>
         <div>
           <dt class="uppercase text-muted">PAX</dt>
-          <dd class="text-ink font-semibold mt-1">{bb.total_pax ?? '—'}</dd>
+          <dd class="text-ink font-semibold mt-1">{bb.total_pax ?? '-'}</dd>
         </div>
         <div>
           <dt class="uppercase text-muted">FNGs</dt>

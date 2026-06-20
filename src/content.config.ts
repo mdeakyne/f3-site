@@ -43,7 +43,7 @@ const aos = defineCollection({
     map_url: z.string().optional(),
     // Bootcamp / running / ruck / etc.
     workout_type: z.string().optional(),
-    // Site Q (point man) — F3 name only, no contact info on the public site.
+    // Site Q (point man). F3 name only, no contact info on the public site.
     site_q: z.string().optional(),
     site_q_slug: z.string().optional(),
     // Optional flavor: what the AO name means / its story.

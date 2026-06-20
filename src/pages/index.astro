@@ -15,7 +15,7 @@ const principles = [
 
 const objections = [
   ['"I need to get in shape first."',
-   "That's like saying I'll go to the doctor once I'm healthy. Every exercise is scalable — go as hard or as easy as you need. You get in shape by showing up."],
+   "That's like saying I'll go to the doctor once I'm healthy. Every exercise is scalable. Go as hard or as easy as you need. You get in shape by showing up."],
   ['"I already have a gym membership."',
    "Great! If that's working for you to get fit and connected, keep it up. F3 is free and it's a group of men who'll notice when you're not there. You don't have to do it alone."],
   ["\"I'm too old / too busy.\"",
@@ -25,7 +25,7 @@ const objections = [
 ];
 ---
 
-<Base title="F3 Lawrence — free workouts for men in Lawrence, KS" description="Free, peer-led, outdoor workouts for men in Lawrence, KS. Rain or shine. No registration, no fee. Just show up.">
+<Base title="F3 Lawrence: free workouts for men in Lawrence, KS" description="Free, peer-led, outdoor workouts for men in Lawrence, KS. Rain or shine. No registration, no fee. Just show up.">
   <!-- HERO -->
   <section class="mb-16">
     <p class="font-mono text-xs uppercase tracking-widest text-muted mb-3">
@@ -151,8 +151,8 @@ const objections = [
           <span class="font-mono text-xs text-muted w-24 shrink-0">{formatDate(bb.date)}</span>
           <a href={`/backblasts/${bb.slug}/`} class="font-heading font-semibold hover:text-accent-red flex-1">{bb.title}</a>
           <span class="font-mono text-xs uppercase text-muted">{aoName(bb.ao)}</span>
-          <span class="font-mono text-xs text-muted w-20 text-right">Q: {bb.q || '—'}</span>
-          <span class="font-mono text-xs text-muted w-10 text-right">{bb.total_pax ?? '—'} pax</span>
+          <span class="font-mono text-xs text-muted w-20 text-right">Q: {bb.q || '-'}</span>
+          <span class="font-mono text-xs text-muted w-10 text-right">{bb.total_pax ?? '-'} pax</span>
         </li>
       ))}
     </ul>
