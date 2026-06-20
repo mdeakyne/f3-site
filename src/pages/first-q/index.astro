@@ -1,0 +1,176 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const flow = [
+  ['~1 min', 'Disclaimer', 'You’re not a professional. Everyone’s here voluntarily, at their own risk, responsible for their own wellbeing — modify anything, know your limits.'],
+  ['~5 min', 'Warmup', 'Mosey to get the blood flowing, then dynamic stretches (Side-Straddle Hops, Imperial Walkers, arm circles, Windmills).'],
+  ['~30 min', 'The Thang', 'The main event — your plan. Mix strength + cardio, use the coupon (cinderblock), move around. Watch the clock.'],
+  ['~5 min', 'Mary', 'Core to finish — Flutter, American Hammer, Freddie Mercury, plank work. PAX can call one out.'],
+  ['~5 min', 'COT', 'Circle up: Count-o-rama (count off), Name-o-rama (name, age, F3 name — FNGs get named), announcements, Ball of Man (intentions / prayer), then the Flag Pic.'],
+];
+
+const counting = [
+  ['Cadence', 'You call “1…2…3” and the PAX shout the rep on the last beat (“…ONE!”). Keeps everyone together.'],
+  ['Single count', 'One number per rep — good for lunges and slow movements (count each side, or each full rep).'],
+  ['OYO', '“On your own” — PAX go at their own pace to a target number. Good for a quick burst while you reset.'],
+];
+
+const etiquette = [
+  'Watch the Six — the last man back sets the regroup. No man left behind.',
+  'A point man sets the pace up front; you keep an eye on the back.',
+  'Greet everyone as they show, and welcome any FNG by name.',
+  'Mumblechatter is good — it means they’re alive. Keep them moving.',
+  'Modify loudly and often: “if that’s too much, do X instead.”',
+];
+---
+
+<Base title="Your First Q — F3 Lawrence" description="Everything you need to lead your first F3 Lawrence workout: the flow, counting, etiquette, the disclaimer, and a printable weinke template.">
+  <section class="max-w-3xl">
+    <header class="mb-8 border-b border-rule pb-6">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Resource · VQ</p>
+      <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">YOUR FIRST Q</h1>
+      <p class="mt-3 font-heading text-lg text-muted">
+        You said yes to lead. Here's everything you need for your VQ — no experience required.
+        Beehive (Tue) and Ad Astra (Thu) both go ~45 minutes, 5:30 AM.
+      </p>
+    </header>
+
+    <!-- THREE RULES -->
+    <section class="mb-12">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">Three rules, that's it</h2>
+      <ol class="grid sm:grid-cols-3 gap-4">
+        <li class="border border-rule bg-surface p-5">
+          <div class="font-display text-3xl text-accent-red leading-none mb-2">1</div>
+          <p class="font-heading font-bold mb-1">It's about the PAX.</p>
+          <p class="text-sm text-muted">Not about you. Every call is for the men in front of you.</p>
+        </li>
+        <li class="border border-rule bg-surface p-5">
+          <div class="font-display text-3xl text-accent-red leading-none mb-2">2</div>
+          <p class="font-heading font-bold mb-1">Write it down.</p>
+          <p class="text-sm text-muted">Carry a weinke (your notes). Template's at the bottom — fill it in and bring it.</p>
+        </li>
+        <li class="border border-rule bg-surface p-5">
+          <div class="font-display text-3xl text-accent-red leading-none mb-2">3</div>
+          <p class="font-heading font-bold mb-1">If you can't do it, don't Q it.</p>
+          <p class="text-sm text-muted">No clipboarding. You do every rep you call.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- BEFORE THE DAY -->
+    <section class="mb-12">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">Before the day</h2>
+      <ul class="space-y-1 text-ink list-disc pl-5">
+        <li>Claim your date on the <a href="/signup/" class="text-accent-link underline">Q signup</a>.</li>
+        <li>Build your plan — steal freely from the <a href="/exercises/" class="text-accent-link underline">exercise toolkit</a> and past <a href="/backblasts/" class="text-accent-link underline">backblasts</a>.</li>
+        <li>Show up ~10 minutes early to set up and greet the PAX.</li>
+        <li>If there's an FNG, welcome him and pair him with a battle buddy.</li>
+      </ul>
+    </section>
+
+    <!-- THE FLOW -->
+    <section class="mb-12">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">The flow (~45 min)</h2>
+      <div class="border border-rule divide-y divide-rule">
+        {flow.map(([time, name, desc], i) => (
+          <div class={`grid grid-cols-[5rem_1fr] sm:grid-cols-[6rem_8rem_1fr] gap-x-4 gap-y-1 px-4 py-4 ${i % 2 === 1 ? 'bg-surface-muted' : 'bg-surface'}`}>
+            <span class="font-mono text-xs text-muted">{time}</span>
+            <span class="font-heading font-bold uppercase tracking-tight col-start-2 sm:col-start-2">{name}</span>
+            <span class="text-sm text-muted col-span-2 sm:col-span-1 sm:col-start-3">{desc}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- COUNTING -->
+    <section class="mb-12">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">How to count</h2>
+      <dl class="space-y-3">
+        {counting.map(([name, desc]) => (
+          <div class="sm:flex sm:gap-4">
+            <dt class="font-heading font-bold w-32 shrink-0">{name}</dt>
+            <dd class="text-muted">{desc}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <!-- ETIQUETTE -->
+    <section class="mb-12">
+      <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-4 border-b border-rule pb-2">Watch the six</h2>
+      <ul class="space-y-1 text-ink list-disc pl-5">
+        {etiquette.map((e) => <li>{e}</li>)}
+      </ul>
+    </section>
+
+    <!-- DISCLAIMER -->
+    <section class="mb-12 bg-surface border-l-4 border-accent-red p-6">
+      <h2 class="font-heading text-xl font-bold uppercase tracking-tight mb-2">Say the disclaimer first</h2>
+      <p class="text-muted mb-2">Right before you start, out loud:</p>
+      <p class="font-heading text-ink">
+        "I'm not a professional. You're here voluntarily and at your own risk — you're
+        responsible for your own wellbeing. Know your limits and modify anything you need to."
+      </p>
+    </section>
+
+    <!-- WEINKE -->
+    <section class="mb-12 weinke">
+      <div class="flex items-baseline justify-between mb-4 border-b border-rule pb-2">
+        <h2 class="font-heading text-2xl font-bold uppercase tracking-tight">Your weinke</h2>
+        <button id="print-weinke" class="no-print font-mono text-xs uppercase text-accent-link hover:underline">Print this →</button>
+      </div>
+      <p class="no-print text-muted mb-4 text-sm">Copy this, fill it in, and carry it. It's fine to read from notes.</p>
+      <pre class="weinke-card border border-rule bg-surface p-5 font-mono text-sm whitespace-pre-wrap leading-relaxed">F3 LAWRENCE — Q WEINKE
+
+AO / Date: ____________________   Q: ____________________
+
+DISCLAIMER + welcome FNGs
+
+WARMUP (~5 min)
+  - Mosey
+  - ____________________  x ____
+  - ____________________  x ____
+
+THE THANG (~30 min)
+  - ____________________  x ____
+  - ____________________  x ____
+  - ____________________  x ____
+  - ____________________  x ____
+  - (coupon / mosey / partner work?)
+
+MARY (~5 min)
+  - ____________________  x ____
+  - ____________________  x ____
+
+COT
+  - Count-o-rama -> Name-o-rama
+  - Announcements: ____________________
+  - Ball of Man (intentions / prayer)
+  - Flag Pic</pre>
+    </section>
+
+    <!-- CTA -->
+    <section class="no-print bg-surface border border-rule p-6 sm:p-8">
+      <h2 class="font-heading text-xl font-bold uppercase tracking-tight mb-2">Ready?</h2>
+      <p class="text-muted mb-4">Lock in a date and it goes to a nantan for confirmation.</p>
+      <a href="/signup/" class="inline-block bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
+        Claim your Q →
+      </a>
+    </section>
+  </section>
+</Base>
+
+<style>
+  @media print {
+    .no-print { display: none !important; }
+    /* Print just the weinke: hide everything, then show the weinke section. */
+    body * { visibility: hidden; }
+    .weinke, .weinke * { visibility: visible; }
+    .weinke { position: absolute; left: 0; top: 0; width: 100%; }
+    .weinke-card { border: none; }
+  }
+</style>
+
+<script>
+  document.getElementById('print-weinke')?.addEventListener('click', () => window.print());
+</script>
