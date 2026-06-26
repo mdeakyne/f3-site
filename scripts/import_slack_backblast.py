@@ -33,6 +33,16 @@ CANONICAL = {
     'training-wheels': 'Training Wheels',
     'bigtoe': 'Big Toe',
     'big-toe': 'Big Toe',
+    'casio': 'Casio',
+    # Wreck It is represented by the :wreck-it-ralph: emoji in Slack.
+    # NOTE: "Trainwreck" is a DIFFERENT, separate PAX — do not collapse it here.
+    'wreck-it-ralph': 'Wreck It',
+}
+
+# Slack channel ID → AO slug (Where: lines often use a bare <#CHANNELID> mention)
+CHANNEL_TO_AO = {
+    'c07a8stlz5z': 'beehive',
+    'c05l33u97l4': 'ad-astra',
 }
 
 def normalize_name(raw: str) -> str:
@@ -60,6 +70,10 @@ def parse_pax_line(line: str) -> list[str]:
     line = re.sub(r'\*\*', '', line)
     # Strip "PAX:" prefix
     line = re.sub(r'^PAX:\s*', '', line, flags=re.IGNORECASE)
+    # The :wreck-it-ralph: emoji stands in for the PAX "Wreck It". Promote it to
+    # its own @-delimited token so a space-separated "casio :wreck-it-ralph:"
+    # doesn't get mashed into one name.
+    line = re.sub(r':wreck-it-ralph:', ' @Wreck It ', line, flags=re.IGNORECASE)
     # Split on @ signs (most common Slack format: @Name1 @Name2 @Name3)
     # or commas
     names = []
@@ -71,6 +85,12 @@ def parse_pax_line(line: str) -> list[str]:
     for p in parts:
         p = p.strip()
         if not p:
+            continue
+        # Drop a trailing standalone "FNG" marker (an unnamed new guy noted after
+        # the named PAX) and bare "FNG" tokens — FNG counts are derived from
+        # first-appearance by update_fngs.py, not from this marker.
+        p = re.sub(r'\s+FNG\s*$', '', p, flags=re.IGNORECASE).strip()
+        if p.upper() == 'FNG' or not p:
             continue
         name = normalize_name(p)
         if name:
@@ -88,6 +108,10 @@ def parse_date(raw: str) -> str:
     m = re.search(r'(\d{4})-(\d{2})-(\d{2})', raw)
     if m:
         return m.group(0)
+    # MM/DD/YY (2-digit year, e.g. 6/16/26 -> 2026-06-16)
+    m = re.search(r'(\d{1,2})/(\d{1,2})/(\d{2})(?!\d)', raw)
+    if m:
+        return f"20{m.group(3)}-{m.group(1).zfill(2)}-{m.group(2).zfill(2)}"
     # Month DD, YYYY
     m = re.search(r'([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})', raw)
     if m:
@@ -99,15 +123,21 @@ def parse_date(raw: str) -> str:
     raise ValueError(f"Cannot parse date: {raw!r}")
 
 def parse_ao(raw: str) -> str:
-    """Map Slack channel mention to AO slug."""
+    """Map a Where: value to an AO slug, or '' if it can't be determined.
+
+    Returning '' lets the caller fall back to the --ao hint instead of writing a
+    raw channel mention (e.g. <#C05L33U97L4>) into the frontmatter.
+    """
     raw = raw.lower()
     if 'beehive' in raw:
         return 'beehive'
     if 'ad-astra' in raw or 'ad_astra' in raw or 'adastra' in raw:
         return 'ad-astra'
-    # fallback: strip # and leading ao-
-    raw = re.sub(r'^#?ao[-_]?', '', raw).strip()
-    return raw or 'ad-astra'
+    # Bare channel-ID mention: <#C05L33U97L4>
+    for cid, slug in CHANNEL_TO_AO.items():
+        if cid in raw:
+            return slug
+    return ''
 
 def parse_message(text: str, ao_hint: str | None = None) -> dict:
     """Parse a Slack backblast message into a dict of fields."""
@@ -129,6 +159,8 @@ def parse_message(text: str, ao_hint: str | None = None) -> dict:
         if re.match(r'\*?\*?backblast\s*:', stripped, re.IGNORECASE):
             raw_title = re.sub(r'\*?\*?backblast\s*:\s*', '', stripped, flags=re.IGNORECASE)
             raw_title = re.sub(r'\*\*', '', raw_title).strip()
+            # Drop Slack :emoji: codes (e.g. ":stopwatch: 17% Rest" -> "17% Rest")
+            raw_title = re.sub(r':[a-z0-9_+\-]+:', '', raw_title).strip()
             if raw_title:
                 title = raw_title
 
@@ -146,7 +178,9 @@ def parse_message(text: str, ao_hint: str | None = None) -> dict:
         elif re.match(r'\*?\*?where\s*:', stripped, re.IGNORECASE):
             raw_ao = re.sub(r'\*?\*?where\s*:\s*', '', stripped, flags=re.IGNORECASE)
             raw_ao = re.sub(r'\*\*', '', raw_ao).strip()
-            ao = parse_ao(raw_ao)
+            parsed_ao = parse_ao(raw_ao)
+            if parsed_ao:
+                ao = parsed_ao
 
         # Q
         elif re.match(r'\*?\*?q\s*:', stripped, re.IGNORECASE):

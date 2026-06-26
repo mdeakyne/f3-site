@@ -12,15 +12,36 @@ List `content/backblasts/` sorted by filename (which is date-prefixed). The last
 
 ## Step 2 — Pull recent posts from Slack
 
-Read both AO channels for backblasts posted after the cutoff:
+Pull both AO channels with the F3 Lawrence Slack token (the `slack_token` in
+`.env`) — **not** the Slack MCP, which is connected to a different workspace.
+The fetch script reads the token, calls the Slack Web API, resolves user
+mentions to names, and emits JSON:
 
-- `#ao-beehive` (channel ID: `C07A8STLZ5Z`) — Tuesdays 5:30a
-- `#ao-ad-astra` (channel ID: `C05L33U97L4`) — Thursdays 5:30a
+```bash
+# Run via uv (the scripts require Python 3.10+; the .python-version pin handles this)
+uv run scripts/fetch_slack_backblasts.py --channel C07A8STLZ5Z --oldest <cutoff> > /tmp/beehive.json   # #ao-beehive, Tuesdays 5:30a
+uv run scripts/fetch_slack_backblasts.py --channel C05L33U97L4 --oldest <cutoff> > /tmp/ad-astra.json  # #ao-ad-astra, Thursdays 5:30a
+```
 
-For each channel, read the recent message history. Identify messages that are **backblasts** (not preblasts, not general chat). A backblast contains:
+Set `--oldest` to a few days before the cutoff date from Step 1 (a backblast is
+sometimes posted a day or two after the workout); the importer dedupes by slug,
+so over-fetching is harmless.
+
+> Token prerequisites (one-time): the Slack app must have the
+> `channels:history`, `channels:read`, `groups:history`, `groups:read`, and
+> `users:read` scopes, and the bot (`f3_lawrence_site`) must be invited to both
+> channels (`/invite @f3_lawrence_site`).
+
+Each JSON message has a `text` field. Identify messages that are **backblasts**
+(not preblasts, not general chat). A backblast contains:
 - A title line starting with "Backblast:"
 - Where, When, Q, PAX fields
 - Workout description
+
+The importer (`scripts/slack_import_runner.py --ao beehive|ad-astra`) can write
+first-draft files automatically, but its output is a rough pass: **always review
+and curate each file** per Steps 3–4 (PAX names, emoji like `:wreck-it-ralph:` →
+Wreck-It, unnamed `FNG` markers, and stopping before the COT).
 
 ## Step 3 — Determine which backblasts are missing
 
@@ -65,7 +86,7 @@ Rules:
 Run the FNG update script:
 
 ```bash
-python3 scripts/update_fngs.py
+uv run scripts/update_fngs.py
 ```
 
 Review any mismatches it reports. The early 2023 founding backblasts (2023-08-10, 2023-08-17, 2023-08-31) have manually-set FNG counts that should NOT be overwritten — restore them to 7, 4, and 2 respectively if the script changes them.
@@ -73,7 +94,7 @@ Review any mismatches it reports. The early 2023 founding backblasts (2023-08-10
 ## Step 6 — Regenerate the leaderboard
 
 ```bash
-python3 scripts/regenerate_data.py
+uv run scripts/regenerate_data.py
 ```
 
 Confirm the output shows the expected backblast count and latest post date.
