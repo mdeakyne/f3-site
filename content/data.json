@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-26T11:49:03Z",
+  "generated_at": "2026-06-30T12:49:27Z",
   "counts": {
-    "backblasts": 253,
+    "backblasts": 254,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
@@ -34,7 +34,7 @@
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 227,
+      "posts": 228,
       "qs": 36,
       "aos": [
         "ad-astra",
@@ -47,7 +47,7 @@
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 183,
+      "posts": 184,
       "qs": 33,
       "aos": [
         "ad-astra",
@@ -60,27 +60,27 @@
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 148,
-      "qs": 37,
+      "posts": 149,
+      "qs": 38,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
       "latest": "2026-06-25",
-      "latest_q": "2026-06-18"
+      "latest_q": "2026-06-23"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck-It",
-      "posts": 86,
+      "posts": 87,
       "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-06-18",
+      "latest": "2026-06-23",
       "latest_q": "2026-03-03"
     },
     {
@@ -99,7 +99,7 @@
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 76,
+      "posts": 77,
       "qs": 15,
       "aos": [
         "ad-astra",
@@ -163,7 +163,7 @@
     {
       "slug": "casio",
       "f3_name": "Casio",
-      "posts": 27,
+      "posts": 28,
       "qs": 0,
       "aos": [
         "ad-astra",
@@ -357,6 +357,19 @@
       "latest_q": null
     },
     {
+      "slug": "goulash",
+      "f3_name": "Goulash",
+      "posts": 7,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-01-27",
+      "latest": "2026-06-23",
+      "latest_q": null
+    },
+    {
       "slug": "medley",
       "f3_name": "Medley",
       "posts": 7,
@@ -407,19 +420,6 @@
       "latest_q": null
     },
     {
-      "slug": "goulash",
-      "f3_name": "Goulash",
-      "posts": 6,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-01-27",
-      "latest": "2026-06-16",
-      "latest_q": null
-    },
-    {
       "slug": "womens-league",
       "f3_name": "Womens League",
       "posts": 5,
@@ -432,18 +432,6 @@
       "latest_q": null
     },
     {
-      "slug": "captain-kirk",
-      "f3_name": "Captain Kirk",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -453,6 +441,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-14",
+      "latest_q": null
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07",
       "latest_q": null
     },
     {
@@ -629,8 +629,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "long-game",
+      "f3_name": "Long Game",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -641,8 +641,8 @@
       "latest_q": null
     },
     {
-      "slug": "long-game",
-      "f3_name": "Long Game",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -677,8 +677,8 @@
       "latest_q": null
     },
     {
-      "slug": "glee-club",
-      "f3_name": "Glee Club",
+      "slug": "queen-bee",
+      "f3_name": "Queen Bee",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -689,8 +689,8 @@
       "latest_q": null
     },
     {
-      "slug": "queen-bee",
-      "f3_name": "Queen Bee",
+      "slug": "glee-club",
+      "f3_name": "Glee Club",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -725,8 +725,8 @@
       "latest_q": null
     },
     {
-      "slug": "clipless",
-      "f3_name": "Clipless",
+      "slug": "baldtire",
+      "f3_name": "Baldtire",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -737,8 +737,8 @@
       "latest_q": null
     },
     {
-      "slug": "baldtire",
-      "f3_name": "Baldtire",
+      "slug": "clipless",
+      "f3_name": "Clipless",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -806,6 +806,15 @@
       "q": "Dizzy",
       "total_pax": 7,
       "fngs": 1
+    },
+    {
+      "slug": "2026-06-23-bent-out-of-shape",
+      "title": "Bent out of Shape",
+      "date": "2026-06-23",
+      "ao": "beehive",
+      "q": "Waco",
+      "total_pax": 7,
+      "fngs": 0
     },
     {
       "slug": "2026-06-18-17-rest",
@@ -878,15 +887,6 @@
       "q": "Farmers Only",
       "total_pax": 6,
       "fngs": null
-    },
-    {
-      "slug": "2026-05-21-springbata",
-      "title": "Springbata",
-      "date": "2026-05-21",
-      "ao": "ad-astra",
-      "q": "404",
-      "total_pax": 5,
-      "fngs": 0
     }
   ]
 }
