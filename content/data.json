@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-30T12:49:27Z",
+  "generated_at": "2026-07-03T15:41:06Z",
   "counts": {
-    "backblasts": 254,
+    "backblasts": 255,
     "pax": 61,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-06-25"
+    "latest_post": "2026-06-30"
   },
   "aos": [
     {
@@ -18,6 +18,19 @@
     }
   ],
   "leaderboard": [
+    {
+      "slug": "farmers-only",
+      "f3_name": "Farmers Only",
+      "posts": 229,
+      "qs": 36,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2026-06-30",
+      "latest_q": "2026-06-16"
+    },
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
@@ -32,56 +45,56 @@
       "latest_q": "2026-06-11"
     },
     {
-      "slug": "farmers-only",
-      "f3_name": "Farmers Only",
-      "posts": 228,
-      "qs": 36,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2023-08-17",
-      "latest": "2026-06-25",
-      "latest_q": "2026-06-16"
-    },
-    {
       "slug": "404",
       "f3_name": "404",
-      "posts": 184,
+      "posts": 185,
       "qs": 33,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-06-25",
+      "latest": "2026-06-30",
       "latest_q": "2026-05-21"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 149,
+      "posts": 150,
       "qs": 38,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-06-25",
+      "latest": "2026-06-30",
       "latest_q": "2026-06-23"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck-It",
-      "posts": 87,
+      "posts": 88,
       "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-06-23",
+      "latest": "2026-06-30",
       "latest_q": "2026-03-03"
+    },
+    {
+      "slug": "dizzy",
+      "f3_name": "Dizzy",
+      "posts": 78,
+      "qs": 15,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2025-04-03",
+      "latest": "2026-06-30",
+      "latest_q": "2026-06-25"
     },
     {
       "slug": "sawdust",
@@ -95,19 +108,6 @@
       "earliest": "2023-08-10",
       "latest": "2025-02-25",
       "latest_q": "2025-01-23"
-    },
-    {
-      "slug": "dizzy",
-      "f3_name": "Dizzy",
-      "posts": 77,
-      "qs": 15,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2025-04-03",
-      "latest": "2026-06-25",
-      "latest_q": "2026-06-25"
     },
     {
       "slug": "flute",
@@ -138,14 +138,14 @@
     {
       "slug": "toto",
       "f3_name": "Toto",
-      "posts": 53,
+      "posts": 54,
       "qs": 6,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-24",
-      "latest": "2026-06-25",
+      "latest": "2026-06-30",
       "latest_q": "2026-05-12"
     },
     {
@@ -163,15 +163,15 @@
     {
       "slug": "casio",
       "f3_name": "Casio",
-      "posts": 28,
-      "qs": 0,
+      "posts": 29,
+      "qs": 1,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-06-25",
-      "latest_q": null
+      "latest": "2026-06-30",
+      "latest_q": "2026-06-30"
     },
     {
       "slug": "bonnet",
@@ -592,6 +592,18 @@
       "latest_q": null
     },
     {
+      "slug": "brick",
+      "f3_name": "Brick",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2025-06-10",
+      "latest": "2026-06-30",
+      "latest_q": null
+    },
+    {
       "slug": "gypsy",
       "f3_name": "Gypsy (Downrange)",
       "posts": 2,
@@ -799,6 +811,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-06-30-tabada",
+      "title": "TABADA",
+      "date": "2026-06-30",
+      "ao": "beehive",
+      "q": "Casio",
+      "total_pax": 8,
+      "fngs": 0
+    },
+    {
       "slug": "2026-06-25-sisyphus",
       "title": "Sisyphus",
       "date": "2026-06-25",
@@ -878,15 +899,6 @@
       "q": "Waco",
       "total_pax": 7,
       "fngs": 0
-    },
-    {
-      "slug": "2026-05-26-learning-from-others",
-      "title": "Learning from Others",
-      "date": "2026-05-26",
-      "ao": "beehive",
-      "q": "Farmers Only",
-      "total_pax": 6,
-      "fngs": null
     }
   ]
 }
