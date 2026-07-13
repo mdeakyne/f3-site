@@ -86,6 +86,7 @@ MANUAL_OVERRIDES = {
     # Unnamed FNG attended (listed as literal "FNG" in the PAX line, not slugged).
     '2026-06-18-17-rest.md': 1,
     '2026-06-25-sisyphus.md': 1,
+    '2026-07-02-all-work-no-play-makes-jack-a-dull-boy.md': 1,
 
 }
 
