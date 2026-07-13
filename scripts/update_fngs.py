@@ -83,6 +83,10 @@ MANUAL_OVERRIDES = {
     '2023-08-31-bear-one-anothers-burdens.md': 2,
     # Breakfast Pizza Q'd this workout as a downrange visitor; Casio already named.
     '2026-03-19-this-is-my-coupon.md': 0,
+    # Unnamed FNG attended (listed as literal "FNG" in the PAX line, not slugged).
+    '2026-06-18-17-rest.md': 1,
+    '2026-06-25-sisyphus.md': 1,
+    '2026-07-02-all-work-no-play-makes-jack-a-dull-boy.md': 1,
 
 }
 
