@@ -12,7 +12,8 @@ pax:
 - Casio
 - Farmers Only
 - Wreck-It
-total_pax: 6
+- Goulash
+total_pax: 7
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-09-01-feeling-low-feeling-negative.md
 ---
@@ -21,7 +22,7 @@ Backblast: Feeling Low, Feeling Negative
 AO: #ao-beehive
 When: 09-01-26 0530
 Q: Big Toe
-PAX: 404, Waco, Casio, Farmers Only, Wreck-It
+PAX: 404, Waco, Casio, Farmers Only, Wreck-It, Goulash
 
 Warm-Up
 - Abe Vigoda
