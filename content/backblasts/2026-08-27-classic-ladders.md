@@ -1,7 +1,7 @@
 ---
-slug: 2026-08-26-classic-ladders
+slug: 2026-08-27-classic-ladders
 title: Classic Ladders
-date: '2026-08-26'
+date: '2026-08-27'
 ao: ad-astra
 q: Waco
 q_slug: waco
@@ -15,12 +15,12 @@ pax:
 - Wreck-It
 total_pax: 7
 fngs: 0
-vault_path: 07 - F3/Backblasts/2026/2026-08-26-classic-ladders.md
+vault_path: 07 - F3/Backblasts/2026/2026-08-27-classic-ladders.md
 ---
 
 Backblast: Classic Ladders
 Where: #ao-ad-astra
-When: 08/26/26 0530
+When: 08/27/26 0530
 Q: Waco
 PAX: Big Toe, Farmers Only, 404, Casio, Toto, Wreck-It
 
