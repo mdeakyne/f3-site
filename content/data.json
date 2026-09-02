@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T22:45:54Z",
+  "generated_at": "2026-09-02T01:10:42Z",
   "counts": {
     "backblasts": 273,
     "pax": 61,
@@ -68,7 +68,7 @@
       ],
       "earliest": "2024-05-02",
       "latest": "2026-09-01",
-      "latest_q": "2026-08-26"
+      "latest_q": "2026-08-27"
     },
     {
       "slug": "wreck-it",
@@ -132,7 +132,7 @@
         "beehive"
       ],
       "earliest": "2025-04-24",
-      "latest": "2026-08-26",
+      "latest": "2026-08-27",
       "latest_q": "2026-05-12"
     },
     {
@@ -432,18 +432,6 @@
       "latest_q": null
     },
     {
-      "slug": "blanks",
-      "f3_name": "Blanks",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-14",
-      "latest_q": null
-    },
-    {
       "slug": "captain-kirk",
       "f3_name": "Captain Kirk",
       "posts": 4,
@@ -453,6 +441,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-07",
+      "latest_q": null
+    },
+    {
+      "slug": "blanks",
+      "f3_name": "Blanks",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-14",
       "latest_q": null
     },
     {
@@ -654,8 +654,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -678,8 +678,8 @@
       "latest_q": null
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -821,9 +821,9 @@
       "fngs": 0
     },
     {
-      "slug": "2026-08-26-classic-ladders",
+      "slug": "2026-08-27-classic-ladders",
       "title": "Classic Ladders",
-      "date": "2026-08-26",
+      "date": "2026-08-27",
       "ao": "ad-astra",
       "q": "Waco",
       "total_pax": 7,
