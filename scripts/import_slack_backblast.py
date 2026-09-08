@@ -56,6 +56,12 @@ def normalize_name(raw: str) -> str:
     if not raw:
         return ''
     key = raw.lower().strip()
+    # A PAX may be written as a bare Slack emoji, including on a Q: line
+    # (e.g. "Q: :wreck-it-ralph:"). Look the emoji name up unwrapped.
+    if len(key) > 2 and key.startswith(':') and key.endswith(':'):
+        inner = key[1:-1]
+        if inner in CANONICAL:
+            return CANONICAL[inner]
     return CANONICAL.get(key, raw)
 
 def slugify(name: str) -> str:
@@ -112,6 +118,15 @@ def parse_date(raw: str) -> str:
     m = re.search(r'(\d{1,2})/(\d{1,2})/(\d{2})(?!\d)', raw)
     if m:
         return f"20{m.group(3)}-{m.group(1).zfill(2)}-{m.group(2).zfill(2)}"
+    # MM-DD-YYYY (dash-separated, US month-first; e.g. 09-01-2026)
+    m = re.search(r'(?<!\d)(\d{1,2})-(\d{1,2})-(\d{4})(?!\d)', raw)
+    if m:
+        return f"{m.group(3)}-{m.group(1).zfill(2)}-{m.group(2).zfill(2)}"
+    # MM-DD-YY (dash-separated, 2-digit year; e.g. 09-01-26 -> 2026-09-01).
+    # Checked after YYYY-MM-DD above, so an ISO date is never misread here.
+    m = re.search(r'(?<!\d)(\d{1,2})-(\d{1,2})-(\d{2})(?!\d)', raw)
+    if m:
+        return f"20{m.group(3)}-{m.group(1).zfill(2)}-{m.group(2).zfill(2)}"
     # Month DD, YYYY
     m = re.search(r'([A-Za-z]+)\s+(\d{1,2}),?\s+(\d{4})', raw)
     if m:
@@ -139,6 +154,36 @@ def parse_ao(raw: str) -> str:
             return slug
     return ''
 
+# Title emoji that are pure decoration: dropping them leaves the title intact.
+# Anything outside this set may be load-bearing (":gem:" means "Diamonds"), so
+# the daily sync refuses to name the workout itself and asks for a human.
+# Add to this set as new decorative emoji show up in titles.
+DECORATIVE_EMOJI = {
+    ':stopwatch:', ':timer_clock:', ':leg:', ':surfer:', ':ladder:', ':fire:',
+    ':muscle:', ':man_in_lotus_position:', ':weight_lifter:', ':running:',
+    ':snowflake:', ':sunny:', ':rain_cloud:', ':christmas_tree:', ':santa:',
+    ':skull:', ':100:', ':star:', ':zap:', ':boom:', ':trophy:',
+}
+
+
+# Header fields at the top of a backblast. The colon is optional: several Qs
+# post "Where <#C07A8STLZ5Z>" / "When 07/14/2026" / "Q @Dizzy" with no colon.
+# A colon-less line is only treated as a header inside HEADER_WINDOW lines of
+# the top, so body prose ("When you get tired, ...") is not mistaken for one.
+_FIELD_RE = re.compile(
+    r'^\*{0,2}(backblast|where|ao|when|q|pax)\*{0,2}\s*(:)?\s*(.*)$', re.IGNORECASE)
+HEADER_WINDOW = 10
+
+# The Circle of Trust is the personal share at the end of a workout. It is
+# never published: none of the committed backblasts contain one.
+_COT_RE = re.compile(r'^\s*\*{0,2}(cot|circle of trust)\b', re.IGNORECASE)
+
+
+def strip_emphasis(s: str) -> str:
+    """Drop wrapping Slack/markdown emphasis, e.g. *Backblast: Foo* -> Foo."""
+    return s.strip().strip('*_').strip()
+
+
 def parse_message(text: str, ao_hint: str | None = None) -> dict:
     """Parse a Slack backblast message into a dict of fields."""
     lines = text.splitlines()
@@ -151,50 +196,67 @@ def parse_message(text: str, ao_hint: str | None = None) -> dict:
     body_lines = []
     in_body = False
 
+    ao_from_where = None
+    title_had_emoji = False
+
     for i, line in enumerate(lines):
         stripped = line.strip()
-        clean = re.sub(r'\*\*', '', stripped).strip()
 
-        # Title: Backblast: <title>
-        if re.match(r'\*?\*?backblast\s*:', stripped, re.IGNORECASE):
-            raw_title = re.sub(r'\*?\*?backblast\s*:\s*', '', stripped, flags=re.IGNORECASE)
-            raw_title = re.sub(r'\*\*', '', raw_title).strip()
-            # Drop Slack :emoji: codes (e.g. ":stopwatch: 17% Rest" -> "17% Rest")
-            raw_title = re.sub(r':[a-z0-9_+\-]+:', '', raw_title).strip()
-            if raw_title:
-                title = raw_title
+        # Everything from the CoT marker onward is dropped, not just the marker
+        # line -- the share continues onto following lines.
+        if _COT_RE.match(stripped):
+            break
 
-        # Date
-        elif re.match(r'\*?\*?when\s*:', stripped, re.IGNORECASE):
-            raw_date = re.sub(r'\*?\*?when\s*:\s*', '', stripped, flags=re.IGNORECASE)
-            raw_date = re.sub(r'\*\*', '', raw_date).strip()
-            raw_date = re.sub(r'@.*$', '', raw_date).strip()  # strip @5:30AM
-            try:
-                date_str = parse_date(raw_date)
-            except ValueError:
-                pass
+        m = _FIELD_RE.match(stripped)
+        # A colon-less line only counts as a header near the top of the message.
+        if m and (m.group(2) or i < HEADER_WINDOW):
+            field = m.group(1).lower()
+            value = strip_emphasis(re.sub(r'\*\*', '', m.group(3)))
 
-        # AO / Where
-        elif re.match(r'\*?\*?where\s*:', stripped, re.IGNORECASE):
-            raw_ao = re.sub(r'\*?\*?where\s*:\s*', '', stripped, flags=re.IGNORECASE)
-            raw_ao = re.sub(r'\*\*', '', raw_ao).strip()
-            parsed_ao = parse_ao(raw_ao)
-            if parsed_ao:
-                ao = parsed_ao
+            if field == 'backblast':
+                # Drop Slack :emoji: codes (":stopwatch: 17% Rest" -> "17% Rest")
+                raw_title = strip_emphasis(re.sub(r':[a-z0-9_+\-]+:', '', value))
+                if raw_title:
+                    title = raw_title
+                    # An emoji can carry meaning the words do not: "7 of :gem:"
+                    # is "7 of Diamonds". Decorative ones strip away cleanly
+                    # (":stopwatch: 17% Rest" -> "17% Rest"), so only record
+                    # emoji that are not known decoration.
+                    title_had_emoji = bool(
+                        set(re.findall(r':[a-z0-9_+\-]+:', value)) - DECORATIVE_EMOJI)
+                continue
 
-        # Q
-        elif re.match(r'\*?\*?q\s*:', stripped, re.IGNORECASE):
-            raw_q = re.sub(r'\*?\*?q\s*:\s*', '', stripped, flags=re.IGNORECASE)
-            raw_q = re.sub(r'\*\*', '', raw_q).strip()
-            q_name = normalize_name(raw_q)
+            if field == 'when':
+                raw_date = re.sub(r'@.*$', '', value).strip()  # strip @5:30AM
+                try:
+                    date_str = parse_date(raw_date)
+                except ValueError:
+                    pass
+                continue
 
-        # PAX
-        elif re.match(r'\*?\*?pax\s*:', stripped, re.IGNORECASE):
-            pax = parse_pax_line(stripped)
+            # "AO:" is an alias for "Where:" -- both name the workout location.
+            if field in ('where', 'ao'):
+                parsed_ao = parse_ao(value)
+                if parsed_ao:
+                    ao_from_where = parsed_ao
+                continue
 
-        # Everything else is body
-        else:
-            body_lines.append(line)
+            if field == 'q':
+                q_name = normalize_name(value)
+                continue
+
+            if field == 'pax':
+                pax = parse_pax_line('PAX: ' + value)
+                continue
+
+        body_lines.append(line)
+
+    # A Where:/AO: line is copy-pasted between AOs and is sometimes stale (the
+    # 2026-06-30 TABADA backblast was posted in #ao-beehive but named the
+    # ad-astra channel). Where the message was posted is the harder fact, so the
+    # channel wins and the disagreement is reported for review.
+    ao_conflict = bool(ao_hint and ao_from_where and ao_from_where != ao_hint)
+    ao = ao_hint or ao_from_where or ao
 
     # Body: strip leading blank lines
     while body_lines and not body_lines[0].strip():
@@ -229,6 +291,9 @@ def parse_message(text: str, ao_hint: str | None = None) -> dict:
         'total_pax': len(pax),
         'fngs': fngs,
         'body': '\n'.join(body_lines),
+        'ao_conflict': ao_conflict,
+        'ao_from_where': ao_from_where,
+        'title_had_emoji': title_had_emoji,
     }
 
 def make_slug(date_str: str, title: str) -> str:

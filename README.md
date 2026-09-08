@@ -47,6 +47,13 @@ cd ../Notion-Obsidian
    - `CLOUDFLARE_ACCOUNT_ID`
 6. Custom domain: Pages → f3-site → Custom domains → add the domain.
 
+## Backblasts
+
+New backblasts are imported from Slack daily by
+`.github/workflows/slack-sync.yml`, which opens a PR for review rather than
+pushing to `main`. See [docs/slack-sync.md](docs/slack-sync.md) for how to run
+it by hand, the test suite, and the edge cases it handles.
+
 ## Deploy
 
 Pushing to `main` runs `.github/workflows/deploy.yml`, which builds and
