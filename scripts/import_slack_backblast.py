@@ -45,24 +45,37 @@ CHANNEL_TO_AO = {
     'c05l33u97l4': 'ad-astra',
 }
 
+EMOJI_RE = re.compile(r':([a-z0-9_+\-]{2,}):', re.IGNORECASE)
+# A PAX line annotates attendance in parentheses -- "@Dizzy (late)", "@Casio
+# (FNG)", "FNG (real name)". None of it is part of the name, and dropping the
+# last of those keeps an unnamed FNG's real name out of the repo.
+ANNOTATION_RE = re.compile(r'\s*\([^)]*\)\s*$')
+
+
 def normalize_name(raw: str) -> str:
-    """Strip Slack link markup, leading @, then apply canonical lookup."""
+    """Strip Slack link markup, leading @, annotations and emoji, then canonicalize."""
     # Strip Slack link: <@U12345|Name> or [@Name](url)
     raw = re.sub(r'<@[A-Z0-9]+\|([^>]+)>', r'\1', raw)
     raw = re.sub(r'\[@([^\]]+)\]\([^)]+\)', r'\1', raw)
     raw = re.sub(r'<@[A-Z0-9]+>', '', raw)
     # Strip leading @
     raw = raw.strip().lstrip('@').strip()
+    raw = ANNOTATION_RE.sub('', raw).strip()
     if not raw:
         return ''
-    key = raw.lower().strip()
-    # A PAX may be written as a bare Slack emoji, including on a Q: line
-    # (e.g. "Q: :wreck-it-ralph:"). Look the emoji name up unwrapped.
-    if len(key) > 2 and key.startswith(':') and key.endswith(':'):
-        inner = key[1:-1]
-        if inner in CANONICAL:
-            return CANONICAL[inner]
-    return CANONICAL.get(key, raw)
+    # A PAX may be written as a Slack emoji, alone ("Q: :wreck-it-ralph:") or
+    # decorating the name ("Q: Wreckit :wreck-it-ralph:"). Resolve the emoji
+    # when it is all there is; otherwise it is decoration on a real name and
+    # must not survive into the name itself.
+    emoji = EMOJI_RE.findall(raw)
+    stripped = EMOJI_RE.sub('', raw).strip(' :').strip()
+    if not stripped:
+        for name in emoji:
+            if name.lower() in CANONICAL:
+                return CANONICAL[name.lower()]
+        return raw.strip()
+    raw = stripped
+    return CANONICAL.get(raw.lower().strip(), raw)
 
 def slugify(name: str) -> str:
     s = name.lower().strip()

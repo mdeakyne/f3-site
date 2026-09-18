@@ -1,7 +1,7 @@
 """Replay three months of real Slack backblasts through the importer.
 
 Every case here comes from an actual message in #ao-beehive or #ao-ad-astra
-between 2026-06-08 and 2026-09-08.
+between 2026-06-08 and 2026-09-18.
 """
 import re
 
@@ -48,7 +48,7 @@ def test_ambiguous_dash_date_is_month_first():
 # ---------------------------------------------------------------------------
 
 def test_detects_every_real_backblast(slack_backblasts):
-    assert len(slack_backblasts) == 22, "fixture corpus changed"
+    assert len(slack_backblasts) == 26, "fixture corpus changed"
     for m in slack_backblasts:
         assert is_backblast(m["text"]), m["text"][:60]
 
@@ -128,6 +128,17 @@ KNOWN_EXCEPTIONS = {
         "field": "title",
         "curated_file": "2026-08-13-7-of-diamonds.md",
     },
+    "Wreckit's Centennial": {
+        "reason": "Slack says 09-07-26, a Monday; beehive is Tuesday and the "
+                  "preblast went up that Monday, so the workout was 09-08",
+        "field": "date",
+    },
+    ": :wreck-it-ralph: Birthday Bash": {
+        "reason": "title is an emoji standing in for a PAX name, and Slack says "
+                  "09-09-2026, a Wednesday; ad-astra is Thursday, so 09-10",
+        "field": ["title", "date"],
+        "curated_file": "2026-09-10-wreckits-birthday-bash.md",
+    },
 }
 
 
@@ -174,10 +185,16 @@ def test_golden_fields(slack_backblasts, curated):
         except ValueError as e:
             failures.append(f"{raw_title}: PARSE FAILED ({e})")
             continue
+        excused = exc.get("field") or ()
+        excused = [excused] if isinstance(excused, str) else excused
         for field in ("date", "ao", "q"):
-            if exc.get("field") == field:
+            if field in excused:
                 continue
-            if got[field] != c[field]:
+            # Display spelling of a name is drifting (see the xfail on
+            # test_display_name_matches_pax_profile); slug is the identity.
+            same = (slugify(got[field] or "") == slugify(c[field] or "")
+                    if field == "q" else got[field] == c[field])
+            if not same:
                 failures.append(
                     f"{raw_title}: {field} got {got[field]!r} want {c[field]!r}")
         got_pax = sorted(slugify(p) for p in got["pax"])
@@ -200,8 +217,13 @@ def test_known_exceptions_are_still_real(slack_backblasts, curated):
             got = parse_message(m["text"], ao_hint=m["channel_ao"])
         except ValueError:
             continue
-        if exc["field"] != "title" and got[exc["field"]] == c[exc["field"]]:
-            stale.append(f"{raw_title}: {exc['field']} now agrees; drop the exception")
+        fields = exc["field"]
+        fields = [fields] if isinstance(fields, str) else fields
+        for field in fields:
+            if field == "title":
+                continue
+            if got[field] == c[field]:
+                stale.append(f"{raw_title}: {field} now agrees; drop the exception")
     assert not stale, "\n".join(stale)
 
 

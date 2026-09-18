@@ -8,9 +8,10 @@ is not safe to commit follows from what the site already publishes:
   * A backblast's header and workout body are already published verbatim in
     content/backblasts/*.md, so they are kept as-is. Everything from the CoT
     (Circle of Trust) marker onward is replaced with a single synthetic
-    `CoT: <redacted for fixture>` line -- no CoT text appears in any of the 273
+    `CoT: <redacted for fixture>` line -- no CoT text appears in any of the
     committed backblasts, and that synthetic marker is what exercises the
-    CoT-stripping test.
+    CoT-stripping test. A PAX line that introduces an FNG by real name has
+    that name dropped, leaving the bare `FNG` marker the site publishes.
   * Preblasts are kept as header lines only (title / Where / When / Q -- all
     published data), with any trailing prose dropped. They matter to the tests
     as near-misses for backblast detection.
@@ -41,11 +42,15 @@ BACKBLAST_RE = re.compile(r"backblast\s*:", re.I)
 COT_RE = re.compile(r"^\s*\*?\*?(cot|circle of trust)\b", re.I)
 PREBLAST_RE = re.compile(r"pre-?blast\s*:", re.I)
 HEADER_RE = re.compile(r"^\s*\*?\*?(pre-?blast|where|when|ao|q|pax|coupon|coffee|ruck)\b", re.I)
+# PAX lines sometimes introduce an FNG by real name ("FNG (Geoff)"). The site
+# never publishes that, so neither does a fixture in this public repo.
+FNG_NAME_RE = re.compile(r"\b(FNGs?)\b\s*\([^)]*\)", re.I)
 
 
 def sanitize(text: str) -> str:
     """Reduce one Slack message to what is safe to commit (see module docstring)."""
     text = text or ""
+    text = FNG_NAME_RE.sub(r"\1", text)
     if BACKBLAST_RE.search(text):
         # Header + workout body are already public; truncate at the CoT.
         out = []
@@ -90,20 +95,54 @@ def fetch(token: str, channel: str, oldest: float) -> list[dict]:
     return msgs
 
 
+def merge(existing: list[dict], fetched: list[dict]) -> list[dict]:
+    """Union of both sets of messages, keyed by ts, freshly-fetched text winning.
+
+    The committed fixtures are an ARCHIVE, not a snapshot: the workspace is on a
+    plan that serves only ~90 days of history, so a message older than that can
+    never be fetched again. Overwriting the file with a fresh fetch silently
+    drops the oldest weeks (and the tests that depend on them); merging keeps
+    them. --replace exists for the rare case of re-sanitizing from scratch.
+    """
+    by_ts = {m["ts"]: m for m in existing}
+    by_ts.update({m["ts"]: m for m in fetched})
+    return sorted(by_ts.values(), key=lambda m: float(m["ts"]))
+
+
+def load_existing(path: str) -> tuple[list[dict], str | None]:
+    if not os.path.exists(path):
+        return [], None
+    with open(path) as f:
+        data = json.load(f)
+    return data.get("messages", []), data.get("oldest")
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--oldest", default="2026-06-08", help="YYYY-MM-DD")
+    ap.add_argument("--replace", action="store_true",
+                    help="discard the committed messages instead of merging "
+                         "(loses anything Slack no longer serves)")
     args = ap.parse_args()
 
     token = load_token()
     oldest = to_epoch(args.oldest)
     os.makedirs(OUT_DIR, exist_ok=True)
     for ao, cid in CHANNELS.items():
-        msgs = fetch(token, cid, oldest)
         path = os.path.join(OUT_DIR, f"{ao}.json")
+        fetched = fetch(token, cid, oldest)
+        if args.replace:
+            msgs, kept, oldest_field = fetched, 0, args.oldest
+        else:
+            existing, prev_oldest = load_existing(path)
+            msgs = merge(existing, fetched)
+            kept = len(msgs) - len(fetched)
+            # The window the fixture covers is the earlier of the two.
+            oldest_field = min(filter(None, [prev_oldest, args.oldest]))
         with open(path, "w") as f:
-            json.dump({"ao": ao, "channel": cid, "oldest": args.oldest,
+            json.dump({"ao": ao, "channel": cid, "oldest": oldest_field,
                        "messages": msgs}, f, indent=2)
             f.write("\n")
         n_bb = sum(1 for m in msgs if BACKBLAST_RE.search(m["text"]))
-        print(f"{ao}: {len(msgs)} messages ({n_bb} backblasts) -> {path}")
+        note = f", {kept} kept from the committed archive" if kept else ""
+        print(f"{ao}: {len(msgs)} messages ({n_bb} backblasts{note}) -> {path}")

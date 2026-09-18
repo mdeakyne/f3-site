@@ -61,8 +61,12 @@ they're already published on the site.
 | Stale `Where:` line | 06-30 TABADA posted in #ao-beehive but names the ad-astra channel | the posting channel wins; disagreement reported as `ao_conflict` |
 | Hand-corrected date | Classic Ladders: Slack says 08/26, workout was 08/27 (PR #33) | same title within ±3 days counts as already imported; reported, not duplicated |
 | Meaningful title emoji | `7 of :gem:` = "7 of Diamonds" | blocks the import and asks; decorative emoji (`:stopwatch:`) strip silently via `DECORATIVE_EMOJI` |
-| CoT in the message | 8 of 22 backblasts | body truncated at the CoT marker; no committed backblast contains one |
+| CoT in the message | 12 of 26 backblasts | body truncated at the CoT marker; no committed backblast contains one |
 | Bare `FNG` marker | `PAX: @Waco @Dizzy FNG` | dropped from the PAX list; counts come from `update_fngs.py` |
+| FNG named in parentheses | `PAX: @Toto @Waco FNG (real name)` on 09-17 | parenthetical dropped by `normalize_name`, so the real name of an unnamed FNG never reaches the repo or the fixtures |
+| Emoji decorating a name | `Q: Wreckit :wreck-it-ralph:` on 09-10 | emoji stripped off the name; an emoji standing **alone** still resolves through `CANONICAL` |
+| Attendance annotation | `@Dizzy (late)` on 09-10 | trailing parenthetical dropped, so it doesn't become a new PAX `dizzy-late` |
+| Date that isn't an AO day | Centennial posted `09-07` (Mon), Birthday Bash `09-09` (Wed) | not auto-corrected: reported for a human, who files it on the real AO day (both in PR #35) |
 | Off-roster PAX name | `Brick` has posts but no profile | blocks the import — it's a new PAX, a missing profile, or a leaked real name |
 | Chatter mentioning "backblast" | "Sorry for the late backblast" | detector needs a line-anchored title **and** a Q **and** a PAX line |
 | `data.json` churn | set iteration + wall-clock timestamp | iteration sorted, leaderboard has a total order, `generated_at` derived from the newest backblast |
@@ -73,8 +77,13 @@ they're already published on the site.
   `2026-08-04` was posted as screenshots plus a bare exercise list with no
   `Backblast:` header, `2026-08-06` only ever got a preblast, and `2026-06-09`
   has no message in either channel (the `vault_path` frontmatter points at an
-  Obsidian vault as a second source). Roughly 88% of backblasts are
-  Slack-derivable; the rest still need a person.
+  Obsidian vault as a second source). 26 of the 29 curated files in the
+  window (~90%) are Slack-derivable; the rest still need a person.
+- **The test fixtures are an archive, not a snapshot.** The workspace serves
+  only ~90 days of history, so `tests/make_fixtures.py` merges a fresh fetch
+  into the committed messages instead of overwriting them. Running it with
+  `--replace` discards every message Slack no longer returns, which silently
+  deletes the oldest weeks of test coverage.
 - **Thread replies aren't read.** `fetch_channel` reads top-level history only.
   No backblast in the window was posted as a reply, but photo links and
   follow-ups often are.

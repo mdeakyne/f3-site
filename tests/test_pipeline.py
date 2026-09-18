@@ -102,7 +102,7 @@ def test_ao_is_a_known_value(curated):
 # Source coverage: which curated files Slack could never have produced.
 # ---------------------------------------------------------------------------
 
-# Verified by hand against channel history for 2026-06-08..2026-09-08.
+# Verified by hand against channel history for 2026-06-08..2026-09-17.
 NOT_IN_SLACK = {
     "2026-06-09-push-and-pull.md":
         "no message in either channel; came from the Obsidian vault",
@@ -114,7 +114,8 @@ NOT_IN_SLACK = {
 
 
 def test_slack_only_covers_the_expected_share_of_the_corpus(curated, slack_backblasts):
-    """Documents the automation's ceiling: ~88% of backblasts are Slack-derivable."""
+    """Documents the automation's ceiling: 26 of the 29 curated files in the
+    window (~90%) are Slack-derivable."""
     expected_gap = set(NOT_IN_SLACK)
     actual_gap = {c["filename"] for c in curated} - _slack_covered(curated, slack_backblasts)
     assert actual_gap == expected_gap, (
