@@ -18,23 +18,23 @@ import { site } from '../../lib/data';
 
     <form id="contact-form" method="post" action="/api/contact" class="space-y-5">
       <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">Your name</label>
-        <input type="text" name="name" required maxlength="80" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
+        <label for="contact-name" class="font-mono text-xs uppercase text-muted block mb-1">Your name</label>
+        <input id="contact-name" type="text" name="name" required maxlength="80" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
       </div>
       <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">How should we reach you? <span class="text-muted">(Slack, email, or phone)</span></label>
-        <input type="text" name="reach" maxlength="200" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
+        <label for="contact-reach" class="font-mono text-xs uppercase text-muted block mb-1">How should we reach you? <span class="text-muted">(Slack, email, or phone)</span></label>
+        <input id="contact-reach" type="text" name="reach" maxlength="200" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
       </div>
       <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">Which AO are you eyeing?</label>
-        <select name="ao" class="w-full border border-rule bg-surface px-3 py-2 font-mono">
+        <label for="contact-ao" class="font-mono text-xs uppercase text-muted block mb-1">Which AO are you eyeing?</label>
+        <select id="contact-ao" name="ao" class="w-full border border-rule bg-surface px-3 py-2 font-mono">
           <option value="">No preference</option>
           {site.aos.map((a) => <option value={a.name}>{a.name}</option>)}
         </select>
       </div>
       <div>
-        <label class="font-mono text-xs uppercase text-muted block mb-1">Anything else? <span class="text-muted">(optional)</span></label>
-        <textarea name="message" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
+        <label for="contact-message" class="font-mono text-xs uppercase text-muted block mb-1">Anything else? <span class="text-muted">(optional)</span></label>
+        <textarea id="contact-message" name="message" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
       </div>
 
       {/* Spam trap: must stay empty; hidden from people. */}
@@ -43,7 +43,13 @@ import { site } from '../../lib/data';
       </div>
       <input type="hidden" name="loaded_at" />
 
-      <button type="submit" class="bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright">
+      <div id="turnstile-widget" class="min-h-16"></div>
+      <div id="turnstile-status" aria-live="polite" class="font-mono text-sm text-muted">
+        Loading verification …
+      </div>
+
+      <button id="contact-submit" type="submit" disabled aria-describedby="turnstile-status"
+              class="bg-accent-red text-surface font-heading font-semibold uppercase tracking-wide px-6 py-3 hover:bg-accent-red-bright disabled:cursor-not-allowed disabled:opacity-50">
         Send it
       </button>
 
@@ -57,24 +63,134 @@ import { site } from '../../lib/data';
 </Base>
 
 <script>
-  const form = document.getElementById('contact-form') as HTMLFormElement | null;
-  if (form) {
-    (form.elements.namedItem('loaded_at') as HTMLInputElement).value = String(Date.now());
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const status = document.getElementById('form-status')!;
-      status.textContent = 'Sending …';
-      status.className = 'font-mono text-sm text-muted';
-      try {
-        const res = await fetch('/api/contact', { method: 'POST', body: new FormData(form) });
-        if (!res.ok) throw new Error(await res.text());
-        status.textContent = "✓ Got it. Big Toe will be in touch soon. Welcome aboard.";
-        status.className = 'font-mono text-sm text-accent-open font-semibold';
-        form.reset();
-      } catch (err) {
-        status.textContent = `✗ ${(err as Error).message || 'Submission failed. Try again.'}`;
-        status.className = 'font-mono text-sm text-accent-red font-semibold';
+  import {
+    createContactFormController,
+    selectTurnstileSiteKey,
+    type ContactFormStatus,
+  } from '../../lib/contact-form-controller';
+
+  type TurnstileApi = {
+    render: (
+      container: HTMLElement,
+      options: {
+        sitekey: string;
+        action: string;
+        callback: (token: string) => void;
+        'expired-callback': () => void;
+        'error-callback': () => void;
+      },
+    ) => string;
+    reset: (widgetId: string) => void;
+  };
+
+  declare global {
+    interface Window {
+      turnstile?: TurnstileApi;
+    }
+  }
+
+  const PRODUCTION_TURNSTILE_SITE_KEY = '0x4AAAAAAFFQOtzOy0HjVVtg';
+  const TEST_TURNSTILE_SITE_KEY = '1x00000000000000000000AA';
+
+  function setStatus(element: HTMLElement, status: ContactFormStatus) {
+    element.textContent = status.message;
+    const color = status.kind === 'success'
+      ? 'text-accent-open font-semibold'
+      : status.kind === 'error'
+        ? 'text-accent-red font-semibold'
+        : 'text-muted';
+    element.className = `font-mono text-sm ${color}`;
+  }
+
+  function initContactForm() {
+    const form = document.getElementById('contact-form') as HTMLFormElement | null;
+    const submit = document.getElementById('contact-submit') as HTMLButtonElement | null;
+    const widget = document.getElementById('turnstile-widget');
+    const challengeStatus = document.getElementById('turnstile-status');
+    const formStatus = document.getElementById('form-status');
+    if (!form || !submit || !widget || !challengeStatus || !formStatus) return;
+
+    const loadedAt = form.elements.namedItem('loaded_at') as HTMLInputElement;
+    const refreshLoadedAt = () => {
+      loadedAt.value = String(Date.now());
+    };
+    refreshLoadedAt();
+
+    let widgetId: string | null = null;
+    const controller = createContactFormController({
+      makeFormData: () => new FormData(form),
+      send: async (data) => {
+        const response = await fetch('/api/contact', { method: 'POST', body: data });
+        let payload: { ok?: boolean; error?: string } = {};
+        try {
+          payload = await response.json();
+        } catch {
+          // A non-JSON response is converted to a useful generic message below.
+        }
+        return {
+          ok: response.ok && payload.ok === true,
+          error: typeof payload.error === 'string'
+            ? payload.error
+            : 'Submission failed. Try again.',
+        };
+      },
+      resetForm: () => form.reset(),
+      refreshLoadedAt,
+      resetWidget: () => {
+        if (widgetId !== null && window.turnstile) window.turnstile.reset(widgetId);
+      },
+      setSubmitDisabled: (disabled) => {
+        submit.disabled = disabled;
+      },
+      setFormStatus: (status) => setStatus(formStatus, status),
+      setChallengeStatus: (status) => setStatus(challengeStatus, status),
+    });
+
+    const renderWidget = () => {
+      if (widgetId !== null) return;
+      if (!window.turnstile) {
+        controller.scriptFailed();
+        return;
       }
+
+      const sitekey = selectTurnstileSiteKey(
+        window.location.hostname,
+        PRODUCTION_TURNSTILE_SITE_KEY,
+        TEST_TURNSTILE_SITE_KEY,
+      );
+      try {
+        widgetId = window.turnstile.render(widget, {
+          sitekey,
+          action: 'join_f3',
+          callback: (token) => controller.challengeReady(token),
+          'expired-callback': () => controller.challengeExpired(),
+          'error-callback': () => controller.challengeError(),
+        });
+      } catch {
+        controller.scriptFailed();
+      }
+    };
+
+    const existingScript = document.getElementById('turnstile-api') as HTMLScriptElement | null;
+    if (existingScript) {
+      if (window.turnstile) renderWidget();
+      else existingScript.addEventListener('load', renderWidget, { once: true });
+    } else {
+      const script = document.createElement('script');
+      script.id = 'turnstile-api';
+      script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+      script.async = true;
+      script.defer = true;
+      script.addEventListener('load', renderWidget, { once: true });
+      script.addEventListener('error', () => controller.scriptFailed(), { once: true });
+      document.head.appendChild(script);
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      void controller.submit();
     });
   }
+
+  initContactForm();
 </script>
