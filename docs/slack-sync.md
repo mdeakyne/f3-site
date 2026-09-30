@@ -37,8 +37,8 @@ in both channels.
 uv run --with pytest pytest tests/ -q
 ```
 
-The suite replays three months of real backblasts (2026-06-08 to 2026-09-08,
-22 of them) from sanitized fixtures and compares the parse against the curated
+The suite replays three months of real backblasts (2026-06-08 to 2026-09-29,
+29 of them) from sanitized fixtures and compares the parse against the curated
 files in `content/backblasts/`, which are the source of truth. The key
 regression guard is `test_replaying_the_window_imports_nothing_new`: running the
 sync daily across that window must converge exactly on what's committed — no new
@@ -49,6 +49,18 @@ public**, so that script sanitizes: CoT sections become a synthetic
 `CoT: <redacted for fixture>` marker, preblasts keep only their header lines,
 and other chatter becomes `<chatter>`. Workout bodies are kept verbatim because
 they're already published on the site.
+
+Two separate things get redacted for the same reason, because a fixture commits
+raw Slack text:
+
+- `FNG (Real Name)` is dropped, leaving the bare `FNG` marker the site publishes.
+- A PAX named on a `PAX:` line that `content/pax/` doesn't publish becomes `FNG`.
+  A Q lists a nameless FNG by their real name (`@Josiah Wegener`), which is
+  otherwise indistinguishable from a real F3 name. This is the same roster test
+  `daily_slack_sync.py` uses to refuse an import, matched through
+  `normalize_name` so Slack's spellings all resolve to one canonical slug. It
+  fails toward redaction: redacting a genuine newcomer costs a fixture some
+  fidelity, the other direction leaks a name.
 
 ## Edge cases and how each is handled
 
@@ -68,6 +80,8 @@ they're already published on the site.
 | Attendance annotation | `@Dizzy (late)` on 09-10 | trailing parenthetical dropped, so it doesn't become a new PAX `dizzy-late` |
 | Date that isn't an AO day | Centennial posted `09-07` (Mon), Birthday Bash `09-09` (Wed) | not auto-corrected: reported for a human, who files it on the real AO day (both in PR #35) |
 | Off-roster PAX name | `Brick` has posts but no profile | blocks the import — it's a new PAX, a missing profile, or a leaked real name |
+| FNG named in a PAX line | `@Josiah Wegener` on 09-29 | left as `FNG` in the backblast; a manual `update_fngs.py` override carries the count, since the slug heuristic can't see an unnamed arrival |
+| FNG debut credited to a later name | `2026-09-17` was `FNG`, named Van Gogh on 09-22 | curated file credits the debut to him; `KNOWN_EXCEPTIONS` in `test_parser.py` records it, since Slack's bare `FNG` cannot express it |
 | Chatter mentioning "backblast" | "Sorry for the late backblast" | detector needs a line-anchored title **and** a Q **and** a PAX line |
 | `data.json` churn | set iteration + wall-clock timestamp | iteration sorted, leaderboard has a total order, `generated_at` derived from the newest backblast |
 
@@ -77,7 +91,7 @@ they're already published on the site.
   `2026-08-04` was posted as screenshots plus a bare exercise list with no
   `Backblast:` header, `2026-08-06` only ever got a preblast, and `2026-06-09`
   has no message in either channel (the `vault_path` frontmatter points at an
-  Obsidian vault as a second source). 26 of the 29 curated files in the
+  Obsidian vault as a second source). 29 of the 32 curated files in the
   window (~90%) are Slack-derivable; the rest still need a person.
 - **The test fixtures are an archive, not a snapshot.** The workspace serves
   only ~90 days of history, so `tests/make_fixtures.py` merges a fresh fetch
@@ -87,7 +101,7 @@ they're already published on the site.
 - **Thread replies aren't read.** `fetch_channel` reads top-level history only.
   No backblast in the window was posted as a reply, but photo links and
   follow-ups often are.
-- **`content/pax/` is an incomplete roster** — 61 profiles against 64 PAX on the
+- **`content/pax/` is an incomplete roster** — 62 profiles against 65 PAX on the
   leaderboard (`brick`, `gypsy`, `honeystinger` have none), and the `post_count`
   fields in it are stale. `KNOWN_OFF_ROSTER` in the sync script lists the three
   so they don't block every run.

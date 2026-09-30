@@ -11,7 +11,9 @@ is not safe to commit follows from what the site already publishes:
     `CoT: <redacted for fixture>` line -- no CoT text appears in any of the
     committed backblasts, and that synthetic marker is what exercises the
     CoT-stripping test. A PAX line that introduces an FNG by real name has
-    that name dropped, leaving the bare `FNG` marker the site publishes.
+    that name dropped, leaving the bare `FNG` marker the site publishes: the
+    site keeps an unnamed FNG as `FNG` until they are given an F3 name, so a
+    name is only kept in a fixture if content/pax/ actually publishes it.
   * Preblasts are kept as header lines only (title / Where / When / Q -- all
     published data), with any trailing prose dropped. They matter to the tests
     as near-misses for backblast detection.
@@ -35,6 +37,8 @@ sys.path.insert(0, os.path.join(REPO_ROOT, "scripts"))
 OUT_DIR = os.path.join(REPO_ROOT, "tests", "fixtures", "slack")
 
 from fetch_slack_backblasts import load_token, slack_get, resolve_mentions, to_epoch  # noqa: E402
+from daily_slack_sync import KNOWN_OFF_ROSTER, roster_slugs  # noqa: E402
+from import_slack_backblast import normalize_name, slugify  # noqa: E402
 
 CHANNELS = {"beehive": "C07A8STLZ5Z", "ad-astra": "C05L33U97L4"}
 
@@ -45,6 +49,57 @@ HEADER_RE = re.compile(r"^\s*\*?\*?(pre-?blast|where|when|ao|q|pax|coupon|coffee
 # PAX lines sometimes introduce an FNG by real name ("FNG (Geoff)"). The site
 # never publishes that, so neither does a fixture in this public repo.
 FNG_NAME_RE = re.compile(r"\b(FNGs?)\b\s*\([^)]*\)", re.I)
+PAX_LINE_RE = re.compile(r"^(\s*\*{0,2}pax\*{0,2}\s*:?\s*)(.*)$", re.I)
+# A Q marks a nameless FNG with a bare trailing "FNG" and no name at all. It
+# rides on the end of the previous token ("@Waco FNG"), so it has to come off
+# before that token can be recognized -- parse_pax_line drops it the same way.
+FNG_TAIL_RE = re.compile(r"\s+FNGs?\s*$", re.I)
+
+_roster: set[str] | None = None
+
+
+def published_slugs() -> set[str]:
+    """Every F3 name the site publishes, plus the known off-roster PAX.
+
+    Cached: a fixture run redacts hundreds of PAX lines and the roster cannot
+    change underneath it.
+    """
+    global _roster
+    if _roster is None:
+        _roster = roster_slugs() | KNOWN_OFF_ROSTER
+    return _roster
+
+
+def redact_pax_line(line: str, roster: set[str]) -> str:
+    """Replace any PAX on the line the site does not publish with a bare `FNG`.
+
+    A Q lists a nameless FNG by their real name ("@Josiah Wegener"), which is
+    indistinguishable from a real PAX name without the roster. The roster is
+    the same test scripts/daily_slack_sync.py uses to refuse an import, so a
+    name survives into a public fixture only if the site already publishes it
+    as an F3 name. Matching goes through normalize_name() so a PAX's Slack
+    spellings ("@Wreckit", ":wreck-it-ralph:") all resolve to their one
+    canonical slug instead of reading as strangers. Redacting a legitimate
+    newcomer is the safe direction to fail: it costs a fixture some fidelity,
+    the other way leaks a name.
+    """
+    m = PAX_LINE_RE.match(line)
+    if not m:
+        return line
+    head, rest = m.group(1), m.group(2)
+    out = []
+    for i, seg in enumerate(rest.split("@")):
+        if i == 0:  # text before the first @ is the "PAX:" header itself
+            out.append(seg)
+            continue
+        name = seg.strip()
+        comma = "," if name.endswith(",") else ""
+        bare = FNG_TAIL_RE.sub("", name.rstrip(",").strip()).strip()
+        if not bare or bare.lower() == "fng" or slugify(normalize_name(bare)) in roster:
+            out.append(seg)
+        else:
+            out.append(f"FNG{comma}")
+    return head + "@".join(out)
 
 
 def sanitize(text: str) -> str:
@@ -54,11 +109,12 @@ def sanitize(text: str) -> str:
     if BACKBLAST_RE.search(text):
         # Header + workout body are already public; truncate at the CoT.
         out = []
+        roster = published_slugs()
         for line in text.splitlines():
             if COT_RE.match(line):
                 out.append("CoT: <redacted for fixture>")
                 break
-            out.append(line)
+            out.append(redact_pax_line(line, roster))
         return "\n".join(out)
     if PREBLAST_RE.search(text):
         # Header lines only -- drop any trailing prose.

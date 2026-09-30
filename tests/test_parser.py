@@ -1,7 +1,7 @@
 """Replay three months of real Slack backblasts through the importer.
 
 Every case here comes from an actual message in #ao-beehive or #ao-ad-astra
-between 2026-06-08 and 2026-09-18.
+between 2026-06-08 and 2026-09-29.
 """
 import re
 
@@ -48,7 +48,7 @@ def test_ambiguous_dash_date_is_month_first():
 # ---------------------------------------------------------------------------
 
 def test_detects_every_real_backblast(slack_backblasts):
-    assert len(slack_backblasts) == 26, "fixture corpus changed"
+    assert len(slack_backblasts) == 29, "fixture corpus changed"
     for m in slack_backblasts:
         assert is_backblast(m["text"]), m["text"][:60]
 
@@ -139,6 +139,12 @@ KNOWN_EXCEPTIONS = {
         "field": ["title", "date"],
         "curated_file": "2026-09-10-wreckits-birthday-bash.md",
     },
+    "Tower of 12s": {
+        "reason": "Slack's PAX line says only 'FNG'. He was named Van Gogh by "
+                  "hand after earning the name on 09-22, so the FNG debut is "
+                  "credited to him rather than left anonymous",
+        "field": "pax",
+    },
 }
 
 
@@ -197,10 +203,13 @@ def test_golden_fields(slack_backblasts, curated):
             if not same:
                 failures.append(
                     f"{raw_title}: {field} got {got[field]!r} want {c[field]!r}")
-        got_pax = sorted(slugify(p) for p in got["pax"])
-        want_pax = sorted(slugify(p) for p in c["pax"] if p != "FNG")
-        if got_pax != want_pax:
-            failures.append(f"{raw_title}: pax got {got_pax} want {want_pax}")
+        # A curated file may credit an FNG debut to the F3 name that PAX
+        # earned later, which Slack's bare "FNG" marker cannot express.
+        if "pax" not in excused:
+            got_pax = sorted(slugify(p) for p in got["pax"])
+            want_pax = sorted(slugify(p) for p in c["pax"] if p != "FNG")
+            if got_pax != want_pax:
+                failures.append(f"{raw_title}: pax got {got_pax} want {want_pax}")
     assert not failures, "\n".join(failures)
 
 
