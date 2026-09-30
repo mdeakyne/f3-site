@@ -50,17 +50,12 @@ public**, so that script sanitizes: CoT sections become a synthetic
 and other chatter becomes `<chatter>`. Workout bodies are kept verbatim because
 they're already published on the site.
 
-Two separate things get redacted for the same reason, because a fixture commits
-raw Slack text:
+`FNG (Real Name)` is dropped, leaving the bare `FNG` marker the site publishes.
 
-- `FNG (Real Name)` is dropped, leaving the bare `FNG` marker the site publishes.
-- A PAX named on a `PAX:` line that `content/pax/` doesn't publish becomes `FNG`.
-  A Q lists a nameless FNG by their real name (`@Josiah Wegener`), which is
-  otherwise indistinguishable from a real F3 name. This is the same roster test
-  `daily_slack_sync.py` uses to refuse an import, matched through
-  `normalize_name` so Slack's spellings all resolve to one canonical slug. It
-  fails toward redaction: redacting a genuine newcomer costs a fixture some
-  fidelity, the other direction leaks a name.
+A Q can also name a nameless FNG with no `FNG` marker at all — a bare
+`@Real Name` on the PAX line, which looks exactly like a real F3 name. The
+sanitizer does not catch that; the 09-29 Blocking Fast and Slow fixture was
+corrected by hand. See "Known limits" below before regenerating.
 
 ## Edge cases and how each is handled
 
@@ -80,7 +75,7 @@ raw Slack text:
 | Attendance annotation | `@Dizzy (late)` on 09-10 | trailing parenthetical dropped, so it doesn't become a new PAX `dizzy-late` |
 | Date that isn't an AO day | Centennial posted `09-07` (Mon), Birthday Bash `09-09` (Wed) | not auto-corrected: reported for a human, who files it on the real AO day (both in PR #35) |
 | Off-roster PAX name | `Brick` has posts but no profile | blocks the import — it's a new PAX, a missing profile, or a leaked real name |
-| FNG named in a PAX line | `@Josiah Wegener` on 09-29 | left as `FNG` in the backblast; a manual `update_fngs.py` override carries the count, since the slug heuristic can't see an unnamed arrival |
+| FNG named in a PAX line | an FNG listed by real name on 09-29 | left as `FNG` in the backblast; a manual `update_fngs.py` override carries the count, since the slug heuristic can't see an unnamed arrival |
 | FNG debut credited to a later name | `2026-09-17` was `FNG`, named Van Gogh on 09-22 | curated file credits the debut to him; `KNOWN_EXCEPTIONS` in `test_parser.py` records it, since Slack's bare `FNG` cannot express it |
 | Chatter mentioning "backblast" | "Sorry for the late backblast" | detector needs a line-anchored title **and** a Q **and** a PAX line |
 | `data.json` churn | set iteration + wall-clock timestamp | iteration sorted, leaderboard has a total order, `generated_at` derived from the newest backblast |
@@ -98,6 +93,13 @@ raw Slack text:
   into the committed messages instead of overwriting them. Running it with
   `--replace` discards every message Slack no longer returns, which silently
   deletes the oldest weeks of test coverage.
+- **A nameless FNG in a fixture needs a human.** `make_fixtures.py` only
+  redacts the `FNG (Real Name)` form. A bare real name on a PAX line is
+  indistinguishable from an F3 name and passes straight through — which is how
+  one reached the 09-29 fixture before it was corrected by hand. **Grep the
+  regenerated fixtures for any PAX name absent from `content/pax/` before
+  committing them.** A roster-driven redaction in `make_fixtures.py` would close
+  this properly; it isn't written yet.
 - **Thread replies aren't read.** `fetch_channel` reads top-level history only.
   No backblast in the window was posted as a reply, but photo links and
   follow-ups often are.
