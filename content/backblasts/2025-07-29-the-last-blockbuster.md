@@ -7,7 +7,7 @@ q: Training Wheels
 q_slug: training-wheels
 pax:
 - Training Wheels
-- Wreck It
+- Wreck-It
 - Waco
 - Farmers Only
 total_pax: 4

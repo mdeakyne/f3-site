@@ -9,7 +9,7 @@ pax:
 - Big Toe
 - Waco
 - Dizzy
-- Wreck It
+- Wreck-It
 - Farmers Only
 - '404'
 total_pax: 6
@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-09-push-and-pull.md
 **Where:** #ao-beehive  
 **When:** 06/09/26 0530  
 **Q:** Big Toe  
-**PAX:** Waco, Dizzy, Wreck It, Farmers Only, 404
+**PAX:** Waco, Dizzy, Wreck-It, Farmers Only, 404
 
 **The Thang:**
 

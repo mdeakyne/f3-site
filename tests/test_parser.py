@@ -92,11 +92,15 @@ def test_wreck_it_variants_collapse(raw):
     assert slugify(normalize_name(raw)) == "wreck-it"
 
 
-@pytest.mark.xfail(reason="display-name drift: content/pax/wreck-it.md says "
-                          "'Wreck It' but recent backblasts say 'Wreck-It'. "
-                          "Cosmetic only (same slug); needs a decision on which "
-                          "spelling is canonical.", strict=True)
 def test_display_name_matches_pax_profile():
+    """CANONICAL, the PAX profile, and the backblasts must all agree on the spelling.
+
+    This was an xfail for months: the importer emitted "Wreck It" while recent
+    curated files said "Wreck-It". Wreck-It is now canonical everywhere, so the
+    drift is gone. Re-add the marker if it ever returns -- it is a real
+    inconsistency, not just cosmetic, because regenerate_data.py lets the last
+    backblast processed decide the name the leaderboard displays.
+    """
     import os
     from conftest import REPO_ROOT
     profile = open(os.path.join(REPO_ROOT, "content", "pax", "wreck-it.md")).read()

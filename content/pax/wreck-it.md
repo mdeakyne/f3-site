@@ -1,6 +1,6 @@
 ---
 slug: wreck-it
-f3_name: Wreck It
+f3_name: Wreck-It
 post_count: 58
 q_count: 1
 earliest_post: '2025-06-05'

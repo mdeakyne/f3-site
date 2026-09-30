@@ -10,7 +10,7 @@ pax:
 - Big Toe
 - Farmers Only
 - Toto
-- Wreck It
+- Wreck-It
 - Casio
 - Dizzy
 total_pax: 7

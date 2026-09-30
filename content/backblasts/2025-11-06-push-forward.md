@@ -11,7 +11,7 @@ pax:
 - Pepper
 - Dizzy
 - Waco
-- Wreck It
+- Wreck-It
 total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-11-06-push-forward.md

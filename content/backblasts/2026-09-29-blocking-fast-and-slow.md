@@ -10,7 +10,7 @@ pax:
 - '404'
 - Dizzy
 - Waco
-- Wreck It
+- Wreck-It
 - Toto
 - Casio
 - Farmers Only
@@ -24,7 +24,7 @@ Backblast: Blocking Fast and Slow
 Where: #ao-beehive
 When: 09/29/26 0530
 Q: Big Toe
-PAX: Big Toe, 404, Dizzy, Waco, Wreck It, Toto, Casio, Farmers Only, FNG
+PAX: Big Toe, 404, Dizzy, Waco, Wreck-It, Toto, Casio, Farmers Only, FNG
 
 The Thang: Tabata
 20 seconds on, 10 seconds off, 8 rounds for each exercise.

@@ -10,7 +10,7 @@ pax:
 - '404'
 - Waco
 - Big Toe
-- Wreck It
+- Wreck-It
 - Dial Up
 total_pax: 6
 fngs: 0

@@ -10,7 +10,7 @@ pax:
 - Farmers Only
 - Waco
 - '404'
-- Wreck It
+- Wreck-It
 total_pax: 5
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-10-23-i-like-to-move-it-move-it.md
@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-10-23-i-like-to-move-it-move-it.md
 - Coupon: :coupon:
 - Coffee: ☕
 
-PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), Wreck It, [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
+PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), Wreck-It, [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
 **Warmup:**
 

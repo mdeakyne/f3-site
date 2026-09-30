@@ -9,7 +9,7 @@ pax:
 - Farmers Only
 - Toto
 - Downrange
-- Wreck It
+- Wreck-It
 - Waco
 - '404'
 - Dizzy

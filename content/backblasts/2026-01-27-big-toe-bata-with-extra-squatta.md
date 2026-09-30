@@ -11,7 +11,7 @@ pax:
 - Flute
 - Waco
 - '404'
-- Wreck It
+- Wreck-It
 - Big Toe
 - Bonnet
 - Goulash

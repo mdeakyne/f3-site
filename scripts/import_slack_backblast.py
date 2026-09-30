@@ -12,12 +12,12 @@ CONTENT_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'backblas
 
 # Canonical name lookup: lowercase stripped key → canonical f3_name
 CANONICAL = {
-    # Wreck It variations
-    'wreckit': 'Wreck It',
-    'wreck-it': 'Wreck It',
-    'wreck it': 'Wreck It',
-    'icon': 'Wreck It',
-    'wreck': 'Wreck It',
+    # Wreck-It variations
+    'wreckit': 'Wreck-It',
+    'wreck-it': 'Wreck-It',
+    'wreck it': 'Wreck-It',
+    'icon': 'Wreck-It',
+    'wreck': 'Wreck-It',
     # Carl Anderson / Medley
     'carl anderson': 'Medley',
     'carl': 'Medley',
@@ -34,9 +34,9 @@ CANONICAL = {
     'bigtoe': 'Big Toe',
     'big-toe': 'Big Toe',
     'casio': 'Casio',
-    # Wreck It is represented by the :wreck-it-ralph: emoji in Slack.
+    # Wreck-It is represented by the :wreck-it-ralph: emoji in Slack.
     # NOTE: "Trainwreck" is a DIFFERENT, separate PAX — do not collapse it here.
-    'wreck-it-ralph': 'Wreck It',
+    'wreck-it-ralph': 'Wreck-It',
 }
 
 # Slack channel ID → AO slug (Where: lines often use a bare <#CHANNELID> mention)
@@ -89,10 +89,10 @@ def parse_pax_line(line: str) -> list[str]:
     line = re.sub(r'\*\*', '', line)
     # Strip "PAX:" prefix
     line = re.sub(r'^PAX:\s*', '', line, flags=re.IGNORECASE)
-    # The :wreck-it-ralph: emoji stands in for the PAX "Wreck It". Promote it to
+    # The :wreck-it-ralph: emoji stands in for the PAX "Wreck-It". Promote it to
     # its own @-delimited token so a space-separated "casio :wreck-it-ralph:"
     # doesn't get mashed into one name.
-    line = re.sub(r':wreck-it-ralph:', ' @Wreck It ', line, flags=re.IGNORECASE)
+    line = re.sub(r':wreck-it-ralph:', ' @Wreck-It ', line, flags=re.IGNORECASE)
     # Split on @ signs (most common Slack format: @Name1 @Name2 @Name3)
     # or commas
     names = []

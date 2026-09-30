@@ -107,8 +107,9 @@ corrected by hand. See "Known limits" below before regenerating.
   leaderboard (`brick`, `gypsy`, `honeystinger` have none), and the `post_count`
   fields in it are stale. `KNOWN_OFF_ROSTER` in the sync script lists the three
   so they don't block every run.
-- **Display-name drift.** `content/pax/wreck-it.md` says `Wreck It` but recent
-  backblasts say `Wreck-It`. Both slugify to `wreck-it`, so links and the
-  leaderboard are correct either way, but `regenerate_data.py` lets the last
-  backblast processed win over the profile. Tracked by an `xfail` test in
-  `tests/test_parser.py`.
+- **`regenerate_data.py` lets the last backblast processed win over the profile's
+  name.** If the corpus ever disagrees on a display spelling, the leaderboard
+  shows whichever file sorted last, not what `content/pax/` says. The two
+  spellings of Wreck-It that used to circulate are now settled: `Wreck-It` is
+  canonical in `CANONICAL`, in the profile, and in every backblast, and
+  `test_display_name_matches_pax_profile` fails if they drift apart again.

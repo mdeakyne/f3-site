@@ -10,7 +10,7 @@ pax:
 - '404'
 - Dizzy
 - Toto
-- Wreck It
+- Wreck-It
 - Pepper
 total_pax: 6
 fngs: 0

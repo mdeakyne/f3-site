@@ -11,7 +11,7 @@ pax:
 - Big Toe
 - Farmers Only
 - Waco
-- Wreck It
+- Wreck-It
 total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-06-24-you-can-bank-on-it.md

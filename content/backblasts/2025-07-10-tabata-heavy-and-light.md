@@ -7,7 +7,7 @@ q: Big Toe
 q_slug: big-toe
 pax:
 - Big Toe
-- Wreck It
+- Wreck-It
 - Training Wheels
 - Waco
 - Toto

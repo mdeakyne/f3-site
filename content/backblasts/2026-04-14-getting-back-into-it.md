@@ -9,7 +9,7 @@ pax:
 - Big Toe
 - Casio
 - Waco
-- Wreck It
+- Wreck-It
 - Farmers Only
 total_pax: 5
 fngs: 0

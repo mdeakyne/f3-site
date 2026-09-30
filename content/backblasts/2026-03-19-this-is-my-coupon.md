@@ -12,7 +12,7 @@ pax:
 - Dizzy
 - '404'
 - Farmers Only
-- Wreck It
+- Wreck-It
 - Casio
 total_pax: 9
 fngs: 0

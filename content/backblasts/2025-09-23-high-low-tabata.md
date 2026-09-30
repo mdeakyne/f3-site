@@ -11,7 +11,7 @@ pax:
 - Dizzy
 - Waco
 - Farmers Only
-- Wreck It
+- Wreck-It
 - Dial Up
 total_pax: 7
 fngs: 0

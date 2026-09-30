@@ -9,7 +9,7 @@ pax:
 - Casio
 - Big Toe
 - Waco
-- Wreck It
+- Wreck-It
 - '404'
 - Farmers Only
 total_pax: 6

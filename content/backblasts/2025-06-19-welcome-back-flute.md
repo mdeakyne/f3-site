@@ -11,7 +11,7 @@ pax:
 - Farmers Only
 - Toto
 - Waco
-- Wreck It
+- Wreck-It
 - '404'
 total_pax: 7
 fngs: 0

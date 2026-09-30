@@ -12,7 +12,7 @@ pax:
 - Dizzy
 - Toto
 - Farmers Only
-- Wreck It
+- Wreck-It
 total_pax: 7
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-09-02-bent-out-of-shape.md

@@ -8,7 +8,7 @@ q_slug: big-toe
 pax:
 - Big Toe
 - Waco
-- Wreck It
+- Wreck-It
 - Dizzy
 - '404'
 total_pax: 5

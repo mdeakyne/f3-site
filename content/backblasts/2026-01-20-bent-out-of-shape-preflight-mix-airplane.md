@@ -12,7 +12,7 @@ pax:
 - Big Toe
 - Flute
 - Waco
-- Wreck It
+- Wreck-It
 - Bonnet
 total_pax: 8
 fngs: 0

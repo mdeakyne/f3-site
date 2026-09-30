@@ -11,7 +11,7 @@ pax:
 - Big Toe
 - Dizzy
 - Waco
-- Wreck It
+- Wreck-It
 - Bonnet
 total_pax: 7
 fngs: 0
@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-29-just-10-reps-revisit.md
 **Where:** #ao-ad-astra  
 **When:** 01-29-26  
 **Q:** @Waco  
-**PAX:** @Wreck It, @404, @Dizzy, @Farmers Only, @Bonnet, @Big Toe  
+**PAX:** @Wreck-It, @404, @Dizzy, @Farmers Only, @Bonnet, @Big Toe  
 **Count:** 7
 
 **Warmup:**

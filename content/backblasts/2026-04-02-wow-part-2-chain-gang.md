@@ -6,7 +6,7 @@ ao: ad-astra
 q: Waco
 q_slug: waco
 pax:
-- Wreck It
+- Wreck-It
 - Big Toe
 - '404'
 - Dizzy
@@ -27,7 +27,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-02-wow-part-2-chain-gang.md
 - When: 04/02/2026 @5:30AM
 - Q: @Waco
 
-PAX: @Wreck It @Big Toe @404 @Dizzy @Farmers Only @Toto @Bonnet, @Casio
+PAX: @Wreck-It @Big Toe @404 @Dizzy @Farmers Only @Toto @Bonnet, @Casio
 
 - The Warmup:
 - SSH - 10 x 4 cnt

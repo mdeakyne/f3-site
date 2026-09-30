@@ -9,7 +9,7 @@ pax:
 - Dizzy
 - Dial Up
 - Big Toe
-- Wreck It
+- Wreck-It
 - Toto
 - Farmers Only
 - Waco
