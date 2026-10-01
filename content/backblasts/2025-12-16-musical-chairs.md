@@ -9,7 +9,7 @@ pax:
 - Farmers Only
 - Big Toe
 - '404'
-- Wreck It
+- Wreck-It
 - Waco
 total_pax: 5
 fngs: 0

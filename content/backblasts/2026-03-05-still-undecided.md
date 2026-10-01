@@ -9,7 +9,7 @@ pax:
 - Farmers Only
 - Big Toe
 - Waco
-- Wreck It
+- Wreck-It
 total_pax: 4
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-03-05-still-undecided.md
@@ -19,7 +19,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-05-still-undecided.md
 **Where:** #ao-ad-astra  
 **When:** 03/05/2026  
 **Q:** @Waco  
-**PAX:** @Wreck It @Farmers Only, @Big Toe
+**PAX:** @Wreck-It @Farmers Only, @Big Toe
 
 - Warm
 - Up:

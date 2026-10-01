@@ -131,7 +131,11 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
             if q_name and q_slug not in name_by_slug:
                 name_by_slug[q_slug] = q_name
 
-        for slug in posted_slugs:
+        # Sorted, not raw set iteration: Python randomizes string hashing per
+        # process, so unsorted iteration makes the insertion order of
+        # posts_by_slug -- and thus the order of PAX tied on posts/qs in the
+        # leaderboard -- vary between runs and churn data.json every day.
+        for slug in sorted(posted_slugs):
             posts_by_slug[slug] += 1
             if ao:
                 aos_by_slug[slug].add(ao)
@@ -161,7 +165,7 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
             'latest': latest_by_slug.get(slug),
             'latest_q': latest_q_by_slug.get(slug),
         })
-    leaderboard.sort(key=lambda r: (-r['posts'], -r['qs']))
+    leaderboard.sort(key=lambda r: (-r['posts'], -r['qs'], r['slug']))
 
     # Latest backblasts (most recent 10)
     latest_bbs = sorted(bbs, key=lambda b: b.get('date', ''), reverse=True)[:10]
@@ -183,7 +187,9 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
     latest_post = max(dates) if dates else ''
 
     return {
-        'generated_at': datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+        # Derived from the newest backblast, not wall clock, so regenerating
+        # unchanged content is a no-op diff.
+        'generated_at': (latest_post + 'T00:00:00Z') if latest_post else '',
         'counts': {
             'backblasts': len(bbs),
             'pax': len(pax_profiles),

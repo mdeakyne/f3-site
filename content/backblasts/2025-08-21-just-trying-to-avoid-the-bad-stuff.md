@@ -11,7 +11,7 @@ pax:
 - '404'
 - Big Toe
 - Pepper
-- Wreck It
+- Wreck-It
 total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-21-just-trying-to-avoid-the-bad-stuff.md

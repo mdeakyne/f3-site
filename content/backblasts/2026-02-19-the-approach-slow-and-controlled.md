@@ -10,7 +10,7 @@ pax:
 - Waco
 - Big Toe
 - '404'
-- Wreck It
+- Wreck-It
 - Bonnet
 - Toto
 total_pax: 7

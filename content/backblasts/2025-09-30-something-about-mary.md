@@ -7,7 +7,7 @@ q: Waco
 q_slug: waco
 pax:
 - Waco
-- Wreck It
+- Wreck-It
 - Big Toe
 - '404'
 - Farmers Only

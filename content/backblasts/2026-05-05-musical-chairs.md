@@ -11,7 +11,7 @@ pax:
 - Dizzy
 - Toto
 - Medley
-- Wreck It
+- Wreck-It
 - Waco
 total_pax: 7
 fngs: 0
@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-05-musical-chairs.md
 - Where: #ao-beehive
 - When: 5/5/2026 @0530
 - Q: @Waco
-- PAX: @Big Toe @Farmers Only @Dizzy @Toto @Medley @Wreck It
+- PAX: @Big Toe @Farmers Only @Dizzy @Toto @Medley @Wreck-It
 
 **Warmup:**
 

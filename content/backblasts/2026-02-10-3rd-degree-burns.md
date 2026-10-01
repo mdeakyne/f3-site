@@ -12,7 +12,7 @@ pax:
 - Waco
 - Medley
 - Dial Up
-- Wreck It
+- Wreck-It
 total_pax: 7
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-10-3rd-degree-burns.md
@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-10-3rd-degree-burns.md
 **Where:** #ao-beehive  
 **When:** 2/10/26 @0530  
 **Q:** @Waco  
-**PAX:** @Big Toe, @404, @Dialup, @Bonnet, @Wreck It, @Medley (FNG Welcome)
+**PAX:** @Big Toe, @404, @Dialup, @Bonnet, @Wreck-It, @Medley (FNG Welcome)
 
 - Ladder: 3 rungs
 - Sprint out to the first rung, then jog back.

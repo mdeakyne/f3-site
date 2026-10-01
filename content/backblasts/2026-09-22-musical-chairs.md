@@ -7,7 +7,7 @@ q: Waco
 q_slug: waco
 pax:
 - Casio
-- Wreck It
+- Wreck-It
 - '404'
 - Farmers Only
 - Big Toe

@@ -3,14 +3,14 @@ slug: 2026-03-03-dealers-choice
 title: Dealers Choice
 date: '2026-03-03'
 ao: beehive
-q: Wreck It
+q: Wreck-It
 q_slug: wreck-it
 pax:
 - Farmers Only
 - Goulash
 - Waco
 - Big Toe
-- Wreck It
+- Wreck-It
 - Hiccup
 - Casio
 total_pax: 7
@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-03-dealers-choice.md
 **Backblast:** Dealers Choice  
 **Where:** #ao-beehive  
 **When:** 3/3/26 @0530  
-**Q:** @Wreck It  
+**Q:** @Wreck-It  
 **PAX:** @Waco @Farmers Only @Big Toe @Goulash @hiccup @casio
 
 - Warm

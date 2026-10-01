@@ -10,7 +10,7 @@ pax:
 - Dizzy
 - '404'
 - Waco
-- Wreck It
+- Wreck-It
 total_pax: 5
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-19-deck-of-many-things.md

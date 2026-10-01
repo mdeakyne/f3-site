@@ -7,7 +7,7 @@ q: '404'
 q_slug: '404'
 pax:
 - '404'
-- Wreck It
+- Wreck-It
 - Waco
 - Farmers Only
 - Training Wheels

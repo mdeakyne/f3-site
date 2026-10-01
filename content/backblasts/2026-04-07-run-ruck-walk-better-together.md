@@ -10,7 +10,7 @@ pax:
 - Casio
 - Farmers Only
 - Waco
-- Wreck It
+- Wreck-It
 - Toto
 total_pax: 6
 fngs: 0

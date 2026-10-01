@@ -6,7 +6,7 @@ ao: ad-astra
 q: Dizzy
 q_slug: dizzy
 pax:
-- Wreck It
+- Wreck-It
 - Big Toe
 - '404'
 - Waco
@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-09-nothing-too-fancy.md
 **Where:** #ao-ad-astra  
 **When:** 04/09/2026 @5:30AM  
 **Q:** @Dizzy  
-**PAX:** @Wreck It @Big Toe @404 @Waco @Farmers Only @Toto, @Casio
+**PAX:** @Wreck-It @Big Toe @404 @Waco @Farmers Only @Toto, @Casio
 
 - The Warmup:
 - Piano Man - 5 x 4 cnt

@@ -8,7 +8,7 @@ q_slug: farmers-only
 pax:
 - Farmers Only
 - Waco
-- Wreck It
+- Wreck-It
 - Dizzy
 - Big Toe
 - '404'

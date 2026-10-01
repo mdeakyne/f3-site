@@ -12,7 +12,7 @@ pax:
 - '404'
 - Training Wheels
 - Toto
-- Wreck It
+- Wreck-It
 total_pax: 7
 fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-08-05-infinity-loop.md

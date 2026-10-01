@@ -7,7 +7,7 @@ q: Toto
 q_slug: toto
 pax:
 - Waco
-- Wreck It
+- Wreck-It
 - Farmers Only
 - Big Toe
 - Medley

@@ -9,7 +9,7 @@ pax:
 - Big Toe
 - Farmers Only
 - Dizzy
-- Wreck It
+- Wreck-It
 - Waco
 - Toto
 - Bonnet

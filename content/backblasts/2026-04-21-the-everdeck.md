@@ -7,7 +7,7 @@ q: Big Toe
 q_slug: big-toe
 pax:
 - Waco
-- Wreck It
+- Wreck-It
 - Dizzy
 - '404'
 - Farmers Only

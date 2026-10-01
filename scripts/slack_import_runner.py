@@ -20,8 +20,21 @@ CONTENT_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'backblas
 EXISTING = {f[:-3] for f in os.listdir(CONTENT_DIR) if f.endswith('.md')}
 
 
+# A backblast title sits at the start of its own line, optionally wrapped in
+# Slack emphasis. Matching "backblast:" anywhere in the message would import
+# chatter like "Sorry for the late backblast: my bad".
+_TITLE_RE = re.compile(r'^\s*\*{0,2}backblast\s*:', re.IGNORECASE | re.MULTILINE)
+# A real backblast always records who led and who posted. Requiring both keeps
+# a "Backblast: coming tonight" placeholder from being imported as a workout.
+_Q_RE = re.compile(r'^\s*\*{0,2}q\*{0,2}\s*:?\s*\S', re.IGNORECASE | re.MULTILINE)
+_PAX_RE = re.compile(r'^\s*\*{0,2}pax\*{0,2}\s*:?\s*\S', re.IGNORECASE | re.MULTILINE)
+
+
 def is_backblast(text: str) -> bool:
-    return bool(re.search(r'backblast\s*:', text, re.IGNORECASE))
+    text = text or ''
+    return bool(_TITLE_RE.search(text)
+                and _Q_RE.search(text)
+                and _PAX_RE.search(text))
 
 
 def already_imported(date_str: str, title: str) -> bool:

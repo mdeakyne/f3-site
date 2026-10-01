@@ -9,7 +9,7 @@ pax:
 - Farmers Only
 - Waco
 - '404'
-- Wreck It
+- Wreck-It
 - Big Toe
 - Hiccup
 - Casio

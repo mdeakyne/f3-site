@@ -9,7 +9,7 @@ pax:
 - Big Toe
 - Farmers Only
 - Waco
-- Wreck It
+- Wreck-It
 - Toto
 - Dial Up
 total_pax: 6

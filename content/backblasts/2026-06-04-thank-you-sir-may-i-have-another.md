@@ -10,7 +10,7 @@ pax:
 - Farmers Only
 - Big Toe
 - casio
-- Wreck It
+- Wreck-It
 total_pax: 5
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.md
@@ -20,7 +20,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.
 **Where:** #ao-ad-astra  
 **When:** 06/04/2026 @ 5:30AM  
 **Q:** Dizzy  
-**PAX:** Farmers Only, Big Toe, Dizzy, casio, Wreck It
+**PAX:** Farmers Only, Big Toe, Dizzy, casio, Wreck-It
 
 **Warmup:**
 

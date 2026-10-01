@@ -6,7 +6,7 @@ ao: ad-astra
 q: Waco
 q_slug: waco
 pax:
-- Wreck It
+- Wreck-It
 - Dizzy
 - '404'
 - Medley
@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-30-wilt-leg-berlain.md
 **Where:** #ao-ad-astra  
 **When:** 04/30/2026 @5:30AM  
 **Q:** @Waco  
-**PAX:** @Wreck It @Dizzy @404 @Medley @Casio @Big Toe @Honey
+**PAX:** @Wreck-It @Dizzy @404 @Medley @Casio @Big Toe @Honey
 
 - Stinger (Downrange Omaha)
 - Wilt Leg-berlain*

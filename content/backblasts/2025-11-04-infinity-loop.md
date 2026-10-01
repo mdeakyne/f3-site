@@ -10,7 +10,7 @@ pax:
 - Farmers Only
 - Dizzy
 - Waco
-- Wreck It
+- Wreck-It
 - '404'
 total_pax: 6
 fngs: 0

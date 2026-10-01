@@ -11,7 +11,7 @@ pax:
 - Toto
 - Big Toe
 - '404'
-- Wreck It
+- Wreck-It
 total_pax: 6
 fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-02-05-discs-of-perseverance.md
@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-05-discs-of-perseverance.md
 **Where:** #ao-ad-astra  
 **When:** 02-05-26  
 **Q:** @404  
-**PAX:** @Wreck It, @Farmers Only, @Waco, @Toto, @Big Toe
+**PAX:** @Wreck-It, @Farmers Only, @Waco, @Toto, @Big Toe
 
 **Warmup:**
 

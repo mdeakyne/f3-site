@@ -13,7 +13,7 @@ pax:
 - Bonnet
 - Farmers Only
 - Medley
-- Wreck It
+- Wreck-It
 total_pax: 8
 fngs: 1
 vault_path: 07 - F3/Backblasts/2026/2026-02-03-rinse-and-repeat.md

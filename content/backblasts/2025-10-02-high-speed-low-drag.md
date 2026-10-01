@@ -11,7 +11,7 @@ pax:
 - Dial Up
 - '404'
 - Waco
-- Wreck It
+- Wreck-It
 - Farmers Only
 - Crocs
 total_pax: 8

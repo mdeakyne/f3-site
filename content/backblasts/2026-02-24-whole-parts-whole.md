@@ -12,7 +12,7 @@ pax:
 - Big Toe
 - '404'
 - Farmers Only
-- Wreck It
+- Wreck-It
 - Casio
 total_pax: 8
 fngs: 1

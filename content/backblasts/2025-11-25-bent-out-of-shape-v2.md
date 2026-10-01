@@ -8,7 +8,7 @@ q_slug: waco
 pax:
 - Farmers Only
 - Dizzy
-- Wreck It
+- Wreck-It
 - Waco
 total_pax: 4
 fngs: 0

@@ -7,7 +7,7 @@ q: Training Wheels
 q_slug: training-wheels
 pax:
 - Waco
-- Wreck It
+- Wreck-It
 - Toto
 - '404'
 - Big Toe
