@@ -37,6 +37,14 @@ CANONICAL = {
     # Wreck-It is represented by the :wreck-it-ralph: emoji in Slack.
     # NOTE: "Trainwreck" is a DIFFERENT, separate PAX — do not collapse it here.
     'wreck-it-ralph': 'Wreck-It',
+    # Recent nickname/name adjustments
+    # Real name -> F3 name (the backblast should show F3 names)
+    'josiah wegener': 'Sludge',
+    'josiah': 'Sludge',
+    'geoff': 'Van Gogh',
+    'vangogh': 'Van Gogh',
+    'van gogh': 'Van Gogh',
+    'van-gogh': 'Van Gogh',
 }
 
 # Slack channel ID → AO slug (Where: lines often use a bare <#CHANNELID> mention)

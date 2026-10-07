@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-29T00:00:00Z",
+  "generated_at": "2026-10-06T00:00:00Z",
   "counts": {
-    "backblasts": 280,
-    "pax": 62,
+    "backblasts": 281,
+    "pax": 63,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-09-29"
+    "latest_post": "2026-10-06"
   },
   "aos": [
     {
@@ -21,66 +21,66 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 250,
-      "qs": 69,
+      "posts": 251,
+      "qs": 70,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-09-29",
-      "latest_q": "2026-09-29"
+      "latest": "2026-10-06",
+      "latest_q": "2026-10-06"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 249,
+      "posts": 250,
       "qs": 40,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-09-29",
+      "latest": "2026-10-06",
       "latest_q": "2026-09-24"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 206,
+      "posts": 207,
       "qs": 37,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-09-29",
+      "latest": "2026-10-06",
       "latest_q": "2026-08-25"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 169,
+      "posts": 170,
       "qs": 44,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-09-29",
+      "latest": "2026-10-06",
       "latest_q": "2026-09-22"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck-It",
-      "posts": 105,
+      "posts": 106,
       "qs": 3,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-09-29",
+      "latest": "2026-10-06",
       "latest_q": "2026-09-10"
     },
     {
@@ -151,14 +151,14 @@
     {
       "slug": "casio",
       "f3_name": "Casio",
-      "posts": 50,
+      "posts": 51,
       "qs": 2,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-09-29",
+      "latest": "2026-10-06",
       "latest_q": "2026-08-04"
     },
     {
@@ -545,6 +545,19 @@
       "latest_q": null
     },
     {
+      "slug": "van-gogh",
+      "f3_name": "Van Gogh",
+      "posts": 3,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-09-17",
+      "latest": "2026-10-06",
+      "latest_q": null
+    },
+    {
       "slug": "peanuts",
       "f3_name": "Peanuts",
       "posts": 2,
@@ -615,19 +628,6 @@
       ],
       "earliest": "2023-08-24",
       "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
-      "slug": "van-gogh",
-      "f3_name": "Van Gogh",
-      "posts": 2,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-09-17",
-      "latest": "2026-09-22",
       "latest_q": null
     },
     {
@@ -821,9 +821,30 @@
       "earliest": "2023-11-16",
       "latest": "2023-11-16",
       "latest_q": null
+    },
+    {
+      "slug": "sludge",
+      "f3_name": "Sludge",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2026-10-06",
+      "latest": "2026-10-06",
+      "latest_q": null
     }
   ],
   "latest_backblasts": [
+    {
+      "slug": "2026-10-06-cindy-500",
+      "title": "Cindy 500",
+      "date": "2026-10-06",
+      "ao": "beehive",
+      "q": "Big Toe",
+      "total_pax": 8,
+      "fngs": 1
+    },
     {
       "slug": "2026-09-29-blocking-fast-and-slow",
       "title": "Blocking Fast and Slow",
@@ -902,15 +923,6 @@
       "date": "2026-08-27",
       "ao": "ad-astra",
       "q": "Waco",
-      "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-08-25-mostly-leg-day",
-      "title": "(mostly) Leg Day",
-      "date": "2026-08-25",
-      "ao": "beehive",
-      "q": "404",
       "total_pax": 7,
       "fngs": 0
     }
