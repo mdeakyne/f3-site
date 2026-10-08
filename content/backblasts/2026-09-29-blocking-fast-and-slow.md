@@ -14,7 +14,7 @@ pax:
 - Toto
 - Casio
 - Farmers Only
-- FNG
+- Slump
 total_pax: 9
 fngs: 1
 vault_path: 07 - F3/Backblasts/2026/2026-09-29-blocking-fast-and-slow.md
@@ -24,7 +24,7 @@ Backblast: Blocking Fast and Slow
 Where: #ao-beehive
 When: 09/29/26 0530
 Q: Big Toe
-PAX: Big Toe, 404, Dizzy, Waco, Wreck It, Toto, Casio, Farmers Only, FNG
+PAX: Big Toe, 404, Dizzy, Waco, Wreck It, Toto, Casio, Farmers Only, Slump
 
 The Thang: Tabata
 20 seconds on, 10 seconds off, 8 rounds for each exercise.
