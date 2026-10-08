@@ -34,6 +34,12 @@ CANONICAL = {
     'bigtoe': 'Big Toe',
     'big-toe': 'Big Toe',
     'casio': 'Casio',
+    'vangogh': 'Van Gogh',
+    # Josiah Wegener was initially recorded as "Sludge" before his F3 name
+    # was corrected to Slump in Slack.
+    'josiah wegener (slump)': 'Slump',
+    'sludge': 'Slump',
+    'slump': 'Slump',
     # Wreck It is represented by the :wreck-it-ralph: emoji in Slack.
     # NOTE: "Trainwreck" is a DIFFERENT, separate PAX — do not collapse it here.
     'wreck-it-ralph': 'Wreck It',
@@ -108,6 +114,10 @@ def parse_date(raw: str) -> str:
     m = re.search(r'(\d{4})-(\d{2})-(\d{2})', raw)
     if m:
         return m.group(0)
+    # MM-DD-YY (Slack posts sometimes use hyphens instead of slashes)
+    m = re.search(r'(\d{1,2})-(\d{1,2})-(\d{2})(?!\d)', raw)
+    if m:
+        return f"20{m.group(3)}-{m.group(1).zfill(2)}-{m.group(2).zfill(2)}"
     # MM/DD/YY (2-digit year, e.g. 6/16/26 -> 2026-06-16)
     m = re.search(r'(\d{1,2})/(\d{1,2})/(\d{2})(?!\d)', raw)
     if m:
@@ -165,8 +175,8 @@ def parse_message(text: str, ao_hint: str | None = None) -> dict:
                 title = raw_title
 
         # Date
-        elif re.match(r'\*?\*?when\s*:', stripped, re.IGNORECASE):
-            raw_date = re.sub(r'\*?\*?when\s*:\s*', '', stripped, flags=re.IGNORECASE)
+        elif re.match(r'\*?\*?when\s*:?\s+', stripped, re.IGNORECASE):
+            raw_date = re.sub(r'\*?\*?when\s*:?\s+', '', stripped, flags=re.IGNORECASE)
             raw_date = re.sub(r'\*\*', '', raw_date).strip()
             raw_date = re.sub(r'@.*$', '', raw_date).strip()  # strip @5:30AM
             try:

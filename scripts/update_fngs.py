@@ -87,8 +87,6 @@ MANUAL_OVERRIDES = {
     '2026-06-18-17-rest.md': 1,
     '2026-06-25-sisyphus.md': 1,
     '2026-07-02-all-work-no-play-makes-jack-a-dull-boy.md': 1,
-    '2026-09-29-blocking-fast-and-slow.md': 1,
-
 }
 
 
