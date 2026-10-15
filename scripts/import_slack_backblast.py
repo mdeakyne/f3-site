@@ -8,6 +8,8 @@ import sys
 import os
 from datetime import datetime
 
+from format_backblast_markdown import normalize_body
+
 CONTENT_DIR = os.path.join(os.path.dirname(__file__), '..', 'content', 'backblasts')
 
 # Canonical name lookup: lowercase stripped key → canonical f3_name
@@ -280,7 +282,7 @@ fngs: {fields['fngs']}
 vault_path: {vault_path}
 ---"""
 
-    body = fields['body'].strip()
+    body = normalize_body(fields['body'].strip())
     content = fm + ('\n\n' + body if body else '') + '\n'
 
     with open(out_path, 'w') as f:
