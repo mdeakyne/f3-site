@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-19-keep-pushing.md
 **Q:** @Big Toe  
 **Pax:** @404 @Farmers Only @Casio
 
-**Warm up:**
+## Warm Up
 
 - 8 SSH Burndown
 - Abe Vigola
@@ -29,7 +29,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-19-keep-pushing.md
 - Imperial Walkers
 - Cherry Pickers
 
-**The Thang:**
+## The Thang
 
 - 10 mins:
 - Bear Crawl to flags, 20 Merkins.

@@ -22,16 +22,18 @@ When: 07/14/2026 @ 05:30
 Q: Dizzy
 PAX: Casio, Farmers Only, Big Toe, 404
 
-The warmup:
+## Warm Up
+
 - Medium distance jog around parking lot
 - Piano Man
 - Sun Gods
 - Arm Circles
 - Michael Phelps
 
-The Thang:
+## The Thang
 
 Set 1
+
 - Grave Diggers x 10
 - Block Swings x 10
 - Goblet Squats x 10
@@ -41,6 +43,7 @@ Set 1
 - Cool Down Sprints (sprints down and back)
 
 Set 2
+
 - OHP x 10
 - Curls x 10
 - Rows x 10

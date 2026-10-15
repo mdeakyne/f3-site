@@ -32,7 +32,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-12-ladders-are-fun.md
 - [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
 - Count: 4.5
 
-**The Thang:**
+## The Thang
 
 - 5: Blockees (Block burpees)
 - 10: Overhead Press

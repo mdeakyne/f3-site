@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-03-rinse-and-repeat.md
 - Michael Phelps
 - Arm Circles
 
-**The Thang:**
+## The Thang
 
 - The Walls of Jericho
 - 7 reps for 7 exercises and then 1 lap

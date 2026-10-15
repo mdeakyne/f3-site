@@ -23,16 +23,19 @@ When: 08/11/2026 @ 05:30
 Q: Waco
 PAX: Dizzy, Big Toe, Farmers Only, 404, Toto
 
-Warmup:
+## Warm Up
+
 - Arm Circles
 - Piano Man
 - Scap Pushups
 
-The Thang:
+## The Thang
+
 Mashup of some of Waco's favorite hits: Surfs Up, Ladders, and 20% Rest.
 
 Surfs Up - 12 minutes
 PAX form a tight circle, facing inward. Each PAX will hold the "worst" or hardest position of the current exercise (as called by the Q). The Q sets the tone and tempo — the wave starts with him. 1's, then 2's, then 3's and around the wave goes:
+
 - OH Press - 5
 - Row - 6
 - Squats - 7
@@ -40,6 +43,7 @@ PAX form a tight circle, facing inward. Each PAX will hold the "worst" or hardes
 
 Movement Ladders - 12 minutes
 3 run ladder, moving exercise out to the first cone (rung), jog back, and then out to the next, out to the last, repeat. Loop all four exercises 'till time.
+
 - Bear Crawl Out - Jog Back
 - Lunges Out - Jog Back
 - Thread the Needle Out - Jog Back
@@ -47,6 +51,7 @@ Movement Ladders - 12 minutes
 
 20% Rest - 15 minutes (3 sets)
 60 seconds per exercise, AMRAP, x4, then 60 seconds of rest:
+
 - Set 1 - OH Press, Curls, Row, Dead Lift
 - Set 2 - Heavy Squats, Lunges, PGUs, Calf Raises
 - Set 3 - Flutter, Heels to Heaven, LBC, Block Taps

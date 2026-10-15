@@ -32,11 +32,11 @@ Coupon: BYOC
 
 Yes
 
-**Warmup:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 - 5 rounds
 - Front squat x10
@@ -47,7 +47,7 @@ OYO
 - Two Lightpole jog
 - 30 sec rest
 
-**Mary:**
+## Mary
 
 - 2 rounds
 - 40 knee to elbow crunches

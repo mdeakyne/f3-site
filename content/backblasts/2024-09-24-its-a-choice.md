@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-24-its-a-choice.md
 **Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
 **When:** 09/24/2024 0530
 
-**The Thang:**
+## The Thang
 
 - EMOM x3
 - 10 Burpees

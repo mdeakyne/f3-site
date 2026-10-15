@@ -29,7 +29,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-10-trying-to-control-what-i-can-t-co
 - 10 Arm circles
 - 10 Michael Phelps
 
-**The Thang:**
+## The Thang
 
 - Burpee Box:
 - Sprint to the 1st corner, then 10 burpees
@@ -44,7 +44,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-10-trying-to-control-what-i-can-t-co
 - 10 mericans
 - 10 skaters
 
-**Mary:**
+## Mary
 
 - 5 Mike Tyson's
 - 20 American Hammers

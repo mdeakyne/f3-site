@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-09-push-and-pull.md
 **Q:** Big Toe  
 **PAX:** Waco, Dizzy, Wreck It, Farmers Only, 404
 
-**The Thang:**
+## The Thang
 
 - Mosey over to the playground.
 - Two groups:
@@ -47,7 +47,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-09-push-and-pull.md
 - Shoulder taps x10 on a 2 count
 - Motivator (6)
 
-**Mary:**
+## Mary
 
 - 10 heels to heaven
 - 15 WWII situps

@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-08-love-the-suck.md
 
 PAX in Attendance: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Dizzy Toto ([@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M))
 
-**Warm-Up:**
+## Warm Up
 
 - (10 mins):
 - 25 SSH (IC)
@@ -34,7 +34,7 @@ PAX in Attendance: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A
 - 15 Arm Circles (Forward & Backward)
 - 10 Tempo Merkins (IC)
 
-**The Thang:**
+## The Thang
 
 3 Stations – 10 min AMRAP each💪 Station 1: Coupon Carnage (All Arms)
 

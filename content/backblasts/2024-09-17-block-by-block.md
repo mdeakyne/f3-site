@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-17-block-by-block.md
 **Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
 **When:** 09/17/2024 0530
 
-**Warmup:**
+## Warm Up
 
 - SSH
 - Arm circles
@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-17-block-by-block.md
 - Forward Claps
 - Imperial Walkers
 
-**The Thang:**
+## The Thang
 
 - Fireman: 1 → 7 → 1
 - Overhead Press
@@ -43,7 +43,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-17-block-by-block.md
 - Row
 - Burpees
 
-**Mary:**
+## Mary
 
 - (x2):
 - Freddie Mercury x 15

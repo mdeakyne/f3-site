@@ -21,11 +21,11 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-24-the-grinder-remix.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M)
 
-**Warmup:**
+## Warm Up
 
 Indian Run around the loop
 
-**The Thang:**
+## The Thang
 
 - First Loop:
 - 10 rounds of:

@@ -24,15 +24,18 @@ When: 09-10-2026 0530
 Q: Wreck-It
 PAX: Waco, Big Toe, Casio, Farmers Only, Toto, Dizzy (late)
 
-Warmup:
+## Warm Up
+
 - SSH Burndown
 - 90/90 Splits
 - Piano Man
 - Toy Soldiers
 
-The Thang:
+## The Thang
+
 - Incinerator Burn Down from 12
 - OH Press - Curls - Row - Dead Lift
 
-The Game:
+## The Game
+
 - Ultimate - every time the frisbee hits the ground, 5 SSH.

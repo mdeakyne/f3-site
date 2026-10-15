@@ -22,9 +22,9 @@ vault_path: 07 - F3/Backblasts/2025/2025-03-25-cinderblock-grinder.md
 **Count:** 4  
 **PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 
-**Warm-up:**
+## Warm Up
 
-**The Thang:**
+## The Thang
 
 - EMOM x5
 - 15 scissor lifts

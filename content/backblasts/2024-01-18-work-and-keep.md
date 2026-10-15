@@ -33,7 +33,7 @@ Coupon: BYOC
 
 Yep
 
-**Warmup:**
+## Warm Up
 
 - (4 count):
 - Side Shuttle Hops (Jumping Jacks) x20
@@ -42,7 +42,7 @@ Yep
 - Shoulder Pretzel x20
 - Imperial Walker x20
 
-**The Thang:**
+## The Thang
 
 - Incinerator (x10, 9, 8...)
 - Goblet Squat

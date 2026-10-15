@@ -31,7 +31,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-13-ladders-3rd-times-a-charm.md
 - Piano Man
 - Indian Run 2x
 
-**The Thang:**
+## The Thang
 
 - Ladder: 3 rungs
 - Sprint out to the first rung, then jog back.

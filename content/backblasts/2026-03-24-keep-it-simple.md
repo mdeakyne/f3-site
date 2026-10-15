@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-24-keep-it-simple.md
 - 10 slow squats (4 down, 4 up)
 - Light jog
 
-**The Thang:**
+## The Thang
 
 - (x4)
 - lateral lunges to halfway, jog back
@@ -48,7 +48,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-24-keep-it-simple.md
 - sprint 3 parking spaces, jog to halfway, then back
 - 15 shoulder press
 
-**Mary:**
+## Mary
 
 - 20 plank jacks
 - 15 Freddy Mercury

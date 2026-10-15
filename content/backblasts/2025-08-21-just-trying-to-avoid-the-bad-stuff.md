@@ -24,12 +24,12 @@ vault_path: 07 - F3/Backblasts/2025/2025-08-21-just-trying-to-avoid-the-bad-stuf
 **PAX:** @Waco, @404, @Big Toe, @Pepper, @Wreck-It  
 **Count:** 6
 
-**Warm up:**
+## Warm Up
 
 - Grass pullers (right, left, middle)
 - Michael Phelps
 
-**The Thang:**
+## The Thang
 
 - Walls of Jericho
 - 7 exercises, 7 times

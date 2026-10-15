@@ -25,14 +25,14 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-05-musical-chairs.md
 - Q: @Waco
 - PAX: @Big Toe @Farmers Only @Dizzy @Toto @Medley @Wreck It
 
-**Warmup:**
+## Warm Up
 
 - *:
 - SSH 10 x 4cnt
 - Arm Circles
 - Piano Man
 
-**The Thang:**
+## The Thang
 
 - Musical Chairs*
 - The setup:

@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-02-04-emom-and-more.md
 **Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)
 
-**The Thang:**
+## The Thang
 
 - Every Minute On The Minute (EMOM) Loop (3 times)
 - 12 Shoulder-Knees-Toes Merkins

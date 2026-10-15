@@ -26,7 +26,7 @@ Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 
 PAX: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @Training Wheels
 
-**Warm Up:**
+## Warm Up
 
 - (20x):
 - Toe touch
@@ -35,7 +35,7 @@ PAX: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Flute](https://f
 - Shoulder taps
 - Imperial walker
 
-**The Thang:**
+## The Thang
 
 - Incinerator
 - Block situp

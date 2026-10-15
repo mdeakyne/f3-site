@@ -24,7 +24,8 @@ When: 08/27/26 0530
 Q: Waco
 PAX: Big Toe, Farmers Only, 404, Casio, Toto, Wreck-It
 
-Warmup:
+## Warm Up
+
 - 4 corners - 2 laps
 - Piano Man - 4cnt x 10
 - Arm Circles - 5x5x2 Directions
@@ -33,12 +34,14 @@ Warmup:
 - Knee-Thigh Stretch - 10 count each side
 
 Ladder: 7 rungs
+
 - Sprint out to the first rung, then jog back.
 - Complete that ladder number of exercises below
 - Once completed 7 rungs, (28 reps), Mosey one parking lot lap.
 - Repeat with next exercise for 30 minutes or until the music stops.
 
 Example:
+
 - Sprint out rung 1, jog back, 1 Merkin
 - Sprint out rung 2, jog back, 2 Merkins
 - ...
@@ -47,6 +50,7 @@ Example:
 - IF YOU COMPLETE THEM ALL BEFORE TIME - climb back down the ladder
 
 Exercises:
+
 1. Merkin
 2. Heels to Heaven
 3. Blockees

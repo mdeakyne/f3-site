@@ -28,12 +28,13 @@ vault_path: 07 - F3/Backblasts/2023/2023-10-19-trials-of-many-kinds.md
 **FNGs:** 1 @waterboy  
 **COUNT:** 11
 
-**Warm Up:**
+## Warm Up
 
-- •
-- Welcome and Disclaimers, 5 core Principles•   Stretch OYO
+- -
+- - Welcome and Disclaimers, 5 core Principles
+- Stretch OYO
 
-**The Thang:**
+## The Thang
 
 - Indian Run (5 minutes)
 - Partner Relay (Shuttle Sprints)

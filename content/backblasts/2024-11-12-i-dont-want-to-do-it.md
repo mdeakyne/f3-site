@@ -30,7 +30,7 @@ PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Flute](https
 - Count: 5
 - FNG: 0
 
-**The Thang:**
+## The Thang
 
 - 10&1
 - 10 shoulder taps & 1 burpee

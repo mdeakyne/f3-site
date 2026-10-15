@@ -31,7 +31,7 @@ Coupon: BYOC
 
 Yes
 
-**Warmup:**
+## Warm Up
 
 OYOThe Thang: Circuit performed at the pace of the man doing the americans, one man per exercise at a time
 
@@ -43,7 +43,7 @@ OYOThe Thang: Circuit performed at the pace of the man doing the americans, one
 - bicep curls
 - jumping jacks
 
-**Mary:**
+## Mary
 
 - 20 situps
 - 20 London bridges

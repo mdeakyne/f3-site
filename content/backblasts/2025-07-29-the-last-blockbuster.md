@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-29-the-last-blockbuster.md
 **Q:** [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)  
 **PAX:** @Wreckit, [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-**The Thang:**
+## The Thang
 
 - ) EMOM, 5 Stations x6 rounds
 - 1) 12 Goblet Squats
@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-29-the-last-blockbuster.md
 - 4) 12 Lunges
 - 5) 20 Block Sit-Ups
 
-**Mary:**
+## Mary
 
 - 1. 25 flutter clicks (4 count)
 - 2. 15 American Hammer (4 count)

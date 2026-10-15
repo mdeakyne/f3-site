@@ -25,7 +25,8 @@ PAX: Farmers Only, 404, Casio, Toto, Goulash
 
 THE BEATDOWN
 
-Warm Up:
+## Warm Up
+
 - SSH (10 Burndown)
 - Imperial Walkers; 20 IC
 - Grass Pickers; 20 IC
@@ -33,19 +34,22 @@ Warm Up:
 - SSH; 25 IC
 
 The Square:
+
 - Top-Right: 10 Merkins, 20 SSH
 - Top-Left: 15 Squats, 30 SSH
 - Bottom-Left: 20 Lunges, 40 SSH
 - Bottom-Right: 10 Burpees, 50 SSH
 
 Incinerator:
+
 - OP (Overhead Press)
 - Curls
 - Rows
 - Blockees
 - SSH
 
-Mary:
+## Mary
+
 - Bird Dog
 - Superman
 - Good Mornings
@@ -57,6 +61,7 @@ Mary:
 - SSH; 10 IC
 
 SSH Damage Report:
+
 - 10 Burndown: 220
 - Warm-up (25 IC): 50
 - The Square: 140

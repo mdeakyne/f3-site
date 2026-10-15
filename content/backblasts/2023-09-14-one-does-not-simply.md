@@ -32,12 +32,12 @@ vault_path: 07 - F3/Backblasts/2023/2023-09-14-one-does-not-simply.md
 **FNGs:** 0  
 **COUNT:** 13
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers, 5 Core Principles
 - Stretch, OYO
 
-**The Thang:**
+## The Thang
 
 - Partner Relay
 - Bank 80 Heavy Lunges, parking lot sprints

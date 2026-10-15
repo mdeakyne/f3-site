@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-09-25-ipc-chris-kyle-wod.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) @Dial Up [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**The Thang:**
+## The Thang
 
 - 40 Block Swings
 - 40 Block Jumps

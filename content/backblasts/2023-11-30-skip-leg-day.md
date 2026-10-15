@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-11-30-skip-leg-day.md
 
 Theme: "Skip Leg Day"
 
-**Warm up:**
+## Warm Up
 
 - "ALBATROSS WINGS", picking cherries,
 - 11 x Forward Arm Circles, picking cherries,

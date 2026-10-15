@@ -31,13 +31,13 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-22-christmas-in-july.md
 - ,
 - [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 
-**The Thang:**
+## The Thang
 
 White elephant tabata
 
 Each pax either draws an exercise, or chooses an already drawn exercise from someone else to steal and that pax draws a new one. Everyone does their exercise for 4 rounds of tabata (1/2 a song), and then new exercises are drown
 
-**Mary:**
+## Mary
 
 - 15 side plank dips on each side
 - 20 alternating dead bug

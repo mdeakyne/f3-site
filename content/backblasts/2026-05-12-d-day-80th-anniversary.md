@@ -24,11 +24,11 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-12-d-day-80th-anniversary.md
 **Q:** @Toto  
 **PAX:** @Waco @Wreck-it @Farmers Only @Big Toe @Medley @404
 
-**Warmup:**
+## Warm Up
 
 Short run around the parking lot
 
-**The Thang:**
+## The Thang
 
 - DDay 80th
 - 1x 1/2 move exercise 1/2 loop of 40 each, then 20 each
@@ -39,4 +39,4 @@ Short run around the parking lot
 - bird dog/ballerina walk
 - Long jog with bonus sprint at end.
 
-**Mary:**
+## Mary

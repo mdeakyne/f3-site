@@ -25,7 +25,7 @@ PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](h
 
 - Count: 5
 
-**Warmup:**
+## Warm Up
 
 - Lap around the islands
 - Exercise:
@@ -39,6 +39,6 @@ PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](h
 - Bent over row: 20
 - 7 rounds. Last was double
 
-**Mary:**
+## Mary
 
 Various

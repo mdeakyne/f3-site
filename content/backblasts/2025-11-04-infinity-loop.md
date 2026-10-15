@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-04-infinity-loop.md
 - Carolina Dry Docks x 10
 - short jog to finish warm up
 
-**The Thang:**
+## The Thang
 
 - Distance from Red to Blue is 20 Yards
 - Red - 10 HR pushups then Broad jump Blue

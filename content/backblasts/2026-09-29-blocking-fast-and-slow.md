@@ -26,7 +26,8 @@ When: 09/29/26 0530
 Q: Big Toe
 PAX: Big Toe, 404, Dizzy, Waco, Wreck It, Toto, Casio, Farmers Only, Slump
 
-The Thang: Tabata
+## The Thang: Tabata
+
 20 seconds on, 10 seconds off, 8 rounds for each exercise.
 
 SSH (Warmup)
@@ -44,5 +45,6 @@ Then as slow as you can the next.
 - Squat (No Block - Block)
 - Burpees (No Block - Block)
 
-Mary:
+## Mary
+
 30 Big Boys, last 10 crossover

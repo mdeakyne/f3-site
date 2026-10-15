@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-19-mini-murph.md
 **Q:** @Big Toe  
 **PAX:** @Waco @404 @casio @Toto @Farmers Only @wreckit @Dizzy
 
-**The Thang:**
+## The Thang
 
 - 800 meter run
 - 10x
@@ -34,7 +34,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-19-mini-murph.md
 - 20 Squats
 - 800 meter run
 
-**Mary:**
+## Mary
 
 - 30 Calf Raises
 - 10 Side Plank Raises

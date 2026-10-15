@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-10-you-asked-for-it.md
 **Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
 **When:** 09/10/2024 0530
 
-**Warm up:**
+## Warm Up
 
 - Static stretches (I don’t know good names for these!)
 - straight leg touch ground
@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-10-you-asked-for-it.md
 - Arm across
 - static squat hold 30sec
 
-**The Thang:**
+## The Thang
 
 - Partner up
 
@@ -42,6 +42,6 @@ Bank 100 burpees - other partner walking lunges to light pole and back
 - Bank 100 thrusters - other partner bear crawls
 - Bank 100 elf on the shelf - other partner murder bunnies
 
-**Mary:**
+## Mary
 
 Jane Fonda (20 on 4 count)

@@ -38,7 +38,7 @@ Pharma @Soccer Mom @Cheap Trick @Astro @Summer School @Bugs @Nutter
 
 COUNT: 36
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers
 - 5 Burpees
@@ -58,7 +58,7 @@ Explain how the XOs we did and will do in warmup will be used in the BD
 - Number Off and remember your number
 - Partner up: 1 and 2, 3 and 4, 5 and 6, etc.
 
-**The Thang:**
+## The Thang
 
 - Welsh Dragon
 
@@ -82,7 +82,7 @@ Do all 4 Starting with 10 reps each then start over with 9 reps…8 reps…all t
 
 Pax 1 starts murder bunny, Pax 2 stays back and does 5 burpees then runs to catch Pax 1. Pax 2 starts the murder bunny and Pax 1 does 5 burpees. Keep going until you reach the end and then return back to the start. Hold plank for the 6.
 
-**Mary:**
+## Mary
 
 - Heavy American Twists
 - 10 x 2, 2 is 1

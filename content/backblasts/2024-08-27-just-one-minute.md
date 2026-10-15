@@ -25,13 +25,13 @@ vault_path: 07 - F3/Backblasts/2024/2024-08-27-just-one-minute.md
 **FNG:** 1  
 **PAX:** [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), @Pepper
 
-**Warm-up:**
+## Warm Up
 
 - Side straddle hops (I still don’t really know the name for these)
 - Arm circles
 - High knees
 
-**The Thang:**
+## The Thang
 
 everyone pick a station, 1 min work, light pole jog, go to the next station, rinse and repeat. (We completed 2 rounds).
 
@@ -44,7 +44,7 @@ everyone pick a station, 1 min work, light pole jog, go to the next station, rin
 - 7. Reverse lunge
 - 8. Burpee
 
-**Mary:**
+## Mary
 
 - 20 XYs (4 count)
 - 20 Freddie Mercury (4 count)

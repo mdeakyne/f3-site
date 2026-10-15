@@ -29,11 +29,11 @@ vault_path: 07 - F3/Backblasts/2024/2024-10-08-shoulders-knees-and-toes.md
 - [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
 - [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**Warm up:**
+## Warm Up
 
 Indian Run one full loop
 
-**The Thang:**
+## The Thang
 
 - Top Gun
 - 15 minutes
@@ -44,7 +44,7 @@ Indian Run one full loop
 - 2: Crab Walk / 20 Burpees
 - 3: Walking Lunge / 40 Air Squats
 
-**Mary:**
+## Mary
 
 - 20 Jane Fonda
 - 20 Freddie Mercury

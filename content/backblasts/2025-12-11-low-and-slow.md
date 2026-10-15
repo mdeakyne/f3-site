@@ -20,7 +20,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-12-11-low-and-slow.md
 - 20 Arm Circles
 - 10 Michael Phelps
 
-**The Thang:**
+## The Thang
 
 Straight leg raises, 30 each. 4-count cadence, one count to raise, and 3 to lower-Toe Up
 
@@ -37,7 +37,7 @@ Straight leg raises, 30 each. 4-count cadence, one count to raise, and 3 to lowe
 - Curls
 - Skull Crusher
 
-**Mary:**
+## Mary
 
 - 10 American Hammer
 - 10 Heels to heaven

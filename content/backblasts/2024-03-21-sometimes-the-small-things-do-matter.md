@@ -33,11 +33,11 @@ Coupon: BYOC
 
 yes
 
-**Warmup:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 - Light Poles 10&1
 - 10 jumping jacks & 1 burpee
@@ -49,7 +49,7 @@ OYO
 - Cow Bells
 - Sit-ups
 
-**The Mary:**
+## Mary
 
 - Reverse Incinerators
 - Swim kicks

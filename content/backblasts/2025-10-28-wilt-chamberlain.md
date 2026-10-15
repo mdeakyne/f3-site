@@ -24,13 +24,13 @@ vault_path: 07 - F3/Backblasts/2025/2025-10-28-wilt-chamberlain.md
 **Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **PAX:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), @404, @Dial-Up
 
-**Warmup:**
+## Warm Up
 
 - Grass pullers starting with middle, left, and right
 - Micheal Phelps
 - Arm circles
 
-**The Thang:**
+## The Thang
 
 - Walls of Jericho (or Waco)
 - seven exercises with seven reps
@@ -46,7 +46,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-10-28-wilt-chamberlain.md
 - `Sprint to the end of parking lot and back`
 - Repeat
 
-**Mary:**
+## Mary
 
 - One Tabata with two cycles on each exercise
 - American Hammer

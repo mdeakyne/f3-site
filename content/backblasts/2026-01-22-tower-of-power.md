@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-22-tower-of-power.md
 **Q:** @404  
 **PAX:** @Farmers Only @404 @Dizzy @Flute FNG @Bonnet
 
-**Warmup:**
+## Warm Up
 
 - 20 Arm Circles
 - 10 Michael Phelps

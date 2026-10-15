@@ -22,11 +22,11 @@ vault_path: 07 - F3/Backblasts/2024/2024-11-28-gobble-gobble.md
 
 [@LumberMack](https://f3lawrence.slack.com/team/U082TMUME83)
 
-**Warm up:**
+## Warm Up
 
 Stretching on your own.
 
-**The Thang:**
+## The Thang
 
 - 11s with Burpees and Weighted Squats
 

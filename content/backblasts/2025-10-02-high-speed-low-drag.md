@@ -35,7 +35,7 @@ PAX: [@Pepper](https://f3lawrence.slack.com/team/U09EMTHU51B), dialup, [@Big Toe
 
 [8:14](https://f3lawrence.slack.com/archives/C05L33U97L4/p1759410898561119)
 
-**The Thang:**
+## The Thang
 
 [8:16](https://f3lawrence.slack.com/archives/C05L33U97L4/p1759410992658389)
 

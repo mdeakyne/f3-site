@@ -27,11 +27,11 @@ vault_path: 07 - F3/Backblasts/2024/2024-05-30-going-in-circles.md
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), @404, @Waco, @Clipless, @Litterbox, [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), @Baldtire, @Flute,  
 **Count:** 9
 
-**Warmup:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 Run the Bases One partner does 5 ‘Mericans at each base while the other partner starts on 150 sit-ups.
 

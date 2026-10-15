@@ -30,11 +30,11 @@ PAX: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Big Toe](https://
 
 - Count: 7
 
-**Warmup:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 - 10&1 (or Confusing Cones)
 - 10 shoulder taps & 1 burpee

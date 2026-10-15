@@ -25,8 +25,10 @@ PAX: Farmers Only, Waco, Dizzy, Wreck-It, FNG
 
 Warm up on your own
 
-The Thang:
+## The Thang
+
 Incinerator
+
 - Overhead Press
 - Curls
 - Bent Over Row

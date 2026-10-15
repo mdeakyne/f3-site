@@ -30,11 +30,11 @@ PAX: [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) [@Waco](https://f
 
 - Count: 7
 
-**Warmup:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 Split into 2 groups
 
@@ -42,7 +42,7 @@ One group in Gazebo: Pullups/dead hang until failure, 20 burpees, 20 curls x 2 t
 
 Second group in parking lot: Indian run until other group finishes, walking lunge between two light poles
 
-**Mary:**
+## Mary
 
 - 20 bicycles
 - 20 London bridge

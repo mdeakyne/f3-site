@@ -27,7 +27,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-25-bent-out-of-shape-v2.md
 - Arm Circles - 10x4c
 - Dynamo Lap
 
-**The Thang:**
+## The Thang
 
 - 95' of moving exercise
 - blocks at one end, pads and sticks at the other. Exercise

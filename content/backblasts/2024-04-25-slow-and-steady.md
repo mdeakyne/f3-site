@@ -31,11 +31,11 @@ Coupon: BYOC
 
 Yes
 
-**Warmup:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 - Two groups - 3 repeats of 3 rounds
 
@@ -47,7 +47,7 @@ Third round - First group bear crawls to the second light post then lunges back,
 
 - Light post group, plank until your whole group finishes
 
-**Mary:**
+## Mary
 
 - 20 leg raises
 - 20 situps

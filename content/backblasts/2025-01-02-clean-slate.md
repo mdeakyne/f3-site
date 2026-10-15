@@ -24,7 +24,7 @@ Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 
 PAX: [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-**The Thang:**
+## The Thang
 
 - 20 sets of 25 exercises:
 - 25 burpees

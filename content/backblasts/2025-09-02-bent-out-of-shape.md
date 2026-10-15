@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-09-02-bent-out-of-shape.md
 
 PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @Wreckit
 
-**The Thang:**
+## The Thang
 
 - 95' of moving exercise
 - Blocks at one end, pads and sticks at the other

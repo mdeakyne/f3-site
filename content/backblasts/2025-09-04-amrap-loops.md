@@ -28,9 +28,9 @@ vault_path: 07 - F3/Backblasts/2025/2025-09-04-amrap-loops.md
 
 PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) Wreckit
 
-**The Thang:**
+## The Thang
 
-**Warmup:**
+## Warm Up
 
 - Grass pullers x 3 rounds on 4 count
 - Arm circles 10 on 4 count (forwards/backwards)

@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-12-24-burpee-bunny-spiderman-christmas-
 
 Stretching on your own
 
-**The Thang:**
+## The Thang
 
 Round 1: Murder Bunny X4   -20 yard Murder Bunny with 5 Spiderman Push ups with Murder bunnies back.
 

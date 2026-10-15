@@ -24,11 +24,11 @@ vault_path: 07 - F3/Backblasts/2025/2025-09-23-high-low-tabata.md
 **Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @Wreckit @dialup
 
-**Warmup:**
+## Warm Up
 
 Indian Run around most of the parking lot (the entire lit section)
 
-**The Thang:**
+## The Thang
 
 Tabata with each song split into a lower-body exercise for the first 4 cycles and an upper-body exercise for the second 4.
 
@@ -38,7 +38,7 @@ Tabata with each song split into a lower-body exercise for the first 4 cycles an
 - One-legged Squats/Bent Over Rows
 - Repeat
 
-**Mary:**
+## Mary
 
 - One Tabata with two cycles on each exercise
 - American Hammer

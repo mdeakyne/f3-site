@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-12-17-its-a-choice.md
 - 10 Windmills
 - 15 pick da grass
 
-**The Thang:**
+## The Thang
 
 - Every Minute On The Minute (EMOM)
 - 4 Rounds:

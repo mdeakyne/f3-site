@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-08-dealers-choice.md
 **PAX:** [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @Wreckit #FNG @bonnet  
 **Count:** 8
 
-**Warmup:**
+## Warm Up
 
 - dealers choice
 - grass pullers
@@ -34,10 +34,10 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-08-dealers-choice.md
 - broad jump
 - jog
 
-**The Thang:**
+## The Thang
 
 dealers choice, draw cards to determine exercise and quantity
 
-**Mary:**
+## Mary
 
 Tubthumping Chumbawumba burpees to I get knocked down

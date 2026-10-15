@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-27-big-toe-bata-with-extra-squatta.m
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @Wreckit [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Goulash](https://f3lawrence.slack.com/team/U0ABFLJQNF6) [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) @Bonnet
 
-**The Thang:**
+## The Thang
 
 - Tabata - 20s on, 10s rest x 8
 - SSH

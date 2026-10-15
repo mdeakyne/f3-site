@@ -19,18 +19,21 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-10-08-tabda-another-one.md
 ---
 
-The Thang:
+## The Thang
 
 Tabata with stations:
-• Jump Rope
-• Blockee
-• Squat step up with weight.
-• Block taps
-• Punching bag
-• Cossack Squat with weight.
-• Grave Digger
-• Farmers Carry
-CoT:
+
+- Jump Rope
+- Blockee
+- Squat step up with weight.
+- Block taps
+- Punching bag
+- Cossack Squat with weight.
+- Grave Digger
+- Farmers Carry
+
+## CoT
+
 Slump going to see fiancee in illinois.
 Casio going on a cruise.
 Waco and Big Toe have a big ruck.

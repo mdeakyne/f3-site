@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-04-11-time-and-measurement.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), @Bonnet, [@mark winton](https://f3lawrence.slack.com/team/U06EGPCL7GU) (Litterbox), @404, @Seafood, [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-**The Thang:**
+## The Thang
 
 - Tabata
 - Tabata (8x 20s on | 10 s off):

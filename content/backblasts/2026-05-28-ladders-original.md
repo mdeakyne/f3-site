@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-28-ladders-original.md
 **Q:** Waco  
 **PAX:** Farmers Only, Big Toe, Dizzy, 404, casio, Wreck It
 
-**Warmup:**
+## Warm Up
 
 - SSH Burndown - 5 down
 - Arm Circles (you know the drills)
@@ -52,6 +52,6 @@ Repeat with next exercise for 30 minutes or until the music stops.
 - Flutter on a 4cnt (plus 3 Merkins on every rung)
 - Burpees
 
-**Mary:**
+## Mary
 
 PAX choice around the circle to time.

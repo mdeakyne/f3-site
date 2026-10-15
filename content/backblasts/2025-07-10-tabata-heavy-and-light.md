@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-10-tabata-heavy-and-light.md
 **PAX:** @Wreckit, [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **When:** 07-10-25
 
-**The Thang:**
+## The Thang
 
 - SSH / Block SSH 🕺
 - *Light:* Side Straddle Hops
@@ -51,6 +51,6 @@ vault_path: 07 - F3/Backblasts/2025/2025-07-10-tabata-heavy-and-light.md
 - *Light:* Shoulder Taps from plank
 - *Heavy:* Hand-Release Merkins
 
-**Mary:**
+## Mary
 
 to finish.

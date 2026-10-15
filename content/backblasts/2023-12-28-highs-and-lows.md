@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-12-28-highs-and-lows.md
 - @Leaks
 - Count
 
-**Warmup:**
+## Warm Up
 
 - Stretching OYOThe Thang:
 - 3 focuses with 6 1 minute rounds
@@ -44,6 +44,6 @@ vault_path: 07 - F3/Backblasts/2023/2023-12-28-highs-and-lows.md
 - Third 6 rounds
 - Choice of Shoulder raises, Bicep curls, or Burpees
 
-**Mary:**
+## Mary
 
 10 Situps

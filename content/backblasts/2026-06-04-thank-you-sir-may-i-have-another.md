@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.
 **Q:** Dizzy  
 **PAX:** Farmers Only, Big Toe, Dizzy, casio, Wreck It
 
-**Warmup:**
+## Warm Up
 
 - Arm Circles 5 forward, 5 back, 5 big, 5 back
 - Michael Phelps x10
@@ -31,7 +31,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.
 - Piano Man x5
 - Run 2 small loops
 
-**The Thang:**
+## The Thang
 
 - 6 rounds:
 - 5 Burpees
@@ -42,7 +42,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.
 
 Exercise gratitude in our lives — repeat (thank you sir, may I have another)
 
-**Mary:**
+## Mary
 
 - 2 rounds peer led, 10 rep max
 - Flutter Kicks

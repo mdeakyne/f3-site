@@ -25,11 +25,11 @@ vault_path: 07 - F3/Backblasts/2024/2024-05-02-randomizer.md
 **PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@mark winton](https://f3lawrence.slack.com/team/U06EGPCL7GU) (Litterbox) @404  
 **Count:** 7
 
-**Warm up:**
+## Warm Up
 
 .
 
-**The Thang:**
+## The Thang
 
 Each of the Pax drew 3 cards (then a 4th) from the [Dexicon](https://f3gear.com/products/f3-card-decks)
 

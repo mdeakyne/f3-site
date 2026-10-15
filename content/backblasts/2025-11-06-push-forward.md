@@ -23,9 +23,9 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-06-push-forward.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), [@Pepper](https://f3lawrence.slack.com/team/U09EMTHU51B), @Wreckit
 
-**The Thang:**
+## The Thang
 
-**Warm up:**
+## Warm Up
 
 - 10 SSH
 - 10 Michael Phelps
@@ -60,7 +60,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-06-push-forward.md
 - Crab Walk / 50 of a style
 - (Repeat Warm Up)
 
-**Mary:**
+## Mary
 
 - Heavy Freddy
 - Shoulder Taps

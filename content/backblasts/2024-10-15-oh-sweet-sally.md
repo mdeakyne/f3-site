@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-10-15-oh-sweet-sally.md
 - [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
 - [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**The Thang:**
+## The Thang
 
 Listening to “Bring Sally Up” we will complete each movement 2x in order. Going up when song sings “up” and down when “down” is sung.
 

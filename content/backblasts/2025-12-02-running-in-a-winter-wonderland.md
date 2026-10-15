@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-12-02-running-in-a-winter-wonderland.md
 - 10 Michael Phelps
 - 20 Arm Circles
 
-**The Thang:**
+## The Thang
 
 - The Walls of Jericho (or Waco)
 - 7 reps for 7 exercises and then 1 lap

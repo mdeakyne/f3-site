@@ -24,14 +24,17 @@ When: 09-08-26 0530
 Q: Wreck-It
 PAX: Waco, Farmers Only, Big Toe, Goulash, 404, Toto
 
-Warmup:
+## Warm Up
+
 - Indian Run
 - Piano Man
 - SSH Burndown - 5
 - Toy Soldiers
 
-The Thang:
+## The Thang
+
 Wilt Chamberlain format - Rifle Carry between all stations:
+
 - 100 Squats
 - 100 Calf Raises
 - 100 American Hammer
@@ -39,8 +42,10 @@ Wilt Chamberlain format - Rifle Carry between all stations:
 - 100 Merkins
 - 100 OH Press
 
-Mary:
+## Mary
+
 Group led - call out and count:
+
 - Deadbugs
 - Freddy Mercury
 - Bird Dogs

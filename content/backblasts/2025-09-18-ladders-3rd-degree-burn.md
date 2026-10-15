@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-09-18-ladders-3rd-degree-burn.md
 **Q:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)  
 **PAX:** @Wreckit, [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M), [@Pepper](https://f3lawrence.slack.com/team/U09EMTHU51B), [@404](https://f3lawrence.slack.com/team/U07G685DW2K) 😪
 
-**The Thang:**
+## The Thang
 
 - Ladder: 3 rungss
 - Sprint out to the first rung, then jog back.

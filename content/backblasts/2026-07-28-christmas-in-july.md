@@ -22,13 +22,15 @@ When: 07/28/2026 @ 05:30
 Q: 404
 PAX: Casio, Wreck-It, Waco, Big Toe
 
-Warmup
+## Warm Up
+
 - SSH BurnDowns - Start at 5
 - 20 Arm Circles
 - 10 Sun Gods
 - 10 Abe Vigoda
 
-The Thang
+## The Thang
+
 White elephant tabata
 First PAX draws an exercise from the bucket. Next PAX can steal an already drawn exercise, or draw a new one. Continue until everyone has an exercise. Everyone performs their exercise for 4 rounds (1/2 a song) of tabata.
 Repeat drawing new exercises.

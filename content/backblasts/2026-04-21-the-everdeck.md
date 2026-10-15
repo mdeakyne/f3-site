@@ -27,7 +27,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-21-the-everdeck.md
 - Q: @Big Toe
 - PAX: @Waco @Wreckit @Dizzy @404 @Farmers Only @Gypsy
 
-**The Thang:**
+## The Thang
 
 We made it through all 120 cards in the everdeck, causing confusion along the way.
 
@@ -87,7 +87,7 @@ We made it through all 120 cards in the everdeck, causing confusion along the wa
 - Total exercise reps: approximately 2,570
 - 8 mandatory 10-second pauses courtesy of the X cards
 
-**Mary:**
+## Mary
 
 - 15 Heavy Freddie
 - 15 Freddie Mercury

@@ -24,11 +24,11 @@ vault_path: 07 - F3/Backblasts/2025/2025-04-29-somethings-ate-worth-repeating.md
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), @Toto  
 **Count:** 6
 
-**Warm up:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 - Walls of Jericho
 - 7 Overhead Press
@@ -44,7 +44,7 @@ OYO
 - 5 side shuttle hops
 - Sprint to the end of the parking lot
 
-**The Mary:**
+## Mary
 
 - 15 XYs (4 count)
 - 15 Freddy Mercurys (4 count)

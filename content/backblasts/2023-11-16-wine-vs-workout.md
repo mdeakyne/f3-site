@@ -33,13 +33,13 @@ vault_path: 07 - F3/Backblasts/2023/2023-11-16-wine-vs-workout.md
 - , @Leaks
 - Count: 10
 
-**Warm up:**
+## Warm Up
 
 - 5 Core Principles
 - F
 - 3 Mission Statement
 
-**The Thang:**
+## The Thang
 
 - Modified 1st and 10
 - Jumping Jacks - 20 count

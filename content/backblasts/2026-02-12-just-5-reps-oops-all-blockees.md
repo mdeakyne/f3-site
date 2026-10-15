@@ -25,11 +25,11 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-12-just-5-reps-oops-all-blockees.md
 
 Up
 
-**Warm up:**
+## Warm Up
 
 5 burn down jumping jacks.
 
-**The Thang:**
+## The Thang
 
 - 5 blockees : 5, 4, 3, 2, 1 OPs
 - 5 blockees: 5, 4, 3, 2, 1 Heavy Squat
@@ -47,7 +47,7 @@ Up
 - 100 Merkins, bear crawl.
 - 100 Groiners, murder bunny.
 
-**Mary:**
+## Mary
 
 - 10 Flutter Kick
 - 10 Freddy Mercury

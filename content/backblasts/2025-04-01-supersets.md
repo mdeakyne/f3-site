@@ -27,14 +27,14 @@ vault_path: 07 - F3/Backblasts/2025/2025-04-01-supersets.md
 - [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 - [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
 
-**Warm-up:**
+## Warm Up
 
 - Arm Circles
 - Squats
 - Push up to Downward Dog
 - Lunges
 
-**The Thang:**
+## The Thang
 
 - Super
 - Tuesday

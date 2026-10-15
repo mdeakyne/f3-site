@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-12-31-big-finish.md
 - [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 - [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
 
-**The Thang:**
+## The Thang
 
 - Laddered Stations
 - 6 stations, 6 exercises

@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-06-better-late-than-never.md
 - ,
 - [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-**Warmup:**
+## Warm Up
 
 - 20 arm circles
 - 10 Michael Phelps

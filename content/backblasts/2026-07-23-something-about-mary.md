@@ -22,7 +22,8 @@ When: 07/23/26 @ 05:30
 Q: Waco
 PAX: Dizzy, 404, Casio, Wreck-It
 
-Warm-Up (~5 minutes):
+## Warm Up (~5 minutes)
+
 - Dynamo Lap x2
 - Windmills (Mobility + Obliques)
 - Toy Soldiers
@@ -33,6 +34,7 @@ Main Set (24 minutes - 4 Rounds of 6-minute EMOMs):
 
 Round 1: Oblique Burn (Core / Balance)
 Each minute:
+
 1. 20 Russian Twists (2-count)
 2. 15 Side Plank Hip Dips (Right)
 3. 15 Side Plank Hip Dips (Left)
@@ -42,6 +44,7 @@ Each minute:
 
 Round 2: Posterior Chain & Core (Strength / Core / Balance)
 Each minute:
+
 1. 25 Glute Bridges
 2. 15 Superman Raises (hold each 1 sec)
 3. 15 V-Ups
@@ -51,6 +54,7 @@ Each minute:
 
 Round 3: Stability & Burnout (Strength / Balance / Mental Toughness)
 Each minute:
+
 1. 15 Zebra Kicks (2 count)
 2. 15 X Factor (2 count)
 3. 15 Push-up to Downward Dog
@@ -60,6 +64,7 @@ Each minute:
 
 Round 4: Straight Core Challenge
 Each minute:
+
 1. 20 Earl-Fonda (10 each side)
 2. 15 Flutter Kicks (4-count)
 3. 20 Heels to Heaven
@@ -69,6 +74,7 @@ Each minute:
 
 Finisher: Core AMRAP Ladder
 Start at 5 reps, add 2 each round (ended at 15 reps):
+
 - BBS (Big Boy Situps)
 - Leg Raises
 - Crossbody Mountain Climbers (2 = 1)

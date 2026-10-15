@@ -33,13 +33,13 @@ PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](https
 
 Yes
 
-**Warmup:**
+## Warm Up
 
 - Toe Tickler
 - Arm Circles
 - Michael Phelps
 
-**The Thang:**
+## The Thang
 
 - All About the Benjamins 4 times
 - 25 various

@@ -25,12 +25,12 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-27-turkey-games.md
 - [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M)
 - @Dial Up @Wreck it
 
-**Warmup:**
+## Warm Up
 
 - 20 Arm Circles
 - 10 Grass Pullers
 
-**The Thang:**
+## The Thang
 
 - (3 rounds)Round 1:
 - Toss and Catch

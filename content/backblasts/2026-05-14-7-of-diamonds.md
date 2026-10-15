@@ -48,7 +48,7 @@ The workout follows a "7 of Diamonds" structure — reps increase as you move to
 
 This creates constant directional changes and keeps the legs under tension throughout the workout.
 
-**Warmup:**
+## Warm Up
 
 - Round*
 - SSH × 7
@@ -61,7 +61,7 @@ This creates constant directional changes and keeps the legs under tension throu
 - 14* – XY's
 - 7* – Burpees
 
-**Mary:**
+## Mary
 
 - *
 - Heavy Glute Bridges × 20

@@ -19,7 +19,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-01-30-ladders-revisited.md
 **Q:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)  
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**The Thang:**
+## The Thang
 
 - Ladder: 7 rungs
 - Sprint out to the first run, then jog back.

@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-12-compounders.md
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), @wreck-it  
 **Count:** 6
 
-**Warm up:**
+## Warm Up
 
 - Grass pullers
 - Arm circles
@@ -32,7 +32,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-12-compounders.md
 - Jog 2 laps
 - Personal stretching
 
-**The Thang:**
+## The Thang
 
 - EMOM AMRAP w/ targets x 5 rounds
 - burpee to broad jump
@@ -42,7 +42,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-12-compounders.md
 - Crawl out to push up
 - Jog one lap
 
-**Mary:**
+## Mary
 
 - 30 sec Plank
 - 30 sec Mountain Climber

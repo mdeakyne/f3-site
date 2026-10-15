@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-12-04-the-snowball-effect.md
 - 10 SSH
 - Jog 2 laps
 
-**The Thang:**
+## The Thang
 
 - Snowball Effect 12 mins w/ rabbit
 - 5 Blockees - Compound

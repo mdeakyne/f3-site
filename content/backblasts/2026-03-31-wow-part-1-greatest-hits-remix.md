@@ -26,12 +26,12 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-31-wow-part-1-greatest-hits-remix.md
 - Q: @Waco
 - PAX: @Farmers Only @Big Toe @Toto @404 @Casio @Bonnet
 
-**Warmup:**
+## Warm Up
 
 - Arm Circles
 - Piano Man
 
-**The Thang:**
+## The Thang
 
 Mashup of some of Waco's favorite hits, Surfs Up, Ladders, and 20% rest.
 

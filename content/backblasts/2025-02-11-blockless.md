@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-02-11-blockless.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-**Warmup:**
+## Warm Up
 
 - 10 ... 1
 - SSH
@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-02-11-blockless.md
 - SSH No Arms
 - Hops
 
-**The Thang:**
+## The Thang
 
 - 1 PAX runs a big lap while others do an exercise
 - All PAX run a cool down lap
@@ -39,7 +39,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-02-11-blockless.md
 - (Forgot)
 - Lunges
 
-**Mary:**
+## Mary
 
 - PAX call it
 - Jane Fonda

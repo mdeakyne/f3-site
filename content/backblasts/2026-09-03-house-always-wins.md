@@ -24,22 +24,25 @@ When: 09/03/2026 05:30
 Q: Farmers Only
 PAX: Casio, Toto, Big Toe, Waco, Wreck-It, 404
 
-The warmup:
+## Warm Up
+
 - 5 burn down side-shuttle hops
 - 10 arm circles
 - 10 reverse arm circles
 - 10 Michael Phelps
 - 10 piano man
 
-The Thang: Blackjack
+## The Thang: Blackjack
 
 Suit to exercise mapping:
+
 - Hearts = Merkins
 - Clubs = LBCs
 - Spades = Lunges
 - Diamonds = Jump Squats
 
 Q deals, starts with dealing 2 cards face up per PAX. Hit or hold like blackjack.
+
 - Under 21, the reps = card values per suit
 - Hit 21 = winner picks exercise and we do 21 reps
 - Bust = double every card's reps

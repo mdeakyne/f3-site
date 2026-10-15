@@ -29,7 +29,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-07-run-ruck-walk-better-together.md
 - Plank walk ups 50 steps at V
 - Hip release stretch
 
-**The Thang:**
+## The Thang
 
 - (x3)
 - Full parking lot jog/ruck

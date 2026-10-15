@@ -29,7 +29,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-17-partner-up.md
 - 5 Burn down jumping jacks
 - 10 kick outs
 
-**The Thang:**
+## The Thang
 
 - As a pair work through 10 sets of the following:
 - 10 Blockees
@@ -39,7 +39,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-17-partner-up.md
 
 One partner works on the exercises while the other jogs to the far end of the parking lot and back. Got iffy on count, so we finished with one set in cadence to get everyone to 40 blockees.
 
-**Mary:**
+## Mary
 
 - 20 American Hammer
 - 20 Big Boy Situps

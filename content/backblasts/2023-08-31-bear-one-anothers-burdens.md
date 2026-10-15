@@ -39,12 +39,12 @@ FNGs: 2; [@Concessions](https://f3lawrence.slack.com/team/U05PWBTJV1Q) @Leaks
 
 - COUNT: 15
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers, 5 Core Principles
 - Stretch, OYO
 
-**The Thang:**
+## The Thang
 
 - Burden Relay, 2 lengths
 - Double coupon HS, double parking lot sprint
@@ -53,7 +53,7 @@ FNGs: 2; [@Concessions](https://f3lawrence.slack.com/team/U05PWBTJV1Q) @Leaks
 - Mixed Bag, 2 lengths
 - lunge, bear crawl, sprint
 
-**Mary:**
+## Mary
 
 - /Cool Down
 - Sharing is Caring, 20 x 2

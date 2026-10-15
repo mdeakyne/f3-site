@@ -22,14 +22,14 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-26-learning-from-others.md
 **Q:** Farmers Only  
 **PAX:** Waco, Wreck It, Dizzy, 404, Big Toe
 
-**Warmup:**
+## Warm Up
 
 - 10 arm circles
 - 10 reverse arm circles
 - 10 Michael Phelps
 - Piano man
 
-**The Thang:**
+## The Thang
 
 - Incinerators plus 1
 - Starting at 10 plus 1 lap, 9 plus 1 lap. Etc….
@@ -42,7 +42,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-26-learning-from-others.md
 - Run one lap
 - Repeat starting at 9
 
-**The Mary:**
+## Mary
 
 - Freddy Mercury
 - Heels to heaven

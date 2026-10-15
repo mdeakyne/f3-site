@@ -28,7 +28,7 @@ The Tellier WOD is dedicated to U.S. Sgt. Zachary D. Tellier, 31, of Charlotte, 
 
 This workout is from a couple weeks ago. The current week's challenge requires a track.
 
-**Warmup:**
+## Warm Up
 
 - ~10 minutes
 - Grass Pullers
@@ -36,7 +36,7 @@ This workout is from a couple weeks ago. The current week's challenge requires a
 - Run a lap
 - Independent stretching
 
-**The Thang:**
+## The Thang
 
 - Format
 - Complete the workout for time
@@ -44,7 +44,7 @@ This workout is from a couple weeks ago. The current week's challenge requires a
 
 Cones or markers for 5-yard, 10-yard, 15-yard, and 20-yard markings
 
-**The Thang:**
+## The Thang
 
 - Start timer
 - 10 burpees

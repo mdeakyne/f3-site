@@ -28,9 +28,9 @@ vault_path: 07 - F3/Backblasts/2025/2025-12-09-keep-it-moving.md
 - [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32)
 - [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-**The Thang:**
+## The Thang
 
-**Warm up:**
+## Warm Up
 
 - OYOTabata (Christmas Style)
 - (alternate WW III situps every other round)OP

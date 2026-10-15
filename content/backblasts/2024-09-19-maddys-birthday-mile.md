@@ -31,7 +31,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-19-maddys-birthday-mile.md
 - [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 - Count: 6
 
-**The Thang:**
+## The Thang
 
 - 4 Laps, 4 Stations, 20 reps at each station
 - Station 1 - Upright Rows

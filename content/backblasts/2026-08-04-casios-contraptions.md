@@ -23,6 +23,7 @@ Q: Casio
 PAX: Waco, Wreck-It, Big Toe, Bonnet
 
 Tabata:
+
 1. Jump Rope
 2. Skull Crusher
 3. Squat Jump
@@ -32,5 +33,6 @@ Tabata:
 7. Step Back Lunge with Weight
 8. Around the World with Grave Digger (with kettlebell)
 
-Mary:
+## Mary
+
 - 25 Sit Ups

@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-11-02-the-least-of-these.md
 **FNGs:** 0  
 **COUNT:** 5
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers,
 - 5 core Principles

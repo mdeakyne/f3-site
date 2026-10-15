@@ -27,7 +27,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-08-19-deck-of-many-things.md
 - [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 - @Wreckit
 
-**The Thang:**
+## The Thang
 
 - Two rounds.
 - Round 1:

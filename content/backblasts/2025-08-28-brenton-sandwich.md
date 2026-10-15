@@ -29,7 +29,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-08-28-brenton-sandwich.md
 - [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32)
 - Pepper
 
-**The Thang:**
+## The Thang
 
 - Bottom Slice of Bread
 - Brenton WOD – (3 rounds)

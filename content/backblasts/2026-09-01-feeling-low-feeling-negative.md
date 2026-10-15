@@ -24,15 +24,18 @@ When: 09-01-26 0530
 Q: Big Toe
 PAX: 404, Waco, Casio, Farmers Only, Wreck-It, Goulash
 
-Warm-Up
+## Warm Up
+
 - Abe Vigoda
 - Arm Circles
 - Imperial Walkers
 - Michael Phelps
 - 5 SSH Burndown
 
-The Thang — 15 / 10 / 5
+## The Thang — 15 / 10 / 5
+
 3 count down, 4th up: (Negative reps)
+
 - Merkins
 - Calf Raises
 - Squats
@@ -44,7 +47,8 @@ The Thang — 15 / 10 / 5
 - Cossack Squats
 - Curls
 
-Mary — 20 Reps Each
+## Mary — 20 Reps Each
+
 - Sit-Ups
 - Deadbugs
 - Supermans

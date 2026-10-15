@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-21-springbata.md
 **Q:** @404  
 **PAX:** @Waco @casio @Big Toe @Dizzy
 
-**Warmup:**
+## Warm Up
 
 - Burndown jumping jacks from 5
 - Arm circles

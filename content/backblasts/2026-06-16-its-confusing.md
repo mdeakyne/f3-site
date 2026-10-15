@@ -25,16 +25,18 @@ When: 6/16/26 0530
 Q: Farmers Only
 PAX: Dizzy, Waco, Big Toe, Wreck-It, Toto, Casio, Goulash
 
-Warmup:
+## Warm Up
+
 - 10 arm circles
 - 10 reverse arm circles
 - 10 windmills
 - 10 Michael Phelps
 - Traveling Side Shuttle Hops
 
-The Thang: The Walls of Jericho with the Cones of Confusion
+## The Thang: The Walls of Jericho with the Cones of Confusion
 
 7 exercises with 7 reps:
+
 - Calf Raises on a 4 count
 - 'Mericans
 - Overhead Press

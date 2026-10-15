@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-01-09-it-was-a-cold-one.md
 **Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**The Thang:**
+## The Thang
 
 - The Walls of Jericho
 - 7 Burpees

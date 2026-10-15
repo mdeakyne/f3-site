@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-14-getting-back-into-it.md
 - Piano Man  (left, middle, right)
 - Micheal Phelps
 
-**The Thang:**
+## The Thang
 
 - Walls of Jericho
 - 7 Curls
@@ -41,7 +41,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-14-getting-back-into-it.md
 - Run 1 lap
 - Leroy Jenkins through out
 
-**The Mary:**
+## Mary
 
 - XYs
 - WW II sit-ups

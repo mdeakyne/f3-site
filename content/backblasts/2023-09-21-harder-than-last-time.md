@@ -35,13 +35,13 @@ PAX: [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Trainwreck](h
 - FNGs: 1, @Second String
 - COUNT: 11
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers, 5 Core Principles
 - Stretch together
 - Indian Run, jog
 
-**The Thang:**
+## The Thang
 
 - Partner Relay
 - Partner 1, double Farmer Carry, Tower of Terror, 3 sets

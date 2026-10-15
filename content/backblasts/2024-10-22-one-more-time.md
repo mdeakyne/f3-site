@@ -23,11 +23,11 @@ vault_path: 07 - F3/Backblasts/2024/2024-10-22-one-more-time.md
 
 Core Principles
 
-**Warm up:**
+## Warm Up
 
 OYO
 
-**The Thang:**
+## The Thang
 
 - Tabata: 5 (20 mins)
 - Block press

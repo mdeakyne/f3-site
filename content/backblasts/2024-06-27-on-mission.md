@@ -23,12 +23,12 @@ vault_path: 07 - F3/Backblasts/2024/2024-06-27-on-mission.md
 **PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @404 [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @Kilo @Dial Up  
 **Count:** 7
 
-**Warm Up:**
+## Warm Up
 
 - Indian Run (3 laps)SSHMountain Climbers
 - Burpees
 
-**The Thang:**
+## The Thang
 
 - Firefighter (ladder + incinerator)
 - Big Toe Smash
@@ -37,7 +37,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-06-27-on-mission.md
 - Curls for Girls
 - Overhead Press
 
-**Mary:**
+## Mary
 
 - 20 Block passes
 - 20 Leg Raises

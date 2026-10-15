@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-24-you-can-bank-on-it.md
 **PAX:** [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M) [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @Wreckit  
 **Count:** 7
 
-**Warmup:**
+## Warm Up
 
 - dealers choice
 - grass pullers
@@ -32,13 +32,13 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-24-you-can-bank-on-it.md
 - SSH x 20
 - Arm Circles
 
-**The Thang:**
+## The Thang
 
 Bank 100 burpees - other partner walking lunges to light pole and back
 
 - Bank 100 elf on the shelf - other partner murder bunnies
 - Bank 100 thrusters - other partner bear crawls
 
-**Mary:**
+## Mary
 
 20 XY

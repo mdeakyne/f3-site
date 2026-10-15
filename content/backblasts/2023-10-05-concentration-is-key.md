@@ -43,16 +43,21 @@ vault_path: 07 - F3/Backblasts/2023/2023-10-05-concentration-is-key.md
 - COUNT:
 - 11
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers, 5 core Principles
 - Stretch together
 - Weighted mosey to gazebo
 
-**The Thang:**
+## The Thang
 
 - Diamond Push Ups, 4x10
-- Single arm Rows, 4x10• Concentration curls, 4x8
-- Concentration rows, 4x8• Dips, 4x8
+- - Single arm Rows, 4x10
+- Concentration curls, 4x8
+- - Concentration rows, 4x8
+- Dips, 4x8
 
-Down Unders, 4x8• Concentration Curls, Failure +5 assisted past failure reps 2x• Weighted Mosey to parking lot.• 1:30 plank.
+- Down Unders, 4x8
+- Concentration Curls, Failure +5 assisted past failure reps 2x
+- Weighted Mosey to parking lot.
+- 1:30 plank.

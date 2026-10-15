@@ -22,14 +22,16 @@ When: 08/06/26 0530
 Q: Dizzy
 PAX: 404, Waco, Big Toe, Casio
 
-Warm Up:
+## Warm Up
+
 - 1 lap
 - Arm Circles
 - Piano Man
 - Willie Mays Hays
 - 1 lap
 
-The Thang:
+## The Thang
+
 - 5 Burpees
 - 5 Pushups
 - 5 Bonnie Blairs

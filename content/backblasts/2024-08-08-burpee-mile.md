@@ -35,7 +35,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-08-08-burpee-mile.md
 - @404
 - Count: 8
 
-**The Thang:**
+## The Thang
 
 - Burpee Mile
 - 12 burpees followed by .25 mile run.

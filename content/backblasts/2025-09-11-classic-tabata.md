@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-09-11-classic-tabata.md
 - [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 - [@Pepper](https://f3lawrence.slack.com/team/U09EMTHU51B)
 
-**The Thang:**
+## The Thang
 
 - Tabata : 20 seconds on, 10 seconds off.
 - SSH

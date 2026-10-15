@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-19-the-approach-slow-and-controlled.
 **Q:** @Toto  
 **PAX:** @Wreckit, @Waco, @404, @bonnet, @Big Toe, @Farmers Only
 
-**Warm up:**
+## Warm Up
 
 parking lot jog, hip release, side lunges, pigeon walk, quad stretch
 

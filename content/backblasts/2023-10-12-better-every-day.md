@@ -27,11 +27,13 @@ vault_path: 07 - F3/Backblasts/2023/2023-10-12-better-every-day.md
 **FNGs:** 0  
 **COUNT:** 8
 
-**Warm Up:**
+## Warm Up
 
-•   Welcome and Disclaimers, 5 core Principles•   Stretch OYO•   Motivators x3 Movements - Down from 10
+- - Welcome and Disclaimers, 5 core Principles
+- Stretch OYO
+- Motivators x3 Movements - Down from 10
 
-**The Thang:**
+## The Thang
 
 - Partner Relay
 

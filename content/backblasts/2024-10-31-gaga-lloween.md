@@ -28,6 +28,6 @@ vault_path: 07 - F3/Backblasts/2024/2024-10-31-gaga-lloween.md
 - [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0)
 - [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**The Thang:**
+## The Thang
 
 Several rounds of Gagaball - with Waco testing out "Just 10 reps" punishments.

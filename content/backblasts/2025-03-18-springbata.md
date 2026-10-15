@@ -22,13 +22,13 @@ vault_path: 07 - F3/Backblasts/2025/2025-03-18-springbata.md
 **Count:** 4  
 **PAX:** [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@404](https://f3lawrence.slack.com/team/U07G685DW2K)
 
-**Warm-up:**
+## Warm Up
 
 - Side straddle hop
 - Arm circles
 - Michael Phelps
 
-**The Thang:**
+## The Thang
 
 - Tabata
 - Thrusters

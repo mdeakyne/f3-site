@@ -37,12 +37,12 @@ vault_path: 07 - F3/Backblasts/2023/2023-09-07-salt-and-light-weight.md
 **FNGs:** 2; @Queen Bee, @Glee Club  
 **COUNT:** 18
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers, 5 Core Principles
 - Stretch, OYO
 
-**The Thang:**
+## The Thang
 
 - Partner Heavy OH Lunges, 3 relays
 
@@ -52,7 +52,7 @@ One partner does 20 lunges with rifle carry coupon, other partner holds plank
 - Incinerator, down from 10
 - Burpee, Thruster, Flutter Kick, Front Raise
 
-**Mary:**
+## Mary
 
 - /Cool Down
 - Paused Air Squats, 20

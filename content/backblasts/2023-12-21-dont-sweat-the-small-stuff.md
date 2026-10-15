@@ -28,11 +28,11 @@ vault_path: 07 - F3/Backblasts/2023/2023-12-21-dont-sweat-the-small-stuff.md
 - @Leaks
 - Count: 6
 
-**Warmup:**
+## Warm Up
 
 Stretching -OYO
 
-**The Thang:**
+## The Thang
 
 - 10 and 1
 - 10 jumping jack + 1 burpee

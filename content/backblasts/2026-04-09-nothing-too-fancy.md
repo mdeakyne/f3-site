@@ -32,7 +32,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-09-nothing-too-fancy.md
 - Willy
 - jog around the parking lot
 
-**The Thang:**
+## The Thang
 
 - Ladder block → 1, 1→2, 1→2→3, etc.
 - 1: 10 x 5 = 50 Carolina Dry Docks
@@ -50,7 +50,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-09-nothing-too-fancy.md
 - 15 SL RDL each side
 - 10 Lateral Lunge each side
 
-**Mary:**
+## Mary
 
 - - peer led:
 - Dead bugs

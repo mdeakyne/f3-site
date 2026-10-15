@@ -22,12 +22,12 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-15-with-some-things-its-easy-to-find
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Airball](https://f3lawrence.slack.com/team/U08SCS8FRAP)  
 **Count:** 6
 
-**Warmup:**
+## Warm Up
 
 - Grass-pullers center, left, right
 - Micheal Phelps
 
-**The Thang:**
+## The Thang
 
 - Incinerators starting at 10,  9, 8….
 - Dips

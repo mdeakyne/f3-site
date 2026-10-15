@@ -34,7 +34,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-08-17-better-together.md
 **FNGs:** 4; @Flaps, @Moist, @Farmers Only, @Soprano  
 **COUNT:** 15
 
-**Warm Up:**
+## Warm Up
 
 - Welcome and Disclaimers, 5 Core Principles
 - Greatest Stretch on Earth, 30s x 2
@@ -42,7 +42,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-08-17-better-together.md
 - Cobra, Down Dog, 30s each x 2
 - Motivators, down from 10
 
-**The Thang:**
+## The Thang
 
 - Tower of Terror and Jump Squats
 - Partners, rotating
@@ -52,7 +52,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-08-17-better-together.md
 - Indian run
 - 5 laps
 
-**Mary:**
+## Mary
 
 - Sharing is Caring
 - Partners, 20 x 1

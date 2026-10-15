@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-02-01-birthday-bash.md
 **Backblast:** Birthday Bash  
 **When:** 02/01/2024
 
-**Warmup:**
+## Warm Up
 
 - Stretching
 - Toe Tickler

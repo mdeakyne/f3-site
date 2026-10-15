@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-07-09-more-than-you-think.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) PAX: [@Billboard](https://f3lawrence.slack.com/team/U05L1S8BK98) [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **Count:** 5
 
-**Warmup:**
+## Warm Up
 
 - 20 ssh
 - 20 imperial walkers
@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-07-09-more-than-you-think.md
 - 20 toe touch
 - 20 Michael phelps
 
-**The Thang:**
+## The Thang
 
 - ← forwards→ karaoke→backwards←karaoke
 - 1. 20 Merkins
@@ -46,7 +46,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-07-09-more-than-you-think.md
 - 11. 10 Burpees
 - 12. 10 Block Swings
 
-**Mary:**
+## Mary
 
 - 20 Flutter Kicks
 - 20 WWIII Sit-ups

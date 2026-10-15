@@ -22,10 +22,12 @@ When: 07/09/26
 Q: Big Toe
 PAX: Dizzy, 404, Casio, Farmers Only
 
-The Thang:
+## The Thang
+
 Mosey over to the gazebo.
 
 Tabata (new app that keeps time and allows for normal, non-cover songs):
+
 - SSH
 - Overhead Press
 - Prison Get Ups

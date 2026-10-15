@@ -31,14 +31,14 @@ vault_path: 07 - F3/Backblasts/2024/2024-01-04-keep-it-simple.md
 - [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
 - Count 6
 
-**Warm up:**
+## Warm Up
 
 - Jumping jacks
 - Shoulder taps
 - Michael Phelps
 - Toe taps
 
-**The Thang:**
+## The Thang
 
 - Tabata (4 minutes : 20 seconds on, 10 seconds rest)
 - 1. Carry on my wayward son → warm up (2 sets each)

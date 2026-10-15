@@ -24,12 +24,14 @@ When: 06/23/26 0530
 Q: Waco
 PAX: Dizzy, 404, Farmers Only, Casio, Goulash, Wreck-It
 
-The Thang:
+## The Thang
+
 - 95' of moving exercise
 - Blocks at one end, pads at the other
 - Hold a plank while you wait for the six
 
 Move down and back, alternating a movement with an exercise:
+
 - Bear Crawl
 - Dead Lift 10x
 - Wushu Bounce

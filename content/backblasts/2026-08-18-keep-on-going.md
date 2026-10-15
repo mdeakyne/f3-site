@@ -22,15 +22,18 @@ When: 08/18/2026 @ 05:30
 Q: Farmers Only
 PAX: 404, Big Toe, Casio, Goulash
 
-Warmup:
+## Warm Up
+
 - 5 Burn Down Side Shuttle Hops
 - 10 Arm Circles
 - 10 Reverse Arm Circles
 - 10 Michael Phelps on a 4 count
 - 4 Morning Glory
 
-The Thang:
+## The Thang
+
 10 & 1, aka The Cones of Confusion
+
 - 10 Side Shuttle Hops & 1 Burpee
 - 10 Mountain Climbers on a 4 count & 1 Burpee
 - 10 Squats & 1 Burpee
@@ -38,13 +41,15 @@ The Thang:
 - 10 Apollo Ono & 1 Burpee
 
 Incinerators, starting at 10, 9, 8...
+
 - Overhead Press
 - Curls
 - Dead Lift
 - One Arm Upright Rows
 - Heavy Squats
 
-Mary:
+## Mary
+
 - Freddy Mercury
 - WWII Sit-ups
 - American Hammer

@@ -20,9 +20,9 @@ vault_path: 07 - F3/Backblasts/2025/2025-02-06-countdown.md
 **Q:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)  
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)
 
-The thang:
+## The Thang
 
-**Warmup:**
+## Warm Up
 
 - 11, 10, 9,...2, 1
 - SSH
@@ -30,7 +30,7 @@ The thang:
 - SSH no arms
 - Hops
 
-**The Thang:**
+## The Thang
 
 - Incinerator 11 ... 1
 - OP
@@ -40,7 +40,7 @@ The thang:
 - Big toe smash
 - Block Swings
 
-**Mary:**
+## Mary
 
 - 11 ... 1
 - Merkins

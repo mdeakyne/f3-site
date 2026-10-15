@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-12-26-white-elephant-christmas-special.
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K),  [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **Count:** 3
 
-**The Thang:**
+## The Thang
 
 - Determine an order to draw a gift (exercise) from the jar
 - 1st PAX draws an exercise and reads aloud

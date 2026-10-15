@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-04-18-partner-up.md
 **Q:** @Seafood  
 **PAX:** @Second String, @Sawdust, @404, @Seafood, @Farmers Only, @Big Toe, and @Flute
 
-**The Thang:**
+## The Thang
 
 - 5  rounds of exercise with partnersround 1
 - partner 1: overhead press 15

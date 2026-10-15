@@ -26,11 +26,11 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-01-emom-schmemom.md
 - Coupon: :coupon:
 - Coffee: ☕
 
-**Warmup:**
+## Warm Up
 
 15 Blockees
 
-**The Thang:**
+## The Thang
 
 - Emom loop 3 times
 - 25 Squats

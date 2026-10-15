@@ -16,14 +16,14 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2025/2025-12-16-musical-chairs.md
 ---
 
-**Warmup:**
+## Warm Up
 
 - Grass Pullers
 - Arm Circles
 - Michael Phelps
 - SSH Burn Down from 4
 
-**The Thang:**
+## The Thang
 
 - Musical Chairs
 - The setup:

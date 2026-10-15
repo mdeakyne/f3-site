@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-08-05-infinity-loop.md
 - [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M)
 - @wreckit
 
-**The Thang:**
+## The Thang
 
 - Each exercise is over a 20 yard distance
 - Exercises
@@ -47,6 +47,6 @@ Red- Start with 10 front Raises then Imperial blockers March to Blue
 
 Q is first rabbit. Picks next designated rabbit. Can’t pick same person twice. Once rabbit completes rifle carry back the round resets on a 30 second rest then pax starts back at the first exercise.
 
-**Mary:**
+## Mary
 
 Moby - Flower (Leg Raises to up and down hold on down)

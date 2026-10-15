@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-18-theres-always-a-dumbass.md
 - Imperial Storm Kickers
 - Traveling Side Shuttle Hops
 
-**The Thang:**
+## The Thang
 
 - Cones of Confusion:  sprint to the first, second, third, etc.
 - 10 Mericans & 1 Burpee
@@ -48,7 +48,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-18-theres-always-a-dumbass.md
 - 25 Mountain Climber
 - 25 Walking Lunges
 
-**Mary:**
+## Mary
 
 - 10 Freddy Mercury
 - 10 Calf Raises

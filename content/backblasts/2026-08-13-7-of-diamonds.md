@@ -27,6 +27,7 @@ The Setup:
 Use a baseball diamond or set 4 cones roughly 90 feet apart to form a square. PAX begin at home plate. The workout follows a "7 of Diamonds" structure — reps increase as you move toward the center of the diamond, then descend back down the opposite side.
 
 The Process:
+
 1. Start at home plate.
 2. Travel to the next cone/base and complete the assigned reps and exercise.
 3. Continue around the diamond, repeating the same reps at each base until returning home.
@@ -35,6 +36,7 @@ The Process:
 
 The Catch:
 PAX must always face south during movement between cones:
+
 - Run forward
 - Side shuffle
 - Backpedal
@@ -43,9 +45,11 @@ PAX must always face south during movement between cones:
 This creates constant directional changes and keeps the legs under tension throughout the workout.
 
 Warmup Round:
+
 - SSH x 7
 
 The Diamond:
+
 - 7 - Merkins
 - 14 - Squat Jumps
 - 21 - Apollo Oh No (Speed Skater Lunges)
@@ -55,12 +59,14 @@ The Diamond:
 - 7 - Burpees
 
 Burn Down - Starting at 5, 4, 3, 2, 1:
+
 - OH Press
 - Curls
 - Row
 - Dead Lift
 
 Mary PAX Pics:
+
 - Heels to Heaven
 - Big Boys
 - WWIII

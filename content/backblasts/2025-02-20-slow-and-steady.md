@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-02-20-slow-and-steady.md
 **Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J)
 
-**The Thang:**
+## The Thang
 
 Listening to "Bring Sally Up" go up when the song sings "up" and down when the song sings "down". Worked through two loops of the exercises:
 
