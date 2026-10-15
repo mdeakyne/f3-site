@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-20-its-up-to-flute.md
 - ,
 - [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32)
 
-## Warm Up
+## Warmup
 
 10 - 1 SSH Burndown.
 

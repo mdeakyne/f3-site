@@ -24,7 +24,7 @@ When: 09-01-26 0530
 Q: Big Toe
 PAX: 404, Waco, Casio, Farmers Only, Wreck-It, Goulash
 
-## Warm Up
+## Warm-Up
 
 - Abe Vigoda
 - Arm Circles

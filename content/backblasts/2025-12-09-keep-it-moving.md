@@ -30,7 +30,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-12-09-keep-it-moving.md
 
 ## The Thang
 
-## Warm Up
+## Warm up
 
 - OYOTabata (Christmas Style)
 - (alternate WW III situps every other round)OP

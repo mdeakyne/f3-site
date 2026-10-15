@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-24-whole-parts-whole.md
 **Q:** @Farmers Only  
 **PAX:** @Big Toe, @Waco, @Wreck-It, @Goulash, @404, @Toto, @Casio (FNG)
 
-## Warm Up
+## Warmup
 
 - 5 Burn Down Side Shuttle Hops
 - Arm Circles, 5 small, 5 big each direction on a 4-count
@@ -47,7 +47,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-24-whole-parts-whole.md
 - Plank until done
 - Run one lap
 
-## Mary
+## The Mary
 
 - Freddy Mercury
 - Dead bug

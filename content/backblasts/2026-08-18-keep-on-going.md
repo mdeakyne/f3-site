@@ -22,7 +22,7 @@ When: 08/18/2026 @ 05:30
 Q: Farmers Only
 PAX: 404, Big Toe, Casio, Goulash
 
-## Warm Up
+## Warmup
 
 - 5 Burn Down Side Shuttle Hops
 - 10 Arm Circles

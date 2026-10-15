@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-07-23-feel-the-burn.md
 **PAX:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), @404  
 **Count:** 4
 
-## Warm Up
+## Warmup
 
 - Parking lot jog (PLJ)
 - Jumping jacks

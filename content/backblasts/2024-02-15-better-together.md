@@ -33,7 +33,7 @@ PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Sawdust](https
 
 Yes
 
-## Warm Up
+## Warmup
 
 - Toe Tickler
 - Arm Circles

@@ -20,7 +20,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-07-16-ai-in-the-beehive.md
 **Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)PAX: [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF)  
 **Count:** 3
 
-## Warm Up
+## Warmup
 
 - brief jog
 - toe touches

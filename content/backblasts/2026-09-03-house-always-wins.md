@@ -24,7 +24,7 @@ When: 09/03/2026 05:30
 Q: Farmers Only
 PAX: Casio, Toto, Big Toe, Waco, Wreck-It, 404
 
-## Warm Up
+## The warmup
 
 - 5 burn down side-shuttle hops
 - 10 arm circles

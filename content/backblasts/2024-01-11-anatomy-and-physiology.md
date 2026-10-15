@@ -32,7 +32,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-01-11-anatomy-and-physiology.md
 - Count 6
 - FNG
 
-## Warm Up
+## Warmup
 
 Michael Phelps, Toe Tickler, Shoulder Pretzel, Flexor PullThe Thang:
 

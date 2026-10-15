@@ -24,7 +24,7 @@ When: 09-10-2026 0530
 Q: Wreck-It
 PAX: Waco, Big Toe, Casio, Farmers Only, Toto, Dizzy (late)
 
-## Warm Up
+## Warmup
 
 - SSH Burndown
 - 90/90 Splits

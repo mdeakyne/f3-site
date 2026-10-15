@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-12-compounders.md
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), @wreck-it  
 **Count:** 6
 
-## Warm Up
+## Warm up
 
 - Grass pullers
 - Arm circles

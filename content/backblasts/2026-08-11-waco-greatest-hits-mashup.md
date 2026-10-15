@@ -23,7 +23,7 @@ When: 08/11/2026 @ 05:30
 Q: Waco
 PAX: Dizzy, Big Toe, Farmers Only, 404, Toto
 
-## Warm Up
+## Warmup
 
 - Arm Circles
 - Piano Man

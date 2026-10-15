@@ -28,7 +28,7 @@ The Tellier WOD is dedicated to U.S. Sgt. Zachary D. Tellier, 31, of Charlotte, 
 
 This workout is from a couple weeks ago. The current week's challenge requires a track.
 
-## Warm Up
+## Warmup
 
 - ~10 minutes
 - Grass Pullers

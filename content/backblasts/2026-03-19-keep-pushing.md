@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-19-keep-pushing.md
 **Q:** @Big Toe  
 **Pax:** @404 @Farmers Only @Casio
 
-## Warm Up
+## Warm up
 
 - 8 SSH Burndown
 - Abe Vigola

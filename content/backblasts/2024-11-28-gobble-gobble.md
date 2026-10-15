@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-11-28-gobble-gobble.md
 
 [@LumberMack](https://f3lawrence.slack.com/team/U082TMUME83)
 
-## Warm Up
+## Warm up
 
 Stretching on your own.
 

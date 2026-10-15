@@ -31,7 +31,7 @@ Coupon: BYOC
 
 Yes
 
-## Warm Up
+## Warmup
 
 OYO
 

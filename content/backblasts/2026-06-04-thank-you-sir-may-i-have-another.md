@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-06-04-thank-you-sir-may-i-have-another.
 **Q:** Dizzy  
 **PAX:** Farmers Only, Big Toe, Dizzy, casio, Wreck It
 
-## Warm Up
+## Warmup
 
 - Arm Circles 5 forward, 5 back, 5 big, 5 back
 - Michael Phelps x10

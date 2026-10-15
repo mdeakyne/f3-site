@@ -24,7 +24,7 @@ When: 08/27/26 0530
 Q: Waco
 PAX: Big Toe, Farmers Only, 404, Casio, Toto, Wreck-It
 
-## Warm Up
+## Warmup
 
 - 4 corners - 2 laps
 - Piano Man - 4cnt x 10

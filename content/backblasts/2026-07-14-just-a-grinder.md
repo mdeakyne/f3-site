@@ -22,7 +22,7 @@ When: 07/14/2026 @ 05:30
 Q: Dizzy
 PAX: Casio, Farmers Only, Big Toe, 404
 
-## Warm Up
+## The warmup
 
 - Medium distance jog around parking lot
 - Piano Man

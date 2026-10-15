@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-26-new-kids-on-the-block.md
 **PAX:** @Farmers Only @Waco @Wreckit @404  
 **FNGs:** @Hiccup @Casio
 
-## Warm Up
+## Warmup
 
 - Arm circles: 20
 - Michael Phelps: 20

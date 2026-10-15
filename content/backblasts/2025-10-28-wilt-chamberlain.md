@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-10-28-wilt-chamberlain.md
 **Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **PAX:** [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Wreck-It, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), @404, @Dial-Up
 
-## Warm Up
+## Warmup
 
 - Grass pullers starting with middle, left, and right
 - Micheal Phelps

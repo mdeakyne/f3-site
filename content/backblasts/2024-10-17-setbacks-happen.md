@@ -39,7 +39,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-10-17-setbacks-happen.md
 - Scissor lifts
 - Upright rows
 
-## Mary
+## The Mary
 
 - 20 Freddy Mercurys
 - 20 Jane Fondas

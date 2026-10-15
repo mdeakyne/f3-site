@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-29-just-10-reps-revisit.md
 **PAX:** @Wreck It, @404, @Dizzy, @Farmers Only, @Bonnet, @Big Toe  
 **Count:** 7
 
-## Warm Up
+## Warmup
 
 - (~5 min)
 - SSH Burn Down - 7 ↓

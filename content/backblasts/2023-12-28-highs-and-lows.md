@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-12-28-highs-and-lows.md
 - @Leaks
 - Count
 
-## Warm Up
+## Warmup
 
 - Stretching OYOThe Thang:
 - 3 focuses with 6 1 minute rounds

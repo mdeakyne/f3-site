@@ -25,7 +25,7 @@ When: 6/16/26 0530
 Q: Farmers Only
 PAX: Dizzy, Waco, Big Toe, Wreck-It, Toto, Casio, Goulash
 
-## Warm Up
+## Warmup
 
 - 10 arm circles
 - 10 reverse arm circles

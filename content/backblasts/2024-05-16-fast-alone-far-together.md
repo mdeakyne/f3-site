@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-05-16-fast-alone-far-together.md
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J) @bonnet @404  
 **Count:** 8
 
-## Warm Up
+## Warm-up
 
 - Focus on ROM and form
 - 1. Parking lot jog - down and back

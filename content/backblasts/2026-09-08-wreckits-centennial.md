@@ -24,7 +24,7 @@ When: 09-08-26 0530
 Q: Wreck-It
 PAX: Waco, Farmers Only, Big Toe, Goulash, 404, Toto
 
-## Warm Up
+## Warmup
 
 - Indian Run
 - Piano Man

@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-11-23-turkey-trot.md
 **PAX:** [@PlotTwist](https://f3lawrence.slack.com/team/U06024Y7EEQ), [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@Blackout](https://f3lawrence.slack.com/team/U05NGUQ13C1), [@Route 44](https://f3lawrence.slack.com/team/U05M1D30MRC)  
 **Count:** 5
 
-## Warm Up
+## Warm up
 
 - Stretch OYO
 - Lap

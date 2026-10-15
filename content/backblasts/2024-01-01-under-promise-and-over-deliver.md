@@ -34,7 +34,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-01-01-under-promise-and-over-deliver.md
 - Count 7
 - FNG 1
 
-## Warm Up
+## Warmup
 
 - Slav Squat, Toe Ticklers, Jack and Rose, MotivatorsThe Thang:
 - Curls, But Harder 10

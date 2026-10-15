@@ -26,7 +26,7 @@ Where: [#ao-ad-astra](https://f3lawrence.slack.com/archives/C05L33U97L4)
 
 PAX: [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) @Bonnet [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF) [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
 
-## Warm Up
+## Warmup
 
 .
 

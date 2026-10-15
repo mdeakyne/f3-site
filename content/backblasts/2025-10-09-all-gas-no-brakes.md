@@ -29,7 +29,7 @@ Coffee: Yes — [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 
 PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), Wreck It, [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), Dial Up, Crocs, [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32)
 
-## Warm Up
+## Warmup
 
 400m jog, stretching
 

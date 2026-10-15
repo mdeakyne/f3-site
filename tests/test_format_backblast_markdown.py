@@ -1,4 +1,6 @@
 import sys
+import subprocess
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -52,7 +54,7 @@ Circle of Trust:
 Prayers for the group.
 """
 
-        expected = """## Warm Up
+        expected = """## The warmup
 
 - SSH
 
@@ -98,7 +100,7 @@ Prayers for the group.
 This stays narrative.
 """
 
-        expected = """## Warm Up
+        expected = """## Warmup
 
 - Existing item
 - Imported item
@@ -146,8 +148,8 @@ The group discussed The Thang: and what made it difficult.
 
         self.assertEqual(normalize_body(source), expected)
 
-    def test_promotes_the_mary_legacy_variant(self):
-        self.assertEqual("## Mary\n", normalize_body("**The Mary:**\n"))
+    def test_promotes_the_mary_legacy_variant_without_rewording_it(self):
+        self.assertEqual("## The Mary\n", normalize_body("**The Mary:**\n"))
 
     def test_splits_multiple_unicode_bullets_collapsed_onto_one_line(self):
         source = """**Warm Up:**
@@ -164,12 +166,10 @@ The group discussed The Thang: and what made it difficult.
 
         self.assertEqual(normalize_body(source), expected)
 
-    def test_treats_text_before_an_embedded_bullet_as_the_first_list_item(self):
+    def test_preserves_ambiguous_embedded_bullet_in_narrative_text(self):
         source = "Down Unders, 4x8• Concentration Curls, 2x• 1:30 plank.\n"
 
-        expected = "- Down Unders, 4x8\n- Concentration Curls, 2x\n- 1:30 plank.\n"
-
-        self.assertEqual(normalize_body(source), expected)
+        self.assertEqual(normalize_body(source), source)
 
     def test_does_not_duplicate_an_existing_list_marker_when_splitting_bullets(self):
         source = "- Welcome and Disclaimers• Stretch OYO• Motivators x3\n"
@@ -178,11 +178,46 @@ The group discussed The Thang: and what made it difficult.
 
         self.assertEqual(normalize_body(source), expected)
 
-    def test_repairs_duplicate_marker_from_an_earlier_normalization_pass(self):
-        self.assertEqual(
-            "- Welcome and Disclaimers\n",
-            normalize_body("- - Welcome and Disclaimers\n"),
-        )
+    def test_preserves_compact_nested_list_markers_idempotently(self):
+        source = "- - - Merkins\n"
+
+        self.assertEqual(normalize_body(source), source)
+        self.assertEqual(normalize_body(normalize_body(source)), source)
+
+    def test_preserves_tilde_and_long_backtick_fences(self):
+        source = """~~~~text
+Warm Up:
+• SSH
+```
+~~~~
+
+````text
+The Thang:
+```
+• Merkins
+````
+"""
+
+        self.assertEqual(normalize_body(source), source)
+
+    def test_preserves_indented_code_and_labels_inside_list_items(self):
+        source = """    Warm Up:
+    • literal symbol
+- The Thang:
+  continuation text
+"""
+
+        self.assertEqual(normalize_body(source), source)
+
+    def test_preserves_inline_code_containing_a_bullet_symbol(self):
+        source = "Use `• ` as the separator.\n"
+
+        self.assertEqual(normalize_body(source), source)
+
+    def test_preserves_lazy_list_continuations(self):
+        source = "- Partner carry\nContinue to the far curb and return.\n"
+
+        self.assertEqual(normalize_body(source), source)
 
 
 class DocumentNormalizationTests(unittest.TestCase):
@@ -211,6 +246,22 @@ The Thang:
             normalize_document("Prayer:\nKeep the group safe.\n"),
             "## Prayer\n\nKeep the group safe.\n",
         )
+
+    def test_cli_preserves_crlf_frontmatter_bytes(self):
+        source = b"---\r\nslug: crlf-test\r\ntitle: CRLF Test\r\n---\r\nWarm Up:\r\n\xe2\x80\xa2 SSH\r\n"
+        script = Path(__file__).resolve().parents[1] / "scripts" / "format_backblast_markdown.py"
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "post.md"
+            path.write_bytes(source)
+            subprocess.run(
+                [sys.executable, str(script), "--write", str(path)],
+                check=True,
+                capture_output=True,
+            )
+            normalized = path.read_bytes()
+
+        self.assertTrue(normalized.startswith(b"---\r\nslug: crlf-test\r\ntitle: CRLF Test\r\n---\r\n"))
 
 
 if __name__ == "__main__":

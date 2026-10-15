@@ -20,7 +20,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-04-08-new-years-resolutions.md
 **Count:** 2  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R)
 
-## Warm Up
+## Warmup
 
 OYO
 
@@ -36,6 +36,6 @@ OYO
 - One expanding lap
 - Repeat 7 times
 
-## Mary
+## The Mary
 
 honestly I can’t remember it all because it took too long to post my Backblast

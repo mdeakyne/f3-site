@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-06-05-out-of-control.md
 **PAX:** [@Toto](https://f3lawrence.slack.com/team/U08QXDW8W6M), [@Airball](https://f3lawrence.slack.com/team/U08SCS8FRAP), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Dizzy](https://f3lawrence.slack.com/team/U08N6V1HF32), @Wreck-It  
 **Count:** 6
 
-## Warm Up
+## Warm up
 
 - Grass pullers
 - right, left middle

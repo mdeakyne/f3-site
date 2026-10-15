@@ -22,7 +22,7 @@ When: 07/23/26 @ 05:30
 Q: Waco
 PAX: Dizzy, 404, Casio, Wreck-It
 
-## Warm Up (~5 minutes)
+## Warm-Up (~5 minutes)
 
 - Dynamo Lap x2
 - Windmills (Mobility + Obliques)

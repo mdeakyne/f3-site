@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-26-learning-from-others.md
 **Q:** Farmers Only  
 **PAX:** Waco, Wreck It, Dizzy, 404, Big Toe
 
-## Warm Up
+## Warmup
 
 - 10 arm circles
 - 10 reverse arm circles
@@ -42,7 +42,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-26-learning-from-others.md
 - Run one lap
 - Repeat starting at 9
 
-## Mary
+## The Mary
 
 - Freddy Mercury
 - Heels to heaven

@@ -31,7 +31,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-01-04-keep-it-simple.md
 - [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48)
 - Count 6
 
-## Warm Up
+## Warm up
 
 - Jumping jacks
 - Shoulder taps

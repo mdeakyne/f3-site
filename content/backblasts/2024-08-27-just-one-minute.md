@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-08-27-just-one-minute.md
 **FNG:** 1  
 **PAX:** [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD), [@404](https://f3lawrence.slack.com/team/U07G685DW2K), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A), @Pepper
 
-## Warm Up
+## Warm-up
 
 - Side straddle hops (I still don’t really know the name for these)
 - Arm circles

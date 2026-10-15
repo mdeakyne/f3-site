@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-12-21-dont-sweat-the-small-stuff.md
 - @Leaks
 - Count: 6
 
-## Warm Up
+## Warmup
 
 Stretching -OYO
 

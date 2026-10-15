@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-11-06-push-forward.md
 
 ## The Thang
 
-## Warm Up
+## Warm up
 
 - 10 SSH
 - 10 Michael Phelps

@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-10-you-asked-for-it.md
 **Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
 **When:** 09/10/2024 0530
 
-## Warm Up
+## Warm up
 
 - Static stretches (I don’t know good names for these!)
 - straight leg touch ground

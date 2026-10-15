@@ -21,7 +21,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-13-it-s-good-to-show-up.md
 **Q:** [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A)  
 **Pax:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @404, @flute
 
-## Warm Up
+## Warmup
 
 - Grass Pullers (left, middle, right)
 - Arm Circles
@@ -44,6 +44,6 @@ vault_path: 07 - F3/Backblasts/2026/2026-01-13-it-s-good-to-show-up.md
 - Dead Man Life
 - Imperial Storm Troopers
 
-## Mary
+## The Mary
 
 A medley of Mary

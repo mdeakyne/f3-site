@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-03-11-changing-seasons.md
 **FNG:** 1  
 **PAX:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K) [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@TrainingWheels](https://f3lawrence.slack.com/team/U07GM1HUYBD)
 
-## Warm Up
+## Warm-up
 
 - Side straddle hops (20 on a 4 count)
 - Squat jumps

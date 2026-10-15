@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-17-block-by-block.md
 **Where:** [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)  
 **When:** 09/17/2024 0530
 
-## Warm Up
+## Warmup
 
 - SSH
 - Arm circles

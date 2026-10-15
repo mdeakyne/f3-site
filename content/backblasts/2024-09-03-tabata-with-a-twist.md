@@ -27,7 +27,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-09-03-tabata-with-a-twist.md
 - [#ao-beehive](https://f3lawrence.slack.com/archives/C07A8STLZ5Z)
 - When: 09/03/2024 0530
 
-## Warm Up
+## Warm up
 
 - 2x:
 - SSH

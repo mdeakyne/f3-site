@@ -30,7 +30,7 @@ PAX: [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0) [@Waco](https://f
 
 - Count: 7
 
-## Warm Up
+## Warmup
 
 OYO
 

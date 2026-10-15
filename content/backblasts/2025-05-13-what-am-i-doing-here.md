@@ -22,7 +22,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-13-what-am-i-doing-here.md
 **Q:** [@404](https://f3lawrence.slack.com/team/U07G685DW2K)  
 **PAX:** [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Farmers Only](https://f3lawrence.slack.com/team/U05NHFL431A) , @…Count: 5
 
-## Warm Up
+## Warm up
 
 - 10 Sun Gods on an 8-count
 - 10 Tappy Taps

@@ -30,7 +30,7 @@ PAX: [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), [@Big Toe](https://
 
 - Count: 7
 
-## Warm Up
+## Warmup
 
 OYO
 

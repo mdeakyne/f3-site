@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-03-31-wow-part-1-greatest-hits-remix.md
 - Q: @Waco
 - PAX: @Farmers Only @Big Toe @Toto @404 @Casio @Bonnet
 
-## Warm Up
+## Warmup
 
 - Arm Circles
 - Piano Man

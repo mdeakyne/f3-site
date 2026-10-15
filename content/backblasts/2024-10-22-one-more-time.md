@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-10-22-one-more-time.md
 
 Core Principles
 
-## Warm Up
+## Warm up
 
 OYO
 

@@ -22,7 +22,7 @@ When: 07/28/2026 @ 05:30
 Q: 404
 PAX: Casio, Wreck-It, Waco, Big Toe
 
-## Warm Up
+## Warmup
 
 - SSH BurnDowns - Start at 5
 - 20 Arm Circles

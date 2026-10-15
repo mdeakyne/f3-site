@@ -25,7 +25,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-12-just-5-reps-oops-all-blockees.md
 
 Up
 
-## Warm Up
+## Warm up
 
 5 burn down jumping jacks.
 

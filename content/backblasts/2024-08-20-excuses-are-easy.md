@@ -46,7 +46,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-08-20-excuses-are-easy.md
 - 1 shoulder tap
 - repeat and add 1 until 5
 
-## Mary
+## The Mary
 
 - 25 Flutter kicks
 - 20 Freddie Mercuries

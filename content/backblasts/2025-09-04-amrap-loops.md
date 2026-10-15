@@ -30,7 +30,7 @@ PAX: [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R) [@404](https://f3
 
 ## The Thang
 
-## Warm Up
+## Warmup
 
 - Grass pullers x 3 rounds on 4 count
 - Arm circles 10 on 4 count (forwards/backwards)

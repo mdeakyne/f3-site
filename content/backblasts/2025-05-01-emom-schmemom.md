@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-05-01-emom-schmemom.md
 - Coupon: :coupon:
 - Coffee: ☕
 
-## Warm Up
+## Warmup
 
 15 Blockees
 

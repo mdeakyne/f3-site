@@ -33,7 +33,7 @@ Coupon: BYOC
 
 yes
 
-## Warm Up
+## Warmup
 
 OYO
 
@@ -49,7 +49,7 @@ OYO
 - Cow Bells
 - Sit-ups
 
-## Mary
+## The Mary
 
 - Reverse Incinerators
 - Swim kicks

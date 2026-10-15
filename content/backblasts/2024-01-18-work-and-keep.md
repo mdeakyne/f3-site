@@ -33,7 +33,7 @@ Coupon: BYOC
 
 Yep
 
-## Warm Up
+## Warmup
 
 - (4 count):
 - Side Shuttle Hops (Jumping Jacks) x20

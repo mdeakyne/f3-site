@@ -24,7 +24,7 @@ When: 08/25/2026 @ 05:30
 Q: 404
 PAX: Farmers Only, Big Toe, Toto, Flute, Waco, Wreck-It
 
-## Warm Up
+## Warmup
 
 - 5 burn down side shuttle hops
 - 10 arm circles

@@ -33,7 +33,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-11-16-wine-vs-workout.md
 - , @Leaks
 - Count: 10
 
-## Warm Up
+## Warm up
 
 - 5 Core Principles
 - F

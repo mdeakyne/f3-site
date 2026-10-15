@@ -48,7 +48,7 @@ The workout follows a "7 of Diamonds" structure — reps increase as you move to
 
 This creates constant directional changes and keeps the legs under tension throughout the workout.
 
-## Warm Up
+## Warmup
 
 - Round*
 - SSH × 7

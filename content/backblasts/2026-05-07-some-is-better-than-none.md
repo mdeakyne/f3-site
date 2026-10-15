@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-05-07-some-is-better-than-none.md
 **Q:** @Dizzy  
 **PAX:** @Waco @Big Toe @Farmers Only @Toto @wreck-it @casio
 
-## Warm Up
+## Warm up
 
 - Jog 2 laps
 - Arm circles

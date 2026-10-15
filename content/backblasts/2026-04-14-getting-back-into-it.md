@@ -41,7 +41,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-14-getting-back-into-it.md
 - Run 1 lap
 - Leroy Jenkins through out
 
-## Mary
+## The Mary
 
 - XYs
 - WW II sit-ups

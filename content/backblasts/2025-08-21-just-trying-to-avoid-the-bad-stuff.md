@@ -24,7 +24,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-08-21-just-trying-to-avoid-the-bad-stuf
 **PAX:** @Waco, @404, @Big Toe, @Pepper, @Wreck-It  
 **Count:** 6
 
-## Warm Up
+## Warm up
 
 - Grass pullers (right, left, middle)
 - Michael Phelps

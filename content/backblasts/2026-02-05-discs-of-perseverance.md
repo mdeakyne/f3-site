@@ -23,7 +23,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-02-05-discs-of-perseverance.md
 **Q:** @404  
 **PAX:** @Wreck It, @Farmers Only, @Waco, @Toto, @Big Toe
 
-## Warm Up
+## Warmup
 
 - 10 4-count SSH
 - 20 Arm Circles

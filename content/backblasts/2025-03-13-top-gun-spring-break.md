@@ -28,7 +28,7 @@ vault_path: 07 - F3/Backblasts/2025/2025-03-13-top-gun-spring-break.md
 
 ## The Thang
 
-## Warm Up
+## Warm up
 
 - 4 laps Indian run around the big loop.
 - Top Gun:

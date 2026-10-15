@@ -26,7 +26,7 @@ vault_path: 07 - F3/Backblasts/2024/2024-05-09-procrastination-is-a-hard-habit-t
 **PAX:** [@Flute](https://f3lawrence.slack.com/team/U05NB7H88J0), [@Waco](https://f3lawrence.slack.com/team/U0727KRQT5J), @Bonnet, [@Sawdust](https://f3lawrence.slack.com/team/U05LDR1T6RF), [@Second String](https://f3lawrence.slack.com/team/U06BV0KBQ48), [@Big Toe](https://f3lawrence.slack.com/team/U05LQM40U4R), [@](https://f3lawrence.slack.com/team/U05LQM40U4R)seafood, @404  
 **Count:** 9
 
-## Warm Up
+## Warmup
 
 OYO
 

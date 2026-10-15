@@ -31,7 +31,7 @@ Coupon: BYOC
 
 Yes
 
-## Warm Up
+## Warmup
 
 OYOThe Thang: Circuit performed at the pace of the man doing the americans, one man per exercise at a time
 
