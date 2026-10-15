@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "test:backblasts": "node --experimental-strip-types --test tests/backblast-rendering.test.ts",
     "test:contact": "node --experimental-strip-types --test tests/contact-*.test.ts",
     "preview": "wrangler pages dev ./dist",
     "deploy": "wrangler pages deploy ./dist",
