@@ -56,7 +56,13 @@ def _expand_unicode_bullets(line: str) -> list[str]:
         return [line]
     indent = re.match(r"^\s*", line).group(0)
     items = [part.strip() for part in re.split(r"[•◦▪]\s*", line.strip()) if part.strip()]
+    if items:
+        items[0] = re.sub(r"^(?:[-+*]|\d+[.)])\s+", "", items[0])
     return [f"{indent}- {item}" for item in items]
+
+
+def _repair_duplicate_list_marker(line: str) -> str:
+    return re.sub(r"^(\s*)-\s+-\s+", r"\1- ", line)
 
 
 def _classify(line: str, in_fence: bool) -> str:
@@ -92,6 +98,7 @@ def normalize_body(body: str) -> str:
             transformed.append((heading, "heading"))
             continue
 
+        line = _repair_duplicate_list_marker(line)
         for expanded_line in _expand_unicode_bullets(line):
             transformed.append((expanded_line, _classify(expanded_line, False)))
 

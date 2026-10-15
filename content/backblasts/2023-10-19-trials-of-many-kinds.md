@@ -31,7 +31,7 @@ vault_path: 07 - F3/Backblasts/2023/2023-10-19-trials-of-many-kinds.md
 ## Warm Up
 
 - -
-- - Welcome and Disclaimers, 5 core Principles
+- Welcome and Disclaimers, 5 core Principles
 - Stretch OYO
 
 ## The Thang

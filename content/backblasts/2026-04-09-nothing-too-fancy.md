@@ -52,7 +52,7 @@ vault_path: 07 - F3/Backblasts/2026/2026-04-09-nothing-too-fancy.md
 
 ## Mary
 
-- - peer led:
+- peer led:
 - Dead bugs
 - Bird dogs
 - Heels 2 heaven

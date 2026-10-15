@@ -171,6 +171,19 @@ The group discussed The Thang: and what made it difficult.
 
         self.assertEqual(normalize_body(source), expected)
 
+    def test_does_not_duplicate_an_existing_list_marker_when_splitting_bullets(self):
+        source = "- Welcome and Disclaimers• Stretch OYO• Motivators x3\n"
+
+        expected = "- Welcome and Disclaimers\n- Stretch OYO\n- Motivators x3\n"
+
+        self.assertEqual(normalize_body(source), expected)
+
+    def test_repairs_duplicate_marker_from_an_earlier_normalization_pass(self):
+        self.assertEqual(
+            "- Welcome and Disclaimers\n",
+            normalize_body("- - Welcome and Disclaimers\n"),
+        )
+
 
 class DocumentNormalizationTests(unittest.TestCase):
     def test_preserves_frontmatter_byte_for_byte(self):

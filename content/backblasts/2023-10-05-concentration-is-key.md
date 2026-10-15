@@ -52,9 +52,9 @@ vault_path: 07 - F3/Backblasts/2023/2023-10-05-concentration-is-key.md
 ## The Thang
 
 - Diamond Push Ups, 4x10
-- - Single arm Rows, 4x10
+- Single arm Rows, 4x10
 - Concentration curls, 4x8
-- - Concentration rows, 4x8
+- Concentration rows, 4x8
 - Dips, 4x8
 
 - Down Unders, 4x8
