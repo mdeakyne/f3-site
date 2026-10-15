@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-08T21:49:29Z",
+  "generated_at": "2026-10-15T17:34:01Z",
   "counts": {
-    "backblasts": 283,
+    "backblasts": 284,
     "pax": 63,
     "aos": 2,
     "since_year": "2023",
-    "latest_post": "2026-10-08"
+    "latest_post": "2026-10-15"
   },
   "aos": [
     {
@@ -21,79 +21,79 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 253,
-      "qs": 70,
+      "posts": 254,
+      "qs": 71,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-10-08",
-      "latest_q": "2026-10-06"
+      "latest": "2026-10-15",
+      "latest_q": "2026-10-15"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 252,
+      "posts": 253,
       "qs": 40,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-10-08",
+      "latest": "2026-10-15",
       "latest_q": "2026-09-24"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 209,
+      "posts": 210,
       "qs": 37,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-10-08",
+      "latest": "2026-10-15",
       "latest_q": "2026-08-25"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 172,
+      "posts": 173,
       "qs": 44,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-10-08",
+      "latest": "2026-10-15",
       "latest_q": "2026-09-22"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 107,
+      "posts": 108,
       "qs": 3,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-10-06",
+      "latest": "2026-10-15",
       "latest_q": "2026-09-10"
     },
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 91,
+      "posts": 92,
       "qs": 17,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-10-01",
+      "latest": "2026-10-15",
       "latest_q": "2026-08-06"
     },
     {
@@ -420,6 +420,19 @@
       "latest_q": null
     },
     {
+      "slug": "van-gogh",
+      "f3_name": "Van Gogh",
+      "posts": 6,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2026-09-17",
+      "latest": "2026-10-15",
+      "latest_q": null
+    },
+    {
       "slug": "womens-league",
       "f3_name": "Womens League",
       "posts": 5,
@@ -429,19 +442,6 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-11-09",
-      "latest_q": null
-    },
-    {
-      "slug": "van-gogh",
-      "f3_name": "Van Gogh",
-      "posts": 5,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-09-17",
-      "latest": "2026-10-08",
       "latest_q": null
     },
     {
@@ -680,6 +680,18 @@
       "latest_q": "2026-03-19"
     },
     {
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": null
+    },
+    {
       "slug": "long-game",
       "f3_name": "Long Game",
       "posts": 1,
@@ -704,18 +716,6 @@
       "latest_q": null
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
-      "posts": 1,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-08-10",
-      "latest_q": null
-    },
-    {
       "slug": "moist",
       "f3_name": "Moist",
       "posts": 1,
@@ -728,8 +728,8 @@
       "latest_q": null
     },
     {
-      "slug": "glee-club",
-      "f3_name": "Glee Club",
+      "slug": "queen-bee",
+      "f3_name": "Queen Bee",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -740,8 +740,8 @@
       "latest_q": null
     },
     {
-      "slug": "queen-bee",
-      "f3_name": "Queen Bee",
+      "slug": "glee-club",
+      "f3_name": "Glee Club",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -838,6 +838,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-10-15-what-goes-up-must-come-down",
+      "title": "What goes up must come down.",
+      "date": "2026-10-15",
+      "ao": "ad-astra",
+      "q": "Big Toe",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
       "slug": "2026-10-08-tabda-another-one",
       "title": "TABDA (Another one)",
       "date": "2026-10-08",
@@ -915,15 +924,6 @@
       "date": "2026-09-08",
       "ao": "beehive",
       "q": "Wreck-It",
-      "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-09-03-house-always-wins",
-      "title": "House Always Wins",
-      "date": "2026-09-03",
-      "ao": "ad-astra",
-      "q": "Farmers Only",
       "total_pax": 7,
       "fngs": 0
     }
