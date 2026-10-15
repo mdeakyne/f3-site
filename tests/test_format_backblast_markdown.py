@@ -125,6 +125,52 @@ The group discussed The Thang: and what made it difficult.
 
         self.assertEqual(normalize_body(once), once)
 
+    def test_promotes_bold_legacy_section_labels(self):
+        source = """**Warm Up:**
+
+- SSH
+
+**The Thang: Blackjack**
+
+- Merkins
+"""
+
+        expected = """## Warm Up
+
+- SSH
+
+## The Thang: Blackjack
+
+- Merkins
+"""
+
+        self.assertEqual(normalize_body(source), expected)
+
+    def test_promotes_the_mary_legacy_variant(self):
+        self.assertEqual("## Mary\n", normalize_body("**The Mary:**\n"))
+
+    def test_splits_multiple_unicode_bullets_collapsed_onto_one_line(self):
+        source = """**Warm Up:**
+
+• Welcome and Disclaimers• Stretch OYO• Motivators x3
+"""
+
+        expected = """## Warm Up
+
+- Welcome and Disclaimers
+- Stretch OYO
+- Motivators x3
+"""
+
+        self.assertEqual(normalize_body(source), expected)
+
+    def test_treats_text_before_an_embedded_bullet_as_the_first_list_item(self):
+        source = "Down Unders, 4x8• Concentration Curls, 2x• 1:30 plank.\n"
+
+        expected = "- Down Unders, 4x8\n- Concentration Curls, 2x\n- 1:30 plank.\n"
+
+        self.assertEqual(normalize_body(source), expected)
+
 
 class DocumentNormalizationTests(unittest.TestCase):
     def test_preserves_frontmatter_byte_for_byte(self):

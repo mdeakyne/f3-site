@@ -10,14 +10,13 @@ from typing import Iterable
 
 
 _FRONTMATTER_RE = re.compile(r"\A(---\r?\n.*?\r?\n---\r?\n)(.*)\Z", re.DOTALL)
-_UNICODE_BULLET_RE = re.compile(r"^(\s*)[•◦▪]\s*(.*)$")
 _MARKDOWN_LIST_RE = re.compile(r"^\s*(?:[-+*]|\d+[.)])\s+")
 _MARKDOWN_HEADING_RE = re.compile(r"^#{1,6}\s+")
 
 _SECTION_PATTERNS: tuple[tuple[re.Pattern[str], str], ...] = (
     (re.compile(r"^(?:the\s+)?warm[\s-]*up\b(.*)$", re.IGNORECASE), "Warm Up"),
     (re.compile(r"^the\s+thang\b(.*)$", re.IGNORECASE), "The Thang"),
-    (re.compile(r"^mary\b(.*)$", re.IGNORECASE), "Mary"),
+    (re.compile(r"^(?:the\s+)?mary\b(.*)$", re.IGNORECASE), "Mary"),
     (re.compile(r"^(?:the\s+)?game\b(.*)$", re.IGNORECASE), "The Game"),
     (re.compile(r"^c\.?\s*o\.?\s*t\.?\b(.*)$", re.IGNORECASE), "CoT"),
     (re.compile(r"^circle\s+of\s+trust\b(.*)$", re.IGNORECASE), "Circle of Trust"),
@@ -30,6 +29,8 @@ def _format_heading(line: str) -> str | None:
     stripped = line.strip()
     if not stripped or _MARKDOWN_HEADING_RE.match(stripped):
         return None
+    if stripped.startswith("**") and stripped.endswith("**") and len(stripped) > 4:
+        stripped = stripped[2:-2].strip()
 
     for pattern, canonical in _SECTION_PATTERNS:
         match = pattern.fullmatch(stripped)
@@ -48,6 +49,14 @@ def _format_heading(line: str) -> str | None:
             suffix = f" {suffix}"
         return f"## {canonical}{suffix}"
     return None
+
+
+def _expand_unicode_bullets(line: str) -> list[str]:
+    if not re.search(r"[•◦▪]", line):
+        return [line]
+    indent = re.match(r"^\s*", line).group(0)
+    items = [part.strip() for part in re.split(r"[•◦▪]\s*", line.strip()) if part.strip()]
+    return [f"{indent}- {item}" for item in items]
 
 
 def _classify(line: str, in_fence: bool) -> str:
@@ -83,10 +92,8 @@ def normalize_body(body: str) -> str:
             transformed.append((heading, "heading"))
             continue
 
-        bullet = _UNICODE_BULLET_RE.match(line)
-        if bullet:
-            line = f"{bullet.group(1)}- {bullet.group(2).rstrip()}"
-        transformed.append((line, _classify(line, False)))
+        for expanded_line in _expand_unicode_bullets(line):
+            transformed.append((expanded_line, _classify(expanded_line, False)))
 
     output: list[str] = []
     for index, (line, kind) in enumerate(transformed):
