@@ -13,6 +13,7 @@ pax:
 - '404'
 - Big Toe
 total_pax: 6
+fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-05-26-learning-from-others.md
 ---
 
