@@ -40,6 +40,7 @@ CANONICAL = {
     # Josiah Wegener was initially recorded as "Sludge" before his F3 name
     # was corrected to Slump in Slack.
     'josiah wegener (slump)': 'Slump',
+    'josiah wegener(slump)': 'Slump',
     'sludge': 'Slump',
     'slump': 'Slump',
     # Wreck It is represented by the :wreck-it-ralph: emoji in Slack.

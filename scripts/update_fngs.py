@@ -87,6 +87,8 @@ MANUAL_OVERRIDES = {
     '2026-06-18-17-rest.md': 1,
     '2026-06-25-sisyphus.md': 1,
     '2026-07-02-all-work-no-play-makes-jack-a-dull-boy.md': 1,
+    # FNG name intentionally withheld from the public site until he is named.
+    '2026-10-27-the-return-of-the-ruck.md': 1,
 }
 
 

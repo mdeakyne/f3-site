@@ -26,6 +26,9 @@ PAX: @Big Toe @Josiah Wegener (Slump)
     def test_previous_wrong_name_maps_to_slump(self):
         self.assertEqual(normalize_name("Sludge"), "Slump")
 
+    def test_slack_display_name_without_space_maps_to_slump(self):
+        self.assertEqual(normalize_name("Josiah Wegener(Slump)"), "Slump")
+
     def test_compact_van_gogh_display_name_maps_to_existing_pax(self):
         self.assertEqual(normalize_name("VanGogh"), "Van Gogh")
 
