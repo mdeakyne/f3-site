@@ -55,7 +55,7 @@ def process_messages(messages: list[dict], ao_hint: str) -> int:
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--ao', required=True, help='ad-astra or beehive')
+    parser.add_argument('--ao', required=True, help='ad-astra, beehive, or ao-caffeine')
     args = parser.parse_args()
 
     data = json.load(sys.stdin)

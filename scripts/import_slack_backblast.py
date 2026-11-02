@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Parse a Slack backblast message and write a markdown file to content/backblasts/.
-Usage: python3 import_slack_backblast.py <ao: ad-astra|beehive> < message.txt
+Usage: python3 import_slack_backblast.py --ao <ad-astra|beehive|ao-caffeine> < message.txt
 """
 import re
 import sys
@@ -52,6 +52,7 @@ CANONICAL = {
 CHANNEL_TO_AO = {
     'c07a8stlz5z': 'beehive',
     'c05l33u97l4': 'ad-astra',
+    'c0ce7tkj7hs': 'ao-caffeine',
 }
 
 def normalize_name(raw: str) -> str:
@@ -146,6 +147,8 @@ def parse_ao(raw: str) -> str:
         return 'beehive'
     if 'ad-astra' in raw or 'ad_astra' in raw or 'adastra' in raw:
         return 'ad-astra'
+    if 'ao-caffeine' in raw or 'ao_caffeine' in raw or 'caffeine' in raw:
+        return 'ao-caffeine'
     # Bare channel-ID mention: <#C05L33U97L4>
     for cid, slug in CHANNEL_TO_AO.items():
         if cid in raw:
@@ -294,7 +297,7 @@ vault_path: {vault_path}
 if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--ao', help='AO hint: ad-astra or beehive')
+    parser.add_argument('--ao', help='AO hint: ad-astra, beehive, or ao-caffeine')
     args = parser.parse_args()
 
     text = sys.stdin.read()

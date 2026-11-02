@@ -110,6 +110,12 @@ import { site } from '../../lib/data';
     const formStatus = document.getElementById('form-status');
     if (!form || !submit || !widget || !challengeStatus || !formStatus) return;
 
+    const requestedAo = new URLSearchParams(window.location.search).get('ao');
+    const aoSelect = form.elements.namedItem('ao') as HTMLSelectElement;
+    if (requestedAo && Array.from(aoSelect.options).some((option) => option.value === requestedAo)) {
+      aoSelect.value = requestedAo;
+    }
+
     const loadedAt = form.elements.namedItem('loaded_at') as HTMLInputElement;
     const refreshLoadedAt = () => {
       loadedAt.value = String(Date.now());

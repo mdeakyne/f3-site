@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { site } from '../../lib/data';
 import { getCollection } from 'astro:content';
+import { upcomingDates } from '../../lib/ao-schedule';
 
 const aoEntries = (await getCollection('aos')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name),
@@ -12,31 +13,8 @@ const pax = [...site.leaderboard].sort(
   (a, b) => b.qs - a.qs || b.posts - a.posts || a.f3_name.localeCompare(b.f3_name),
 );
 
-// Upcoming dates per AO, restricted to that AO's meeting weekday.
-const DOW: Record<string, number> = {
-  Sunday: 0, Monday: 1, Tuesday: 2, Wednesday: 3, Thursday: 4, Friday: 5, Saturday: 6,
-};
-const WD = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-function fmt(d: Date) {
-  const value = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-  return { value, label: `${WD[d.getDay()]} · ${MON[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}` };
-}
-function upcoming(dayName: string | undefined, n = 10) {
-  const target = dayName ? DOW[dayName] : undefined;
-  const out: { value: string; label: string }[] = [];
-  if (target === undefined) return out;
-  const d = new Date();
-  d.setHours(12, 0, 0, 0);
-  while (d.getDay() !== target) d.setDate(d.getDate() + 1);
-  for (let i = 0; i < n; i++) {
-    out.push(fmt(new Date(d)));
-    d.setDate(d.getDate() + 7);
-  }
-  return out;
-}
 const datesByAo = Object.fromEntries(
-  aoEntries.map((ao) => [ao.data.slug, upcoming(ao.data.day)]),
+  aoEntries.map((ao) => [ao.data.slug, upcomingDates(ao.data.day)]),
 );
 ---
 

@@ -9,6 +9,7 @@ from collections import defaultdict
 ROOT = os.path.join(os.path.dirname(__file__), '..')
 BACKBLASTS_DIR = os.path.join(ROOT, 'content', 'backblasts')
 PAX_DIR = os.path.join(ROOT, 'content', 'pax')
+AOS_DIR = os.path.join(ROOT, 'content', 'aos')
 DATA_JSON = os.path.join(ROOT, 'content', 'data.json')
 
 def parse_frontmatter(path: str) -> dict:
@@ -73,6 +74,17 @@ def load_pax() -> dict[str, dict]:
             pax[fm['slug']] = fm
     return pax
 
+def load_aos() -> list[dict[str, str]]:
+    """Load the public AO catalog from the same content used by the site."""
+    aos = []
+    for fname in sorted(os.listdir(AOS_DIR)):
+        if not fname.endswith('.md'):
+            continue
+        fm = parse_frontmatter(os.path.join(AOS_DIR, fname))
+        if fm.get('slug') and fm.get('name'):
+            aos.append({'slug': fm['slug'], 'name': fm['name']})
+    return sorted(aos, key=lambda ao: ao['name'].lower())
+
 def strip_annotations(name: str) -> str:
     return re.sub(r'\s*\(.*?\)\s*$', '', name).strip()
 
@@ -93,6 +105,7 @@ def load_backblasts() -> list[dict]:
     return bbs
 
 def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
+    aos = load_aos()
     # Tally posts and Qs per person
     posts_by_slug: dict[str, int] = defaultdict(int)
     qs_by_slug: dict[str, int] = defaultdict(int)
@@ -187,14 +200,11 @@ def build_data(bbs: list[dict], pax_profiles: dict[str, dict]) -> dict:
         'counts': {
             'backblasts': len(bbs),
             'pax': len(pax_profiles),
-            'aos': 2,
+            'aos': len(aos),
             'since_year': since_year,
             'latest_post': latest_post,
         },
-        'aos': [
-            {'slug': 'beehive', 'name': 'beehive'},
-            {'slug': 'ad-astra', 'name': 'ad-astra'},
-        ],
+        'aos': aos,
         'leaderboard': leaderboard,
         'latest_backblasts': latest_backblasts,
     }

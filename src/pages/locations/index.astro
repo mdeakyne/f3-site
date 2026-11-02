@@ -30,7 +30,7 @@ function directionsUrl(mapUrl?: string, address?: string) {
     <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Find a workout</p>
     <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">LOCATIONS</h1>
     <p class="mt-3 font-heading text-lg text-muted max-w-2xl">
-      Two AOs in Lawrence. No fee, just show up a few minutes early and introduce yourself as an FNG. New here?
+      {aoEntries.length} AOs in Lawrence. No fee, just show up a few minutes early and introduce yourself as an FNG. New here?
       <a href="/" class="text-accent-link underline">Read this first.</a>
     </p>
   </header>
@@ -94,7 +94,7 @@ function directionsUrl(mapUrl?: string, address?: string) {
                   Get directions
                 </a>
               )}
-              <a href="/contact/" class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-5 py-2.5 hover:bg-ink hover:text-surface">
+              <a href={`/contact/?ao=${encodeURIComponent(ao.data.name)}`} class="inline-block border border-ink font-heading font-semibold uppercase tracking-wide px-5 py-2.5 hover:bg-ink hover:text-surface">
                 Tell us you're coming
               </a>
               <a href={`/backblasts/?ao=${ao.data.slug}`} class="inline-block font-mono text-xs uppercase text-accent-link self-center hover:underline">
