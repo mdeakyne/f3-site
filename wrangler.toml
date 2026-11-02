@@ -12,8 +12,10 @@ database_name = "f3-signups"
 database_id = "b7ac38a1-b139-4f60-a9c8-3dbb99230b17"
 migrations_dir = "migrations"
 
-# Secret (NOT committed) set via wrangler:
-#   wrangler pages secret put SLACK_WEBHOOK_URL --project-name f3-site
-#
-# Spam is handled in-Function with a honeypot + timing check — no CAPTCHA and
-# no extra secrets. The Functions only need SLACK_WEBHOOK_URL.
+# Pages secrets (never committed):
+#   wrangler pages secret put TURNSTILE_SECRET_KEY --project-name f3-site
+#   wrangler pages secret put SLACK_BOT_TOKEN --project-name f3-site
+# Optional server-only Q_SLACK_MEMBERS_JSON is also configured on Pages.
+# The contact form separately retains SLACK_WEBHOOK_URL.
+# Configure the same SLACK_BOT_TOKEN and optional member map on the cron Worker;
+# workers/wrangler.toml binds this same D1 database. See docs/q-signup-deployment.md.

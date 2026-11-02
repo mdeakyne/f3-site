@@ -31,3 +31,11 @@ pnpm-debug.log*
 # Python
 __pycache__/
 *.pyc
+
+# superlite: dependency, build and cache folders
+.superlite/
+.claude/worktrees/
+Thumbs.db
+*.swp
+coverage/
+*.tsbuildinfo

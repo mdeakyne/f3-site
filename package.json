@@ -15,7 +15,8 @@
     "preview": "wrangler pages dev ./dist",
     "deploy": "wrangler pages deploy ./dist",
     "astro": "astro",
-    "cf-typegen": "wrangler types"
+    "cf-typegen": "wrangler types",
+    "test:q": "npm run build && node --experimental-strip-types --test --test-concurrency=1 tests/q-*.test.ts"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.18",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.10.5",
+    "jsdom": "^26.1.0",
     "wrangler": "^4.83.0"
   }
 }

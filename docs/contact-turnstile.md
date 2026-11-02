@@ -1,8 +1,9 @@
 # Contact form Turnstile operations
 
-Cloudflare Turnstile protects only the join form at `/contact/` and its
-`/api/contact` endpoint. It does not gate public pages, search, or the Q signup
-flow.
+Cloudflare Turnstile protects the join form at `/contact/` and its
+`/api/contact` endpoint. Q signup also requires Turnstile, with the separate
+`q_signup` action; see [Q signup deployment](q-signup-deployment.md). Public
+pages and search remain readable without a challenge.
 
 ## Production configuration
 

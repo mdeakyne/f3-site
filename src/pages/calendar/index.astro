@@ -1,37 +1,18 @@
 ---
 import Base from '../../layouts/Base.astro';
-import { getCollection } from 'astro:content';
-import { calendarEntries } from '../../lib/ao-schedule';
-
-// Placeholder calendar: next eight weeks, derived from each AO's meeting day.
-// Replaced in Phase 4 by parsing `07 - F3/Q Schedule/YYYY-MM.md` tables.
-const aos = (await getCollection('aos')).map((ao) => ({
-  slug: ao.data.slug,
-  name: ao.data.name,
-  day: ao.data.day,
-}));
-const weeks = calendarEntries(aos);
 ---
 
 <Base title="Q Calendar · F3 Lawrence">
   <header class="mb-8 border-b border-rule pb-6">
     <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Schedule</p>
     <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">Q CALENDAR</h1>
-    <p class="mt-3 font-heading text-lg text-muted">
-      Next 8 weeks. Claim an open slot via <a href="/signup/" class="text-accent-link underline">Sign up to Q</a>.
-    </p>
+    <p class="mt-3 font-heading text-lg text-muted">Upcoming workouts from tomorrow through the next two months. All times are Central. Choose an open workout to lead.</p>
   </header>
-
-  <ul class="divide-y divide-rule border-y border-rule">
-    {weeks.map((w, i) => (
-      <li class={`grid grid-cols-[6rem_1fr_8rem_5rem] items-center gap-3 px-4 py-4 ${i % 2 === 1 ? 'bg-surface-muted' : ''}`}>
-        <span class="font-mono text-xs text-muted">{w.value}</span>
-        <span class="font-heading font-semibold uppercase">{w.name}</span>
-        <span class="font-mono text-xs">
-          <span class="text-accent-open font-semibold">OPEN</span>
-        </span>
-        <a href={`/signup/?date=${w.value}&ao=${w.slug}`} class="font-mono text-xs text-accent-link hover:underline text-right">Claim →</a>
-      </li>
-    ))}
-  </ul>
+  <p id="availability-status" role="status" class="font-mono text-sm text-muted mb-4">Checking availability …</p>
+  <noscript><p>JavaScript is required to confirm current workout availability.</p></noscript>
+  <ul id="q-calendar" class="divide-y divide-rule border-y border-rule"></ul>
 </Base>
+<script>
+  import { initQCalendar } from '../../lib/q-calendar-controller';
+  initQCalendar(document, fetch, new Date());
+</script>

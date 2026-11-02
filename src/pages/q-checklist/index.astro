@@ -1,0 +1,70 @@
+---
+import Base from '../../layouts/Base.astro';
+
+const sections = [
+  ['Plan', [
+    'Write down your workout and bring your weinke.',
+    'Confirm the AO start time, workout length, coupon needs, and weather. Adapt the plan to the conditions.',
+    'Bring enough material, with a simple fallback or extra-credit option.',
+  ]],
+  ['Before the workout', [
+    'Arrive about ten minutes early. Set out the shovel flag and any coupons.',
+    'Greet the PAX, welcome any FNG, and help him find a battle buddy.',
+    'Review the five F3 workout principles: free, open to all men, outdoors, peer-led, and ending with a Circle of Trust.',
+    'Share the F3 motto: Leave no man behind, but leave no man where you find him.',
+    'Start on time.',
+  ]],
+  ['Lead', [
+    'Give the disclaimer: this is a free, volunteer, peer-led workout. The Q is not a professional. Each man is responsible for his own safety, knows his limits, and should modify as needed.',
+    'Warm up before the main work.',
+    'Lead The Thang and do the work you call. Watch the six, offer modifications, and choose safe movements and terrain.',
+    'Watch the clock and finish the workout portion on time.',
+  ]],
+  ['Circle of Trust — F3 Lawrence order', [
+    'Name-o-Rama: name, age, F3 name; welcome and name FNGs.',
+    'Announcements.',
+    'Share the Q’s closing thought.',
+    'Ball of Man: prayer and intentions.',
+    'Flag photo.',
+  ]],
+  ['After', ['Post the backblast in Slack. Include who was there and what you did.']],
+];
+---
+
+<Base title="Q Checklist · F3 Lawrence" description="A practical day-of checklist for leading an F3 Lawrence workout, from planning through the Circle of Trust and backblast.">
+  <section class="max-w-3xl">
+    <header class="mb-8 border-b border-rule pb-6">
+      <p class="font-mono text-xs uppercase tracking-widest text-muted mb-2">Resource · Lead</p>
+      <h1 class="font-display text-5xl sm:text-6xl leading-none tracking-tight text-ink">Q CHECKLIST</h1>
+      <p class="mt-3 font-heading text-lg text-muted">A quick check before you lead. For the full walkthrough and printable weinke, open <a href="/first-q/" class="text-accent-link underline">Your First Q</a>.</p>
+      <p class="mt-3 text-sm text-muted">Checks are not saved. Refreshing or leaving this page may reset them.</p>
+    </header>
+
+    {sections.map(([heading, items]) => (
+      <section class="mb-8">
+        <h2 class="font-heading text-2xl font-bold uppercase tracking-tight mb-3 border-b border-rule pb-2">{heading}</h2>
+        <ul class="space-y-2">
+          {(items as string[]).map((item) => (
+            <li>
+              <label class="flex items-start gap-3 border border-rule bg-surface p-4 cursor-pointer">
+                <input type="checkbox" class="mt-1 size-5 shrink-0 accent-accent-red" />
+                <span>{item}</span>
+              </label>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <section class="mb-8 border border-rule bg-surface p-5">
+      <h2 class="font-heading text-xl font-bold uppercase tracking-tight mb-3">Ideas and references</h2>
+      <ul class="space-y-2 text-accent-link underline">
+        <li><a href="/exercises/">Local exercise toolkit</a></li>
+        <li><a href="/backblasts/">Past backblasts</a></li>
+        <li><a href="https://f3nation.com/q101/">F3 Nation Q101</a></li>
+        <li><a href="https://codex.f3nation.com/">Official F3 Codex: exercises and terminology</a></li>
+        <li><a href="https://www.twosapp.com/65e7a60c32767582884610ca?s=6593fcf0d359942f76c005d4">Original Twos checklist reference</a></li>
+      </ul>
+    </section>
+  </section>
+</Base>

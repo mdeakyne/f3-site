@@ -1,0 +1,17 @@
+name = "f3-q-publisher"
+main = "q-publisher.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Both UTC hours are needed; runScheduled gates to 16:00 America/Chicago.
+[triggers]
+crons = ["0 21,22 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "f3-signups"
+database_id = "b7ac38a1-b139-4f60-a9c8-3dbb99230b17"
+migrations_dir = "../migrations"
+
+# Configure SLACK_BOT_TOKEN as a Worker secret. Optional Q_SLACK_MEMBERS_JSON
+# is server-only JSON mapping stable PAX slugs to Slack member IDs.

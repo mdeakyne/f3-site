@@ -1,132 +1,95 @@
-// Cloudflare Pages Function: POST /api/q-signup
-//
-// Accepts multipart/form-data or URL-encoded form submission from the signup
-// page, filters spam with an invisible honeypot + timing check, rate-limits by
-// IP hash, inserts into D1, and posts a notification into Slack (#admin) for
-// approval via an incoming webhook. Matt promotes approved rows into the vault
-// weekly via `nob pull-signups`. The webhook URL lives in a Cloudflare secret
-// (SLACK_WEBHOOK_URL); see docs/slack-webhook-setup.md.
+import { PAX_CATALOG } from '../../src/lib/q-catalog.ts';
+import { eligiblePax, publicationTime, validSlot } from '../../src/lib/q-dates.ts';
+import type { ClaimEnv, ClaimInput } from '../../src/lib/q-types.ts';
+import { ClaimRateLimitError, insertClaim } from '../lib/q-store.ts';
 
-interface Env {
-  DB: D1Database;
-  SLACK_WEBHOOK_URL: string;
-}
-
-interface D1Database {
-  prepare: (q: string) => D1PreparedStatement;
-}
-interface D1PreparedStatement {
-  bind: (...vals: unknown[]) => D1PreparedStatement;
-  run: () => Promise<{ success: boolean; meta: { last_row_id: number } }>;
-  first: <T = unknown>() => Promise<T | null>;
-}
-
-export const onRequestPost: PagesFunction<Env> = async (ctx) => {
-  const { request, env } = ctx;
-  const ip = request.headers.get('CF-Connecting-IP') ?? 'unknown';
-  const form = await request.formData();
-
-  // Silently accept-and-drop obvious bots so they don't retry.
-  if (looksLikeBot(form)) return json({ ok: true });
-
-  const event_date = String(form.get('event_date') ?? '').trim();
-  const ao_slug = String(form.get('ao_slug') ?? '').trim();
-  const f3_name = String(form.get('f3_name') ?? '').trim();
-  const contact = String(form.get('contact') ?? '').trim();
-  const notes = String(form.get('notes') ?? '').trim();
-
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(event_date)) return json({ error: 'Invalid date.' }, 400);
-  if (!ao_slug || !f3_name) return json({ error: 'Missing required fields.' }, 400);
-  if (f3_name.length > 80 || contact.length > 200 || notes.length > 1000) {
-    return json({ error: 'Field too long.' }, 400);
-  }
-
-  const ip_hash = await sha256(`${ip}:f3-lawrence-v1`);
-
-  // Rate-limit: max 5 submissions per IP in last 24h.
-  const count = await env.DB
-    .prepare(
-      `SELECT COUNT(*) AS n FROM q_signups
-       WHERE ip_hash = ?1 AND created_at > datetime('now','-1 day')`,
-    )
-    .bind(ip_hash)
-    .first<{ n: number }>();
-  if ((count?.n ?? 0) >= 5) return json({ error: 'Too many recent submissions.' }, 429);
-
-  await env.DB
-    .prepare(
-      `INSERT INTO q_signups (event_date, ao_slug, f3_name, contact, notes, ip_hash)
-       VALUES (?1, ?2, ?3, ?4, ?5, ?6)`,
-    )
-    .bind(event_date, ao_slug, f3_name, contact || null, notes || null, ip_hash)
-    .run();
-
-  ctx.waitUntil(
-    postToSlack(env.SLACK_WEBHOOK_URL, {
-      event_date,
-      ao_slug,
-      f3_name,
-      contact,
-      notes,
-    }).catch(() => {}),
-  );
-
-  return json({ ok: true });
+type Publication = 'posted' | 'failed' | 'skipped';
+type Context = { request: Request; env: ClaimEnv; waitUntil?: (p: Promise<unknown>) => void };
+type Dependencies = {
+  now?: () => Date;
+  fetcher?: typeof fetch;
+  publisher?: (env: ClaimEnv, id: number, now: Date) => Promise<Publication>;
 };
+const json = (body: unknown, status = 200) => Response.json(body, { status, headers: { 'cache-control': 'no-store' } });
 
-// Honeypot: a hidden field humans never fill. Timing: a form submitted within
-// 2s of load is almost certainly scripted.
-function looksLikeBot(form: FormData): boolean {
-  if (String(form.get('company') ?? '').trim() !== '') return true;
-  const loadedAt = Number(form.get('loaded_at'));
-  if (Number.isFinite(loadedAt) && Date.now() - loadedAt < 2000) return true;
-  return false;
+export function createSignupHandler(deps: Dependencies = {}) {
+  return async ({ request, env }: Context): Promise<Response> => {
+    const now = deps.now?.() ?? new Date();
+    let form: FormData;
+    try {
+      // Bound actual bytes, including requests without Content-Length.
+      const reader = request.body?.getReader();
+      if (!reader) return json({ error: 'Missing form.' }, 400);
+      const chunks: Uint8Array[] = []; let length = 0;
+      while (true) {
+        const { value, done } = await reader.read(); if (done) break;
+        length += value.byteLength;
+        if (length > 32768) { await reader.cancel(); return json({ error: 'Form too large.' }, 400); }
+        chunks.push(value);
+      }
+      const bytes = new Uint8Array(length); let offset = 0;
+      for (const chunk of chunks) { bytes.set(chunk, offset); offset += chunk.byteLength; }
+      form = await new Request(request.url, { method: 'POST', headers: { 'content-type': request.headers.get('content-type') ?? '' }, body: bytes }).formData();
+    } catch { return json({ error: 'Invalid form.' }, 400); }
+    const field = (name: string) => typeof form.get(name) === 'string' ? String(form.get(name)).trim() : '';
+    const loaded = Number(field('loaded_at'));
+    if (field('company') || (Number.isFinite(loaded) && now.getTime() - loaded < 2000)) return json({ ok: true });
+    const token = field('cf-turnstile-response');
+    if (!token || token.length > 2048) return json({ error: 'Please complete verification again.' }, 400);
+    if (!env.TURNSTILE_SECRET_KEY) return json({ error: 'Verification is temporarily unavailable.' }, 503);
+    const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 10000);
+    try {
+      const body = new FormData(); body.set('secret', env.TURNSTILE_SECRET_KEY); body.set('response', token);
+      const ip = request.headers.get('CF-Connecting-IP'); if (ip) body.set('remoteip', ip);
+      const res = await (deps.fetcher ?? fetch)('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body, signal: controller.signal });
+      if (!res.ok) return json({ error: 'Verification is temporarily unavailable.' }, 503);
+      const result = await res.json() as { success?: boolean; action?: string; hostname?: string };
+      if (!result || typeof result.success !== 'boolean') return json({ error: 'Verification is temporarily unavailable.' }, 503);
+      if (!result.success || result.action !== 'q_signup' || result.hostname !== 'f3lawrence.com') return json({ error: 'Please complete verification again.' }, 400);
+    } catch { return json({ error: 'Verification is temporarily unavailable.' }, 503); }
+    finally { clearTimeout(timer); }
+    const validatedAt = deps.now?.() ?? new Date();
+    const slug = field('q_slug');
+    const pax = eligiblePax(PAX_CATALOG, validatedAt).find(pax => pax.slug === slug);
+    const input: ClaimInput = { ao_slug: field('ao_slug'), event_date: field('event_date'), q_slug: slug === '__other__' ? null : slug,
+      q_name: slug === '__other__' ? field('f3_name_other') : pax?.name ?? '', title: field('title'), description: field('description'), coupon: field('coupon') === 'yes' };
+    if (!validSlot(input.ao_slug, input.event_date, validatedAt) || !input.q_name || input.q_name.length > 80 || !input.title || input.title.length > 120 || !input.description || input.description.length > 4000 || !['yes','no'].includes(field('coupon'))) return json({ error: 'Please check the required fields and available workout date.' }, 400);
+    try {
+      const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${request.headers.get('CF-Connecting-IP') ?? 'unknown'}:f3-lawrence-v1`));
+      const ipHash = Array.from(new Uint8Array(hash), b => b.toString(16).padStart(2,'0')).join('');
+      const count = await env.DB.prepare('SELECT COUNT(*) AS n FROM q_claims WHERE ip_hash = ?1 AND created_at > ?2').bind(ipHash, new Date(validatedAt.getTime() - 86400000).toISOString()).first<{n:number}>();
+      if ((count?.n ?? 0) >= 5) return json({ error: 'Too many recent claims. Please try again later.' }, 429);
+      const createdAt = deps.now?.() ?? new Date();
+      if (!validSlot(input.ao_slug, input.event_date, createdAt) || (input.q_slug !== null && !eligiblePax(PAX_CATALOG, createdAt).some(pax => pax.slug === input.q_slug))) return json({ error: 'Please check the required fields and available workout date.' }, 400);
+      const id = await insertClaim(env, input, ipHash, createdAt);
+      if (id === null) return json({ error: 'That workout was just claimed. Please choose another date.' }, 409);
+      let publication: 'scheduled'|'posted'|'failed' = 'scheduled';
+      let pending = false;
+      // Cron can scan while verification or the insert is still in flight.
+      const publicationNow = deps.now?.() ?? new Date();
+      if (publicationTime(input.event_date) <= publicationNow.toISOString()) {
+        // A saved claim stays active even when delivery or its status write fails.
+        let outcome: Publication | undefined;
+        try {
+          const publisher = deps.publisher ?? (await import('../lib/q-publisher.ts')).publishClaim;
+          outcome = await publisher(env,id,publicationNow);
+        } catch { /* Reconcile persisted state before reporting a delivery failure. */ }
+        if (outcome === 'posted') publication = 'posted';
+        else {
+          let status: string | undefined;
+          try {
+            const row = await env.DB.prepare('SELECT publish_status FROM q_claims WHERE id = ?1').bind(id).first<{publish_status:string}>();
+            status = row?.publish_status;
+          } catch { /* An unreadable status does not establish failed delivery. */ }
+          publication = status === 'posted' ? 'posted' : status === 'failed' ? 'failed' : 'scheduled';
+          pending = publication === 'scheduled';
+        }
+      }
+      return json({ ok: true, publication, message: publication === 'failed' ? 'Workout claimed. Slack delivery needs attention. Check Slack before any manual correction. Your claim is saved.' : publication === 'posted' ? 'Workout claimed and pre-blast posted.' : pending ? 'Workout claimed. Your claim is saved; pre-blast publication is pending confirmation. Check Slack before making any changes.' : 'Workout claimed. Your pre-blast is scheduled.' });
+    } catch (error) {
+      if (error instanceof ClaimRateLimitError) return json({ error: 'Too many recent claims. Please try again later.' }, 429);
+      return json({ error: 'Claims are temporarily unavailable. Please try again.' }, 503);
+    }
+  };
 }
-
-async function sha256(input: string): Promise<string> {
-  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(input));
-  return Array.from(new Uint8Array(buf))
-    .map((b) => b.toString(16).padStart(2, '0'))
-    .join('');
-}
-
-async function postToSlack(webhookUrl: string, s: {
-  event_date: string;
-  ao_slug: string;
-  f3_name: string;
-  contact: string;
-  notes: string;
-}): Promise<void> {
-  if (!webhookUrl) return;
-  // NOTE: to @-mention the Q in Slack we'd need their Slack member ID
-  // (e.g. <@U012ABC>) — display names can't be tagged via an incoming webhook.
-  // See docs/slack-webhook-setup.md for how to add an F3-name → member-ID map.
-  const text = [
-    `*New Q signup — needs approval* :calendar:`,
-    `*Q:* ${s.f3_name}`,
-    `*Date:* ${s.event_date}`,
-    `*AO:* ${s.ao_slug}`,
-    `*Contact:* ${s.contact || '—'}`,
-    `*Notes:* ${s.notes || '—'}`,
-    `_Promote via_ \`nob pull-signups\``,
-  ].join('\n');
-
-  await fetch(webhookUrl, {
-    method: 'POST',
-    headers: { 'content-type': 'application/json' },
-    body: JSON.stringify({ text }),
-  });
-}
-
-function json(data: unknown, status = 200): Response {
-  return new Response(JSON.stringify(data), {
-    status,
-    headers: { 'content-type': 'application/json' },
-  });
-}
-
-type PagesFunction<E = unknown> = (ctx: {
-  request: Request;
-  env: E;
-  waitUntil: (p: Promise<unknown>) => void;
-}) => Promise<Response> | Response;
+export const onRequestPost = createSignupHandler();

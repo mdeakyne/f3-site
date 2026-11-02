@@ -1,4 +1,4 @@
-import data from '../../content/data.json';
+import data from '../../content/data.json' with { type: 'json' };
 
 export interface SiteData {
   generated_at: string;
