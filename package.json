@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "test:backblasts": "node --experimental-strip-types --test tests/backblast-rendering.test.ts",
+    "test:ao-caffeine": "node --experimental-strip-types --test tests/ao-schedule.test.ts tests/ao-caffeine-site.test.ts",
     "test:contact": "node --experimental-strip-types --test tests/contact-*.test.ts",
     "preview": "wrangler pages dev ./dist",
     "deploy": "wrangler pages deploy ./dist",
