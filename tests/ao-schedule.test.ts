@@ -16,7 +16,7 @@ test('calendar dates use America/Chicago when UTC is already on the next day', (
   const sundayNightInChicago = new Date('2026-11-02T05:30:00Z');
 
   const entries = calendarEntries(
-    [{ slug: 'ao-caffeine', name: 'AO-Caffeine', day: 'Saturday' }],
+    [{ slug: 'caffeine', name: 'Caffeine', day: 'Saturday' }],
     7,
     sundayNightInChicago,
   );
@@ -28,7 +28,7 @@ test('calendar keeps the Chicago date across the spring DST boundary', () => {
   const saturdayNightBeforeSpringForward = new Date('2027-03-14T04:30:00Z');
 
   const entries = calendarEntries(
-    [{ slug: 'ao-caffeine', name: 'AO-Caffeine', day: 'Saturday' }],
+    [{ slug: 'caffeine', name: 'Caffeine', day: 'Saturday' }],
     2,
     saturdayNightBeforeSpringForward,
   );

@@ -6,19 +6,31 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from import_slack_backblast import parse_ao
+from import_slack_backblast import parse_ao, parse_message
 import regenerate_data
 
 
-class AOCaffeineHistoryTests(unittest.TestCase):
+class CaffeineHistoryTests(unittest.TestCase):
     def test_parser_recognizes_caffeine_name_and_existing_slack_channel(self):
-        self.assertEqual(parse_ao("#ao-caffeine"), "ao-caffeine")
-        self.assertEqual(parse_ao("<#C0CE7TKJ7HS>"), "ao-caffeine")
+        self.assertEqual(parse_ao("#caffeine"), "caffeine")
+        self.assertEqual(parse_ao("#ao-caffeine"), "caffeine")
+        self.assertEqual(parse_ao("<#C0CE7TKJ7HS>"), "caffeine")
+
+    def test_import_hint_normalizes_existing_slack_channel_name(self):
+        message = """Backblast: Saturday Ruck
+When: 11/07/2026 0600
+Q: @Big Toe
+PAX: @Big Toe
+"""
+
+        parsed = parse_message(message, ao_hint="ao-caffeine")
+
+        self.assertEqual(parsed["ao"], "caffeine")
 
     def test_generated_site_data_uses_the_ao_catalog(self):
         with tempfile.TemporaryDirectory() as directory:
-            Path(directory, "ao-caffeine.md").write_text(
-                "---\nslug: ao-caffeine\nname: AO-Caffeine\n---\n"
+            Path(directory, "caffeine.md").write_text(
+                "---\nslug: caffeine\nname: Caffeine\n---\n"
             )
             original_aos_dir = getattr(regenerate_data, "AOS_DIR", None)
             regenerate_data.AOS_DIR = directory
@@ -32,7 +44,7 @@ class AOCaffeineHistoryTests(unittest.TestCase):
 
         self.assertEqual(data["counts"]["aos"], 1)
         self.assertEqual(
-            data["aos"], [{"slug": "ao-caffeine", "name": "AO-Caffeine"}]
+            data["aos"], [{"slug": "caffeine", "name": "Caffeine"}]
         )
 
 
