@@ -24,7 +24,7 @@ test('publishes Caffeine location details and an AO-specific RSVP link', () => {
   const html = page('locations');
 
   assert.match(html, /Caffeine/);
-  assert.match(html, /Saturday\s+at 6:00–6:45 AM/);
+  assert.match(html, /Saturday\s+at 6:00 AM/);
   assert.match(html, /South parking lot of West Middle School/);
   assert.match(html, /Ruck Workout/);
   assert.match(html, /38\.964925(?:%2C|,)-95\.269030/);
@@ -64,7 +64,7 @@ test('offers Caffeine in RSVP and loads its Saturday signup choices from live av
     ]);
     const time = document.querySelector<HTMLInputElement>('[name="time"]')!;
     assert.equal(time.readOnly, true);
-    assert.equal(time.value, '6:00–6:45 AM');
+    assert.equal(time.value, '6:00 AM');
   } finally {
     dom.window.close();
   }
@@ -82,10 +82,10 @@ test('lists Caffeine Saturdays and claim links only after confirming live calend
     await settle();
     const rows = Array.from(calendar.querySelectorAll('li')).filter(row => row.textContent!.includes('Caffeine'));
     assert.equal(rows.length, 9);
-    assert.match(rows[0].textContent!, /2026-11-07 · 6:00–6:45 AM · Caffeine · OPEN/);
+    assert.match(rows[0].textContent!, /2026-11-07 · 6:00 AM · Caffeine · OPEN/);
     assert.match(rows.at(-1)!.textContent!, /2027-01-02/);
     for (const row of rows) {
-      assert.match(row.textContent!, /6:00–6:45 AM/);
+      assert.match(row.textContent!, /6:00 AM/);
       const link = new URL(row.querySelector('a')!.href);
       assert.equal(link.pathname, '/signup/');
       assert.equal(link.searchParams.get('ao'), 'caffeine');

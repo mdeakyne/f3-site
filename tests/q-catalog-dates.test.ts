@@ -77,7 +77,7 @@ test('test_all_ao_channels', () => {
   assert.deepEqual(catalog.AO_CATALOG, [
     { slug: 'beehive', name: 'Beehive', weekday: 2, time: '5:30 AM', channelId: 'C07A8STLZ5Z' },
     { slug: 'ad-astra', name: 'Ad Astra', weekday: 4, time: '5:30 AM', channelId: 'C05L33U97L4' },
-    { slug: 'caffeine', name: 'Caffeine', weekday: 6, time: '6:00–6:45 AM', channelId: 'C0CE7TKJ7HS' },
+    { slug: 'caffeine', name: 'Caffeine', weekday: 6, time: '6:00 AM', channelId: 'C0CE7TKJ7HS' },
   ]);
   assert.deepEqual(catalog.PUBLIC_AO_CATALOG, catalog.AO_CATALOG.map(({ channelId, ...ao }) => ao));
   for (const ao of catalog.AO_CATALOG) {

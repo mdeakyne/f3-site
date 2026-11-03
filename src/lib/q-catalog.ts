@@ -6,7 +6,7 @@ import type { Ao, Pax } from './q-types.ts';
 export const PUBLIC_AO_CATALOG: Omit<Ao, 'channelId'>[] = [
   { slug: 'beehive', name: 'Beehive', weekday: 2, time: '5:30 AM' },
   { slug: 'ad-astra', name: 'Ad Astra', weekday: 4, time: '5:30 AM' },
-  { slug: 'caffeine', name: 'Caffeine', weekday: 6, time: '6:00–6:45 AM' },
+  { slug: 'caffeine', name: 'Caffeine', weekday: 6, time: '6:00 AM' },
 ];
 
 export const AO_CATALOG: Ao[] = /* @__PURE__ */ (() => {
