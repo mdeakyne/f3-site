@@ -42,12 +42,12 @@ export function claimWindow(now: Date): { first: string; last: string; paxCutoff
 export function publicationTime(eventDate: string): string {
   if (!isIsoDate(eventDate)) throw new RangeError('Invalid event date');
   const previous = addDays(eventDate, -1);
-  // At 16:00 Chicago, the offset is unambiguous even on DST transition days.
-  const candidate = new Date(`${previous}T22:00:00Z`);
+  // At 10:00 Chicago, the offset is unambiguous even on DST transition days.
+  const candidate = new Date(`${previous}T16:00:00Z`);
   const hour = Number(new Intl.DateTimeFormat('en-US', {
     timeZone: 'America/Chicago', hour: 'numeric', hourCycle: 'h23',
   }).format(candidate));
-  candidate.setUTCHours(candidate.getUTCHours() + 16 - hour);
+  candidate.setUTCHours(candidate.getUTCHours() + 10 - hour);
   return candidate.toISOString();
 }
 

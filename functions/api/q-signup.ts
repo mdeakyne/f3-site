@@ -8,6 +8,7 @@ type Context = { request: Request; env: ClaimEnv; waitUntil?: (p: Promise<unknow
 type Dependencies = {
   now?: () => Date;
   fetcher?: typeof fetch;
+  notePublisher?: (env: ClaimEnv, claim: ClaimInput) => Promise<'posted' | 'failed'>;
   publisher?: (env: ClaimEnv, id: number, now: Date) => Promise<Publication>;
 };
 const json = (body: unknown, status = 200) => Response.json(body, { status, headers: { 'cache-control': 'no-store' } });
@@ -63,6 +64,11 @@ export function createSignupHandler(deps: Dependencies = {}) {
       if (!validSlot(input.ao_slug, input.event_date, createdAt) || (input.q_slug !== null && !eligiblePax(PAX_CATALOG, createdAt).some(pax => pax.slug === input.q_slug))) return json({ error: 'Please check the required fields and available workout date.' }, 400);
       const id = await insertClaim(env, input, ipHash, createdAt);
       if (id === null) return json({ error: 'That workout was just claimed. Please choose another date.' }, 409);
+      // Announce the signup immediately; a note failure never discards the claim.
+      try {
+        const note = deps.notePublisher ?? (await import('../lib/q-publisher.ts')).postSignupNote;
+        if (await note(env, input) !== 'posted') console.error('Q signup note needs manual attention', { claimId: id });
+      } catch { console.error('Q signup note needs manual attention', { claimId: id }); }
       let publication: 'scheduled'|'posted'|'failed' = 'scheduled';
       let pending = false;
       // Cron can scan while verification or the insert is still in flight.

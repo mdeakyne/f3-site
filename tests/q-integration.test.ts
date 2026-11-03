@@ -86,7 +86,7 @@ test('Q command and Pages/Worker configuration form one rollout', async () => {
   assert.equal(pages.match(/database_id = "([^"]+)"/)?.[1], scheduled.match(/database_id = "([^"]+)"/)?.[1]);
   assert.match(pages, /TURNSTILE_SECRET_KEY/); assert.match(pages, /Q_SLACK_WEBHOOKS_JSON/);
   assert.doesNotMatch(pages, /no CAPTCHA|only need SLACK_WEBHOOK_URL/);
-  assert.match(scheduled, /0 21,22 \* \* \*/);
+  assert.match(scheduled, /0 15,16 \* \* \*/);
 });
 
 test('deployment publishes Pages and the scheduled Worker from one revision', async () => {
@@ -105,13 +105,21 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
   const now = new Date(due.getTime() - 3600000);
   const siteverify = async () => Response.json({ success: true, action: 'q_signup', hostname: 'f3lawrence.com' });
   const handler = createSignupHandler({ now: () => now, fetcher: siteverify });
-  let sends = 0;
+  let notes = 0;
+  let preblasts = 0;
   t.mock.method(globalThis, 'fetch', async (url: string, init: RequestInit) => {
     assert.equal(String(url), 'https://hooks.slack.com/services/T000/B000/beehive-private');
     const payload = JSON.parse(String(init.body));
     assert.equal(payload.channel, undefined);
-    assert.match(payload.text, /Integration 💪/); assert.match(payload.text, /private description/);
-    sends++; return new Response('ok');
+    if (payload.text.includes('Q signed up:')) {
+      notes++;
+      assert.match(payload.text, /O'Brien/);
+      assert.doesNotMatch(payload.text, /<!channel>/);
+    } else {
+      preblasts++;
+      assert.match(payload.text, /Integration 💪/); assert.match(payload.text, /private description/);
+    }
+    return new Response('ok');
   });
   const send = () => handler({ env: f.env, request: new Request('https://f3lawrence.com/api/q-signup', { method: 'POST', headers: { 'CF-Connecting-IP': '203.0.113.8' }, body: new URLSearchParams({
     ao_slug: 'beehive', event_date: event, q_slug: '__other__', f3_name_other: "O'Brien", title: 'Integration 💪', description: 'private description', coupon: 'yes',
@@ -120,7 +128,8 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
   const responses = await Promise.all([send(), send()]);
   assert.deepEqual(responses.map(r => r.status).sort(), [200, 409], JSON.stringify(f.errors));
   assert.equal((await (responses.find(r => r.status === 200)!).json()).publication, 'scheduled');
-  assert.equal(sends, 0);
+  assert.equal(notes, 1);
+  assert.equal(preblasts, 0);
   assert.equal((await f.query('SELECT COUNT(*) AS n FROM q_claims'))[0].results[0].n, 1);
   const live = await onRequestGet({ env: f.env });
   assert.equal(live.headers.get('cache-control'), 'no-store');
@@ -129,7 +138,8 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
   assert.doesNotMatch(JSON.stringify(body), /description|ip_hash|publish_|scheduled_for|private|channelId/);
   const invoke = () => { let work!: Promise<unknown>; worker.scheduled({ scheduledTime: due.getTime() }, f.env, { waitUntil(p) { work = p; } }); return work; };
   await Promise.all([invoke(), invoke()]); await invoke();
-  assert.equal(sends, 1);
+  assert.equal(notes, 1);
+  assert.equal(preblasts, 1);
   const row = (await f.query('SELECT publish_status,published_at FROM q_claims'))[0].results[0];
   assert.equal(row.publish_status, 'posted'); assert.equal(row.published_at, due.toISOString());
   assert.deepEqual((await f.query('SELECT * FROM q_signups'))[0].results, f.before);
@@ -137,7 +147,7 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
 
 test('real D1: six concurrent distinct protected claims atomically enforce five per IP', { timeout: 180000 }, async (t) => {
   const f = await fixture(6); t.after(f.close);
-  const now = new Date('2026-11-02T18:00:00Z');
+  const now = new Date('2026-11-02T14:00:00Z');
   const slots: { ao_slug: string; event_date: string }[] = [];
   for (let day = 1; slots.length < 6; day++) {
     const event_date = new Date(now.getTime() + day * 86400000).toISOString().slice(0, 10);
@@ -148,6 +158,7 @@ test('real D1: six concurrent distinct protected claims atomically enforce five 
   }
   const handler = createSignupHandler({ now: () => now,
     fetcher: async () => Response.json({ success: true, action: 'q_signup', hostname: 'f3lawrence.com' }),
+    notePublisher: async () => 'posted',
   });
   const responses = await Promise.all(slots.map(slot => handler({ env: f.env, request: new Request('https://f3lawrence.com/api/q-signup', {
     method: 'POST', headers: { 'CF-Connecting-IP': '203.0.113.10' }, body: new URLSearchParams({ ...slot,

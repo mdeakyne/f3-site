@@ -3,9 +3,9 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import type { ClaimEnv, StoredClaim } from '../src/lib/q-types.ts';
 const module = await import('../functions/lib/q-publisher.ts').catch(() => ({} as any));
-const now = new Date('2026-11-02T22:00:00Z');
+const now = new Date('2026-11-02T16:00:00Z');
 function fixture(options: Record<string, any> = {}) {
-  const row: StoredClaim = { id:17, ao_slug:'beehive', event_date:'2026-11-03', q_slug:'404', q_name:'404', title:'💪 :coupon: <!channel>', description:'&<> <@U123> <https://evil>', coupon:true, ip_hash:'hash', created_at:'2026-11-02T18:00:00Z', scheduled_for:'2026-11-02T22:00:00.000Z', publish_status:'scheduled', published_at:null, publish_error:null, ...options.row };
+  const row: StoredClaim = { id:17, ao_slug:'beehive', event_date:'2026-11-03', q_slug:'404', q_name:'404', title:'💪 :coupon: <!channel>', description:'&<> <@U123> <https://evil>', coupon:true, ip_hash:'hash', created_at:'2026-11-02T18:00:00Z', scheduled_for:'2026-11-02T16:00:00.000Z', publish_status:'scheduled', published_at:null, publish_error:null, ...options.row };
   const db = { prepare(sql: string) { let values: any[] = []; return {
     bind(...args: any[]) { values=args; return this; },
     async first() { return { ...row }; },
@@ -36,8 +36,8 @@ function fixture(options: Record<string, any> = {}) {
   });
   const env = { DB:db, TURNSTILE_SECRET_KEY:'secret', Q_SLACK_WEBHOOKS_JSON:webhooks, Q_SLACK_MEMBERS_JSON: options.members ?? '{"404":"U0123456789"}' } as ClaimEnv;
   const fetcher = async (url: string, init: RequestInit) => { sends.push({url:String(url), ...JSON.parse(String(init.body))}); if(options.error) throw new Error('ambiguous timeout with secret'); if(options.malformed) return new Response('ambiguous body'); return new Response(options.response ?? 'ok', {status:options.httpStatus ?? 200}); };
-  const publisher = module.createPublisher?.({fetcher}) ?? { publishClaim: async () => 'skipped', runScheduled: async () => {} };
-  return {row,env,sends,publish: () => publisher.publishClaim(env,17,now), run: (date: Date) => publisher.runScheduled(env,date)};
+  const publisher = module.createPublisher?.({fetcher}) ?? { publishClaim: async () => 'skipped', runScheduled: async () => {}, postSignupNote: async () => 'failed' };
+  return {row,env,sends,publish: () => publisher.publishClaim(env,17,now), note: (claim: any = row) => publisher.postSignupNote(env,claim), run: (date: Date) => publisher.runScheduled(env,date)};
 }
 test('test_two_publishers reserves once', async () => { const f=fixture(); const results=await Promise.all([f.publish(),f.publish()]); assert.equal(f.sends.length,1); assert.deepEqual(results.sort(),['posted','skipped']); assert.equal(f.row.publish_status,'posted'); assert.equal(f.row.published_at, now.toISOString()); });
 test('test_network_ambiguous never retries', async () => { const f=fixture({error:true}); assert.equal(await f.publish(),'failed'); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,1); assert.equal(f.row.publish_status,'failed'); assert.ok(!f.row.publish_error?.includes('secret')); });
@@ -51,8 +51,8 @@ test('only valid Slack webhook URLs for the claim AO are used', async () => {
   assert.equal(await f.publish(),'failed'); assert.equal(f.sends.length,0);
 });
 test('test_wrong_utc_trigger and tomorrow-only scheduling', async () => {
-  const f=fixture(); await f.run(new Date('2026-11-02T21:00:00Z')); assert.equal(f.sends.length,0); await f.run(now); assert.equal(f.sends.length,1); await f.run(now); assert.equal(f.sends.length,1);
-  const summer=fixture({row:{event_date:'2026-07-07',scheduled_for:'2026-07-06T21:00:00.000Z'}}); await summer.run(new Date('2026-07-06T22:00:00Z')); assert.equal(summer.sends.length,0); await summer.run(new Date('2026-07-06T21:00:00Z')); assert.equal(summer.sends.length,1);
+  const f=fixture(); await f.run(new Date('2026-11-02T15:00:00Z')); assert.equal(f.sends.length,0); await f.run(now); assert.equal(f.sends.length,1); await f.run(now); assert.equal(f.sends.length,1);
+  const summer=fixture({row:{event_date:'2026-07-07',scheduled_for:'2026-07-06T15:00:00.000Z'}}); await summer.run(new Date('2026-07-06T16:00:00Z')); assert.equal(summer.sends.length,0); await summer.run(new Date('2026-07-06T15:00:00Z')); assert.equal(summer.sends.length,1);
   const later=fixture({row:{event_date:'2026-11-05'}}); await later.run(now); assert.equal(later.sends.length,0);
 });
 test('not-due and already reserved rows skipped', async () => { for(const row of [{scheduled_for:'2026-11-03T22:00:00.000Z'},{publish_status:'publishing'},{publish_status:'failed'},{publish_status:'posted'}]) {const f=fixture({row}); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,0);} });
@@ -62,7 +62,27 @@ test('test_user_mentions escaped; test_controlled_mentions retained', async () =
   assert.ok(text.includes('<@U0123456789>')); assert.ok(text.includes('💪 :coupon: &lt;!channel&gt;')); assert.ok(text.includes('&amp;&lt;&gt; &lt;@U123&gt; &lt;https://evil&gt;')); assert.ok(text.includes('*:coupon: Coupon:* Yes')); assert.ok(text.includes('5:30 AM'));
   for(const members of ['{}','{"404":"evil><!channel>"}','invalid']) {const plain=fixture({members,row:{q_name:'<@U123>'}}); await plain.publish(); assert.ok(plain.sends[0].text.includes('*Q:* &lt;@U123&gt;'));}
 });
-test('worker has both DST cron hours and same D1 binding', () => { const config=readFileSync(new URL('../workers/wrangler.toml',import.meta.url),'utf8'); assert.ok(config.includes('0 21,22 * * *')); assert.ok(config.includes('b7ac38a1-b139-4f60-a9c8-3dbb99230b17')); });
+test('worker has both DST cron hours and same D1 binding', () => { const config=readFileSync(new URL('../workers/wrangler.toml',import.meta.url),'utf8'); assert.ok(config.includes('0 15,16 * * *')); assert.ok(config.includes('b7ac38a1-b139-4f60-a9c8-3dbb99230b17')); });
+
+test('signup note announces the Q and the scheduled preblast time without a channel-wide ping', async () => {
+  const f=fixture(); assert.equal(await f.note(),'posted');
+  assert.equal(f.sends.length,1);
+  const {text,url,unfurl_links,unfurl_media}=f.sends[0];
+  assert.equal(url,'https://hooks.slack.com/services/T000/B000/beehive');
+  assert.equal(unfurl_links,false); assert.equal(unfurl_media,false);
+  assert.ok(text.includes('*Q signed up:* <@U0123456789> for *Tuesday, November 3, 2026*.'));
+  assert.ok(text.includes('Preblast will be posted on *Monday, November 2, 2026* around 10:00 AM.'));
+  assert.ok(!text.includes('<!channel>'));
+});
+test('signup note escapes unmapped Q names and fails closed without a usable webhook', async () => {
+  const f=fixture({members:'{"404":"evil><!channel>"}',row:{q_name:'<@U123>'}});
+  assert.equal(await f.note(),'posted');
+  assert.ok(f.sends[0].text.includes('*Q signed up:* &lt;@U123&gt; for'));
+  assert.ok(!f.sends[0].text.includes('<!channel>'));
+  for(const options of [{webhooks:''},{error:true},{httpStatus:503,response:'private credential details'}]) {
+    const g=fixture(options); assert.equal(await g.note(),'failed'); assert.equal(g.sends.length,options.webhooks === '' ? 0 : 1);
+  }
+});
 
 test('ambiguous response and final DB write crash never cause another send', async () => {
   for(const options of [{malformed:true},{finalWriteCrash:true}]) {
@@ -94,8 +114,8 @@ test('Slack HTTP errors remain failed without retaining remote error text or ret
 });
 test('Chicago hour gate follows both DST transition days', async () => {
   for(const [event_date,scheduled_for,wrong] of [
-    ['2026-03-09','2026-03-08T21:00:00.000Z','2026-03-08T22:00:00.000Z'],
-    ['2026-11-02','2026-11-01T22:00:00.000Z','2026-11-01T21:00:00.000Z'],
+    ['2026-03-09','2026-03-08T15:00:00.000Z','2026-03-08T16:00:00.000Z'],
+    ['2026-11-02','2026-11-01T16:00:00.000Z','2026-11-01T15:00:00.000Z'],
   ]) {
     const f=fixture({row:{event_date,scheduled_for}});
     await f.run(new Date(wrong)); assert.equal(f.sends.length,0);

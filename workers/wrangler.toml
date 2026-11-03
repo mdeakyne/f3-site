@@ -3,9 +3,9 @@ main = "q-publisher.ts"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
 
-# Both UTC hours are needed; runScheduled gates to 16:00 America/Chicago.
+# Both UTC hours are needed; runScheduled gates to 10:00 America/Chicago.
 [triggers]
-crons = ["0 21,22 * * *"]
+crons = ["0 15,16 * * *"]
 
 [[d1_databases]]
 binding = "DB"

@@ -1,9 +1,11 @@
 import { AO_CATALOG } from '../../src/lib/q-catalog.ts';
-import { claimWindow } from '../../src/lib/q-dates.ts';
+import { claimWindow, publicationTime } from '../../src/lib/q-dates.ts';
 import type { ClaimEnv, StoredClaim } from '../../src/lib/q-types.ts';
 
 type Outcome = 'posted' | 'failed' | 'skipped';
+type NoteClaim = Pick<StoredClaim, 'ao_slug' | 'event_date' | 'q_slug' | 'q_name'>;
 const escapeSlack = (value: string) => value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const dateLabel = (date: string) => new Intl.DateTimeFormat('en-US', { timeZone:'America/Chicago', weekday:'long', month:'long', day:'numeric', year:'numeric' }).format(new Date(`${date}T12:00:00Z`));
 
 // Each incoming webhook is bound to one channel; the secret maps AO slugs to those URLs.
 function webhookUrl(env: ClaimEnv, slug: string): string | null {
@@ -13,17 +15,38 @@ function webhookUrl(env: ClaimEnv, slug: string): string | null {
   return typeof url === 'string' && /^https:\/\/hooks\.slack\.com\/services\/[\w/-]+$/.test(url) ? url : null;
 }
 
+function qLabel(env: ClaimEnv, claim: { q_slug: string | null; q_name: string }): string {
+  let member: unknown;
+  try { const members = JSON.parse(env.Q_SLACK_MEMBERS_JSON ?? '{}'); member = claim.q_slug && members && typeof members === 'object' ? members[claim.q_slug] : undefined; } catch { /* Optional mappings fail closed to plain text. */ }
+  return typeof member === 'string' && /^[UW][A-Z0-9]{8,}$/.test(member) ? `<@${member}>` : escapeSlack(claim.q_name);
+}
+
 function message(env: ClaimEnv, row: StoredClaim): { text: string; unfurl_links: false; unfurl_media: false } {
   const ao = AO_CATALOG.find(ao => ao.slug === row.ao_slug);
   if (!ao) throw new Error('Invalid AO');
-  let member: unknown;
-  try { const members = JSON.parse(env.Q_SLACK_MEMBERS_JSON ?? '{}'); member = row.q_slug && members && typeof members === 'object' ? members[row.q_slug] : undefined; } catch { /* Optional mappings fail closed to plain text. */ }
-  const q = typeof member === 'string' && /^[UW][A-Z0-9]{8,}$/.test(member) ? `<@${member}>` : escapeSlack(row.q_name);
-  const date = new Intl.DateTimeFormat('en-US', { timeZone:'America/Chicago', weekday:'long', month:'long', day:'numeric', year:'numeric' }).format(new Date(`${row.event_date}T12:00:00Z`));
-  return { text:[`<!channel> *PRE-BLAST: ${escapeSlack(row.title)}*`, `*AO:* ${ao.name}`, `*When:* ${date} · ${ao.time}`, `*Q:* ${q}`, `*:coupon: Coupon:* ${row.coupon ? 'Yes' : 'No'}`, '', escapeSlack(row.description)].join('\n'), unfurl_links:false, unfurl_media:false };
+  return { text:[`<!channel> *PRE-BLAST: ${escapeSlack(row.title)}*`, `*AO:* ${ao.name}`, `*When:* ${dateLabel(row.event_date)} · ${ao.time}`, `*Q:* ${qLabel(env,row)}`, `*:coupon: Coupon:* ${row.coupon ? 'Yes' : 'No'}`, '', escapeSlack(row.description)].join('\n'), unfurl_links:false, unfurl_media:false };
+}
+
+function noteMessage(env: ClaimEnv, claim: NoteClaim): { text: string; unfurl_links: false; unfurl_media: false } {
+  const publishDate = new Intl.DateTimeFormat('en-US', { timeZone:'America/Chicago', weekday:'long', month:'long', day:'numeric', year:'numeric' }).format(new Date(publicationTime(claim.event_date)));
+  return { text:`*Q signed up:* ${qLabel(env,claim)} for *${dateLabel(claim.event_date)}*. Preblast will be posted on *${publishDate}* around 10:00 AM.`, unfurl_links:false, unfurl_media:false };
 }
 
 export function createPublisher(deps: { fetcher?: typeof fetch } = {}) {
+  async function postSignupNote(env: ClaimEnv, claim: NoteClaim): Promise<'posted' | 'failed'> {
+    const url = webhookUrl(env, claim.ao_slug);
+    if (!url) return 'failed';
+    const controller = new AbortController(); const timer = setTimeout(() => controller.abort(),10000);
+    try {
+      const response = await (deps.fetcher ?? fetch)(url, {
+        method:'POST', headers:{ 'content-type':'application/json; charset=utf-8' },
+        body:JSON.stringify(noteMessage(env,claim)), signal:controller.signal,
+      });
+      if (!response.ok) return 'failed';
+      return (await response.text()).trim() === 'ok' ? 'posted' : 'failed';
+    } catch { return 'failed'; } finally { clearTimeout(timer); }
+  }
+
   async function publishClaim(env: ClaimEnv, id: number, now: Date): Promise<Outcome> {
     // The conditional write is the sole right to send. A crash after this write
     // leaves publishing locked for manual diagnosis instead of risking a retry.
@@ -59,7 +82,7 @@ export function createPublisher(deps: { fetcher?: typeof fetch } = {}) {
 
   async function runScheduled(env: ClaimEnv, now: Date): Promise<void> {
     const hour = Number(new Intl.DateTimeFormat('en-US', { timeZone:'America/Chicago', hour:'numeric', hourCycle:'h23' }).format(now));
-    if (hour !== 16) return;
+    if (hour !== 10) return;
     const { first } = claimWindow(now);
     const result = await env.DB.prepare(`SELECT id FROM q_claims
       WHERE event_date = ?1 AND publish_status = 'scheduled' AND scheduled_for <= ?2 ORDER BY id`).bind(first,now.toISOString()).all<{id:number}>();
@@ -68,8 +91,9 @@ export function createPublisher(deps: { fetcher?: typeof fetch } = {}) {
       try { await publishClaim(env,id,now); } catch { console.error('Q publication reservation unavailable', { claimId:id }); }
     }
   }
-  return { publishClaim, runScheduled };
+  return { publishClaim, postSignupNote, runScheduled };
 }
 const publisher = createPublisher();
 export const publishClaim: (env: ClaimEnv,id: number,now: Date) => Promise<Outcome> = publisher.publishClaim;
+export const postSignupNote: (env: ClaimEnv,claim: NoteClaim) => Promise<'posted' | 'failed'> = publisher.postSignupNote;
 export const runScheduled: (env: ClaimEnv,now: Date) => Promise<void> = publisher.runScheduled;

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import * as api from '../functions/api/q-signup.ts';
 import type { ClaimEnv } from '../src/lib/q-types.ts';
 
-const now = new Date('2026-11-02T18:00:00Z');
+const now = new Date('2026-11-02T14:00:00Z');
 function fixture(options: Record<string, any> = {}) {
   const db = { rows: [] as any[], calls: [] as string[], prepare(sql: string) {
     this.calls.push(sql);
@@ -29,20 +29,21 @@ function fixture(options: Record<string, any> = {}) {
   let calls = 0;
   const fetcher = async () => { calls++; if (options.timeout) throw new Error('timeout'); await options.onVerification?.(); return Response.json(options.verification ?? { success: true, action: 'q_signup', hostname: 'f3lawrence.com' }); };
   let published = 0;
-  const handler = (api as any).createSignupHandler?.({ now: () => options.clock?.() ?? options.now ?? now, fetcher, publisher: async (_env: ClaimEnv, _id: number, timestamp: Date) => { published++; options.onPublish?.(timestamp); return options.publication ?? 'posted'; } }) ?? api.onRequestPost;
+  let noted = 0;
+  const handler = (api as any).createSignupHandler?.({ now: () => options.clock?.() ?? options.now ?? now, fetcher, notePublisher: async (_env: ClaimEnv, claim: any) => { noted++; options.onNote?.(claim); return options.note ?? 'posted'; }, publisher: async (_env: ClaimEnv, _id: number, timestamp: Date) => { published++; options.onPublish?.(timestamp); return options.publication ?? 'posted'; } }) ?? api.onRequestPost;
   async function send(patch: Record<string,string> = {}) {
     const data = new URLSearchParams({ ao_slug: 'beehive', event_date: '2026-11-03', q_slug: '__other__', f3_name_other: '404', title: 'Test', description: 'Workout 💪 :coupon:', coupon: 'yes', 'cf-turnstile-response': 'valid', loaded_at: String((options.now ?? now).getTime() - 5000), ...patch });
     return handler({ env, request: new Request('https://f3lawrence.com/api/q-signup', { method: 'POST', body: data }), waitUntil() {} });
   }
-  return { send, db, env, network: () => calls, published: () => published };
+  return { send, db, env, network: () => calls, published: () => published, noted: () => noted };
 }
 
 test('test_turnstile_action_wrong', async () => {
   const f = fixture({ verification: { success: true, action: 'join_f3', hostname: 'f3lawrence.com' } });
-  const res = await f.send({ f3_name: '404' }); assert.equal(res.status, 400); assert.equal(f.db.rows.length, 0); assert.equal(f.published(), 0);
+  const res = await f.send({ f3_name: '404' }); assert.equal(res.status, 400); assert.equal(f.db.rows.length, 0); assert.equal(f.published(), 0); assert.equal(f.noted(), 0);
 });
 test('test_unavailable', async () => {
-  for (const options of [{ secret: '' }, { timeout: true }]) { const f = fixture(options); assert.equal((await f.send()).status, 503); assert.equal(f.db.rows.length, 0); }
+  for (const options of [{ secret: '' }, { timeout: true }]) { const f = fixture(options); assert.equal((await f.send()).status, 503); assert.equal(f.db.rows.length, 0); assert.equal(f.noted(), 0); }
 });
 test('verification rejects missing token, invalid result and hostname', async () => {
   assert.equal((await fixture().send({ 'cf-turnstile-response': '' })).status, 400);
@@ -50,8 +51,12 @@ test('verification rejects missing token, invalid result and hostname', async ()
   for (const verification of [{ success: false }, { success: true, action: 'q_signup', hostname: 'evil.com' }]) assert.equal((await fixture({ verification }).send()).status, 400);
 });
 test('test_duplicate and real database errors', async () => {
-  assert.equal((await fixture({ error: 'D1_ERROR: UNIQUE constraint failed: q_claims.ao_slug, q_claims.event_date' }).send()).status, 409);
-  assert.equal((await fixture({ error: 'database unavailable' }).send()).status, 503);
+  const duplicate = fixture({ error: 'D1_ERROR: UNIQUE constraint failed: q_claims.ao_slug, q_claims.event_date' });
+  assert.equal((await duplicate.send()).status, 409);
+  assert.equal(duplicate.noted(), 0);
+  const unavailable = fixture({ error: 'database unavailable' });
+  assert.equal((await unavailable.send()).status, 503);
+  assert.equal(unavailable.noted(), 0);
 });
 test('atomic insertion rate rejection ignores a stale row id and preserves other database failures', async () => {
   const f = fixture({ insertResult: { success: true, meta: { changes: 0, last_row_id: 17 }, results: [] } });
@@ -59,6 +64,7 @@ test('atomic insertion rate rejection ignores a stale row id and preserves other
   assert.equal(response.status, 429);
   assert.match((await response.json()).error, /Too many recent claims/);
   assert.equal(f.published(), 0);
+  assert.equal(f.noted(), 0);
   for (const insertResult of [
     { success: false, meta: { changes: 0, last_row_id: 17 }, results: [] },
     { success: true, meta: { last_row_id: 17 }, results: [] },
@@ -67,6 +73,7 @@ test('atomic insertion rate rejection ignores a stale row id and preserves other
 test('test_time_channel_spoof and canonical successful claim', async () => {
   const f = fixture(); const res = await f.send({ time: 'midnight', channelId: 'evil' });
   assert.equal(res.status, 200); assert.equal((await res.json()).publication, 'scheduled'); assert.equal(f.db.rows.length, 1);
+  assert.equal(f.noted(), 1);
   assert.ok(!JSON.stringify(f.db.rows).includes('evil')); assert.ok(!f.db.calls.some(sql => /q_signups\b/.test(sql)));
 });
 test('bounds, required fields, schedule and rate limit', async () => {
@@ -74,31 +81,32 @@ test('bounds, required fields, schedule and rate limit', async () => {
   assert.equal((await fixture({ count: 5 }).send()).status, 429);
 });
 test('bots silently dropped without network or insert', async () => {
-  for (const patch of [{ company: 'spam' }, { loaded_at: String(now.getTime() - 1000) }]) { const f = fixture(); assert.equal((await f.send(patch)).status, 200); assert.equal(f.network(), 0); assert.equal(f.db.rows.length, 0); }
+  for (const patch of [{ company: 'spam' }, { loaded_at: String(now.getTime() - 1000) }]) { const f = fixture(); assert.equal((await f.send(patch)).status, 200); assert.equal(f.network(), 0); assert.equal(f.db.rows.length, 0); assert.equal(f.noted(), 0); }
 });
-test('late claims use shared publisher and remain claimed on failure', async () => {
-  for (const publication of ['posted','failed']) { const f = fixture({ now: new Date('2026-11-02T22:01:00Z'), publication }); const res = await f.send(); assert.equal(res.status, 200); assert.equal((await res.json()).publication, publication); assert.equal(f.published(), 1); assert.equal(f.db.rows.length, 1); }
+test('late claims post a signup note before using the shared publisher and remain claimed on failure', async () => {
+  for (const publication of ['posted','failed']) { const f = fixture({ now: new Date('2026-11-02T17:01:00Z'), publication }); const res = await f.send(); assert.equal(res.status, 200); assert.equal((await res.json()).publication, publication); assert.equal(f.noted(), 1); assert.equal(f.published(), 1); assert.equal(f.db.rows.length, 1); }
 });
 
-test('claim inserted after the 16:00 cron scan publishes using the post-insert clock', async () => {
+test('claim inserted after the 10:00 cron scan publishes using the post-insert clock', async () => {
   const { runScheduled } = await import('../functions/lib/q-publisher.ts');
-  let clock = new Date('2026-11-02T21:59:59Z');
+  let clock = new Date('2026-11-02T15:59:59Z');
   let cronScans = 0;
   const f = fixture({ clock: () => clock, now: clock, async beforeInsert() {
     // The real scheduled scan runs before this insert commits.
-    clock = new Date('2026-11-02T22:00:00Z');
+    clock = new Date('2026-11-02T16:00:00Z');
     await runScheduled(f.env, clock);
   }, onScan(sql: string, rows: unknown[]) {
     assert.match(sql, /SELECT id FROM q_claims/);
     assert.equal(rows.length, 0);
     cronScans++;
   }, onInsert() {
-    clock = new Date('2026-11-02T22:00:01Z');
+    clock = new Date('2026-11-02T16:00:01Z');
   }, onPublish(timestamp: Date) { assert.equal(timestamp.toISOString(), clock.toISOString()); } });
   const res = await f.send();
   assert.equal(cronScans, 1);
   assert.equal(res.status, 200);
   assert.equal((await res.json()).publication, 'posted');
+  assert.equal(f.noted(), 1);
   assert.equal(f.published(), 1);
 });
 
@@ -109,6 +117,7 @@ test('claim that becomes today during verification or rate checking is rejected 
     assert.equal((await f.send()).status, 400, phase);
     assert.equal(f.db.rows.length, 0, phase);
     assert.equal(f.published(), 0, phase);
+    assert.equal(f.noted(), 0, phase);
   }
 });
 
@@ -123,6 +132,7 @@ test('cron-owned publication reconciles persisted status without urging a duplic
     assert.equal(body.ok, true);
     assert.doesNotMatch(body.message, /arrange the pre-blast|post (?:it|again|another)/i);
     if (persistedStatus !== 'failed') assert.doesNotMatch(body.message, /delivery (?:failed|needs attention)/i);
+    assert.equal(f.noted(), 1);
     assert.equal(f.published(), 1);
     assert.equal(f.db.rows.length, 1);
   }
@@ -136,6 +146,7 @@ test('uncertain persisted publication status preserves saved claim without repor
   assert.equal(body.publication, 'scheduled');
   assert.match(body.message, /saved/i);
   assert.doesNotMatch(body.message, /delivery (?:failed|needs attention)|arrange the pre-blast|post again/i);
+  assert.equal(f.noted(), 1);
 });
 
 test('confirmed publisher failure asks for review before any manual correction', async () => {
@@ -144,6 +155,7 @@ test('confirmed publisher failure asks for review before any manual correction',
   assert.equal(body.publication, 'failed');
   assert.match(body.message, /check Slack/i);
   assert.doesNotMatch(body.message, /arrange the pre-blast|post again/i);
+  assert.equal(f.noted(), 1);
   assert.equal(f.db.rows.length, 1);
 });
 
@@ -152,6 +164,7 @@ test('committed posted status wins over a publisher failure caused by lost ackno
   const res = await f.send(); const body = await res.json();
   assert.equal(body.publication, 'posted');
   assert.match(body.message, /pre-blast posted/i);
+  assert.equal(f.noted(), 1);
 });
 test('test_public_fields', async () => {
   const { listClaims } = await import('../functions/lib/q-store.ts');
