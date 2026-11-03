@@ -48,6 +48,6 @@ export interface D1Database { prepare(query: string): D1PreparedStatement }
 export interface ClaimEnv {
   DB: D1Database;
   TURNSTILE_SECRET_KEY: string;
-  SLACK_BOT_TOKEN: string;
+  Q_SLACK_WEBHOOKS_JSON: string;
   Q_SLACK_MEMBERS_JSON?: string;
 }

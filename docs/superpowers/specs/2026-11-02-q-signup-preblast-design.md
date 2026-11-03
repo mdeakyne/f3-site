@@ -185,9 +185,9 @@ This provides at-most-once automatic delivery. It intentionally favors no duplic
 
 ### Slack delivery
 
-The existing incoming webhook is fixed to `#admin` and cannot route dynamically. The publisher will use a Slack bot token stored as a Cloudflare secret and `chat.postMessage` with an explicit AO channel ID. The Slack app must have permission to post and must be present in each AO channel.
+An incoming webhook is bound to the single channel selected when it was created, so the publisher will use one webhook per AO channel. The URLs live in a server-only `Q_SLACK_WEBHOOKS_JSON` secret mapping AO slugs to their channel's webhook, on both Pages and the scheduled Worker. This matches the contact form's existing webhook mechanism and avoids bot scopes and channel membership.
 
-AO channel IDs belong in the canonical AO catalog, not in browser-submitted data. The server chooses the destination from the validated AO slug.
+The AO slug mapping and the canonical AO channel IDs belong on the server, not in browser-submitted data. The server chooses the destination from the validated AO slug.
 
 PAX-to-Slack-member-ID mappings are optional server-side configuration. A mapped Q is rendered as a controlled `<@MEMBER_ID>` mention. An unmapped regular PAX or `Other` Q is rendered as escaped plain text. The browser does not receive the full mapping.
 
@@ -306,8 +306,7 @@ Manual deployment checks must confirm:
 
 - D1 migration applies without duplicate active slots.
 - Turnstile secret and hostname/action configuration are correct.
-- Slack bot token remains secret, has the minimum required scope, and can post in all three AO channels.
-- Channel IDs map to Beehive, Ad Astra, and Caffeine correctly.
+- Webhook URLs remain secret, and each maps to Beehive, Ad Astra, or Caffeine and posts only to that channel.
 - Cron triggers are installed and Worker observability is available.
 - A non-posting/local test can simulate scheduled times. A real production Slack test requires an intentionally identified test claim/channel message.
 
@@ -315,7 +314,7 @@ Manual deployment checks must confirm:
 
 1. Create the new `q_claims` table. Leave obsolete `q_signups` rows untouched as an unreferenced archive.
 2. Deploy the read API and updated claim endpoint with Turnstile.
-3. Configure the Slack bot secret and AO channel access.
+3. Configure the per-AO Slack webhook secret on both runtimes.
 4. Deploy and test the scheduled Worker.
 5. Publish the updated signup/calendar UI.
 6. Publish the Q Checklist and aligned First Q corrections.

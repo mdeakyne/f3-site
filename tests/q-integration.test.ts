@@ -70,7 +70,9 @@ async function fixture(concurrentCounts = 0) {
   await query(`${archive}\nINSERT INTO q_signups(event_date,ao_slug,f3_name,ip_hash) VALUES('2020-01-01','beehive','Archived','old');`);
   const before = (await query('SELECT * FROM q_signups'))[0].results;
   await query(await readFile('migrations/0002_q_claims.sql', 'utf8'));
-  return { env: { DB, TURNSTILE_SECRET_KEY: 'test-turnstile-private', SLACK_BOT_TOKEN: 'test-slack-private', Q_SLACK_MEMBERS_JSON: '{"private":"U0123456789"}' } as ClaimEnv,
+  return { env: { DB, TURNSTILE_SECRET_KEY: 'test-turnstile-private', Q_SLACK_WEBHOOKS_JSON: JSON.stringify({
+      beehive: 'https://hooks.slack.com/services/T000/B000/beehive-private', 'ad-astra': 'https://hooks.slack.com/services/T000/B000/adastra-private', caffeine: 'https://hooks.slack.com/services/T000/B000/caffeine-private',
+    }), Q_SLACK_MEMBERS_JSON: '{"private":"U0123456789"}' } as ClaimEnv,
     query, before, errors, close: () => rm(dir, { recursive: true, force: true }) };
 }
 
@@ -82,7 +84,7 @@ test('Q command and Pages/Worker configuration form one rollout', async () => {
   const pages = await readFile('wrangler.toml', 'utf8');
   const scheduled = await readFile('workers/wrangler.toml', 'utf8');
   assert.equal(pages.match(/database_id = "([^"]+)"/)?.[1], scheduled.match(/database_id = "([^"]+)"/)?.[1]);
-  assert.match(pages, /TURNSTILE_SECRET_KEY/); assert.match(pages, /SLACK_BOT_TOKEN/);
+  assert.match(pages, /TURNSTILE_SECRET_KEY/); assert.match(pages, /Q_SLACK_WEBHOOKS_JSON/);
   assert.doesNotMatch(pages, /no CAPTCHA|only need SLACK_WEBHOOK_URL/);
   assert.match(scheduled, /0 21,22 \* \* \*/);
 });
@@ -105,11 +107,11 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
   const handler = createSignupHandler({ now: () => now, fetcher: siteverify });
   let sends = 0;
   t.mock.method(globalThis, 'fetch', async (url: string, init: RequestInit) => {
-    assert.equal(String(url), 'https://slack.com/api/chat.postMessage');
+    assert.equal(String(url), 'https://hooks.slack.com/services/T000/B000/beehive-private');
     const payload = JSON.parse(String(init.body));
-    assert.equal(payload.channel, AO_CATALOG.find(ao => ao.slug === 'beehive')!.channelId);
+    assert.equal(payload.channel, undefined);
     assert.match(payload.text, /Integration 💪/); assert.match(payload.text, /private description/);
-    sends++; return Response.json({ ok: true });
+    sends++; return new Response('ok');
   });
   const send = () => handler({ env: f.env, request: new Request('https://f3lawrence.com/api/q-signup', { method: 'POST', headers: { 'CF-Connecting-IP': '203.0.113.8' }, body: new URLSearchParams({
     ao_slug: 'beehive', event_date: event, q_slug: '__other__', f3_name_other: "O'Brien", title: 'Integration 💪', description: 'private description', coupon: 'yes',
@@ -201,6 +203,6 @@ test('actual emitted public HTML and JS omit all server channel/member maps and 
     const raw = await readFile(path, 'utf8');
     const source = privacySource(path, raw);
     for (const ao of AO_CATALOG) assert.ok(!source.includes(ao.channelId), `channel leaked in ${path}`);
-    assert.doesNotMatch(raw, /Q_SLACK_MEMBERS_JSON|SLACK_BOT_TOKEN|TURNSTILE_SECRET_KEY|test-slack-private|test-turnstile-private/);
+    assert.doesNotMatch(raw, /Q_SLACK_MEMBERS_JSON|Q_SLACK_WEBHOOKS_JSON|TURNSTILE_SECRET_KEY|beehive-private|test-turnstile-private/);
   }
 });

@@ -13,5 +13,6 @@ database_name = "f3-signups"
 database_id = "b7ac38a1-b139-4f60-a9c8-3dbb99230b17"
 migrations_dir = "../migrations"
 
-# Configure SLACK_BOT_TOKEN as a Worker secret. Optional Q_SLACK_MEMBERS_JSON
-# is server-only JSON mapping stable PAX slugs to Slack member IDs.
+# Configure Q_SLACK_WEBHOOKS_JSON as a Worker secret: server-only JSON mapping
+# AO slugs to their channel's incoming webhook URL. Optional
+# Q_SLACK_MEMBERS_JSON maps stable PAX slugs to Slack member IDs.

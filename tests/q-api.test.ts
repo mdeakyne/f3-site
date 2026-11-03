@@ -25,7 +25,7 @@ function fixture(options: Record<string, any> = {}) {
         db.rows.push(values); await options.onInsert?.(); return { success: true, meta: { last_row_id: 17, changes: 1 }, results: [] };
       } };
   } };
-  const env = { DB: db, TURNSTILE_SECRET_KEY: options.secret ?? 'secret', SLACK_BOT_TOKEN: 'token' } as ClaimEnv;
+  const env = { DB: db, TURNSTILE_SECRET_KEY: options.secret ?? 'secret', Q_SLACK_WEBHOOKS_JSON: '{}' } as ClaimEnv;
   let calls = 0;
   const fetcher = async () => { calls++; if (options.timeout) throw new Error('timeout'); await options.onVerification?.(); return Response.json(options.verification ?? { success: true, action: 'q_signup', hostname: 'f3lawrence.com' }); };
   let published = 0;

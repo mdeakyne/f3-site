@@ -29,14 +29,27 @@ function fixture(options: Record<string, any> = {}) {
     },
   }; } };
   const sends: any[] = [];
-  const env = { DB:db, TURNSTILE_SECRET_KEY:'secret', SLACK_BOT_TOKEN:options.token ?? 'token', Q_SLACK_MEMBERS_JSON: options.members ?? '{"404":"U0123456789"}' } as ClaimEnv;
-  const fetcher = async (_url: string, init: RequestInit) => { sends.push(JSON.parse(String(init.body))); if(options.error) throw new Error('ambiguous timeout with secret'); if(options.malformed) return new Response('ambiguous body'); return Response.json(options.response ?? {ok:true,ts:'do not retain'}, {status:options.httpStatus ?? 200}); };
+  const webhooks = options.webhooks ?? JSON.stringify({
+    beehive:'https://hooks.slack.com/services/T000/B000/beehive',
+    'ad-astra':'https://hooks.slack.com/services/T000/B000/adastra',
+    caffeine:'https://hooks.slack.com/services/T000/B000/caffeine',
+  });
+  const env = { DB:db, TURNSTILE_SECRET_KEY:'secret', Q_SLACK_WEBHOOKS_JSON:webhooks, Q_SLACK_MEMBERS_JSON: options.members ?? '{"404":"U0123456789"}' } as ClaimEnv;
+  const fetcher = async (url: string, init: RequestInit) => { sends.push({url:String(url), ...JSON.parse(String(init.body))}); if(options.error) throw new Error('ambiguous timeout with secret'); if(options.malformed) return new Response('ambiguous body'); return new Response(options.response ?? 'ok', {status:options.httpStatus ?? 200}); };
   const publisher = module.createPublisher?.({fetcher}) ?? { publishClaim: async () => 'skipped', runScheduled: async () => {} };
   return {row,env,sends,publish: () => publisher.publishClaim(env,17,now), run: (date: Date) => publisher.runScheduled(env,date)};
 }
 test('test_two_publishers reserves once', async () => { const f=fixture(); const results=await Promise.all([f.publish(),f.publish()]); assert.equal(f.sends.length,1); assert.deepEqual(results.sort(),['posted','skipped']); assert.equal(f.row.publish_status,'posted'); assert.equal(f.row.published_at, now.toISOString()); });
 test('test_network_ambiguous never retries', async () => { const f=fixture({error:true}); assert.equal(await f.publish(),'failed'); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,1); assert.equal(f.row.publish_status,'failed'); assert.ok(!f.row.publish_error?.includes('secret')); });
-test('Slack API error and missing token fail permanently', async () => { for(const options of [{response:{ok:false,error:'not_in_channel'}},{token:''}]) { const f=fixture(options); assert.equal(await f.publish(),'failed'); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,options.token === '' ? 0 : 1); } });
+test('Slack error response and missing webhook fail permanently', async () => { for(const options of [{response:'invalid_payload'},{webhooks:''}]) { const f=fixture(options); assert.equal(await f.publish(),'failed'); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,options.webhooks === '' ? 0 : 1); } });
+test('only valid Slack webhook URLs for the claim AO are used', async () => {
+  for(const webhooks of ['{}','not json',JSON.stringify({beehive:'https://evil.example/services/T/B/x'})]) {
+    const f=fixture({webhooks}); assert.equal(await f.publish(),'failed'); assert.equal(f.sends.length,0);
+    assert.ok(!f.row.publish_error?.includes('evil'));
+  }
+  const f=fixture({webhooks:JSON.stringify({'ad-astra':'https://hooks.slack.com/services/T000/B000/adastra'})});
+  assert.equal(await f.publish(),'failed'); assert.equal(f.sends.length,0);
+});
 test('test_wrong_utc_trigger and tomorrow-only scheduling', async () => {
   const f=fixture(); await f.run(new Date('2026-11-02T21:00:00Z')); assert.equal(f.sends.length,0); await f.run(now); assert.equal(f.sends.length,1); await f.run(now); assert.equal(f.sends.length,1);
   const summer=fixture({row:{event_date:'2026-07-07',scheduled_for:'2026-07-06T21:00:00.000Z'}}); await summer.run(new Date('2026-07-06T22:00:00Z')); assert.equal(summer.sends.length,0); await summer.run(new Date('2026-07-06T21:00:00Z')); assert.equal(summer.sends.length,1);
@@ -44,8 +57,8 @@ test('test_wrong_utc_trigger and tomorrow-only scheduling', async () => {
 });
 test('not-due and already reserved rows skipped', async () => { for(const row of [{scheduled_for:'2026-11-03T22:00:00.000Z'},{publish_status:'publishing'},{publish_status:'failed'},{publish_status:'posted'}]) {const f=fixture({row}); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,0);} });
 test('test_user_mentions escaped; test_controlled_mentions retained', async () => {
-  const f=fixture(); await f.publish(); const {text,channel,link_names,parse}=f.sends[0];
-  assert.equal(channel,'C07A8STLZ5Z'); assert.equal(link_names,false); assert.equal(parse,'none'); assert.ok(text.startsWith('<!channel> *PRE-BLAST:'));
+  const f=fixture(); await f.publish(); const {text,url,unfurl_links,unfurl_media}=f.sends[0];
+  assert.equal(url,'https://hooks.slack.com/services/T000/B000/beehive'); assert.equal(unfurl_links,false); assert.equal(unfurl_media,false); assert.ok(text.startsWith('<!channel> *PRE-BLAST:'));
   assert.ok(text.includes('<@U0123456789>')); assert.ok(text.includes('💪 :coupon: &lt;!channel&gt;')); assert.ok(text.includes('&amp;&lt;&gt; &lt;@U123&gt; &lt;https://evil&gt;')); assert.ok(text.includes('*:coupon: Coupon:* Yes')); assert.ok(text.includes('5:30 AM'));
   for(const members of ['{}','{"404":"evil><!channel>"}','invalid']) {const plain=fixture({members,row:{q_name:'<@U123>'}}); await plain.publish(); assert.ok(plain.sends[0].text.includes('*Q:* &lt;@U123&gt;'));}
 });
@@ -71,7 +84,7 @@ test('committed final update with lost acknowledgement preserves posted state an
   assert.equal(f.sends.length,1);
 });
 test('Slack HTTP errors remain failed without retaining remote error text or retrying', async () => {
-  const f=fixture({httpStatus:503,response:{ok:true,error:'private credential details'}});
+  const f=fixture({httpStatus:503,response:'private credential details'});
   assert.equal(await f.publish(),'failed');
   assert.equal(f.row.publish_status,'failed');
   assert.ok((f.row.publish_error?.length ?? 0) <= 300);

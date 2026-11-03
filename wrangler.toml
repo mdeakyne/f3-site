@@ -14,8 +14,9 @@ migrations_dir = "migrations"
 
 # Pages secrets (never committed):
 #   wrangler pages secret put TURNSTILE_SECRET_KEY --project-name f3-site
-#   wrangler pages secret put SLACK_BOT_TOKEN --project-name f3-site
-# Optional server-only Q_SLACK_MEMBERS_JSON is also configured on Pages.
-# The contact form separately retains SLACK_WEBHOOK_URL.
-# Configure the same SLACK_BOT_TOKEN and optional member map on the cron Worker;
+#   wrangler pages secret put Q_SLACK_WEBHOOKS_JSON --project-name f3-site
+# Q_SLACK_WEBHOOKS_JSON maps AO slugs to their channel's incoming webhook URL;
+# optional Q_SLACK_MEMBERS_JSON is also configured on Pages.
+# The contact form separately retains its #admin SLACK_WEBHOOK_URL.
+# Configure the same Q webhooks and optional member map on the cron Worker;
 # workers/wrangler.toml binds this same D1 database. See docs/q-signup-deployment.md.

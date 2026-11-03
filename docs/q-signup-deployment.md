@@ -43,15 +43,17 @@ scheduled Worker's environment; a Pages secret is not inherited by a Worker:
 
 ```sh
 npx wrangler pages secret put TURNSTILE_SECRET_KEY --project-name f3-site
-npx wrangler pages secret put SLACK_BOT_TOKEN --project-name f3-site
-npx wrangler secret put SLACK_BOT_TOKEN --config workers/wrangler.toml
+# One server-only JSON object: {"beehive":"https://hooks.slack.com/...","ad-astra":"...","caffeine":"..."}
+npx wrangler pages secret put Q_SLACK_WEBHOOKS_JSON --project-name f3-site
+npx wrangler secret put Q_SLACK_WEBHOOKS_JSON --config workers/wrangler.toml
 # Optional stable PAX slug → Slack member ID map, server-only on BOTH:
 npx wrangler pages secret put Q_SLACK_MEMBERS_JSON --project-name f3-site
 npx wrangler secret put Q_SLACK_MEMBERS_JSON --config workers/wrangler.toml
 ```
 
-Only Pages needs `TURNSTILE_SECRET_KEY`. The existing contact webhook remains
-`SLACK_WEBHOOK_URL`; Q publishing has no webhook fallback. Never put token or
+Only Pages needs `TURNSTILE_SECRET_KEY`. The contact form keeps its own
+`#admin` webhook as `SLACK_WEBHOOK_URL`; Q publishing uses the per-channel
+webhook map above and has no fallback to it. Never put webhook URLs or
 member-map values in public assets, build environment serialization, or logs.
 Local Pages `.dev.vars` and Worker `workers/.dev.vars` are separate; keep any
 local credentials untracked and use network fakes for ordinary checks.
@@ -70,9 +72,12 @@ its own `join_f3` action. Localhost/127.0.0.1 use the official test site key;
 preview hostnames do not satisfy the production hostname policy. Never
 weaken hostname/action checks to make a preview pass.
 
-The bot needs Slack `chat:write` and membership/access in all three AO
-channels. Invite it before launch; membership avoids requiring
-`chat:write.public`. Confirm these canonical mappings with Slack:
+Create one incoming webhook per AO channel in the F3 Lawrence Slack app, the
+same mechanism as the contact form's webhook, and put each URL in
+`Q_SLACK_WEBHOOKS_JSON` under its AO slug. A webhook posts only to the channel
+selected when it was created, so the slug-to-URL mapping is the destination.
+No bot scopes or channel membership are required. Confirm each webhook targets
+its canonical channel:
 
 | AO | Channel ID |
 | --- | --- |
@@ -82,7 +87,8 @@ channels. Invite it before launch; membership avoids requiring
 
 Optional member IDs are valid Slack member IDs keyed by stable PAX slug.
 Unmapped/invalid entries become escaped plain names. User text cannot add
-mentions; the system supplies the controlled channel and mapped-Q mentions.
+mentions; the system supplies the controlled webhook destination and mapped-Q
+mentions.
 
 ## Cutover and first scheduled run
 
@@ -129,8 +135,8 @@ Retain operational logs without adding private form text or credentials.
 Delivery is at-most-once: `scheduled → publishing → posted|failed`. There is
 no retry/unlock job. A timeout may mean Slack accepted the message; a crash or
 status-write failure may leave `publishing`. Inspect the claim's due time,
-status and bounded error, Worker/Pages logs, bot scope/membership, and the AO
-Slack history. A `scheduled` row after its due date may indicate a missed
+status and bounded error, Worker/Pages logs, the AO's webhook mapping, and the
+AO Slack history. A `scheduled` row after its due date may indicate a missed
 trigger or configuration failure; the Worker intentionally selects tomorrow
 only, so do not expect catch-up publication on following days.
 

@@ -57,7 +57,8 @@ deploys both Pages and the scheduled Q publisher from the same revision.
 The Turnstile-protected `/api/q-signup` endpoint atomically claims an AO/date
 in D1 `q_claims`. Signup and calendar pages fetch current public claims from
 `/api/q-signups`; no approval or rebuild is required. Pre-blasts post through
-a Slack bot at 4 PM Chicago the preceding day, or immediately for late claims.
+channel-specific Slack incoming webhooks at 4 PM Chicago the preceding day, or
+immediately for late claims.
 A separate scheduled Worker shares the Pages D1 database. The legacy
 `q_signups` table remains an untouched archive; `nob pull-signups` is retired
 for new claims.

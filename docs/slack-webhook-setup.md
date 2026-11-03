@@ -1,7 +1,8 @@
 # Contact form Slack webhook
 
-Only the **Join F3 Lawrence** contact form (`/api/contact`) posts through the
-incoming webhook to **#admin**. Q signup uses a bot and AO channels; follow
+Only the **Join F3 Lawrence** contact form (`/api/contact`) posts through this
+incoming webhook to **#admin**. Q signup uses separate channel-specific
+incoming webhooks for the three AO channels; follow
 [Q signup deployment](q-signup-deployment.md) for its configuration.
 
 1. In the F3 Lawrence Slack app, enable **Incoming Webhooks**, add a webhook
