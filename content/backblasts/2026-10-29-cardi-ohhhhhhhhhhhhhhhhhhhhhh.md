@@ -19,8 +19,6 @@ fngs: 0
 vault_path: 07 - F3/Backblasts/2026/2026-10-29-cardi-ohhhhhhhhhhhhhhhhhhhhhh.md
 ---
 
-Where <#C05L33U97L4>
-
 ## Warmup
 
 - Piano Man
