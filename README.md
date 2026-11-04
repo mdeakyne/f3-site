@@ -56,10 +56,10 @@ deploys both Pages and the scheduled Q publisher from the same revision.
 
 The Turnstile-protected `/api/q-signup` endpoint atomically claims an AO/date
 in D1 `q_claims`. Signup and calendar pages fetch current public claims from
-`/api/q-signups`; no approval or rebuild is required. A signup note posts to
-the AO's channel immediately, then the full pre-blast posts through that
-channel's incoming webhook at 10 AM Chicago the preceding day, or immediately
-for late claims.
+`/api/q-signups`; no approval or rebuild is required. Claims made before the
+preceding day post a signup note to the AO's channel immediately. On the
+preceding day, only the full pre-blast posts: at 10 AM Chicago, or immediately
+for later claims.
 A separate scheduled Worker shares the Pages D1 database. The legacy
 `q_signups` table remains an untouched archive; `nob pull-signups` is retired
 for new claims.

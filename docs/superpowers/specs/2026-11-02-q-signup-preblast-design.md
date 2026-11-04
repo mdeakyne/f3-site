@@ -5,7 +5,7 @@
 
 ## Intent
 
-Replace the current approval-oriented Q signup with a self-service claim system. A PAX can claim an upcoming Lawrence AO, provide a complete pre-blast, see the claim reflected immediately on the website, and have a short signup note posted immediately followed by the full pre-blast at 10:00 AM America/Chicago on the preceding day.
+Replace the current approval-oriented Q signup with a self-service claim system. A PAX can claim an upcoming Lawrence AO, provide a complete pre-blast, see the claim reflected immediately on the website, and have a short signup note posted for early claims followed by the full pre-blast at 10:00 AM America/Chicago on the preceding day.
 
 The first release favors a simple, trustworthy workflow: Turnstile blocks automated abuse, the database prevents duplicate claims, and Slack remains the place where humans handle edits or cancellations.
 
@@ -19,10 +19,10 @@ The first release favors a simple, trustworthy workflow: Turnstile blocks automa
 - Require a complete pre-blast: AO, workout date/time, Q, title, description, and Coupon Yes/No.
 - Show upcoming claims immediately on the signup page with the AO, date/time, Q, and title.
 - Remove claimed slots from the choices available to another submitter.
-- Post a short signup note to the selected AO's Slack channel immediately after a successful claim, naming the Q, the workout date, and the date the full pre-blast will post.
+- Post a short signup note to the selected AO's Slack channel when a successful claim is made before the preceding day, naming the Q, the workout date, and the date the full pre-blast will post.
 - Publish each full pre-blast to the selected AO's Slack channel at 10:00 AM America/Chicago on the day before the workout.
-- If a claim is created from 10:00 AM through 11:59 PM the day before the workout, post the signup note and publish the full pre-blast immediately.
-- Include both `@channel` and a real Slack mention for the Q when a member-ID mapping exists; otherwise show the Q's name as plain text.
+- If a claim is created on the day before the workout, omit the signup note; before 10:00 AM the full pre-blast remains scheduled, and from 10:00 AM onward it publishes immediately.
+- Include a controlled `Where: <#CHANNEL_ID>` link and a real Slack mention for the Q when a member-ID mapping exists; otherwise show the Q's name as plain text.
 - Preserve Unicode emoji and Slack-style emoji codes in user-entered titles and descriptions.
 - Make at most one automatic Slack posting attempt per claim so the system does not create duplicate pre-blasts.
 - After a successful claim, show a prominent `Open your Q Checklist` button linking to a new local checklist page.
@@ -174,9 +174,9 @@ The existing honeypot, minimum-fill-time check, and IP rate limit remain defense
 
 ### Publication timing
 
-Claims created before 10:00 AM Chicago time on the preceding day receive publication state `scheduled`. They also post a short signup note immediately.
+Claims created before the preceding Chicago calendar day receive publication state `scheduled` and post a short signup note immediately.
 
-Claims created from 10:00 AM through 11:59 PM on the preceding day are inserted first, post the signup note, and then send the full pre-blast immediately. The claim remains locked even if Slack delivery fails.
+Claims created before 10:00 AM on the preceding day receive publication state `scheduled` without a signup note. Claims created from 10:00 AM through 11:59 PM on the preceding day are inserted first and send only the full pre-blast immediately. The claim remains locked even if Slack delivery fails.
 
 A small companion Cloudflare Worker will use the same D1 database and run on both UTC hours that can correspond to 10:00 AM Chicago time. On each invocation it will first confirm that the Chicago local time is 10:00 AM; the other daylight-saving trigger becomes a no-op. It then selects scheduled claims for tomorrow.
 
@@ -195,8 +195,9 @@ PAX-to-Slack-member-ID mappings are optional server-side configuration. A mapped
 The initial message format is:
 
 ```text
-<!channel> *PRE-BLAST: {Title}*
+*PRE-BLAST: {Title}*
 *AO:* {AO name}
+*Where:* <#{canonical AO channel ID}>
 *When:* {weekday, date · canonical AO time}
 *Q:* {Slack mention when mapped, otherwise F3 name}
 *:coupon: Coupon:* {Yes|No}
@@ -204,9 +205,9 @@ The initial message format is:
 {Description}
 ```
 
-User-entered text is escaped so it cannot create its own Slack mentions or links. Unicode emoji and colon-style emoji codes remain intact. The controlled `<!channel>`, Q mention, formatting, and `:coupon:` code are added only by the server.
+User-entered text is escaped so it cannot create its own Slack mentions or links. Unicode emoji and colon-style emoji codes remain intact. The controlled AO channel link, Q mention, formatting, and `:coupon:` code are added only by the server.
 
-The immediate signup note uses the same AO webhook and Q mention rules, without `<!channel>`:
+The early-claim signup note uses the same AO webhook and Q mention rules, without a channel-wide mention:
 
 ```text
 *Q signed up:* {Slack mention when mapped, otherwise F3 name} for *{weekday, month day, year}*. Preblast will be posted on *{preblast weekday, month day, year}* around 10:00 AM.
@@ -218,7 +219,7 @@ The note has no publication state. Its failure is logged for manual follow-up an
 
 The website claim remains active and visible if publication fails. The database records only a bounded operational error and `failed` state. No automatic retry occurs. Cloudflare logs make the failure diagnosable; manual correction happens in Slack for the first release.
 
-The immediate signup note is separate: it is best-effort, has no stored state, and is not retried. A note failure is logged for manual follow-up and never rolls back the claim or changes the scheduled preblast.
+The early-claim signup note is separate: it is best-effort, has no stored state, and is not retried. A note failure is logged for manual follow-up and never rolls back the claim or changes the scheduled preblast.
 
 The immediate-signup response distinguishes “claimed and posted” from “claimed, but Slack delivery needs attention” without inviting the user to resubmit. Scheduled failures occur after the visitor has left and are operationally visible in Worker logs and D1.
 
@@ -265,7 +266,7 @@ No Slack message timestamp is required in this release.
 3. Derive the Chicago date, accepted window, AO weekday/time, and publication time server-side.
 4. Validate the selected regular PAX or accept a bounded `Other` name.
 5. Insert the claim atomically.
-6. Post a short signup note to the AO channel. This is best-effort and never rolls back the claim.
+6. If the claim is made before the preceding Chicago calendar day, post a short signup note to the AO channel. This is best-effort and never rolls back the claim.
 7. If it is after the 10:00 AM threshold on the preceding day, attempt the one allowed full pre-blast publication synchronously.
 8. Return structured JSON describing claim success, publication state, and a human-readable message.
 
@@ -308,9 +309,10 @@ Automated tests must cover:
 - Two concurrent claims for the same AO/date producing exactly one stored claim.
 - Claimed dates disappearing and appearing with AO, date/time, Q, and title on signup and calendar pages.
 - Scheduled publication at 10:00 AM Chicago, no-op UTC trigger, and immediate publication after 10:00 AM the day before.
-- A signup note posted immediately after a successful claim, with no `<!channel>`, a mapped or escaped Q, and the correct preblast date.
+- A signup note posted for claims made before the preceding day, with no channel-wide mention, a mapped or escaped Q, and the correct preblast date.
+- Day-before claims before and after 10:00 AM producing no signup note and exactly one full preblast.
 - A note webhook failure leaving the claim saved and the preblast schedule unchanged.
-- Controlled `@channel`, mapped-Q mention, unmapped-Q fallback, coupon emoji, and title/description emoji preservation.
+- Controlled AO channel link, mapped-Q mention, unmapped-Q fallback, coupon emoji, and title/description emoji preservation.
 - Repeated scheduled invocations and concurrent workers producing no duplicate Slack calls.
 - Success, definite Slack failure, and ambiguous network failure state transitions with no automatic retry.
 - Public API never returning private or operational fields.
@@ -340,7 +342,7 @@ Because the initial release has no website cancellation, any erroneous active cl
 
 - The two- and three-month windows use calendar-month subtraction/addition with end-of-month clamping rather than fixed day counts.
 - The existing calendar page will use the same claim data as the signup page so it cannot falsely show claimed slots as open.
-- User text cannot inject Slack mentions; only the system adds `@channel` and mapped-Q mentions.
+- User text cannot inject Slack mentions; only the system adds the AO channel link and mapped-Q mentions.
 - Slack failures are at-most-once and non-retrying, matching the explicit “no duplicates” priority.
 - The coupon emoji is represented by the Slack code `:coupon:` unless the workspace uses a different custom code.
 - Operational failure visibility starts with D1 state and Cloudflare logs; a dedicated admin dashboard or Slack-failure alert is deferred.

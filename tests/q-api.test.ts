@@ -73,8 +73,13 @@ test('atomic insertion rate rejection ignores a stale row id and preserves other
 test('test_time_channel_spoof and canonical successful claim', async () => {
   const f = fixture(); const res = await f.send({ time: 'midnight', channelId: 'evil' });
   assert.equal(res.status, 200); assert.equal((await res.json()).publication, 'scheduled'); assert.equal(f.db.rows.length, 1);
-  assert.equal(f.noted(), 1);
+  assert.equal(f.noted(), 0);
   assert.ok(!JSON.stringify(f.db.rows).includes('evil')); assert.ok(!f.db.calls.some(sql => /q_signups\b/.test(sql)));
+});
+test('claims made before the preblast day still post the signup note', async () => {
+  const f = fixture(); const res = await f.send({ event_date: '2026-11-10' });
+  assert.equal(res.status, 200); assert.equal((await res.json()).publication, 'scheduled');
+  assert.equal(f.noted(), 1); assert.equal(f.published(), 0);
 });
 test('bounds, required fields, schedule and rate limit', async () => {
   for (const patch of [{ title: 'x'.repeat(121) }, { description: 'x'.repeat(4001) }, { f3_name_other: '' }, { coupon: '' }, { ao_slug: 'caffeine' }, { event_date: '2026-02-30' }, { q_slug: 'unknown' }]) assert.equal((await fixture().send(patch)).status, 400);
@@ -83,8 +88,8 @@ test('bounds, required fields, schedule and rate limit', async () => {
 test('bots silently dropped without network or insert', async () => {
   for (const patch of [{ company: 'spam' }, { loaded_at: String(now.getTime() - 1000) }]) { const f = fixture(); assert.equal((await f.send(patch)).status, 200); assert.equal(f.network(), 0); assert.equal(f.db.rows.length, 0); assert.equal(f.noted(), 0); }
 });
-test('late claims post a signup note before using the shared publisher and remain claimed on failure', async () => {
-  for (const publication of ['posted','failed']) { const f = fixture({ now: new Date('2026-11-02T17:01:00Z'), publication }); const res = await f.send(); assert.equal(res.status, 200); assert.equal((await res.json()).publication, publication); assert.equal(f.noted(), 1); assert.equal(f.published(), 1); assert.equal(f.db.rows.length, 1); }
+test('late claims skip the signup note and use the shared publisher once', async () => {
+  for (const publication of ['posted','failed']) { const f = fixture({ now: new Date('2026-11-02T17:01:00Z'), publication }); const res = await f.send(); assert.equal(res.status, 200); assert.equal((await res.json()).publication, publication); assert.equal(f.noted(), 0); assert.equal(f.published(), 1); assert.equal(f.db.rows.length, 1); }
 });
 
 test('claim inserted after the 10:00 cron scan publishes using the post-insert clock', async () => {
@@ -106,7 +111,7 @@ test('claim inserted after the 10:00 cron scan publishes using the post-insert c
   assert.equal(cronScans, 1);
   assert.equal(res.status, 200);
   assert.equal((await res.json()).publication, 'posted');
-  assert.equal(f.noted(), 1);
+  assert.equal(f.noted(), 0);
   assert.equal(f.published(), 1);
 });
 
@@ -132,7 +137,7 @@ test('cron-owned publication reconciles persisted status without urging a duplic
     assert.equal(body.ok, true);
     assert.doesNotMatch(body.message, /arrange the pre-blast|post (?:it|again|another)/i);
     if (persistedStatus !== 'failed') assert.doesNotMatch(body.message, /delivery (?:failed|needs attention)/i);
-    assert.equal(f.noted(), 1);
+    assert.equal(f.noted(), 0);
     assert.equal(f.published(), 1);
     assert.equal(f.db.rows.length, 1);
   }
@@ -146,7 +151,7 @@ test('uncertain persisted publication status preserves saved claim without repor
   assert.equal(body.publication, 'scheduled');
   assert.match(body.message, /saved/i);
   assert.doesNotMatch(body.message, /delivery (?:failed|needs attention)|arrange the pre-blast|post again/i);
-  assert.equal(f.noted(), 1);
+  assert.equal(f.noted(), 0);
 });
 
 test('confirmed publisher failure asks for review before any manual correction', async () => {
@@ -155,7 +160,7 @@ test('confirmed publisher failure asks for review before any manual correction',
   assert.equal(body.publication, 'failed');
   assert.match(body.message, /check Slack/i);
   assert.doesNotMatch(body.message, /arrange the pre-blast|post again/i);
-  assert.equal(f.noted(), 1);
+  assert.equal(f.noted(), 0);
   assert.equal(f.db.rows.length, 1);
 });
 
@@ -164,7 +169,7 @@ test('committed posted status wins over a publisher failure caused by lost ackno
   const res = await f.send(); const body = await res.json();
   assert.equal(body.publication, 'posted');
   assert.match(body.message, /pre-blast posted/i);
-  assert.equal(f.noted(), 1);
+  assert.equal(f.noted(), 0);
 });
 test('test_public_fields', async () => {
   const { listClaims } = await import('../functions/lib/q-store.ts');

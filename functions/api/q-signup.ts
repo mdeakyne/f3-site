@@ -1,5 +1,5 @@
 import { PAX_CATALOG } from '../../src/lib/q-catalog.ts';
-import { eligiblePax, publicationTime, validSlot } from '../../src/lib/q-dates.ts';
+import { chicagoDate, eligiblePax, publicationTime, validSlot } from '../../src/lib/q-dates.ts';
 import type { ClaimEnv, ClaimInput } from '../../src/lib/q-types.ts';
 import { ClaimRateLimitError, insertClaim } from '../lib/q-store.ts';
 
@@ -64,16 +64,20 @@ export function createSignupHandler(deps: Dependencies = {}) {
       if (!validSlot(input.ao_slug, input.event_date, createdAt) || (input.q_slug !== null && !eligiblePax(PAX_CATALOG, createdAt).some(pax => pax.slug === input.q_slug))) return json({ error: 'Please check the required fields and available workout date.' }, 400);
       const id = await insertClaim(env, input, ipHash, createdAt);
       if (id === null) return json({ error: 'That workout was just claimed. Please choose another date.' }, 409);
-      // Announce the signup immediately; a note failure never discards the claim.
-      try {
-        const note = deps.notePublisher ?? (await import('../lib/q-publisher.ts')).postSignupNote;
-        if (await note(env, input) !== 'posted') console.error('Q signup note needs manual attention', { claimId: id });
-      } catch { console.error('Q signup note needs manual attention', { claimId: id }); }
+      const publicationNow = deps.now?.() ?? new Date();
+      const scheduledFor = publicationTime(input.event_date);
+      const isPreblastDay = chicagoDate(publicationNow) === chicagoDate(new Date(scheduledFor));
+      // On the day before the workout, the full preblast is the only announcement.
+      if (!isPreblastDay) {
+        try {
+          const note = deps.notePublisher ?? (await import('../lib/q-publisher.ts')).postSignupNote;
+          if (await note(env, input) !== 'posted') console.error('Q signup note needs manual attention', { claimId: id });
+        } catch { console.error('Q signup note needs manual attention', { claimId: id }); }
+      }
       let publication: 'scheduled'|'posted'|'failed' = 'scheduled';
       let pending = false;
       // Cron can scan while verification or the insert is still in flight.
-      const publicationNow = deps.now?.() ?? new Date();
-      if (publicationTime(input.event_date) <= publicationNow.toISOString()) {
+      if (scheduledFor <= publicationNow.toISOString()) {
         // A saved claim stays active even when delivery or its status write fails.
         let outcome: Publication | undefined;
         try {

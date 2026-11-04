@@ -24,7 +24,7 @@ function qLabel(env: ClaimEnv, claim: { q_slug: string | null; q_name: string })
 function message(env: ClaimEnv, row: StoredClaim): { text: string; unfurl_links: false; unfurl_media: false } {
   const ao = AO_CATALOG.find(ao => ao.slug === row.ao_slug);
   if (!ao) throw new Error('Invalid AO');
-  return { text:[`<!channel> *PRE-BLAST: ${escapeSlack(row.title)}*`, `*AO:* ${ao.name}`, `*When:* ${dateLabel(row.event_date)} · ${ao.time}`, `*Q:* ${qLabel(env,row)}`, `*:coupon: Coupon:* ${row.coupon ? 'Yes' : 'No'}`, '', escapeSlack(row.description)].join('\n'), unfurl_links:false, unfurl_media:false };
+  return { text:[`*PRE-BLAST: ${escapeSlack(row.title)}*`, `*AO:* ${ao.name}`, `*Where:* <#${ao.channelId}>`, `*When:* ${dateLabel(row.event_date)} · ${ao.time}`, `*Q:* ${qLabel(env,row)}`, `*:coupon: Coupon:* ${row.coupon ? 'Yes' : 'No'}`, '', escapeSlack(row.description)].join('\n'), unfurl_links:false, unfurl_media:false };
 }
 
 function noteMessage(env: ClaimEnv, claim: NoteClaim): { text: string; unfurl_links: false; unfurl_media: false } {

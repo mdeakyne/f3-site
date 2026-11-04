@@ -58,7 +58,8 @@ test('test_wrong_utc_trigger and tomorrow-only scheduling', async () => {
 test('not-due and already reserved rows skipped', async () => { for(const row of [{scheduled_for:'2026-11-03T22:00:00.000Z'},{publish_status:'publishing'},{publish_status:'failed'},{publish_status:'posted'}]) {const f=fixture({row}); assert.equal(await f.publish(),'skipped'); assert.equal(f.sends.length,0);} });
 test('test_user_mentions escaped; test_controlled_mentions retained', async () => {
   const f=fixture(); await f.publish(); const {text,url,unfurl_links,unfurl_media}=f.sends[0];
-  assert.equal(url,'https://hooks.slack.com/services/T000/B000/beehive'); assert.equal(unfurl_links,false); assert.equal(unfurl_media,false); assert.ok(text.startsWith('<!channel> *PRE-BLAST:'));
+  assert.equal(url,'https://hooks.slack.com/services/T000/B000/beehive'); assert.equal(unfurl_links,false); assert.equal(unfurl_media,false); assert.ok(text.startsWith('*PRE-BLAST:'));
+  assert.ok(text.includes('*Where:* <#C07A8STLZ5Z>')); assert.ok(!text.includes('<!channel>'));
   assert.ok(text.includes('<@U0123456789>')); assert.ok(text.includes('💪 :coupon: &lt;!channel&gt;')); assert.ok(text.includes('&amp;&lt;&gt; &lt;@U123&gt; &lt;https://evil&gt;')); assert.ok(text.includes('*:coupon: Coupon:* Yes')); assert.ok(text.includes('5:30 AM'));
   for(const members of ['{}','{"404":"evil><!channel>"}','invalid']) {const plain=fixture({members,row:{q_name:'<@U123>'}}); await plain.publish(); assert.ok(plain.sends[0].text.includes('*Q:* &lt;@U123&gt;'));}
 });

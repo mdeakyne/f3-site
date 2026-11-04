@@ -1,8 +1,8 @@
 # Q signup deployment and operations
 
 Pages serves the protected claim API and public availability; the scheduled
-Worker sends pre-blasts. Pages also posts a short signup note to the AO channel
-immediately after a successful claim. Both must use D1 `f3-signups`, database ID
+Worker sends pre-blasts. For claims made before the preceding day, Pages also
+posts a short signup note to the AO channel immediately. Both must use D1 `f3-signups`, database ID
 `b7ac38a1-b139-4f60-a9c8-3dbb99230b17`. New claims live only in `q_claims`.
 The old `q_signups` table is an untouched archive, with no import or approval
 step and no new `nob pull-signups` use.
@@ -115,17 +115,19 @@ mentions.
 4. Verify cron expression `0 15,16 * * *` is installed: both 15:00 and 16:00
    UTC run every day. The code gates to 10:00 America/Chicago, so the other
    UTC trigger is a no-op across daylight saving changes. Only tomorrow's
-   scheduled/due rows are selected. Late claims publish synchronously after
-   their signup note.
+   scheduled/due rows are selected. Late claims publish synchronously without
+   a separate signup note.
 5. Confirm `/signup/`, `/calendar/`, `/q-checklist/`, and public
    `/api/q-signups` work. GET must be `no-store` and contain only AO slug/name,
    date/time, Q name, and title. A missing-token POST must return 400.
    For positive checks use local network fakes. Any real Slack test needs a
    deliberately identified test claim/channel message and explicit approval.
-6. Confirm a successful claim posts a short signup note (`Q signed up` and the
-   scheduled preblast date) to the AO channel, and that the full preblast posts
-   at 10:00 America/Chicago the day before. The note is best-effort: it never
-   rolls back the claim and is not retried or recorded in `q_claims`.
+6. Confirm a claim made before the preceding day posts a short signup note
+   (`Q signed up` and the scheduled preblast date) to the AO channel. Confirm a
+   claim made on the preceding day posts no note and that the full preblast
+   posts at 10:00 America/Chicago or immediately after that time. The note is
+   best-effort: it never rolls back the claim and is not retried or recorded in
+   `q_claims`.
 7. Monitor the first legitimate 10:00 Chicago run using Worker logs and D1:
 
 ```sql
@@ -146,10 +148,11 @@ AO Slack history. A `scheduled` row after its due date may indicate a missed
 trigger or configuration failure; the Worker intentionally selects tomorrow
 only, so do not expect catch-up publication on following days.
 
-The immediate signup note is separate from the preblast lifecycle. It is
+The early-claim signup note is separate from the preblast lifecycle. It is
 best-effort, has no stored status, and is not retried; a missing note does not
-mean the preblast will be missed. Diagnose a missing note from Pages logs and
-the AO channel, then coordinate a manual note if needed.
+mean the preblast will be missed. Day-before claims intentionally have no
+signup note. Diagnose an expected-but-missing note from Pages logs and the AO
+channel, then coordinate a manual note if needed.
 
 For `failed` or stuck `publishing`, verify whether Slack already contains the
 message before doing anything. If delivered, mark it `posted` with a verified

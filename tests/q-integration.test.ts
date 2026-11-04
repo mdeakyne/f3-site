@@ -128,7 +128,7 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
   const responses = await Promise.all([send(), send()]);
   assert.deepEqual(responses.map(r => r.status).sort(), [200, 409], JSON.stringify(f.errors));
   assert.equal((await (responses.find(r => r.status === 200)!).json()).publication, 'scheduled');
-  assert.equal(notes, 1);
+  assert.equal(notes, 0);
   assert.equal(preblasts, 0);
   assert.equal((await f.query('SELECT COUNT(*) AS n FROM q_claims'))[0].results[0].n, 1);
   const live = await onRequestGet({ env: f.env });
@@ -138,7 +138,7 @@ test('real D1: concurrent protected POST → live GET → overlapping scheduled 
   assert.doesNotMatch(JSON.stringify(body), /description|ip_hash|publish_|scheduled_for|private|channelId/);
   const invoke = () => { let work!: Promise<unknown>; worker.scheduled({ scheduledTime: due.getTime() }, f.env, { waitUntil(p) { work = p; } }); return work; };
   await Promise.all([invoke(), invoke()]); await invoke();
-  assert.equal(notes, 1);
+  assert.equal(notes, 0);
   assert.equal(preblasts, 1);
   const row = (await f.query('SELECT publish_status,published_at FROM q_claims'))[0].results[0];
   assert.equal(row.publish_status, 'posted'); assert.equal(row.published_at, due.toISOString());
