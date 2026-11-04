@@ -200,7 +200,7 @@ The initial message format is:
 *Where:* <#{canonical AO channel ID}>
 *When:* {weekday, date · canonical AO time}
 *Q:* {Slack mention when mapped, otherwise F3 name}
-*:coupon: Coupon:* {Yes|No}
+:coupon: {Yes|No}
 
 {Description}
 ```
