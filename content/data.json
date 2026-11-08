@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T17:18:39Z",
+  "generated_at": "2026-11-08T13:39:18Z",
   "counts": {
-    "backblasts": 289,
+    "backblasts": 290,
     "pax": 63,
     "aos": 3,
     "since_year": "2023",
-    "latest_post": "2026-11-03"
+    "latest_post": "2026-11-07"
   },
   "aos": [
     {
@@ -38,27 +38,29 @@
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 258,
+      "posts": 259,
       "qs": 40,
       "aos": [
         "ad-astra",
-        "beehive"
+        "beehive",
+        "caffeine"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-11-03",
+      "latest": "2026-11-07",
       "latest_q": "2026-09-24"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 215,
+      "posts": 216,
       "qs": 38,
       "aos": [
         "ad-astra",
-        "beehive"
+        "beehive",
+        "caffeine"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-11-03",
+      "latest": "2026-11-07",
       "latest_q": "2026-10-20"
     },
     {
@@ -90,15 +92,16 @@
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 94,
-      "qs": 17,
+      "posts": 95,
+      "qs": 18,
       "aos": [
         "ad-astra",
-        "beehive"
+        "beehive",
+        "caffeine"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-10-29",
-      "latest_q": "2026-08-06"
+      "latest": "2026-11-07",
+      "latest_q": "2026-11-07"
     },
     {
       "slug": "sawdust",
@@ -140,6 +143,20 @@
       "latest_q": "2026-03-24"
     },
     {
+      "slug": "casio",
+      "f3_name": "Casio",
+      "posts": 58,
+      "qs": 4,
+      "aos": [
+        "ad-astra",
+        "beehive",
+        "caffeine"
+      ],
+      "earliest": "2026-02-24",
+      "latest": "2026-11-07",
+      "latest_q": "2026-10-08"
+    },
+    {
       "slug": "training-wheels",
       "f3_name": "Training Wheels",
       "posts": 57,
@@ -151,19 +168,6 @@
       "earliest": "2024-07-30",
       "latest": "2026-01-06",
       "latest_q": "2025-11-11"
-    },
-    {
-      "slug": "casio",
-      "f3_name": "Casio",
-      "posts": 57,
-      "qs": 4,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-02-24",
-      "latest": "2026-11-03",
-      "latest_q": "2026-10-08"
     },
     {
       "slug": "second-string",
@@ -264,6 +268,20 @@
       "latest_q": "2023-09-14"
     },
     {
+      "slug": "goulash",
+      "f3_name": "Goulash",
+      "posts": 12,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive",
+        "caffeine"
+      ],
+      "earliest": "2026-01-27",
+      "latest": "2026-11-07",
+      "latest_q": null
+    },
+    {
       "slug": "leaks",
       "f3_name": "Leaks",
       "posts": 11,
@@ -276,16 +294,17 @@
       "latest_q": null
     },
     {
-      "slug": "goulash",
-      "f3_name": "Goulash",
+      "slug": "van-gogh",
+      "f3_name": "Van Gogh",
       "posts": 11,
       "qs": 0,
       "aos": [
         "ad-astra",
-        "beehive"
+        "beehive",
+        "caffeine"
       ],
-      "earliest": "2026-01-27",
-      "latest": "2026-09-08",
+      "earliest": "2026-09-17",
+      "latest": "2026-11-07",
       "latest_q": null
     },
     {
@@ -311,19 +330,6 @@
       "earliest": "2023-08-10",
       "latest": "2023-11-23",
       "latest_q": "2023-10-05"
-    },
-    {
-      "slug": "van-gogh",
-      "f3_name": "Van Gogh",
-      "posts": 10,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2026-09-17",
-      "latest": "2026-11-03",
-      "latest_q": null
     },
     {
       "slug": "soprano",
@@ -449,18 +455,6 @@
       "latest_q": null
     },
     {
-      "slug": "captain-kirk",
-      "f3_name": "Captain Kirk",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -470,6 +464,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-14",
+      "latest_q": null
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07",
       "latest_q": null
     },
     {
@@ -684,8 +690,8 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "long-game",
+      "f3_name": "Long Game",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -696,8 +702,8 @@
       "latest_q": null
     },
     {
-      "slug": "long-game",
-      "f3_name": "Long Game",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -732,8 +738,8 @@
       "latest_q": null
     },
     {
-      "slug": "queen-bee",
-      "f3_name": "Queen Bee",
+      "slug": "glee-club",
+      "f3_name": "Glee Club",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -744,8 +750,8 @@
       "latest_q": null
     },
     {
-      "slug": "glee-club",
-      "f3_name": "Glee Club",
+      "slug": "queen-bee",
+      "f3_name": "Queen Bee",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -842,6 +848,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-11-07-caffeine-kickoff",
+      "title": "Caffeine Kickoff",
+      "date": "2026-11-07",
+      "ao": "caffeine",
+      "q": "Dizzy",
+      "total_pax": 6,
+      "fngs": 0
+    },
+    {
       "slug": "2026-11-03-democracy",
       "title": "Democracy",
       "date": "2026-11-03",
@@ -921,15 +936,6 @@
       "q": "Casio",
       "total_pax": 8,
       "fngs": 0
-    },
-    {
-      "slug": "2026-09-29-blocking-fast-and-slow",
-      "title": "Blocking Fast and Slow",
-      "date": "2026-09-29",
-      "ao": "beehive",
-      "q": "Big Toe",
-      "total_pax": 9,
-      "fngs": 1
     }
   ]
 }
