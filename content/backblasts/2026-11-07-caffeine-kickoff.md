@@ -7,7 +7,7 @@ q: Dizzy
 q_slug: dizzy
 pax:
 - Van Gogh
-- Farmers Only
+- Big Toe
 - Casio
 - '404'
 - Goulash

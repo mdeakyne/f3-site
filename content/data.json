@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T13:39:18Z",
+  "generated_at": "2026-11-09T19:19:34Z",
   "counts": {
     "backblasts": 290,
     "pax": 63,
@@ -25,28 +25,28 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 259,
+      "posts": 260,
       "qs": 73,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2026-11-03",
-      "latest_q": "2026-11-03"
-    },
-    {
-      "slug": "farmers-only",
-      "f3_name": "Farmers Only",
-      "posts": 259,
-      "qs": 40,
       "aos": [
         "ad-astra",
         "beehive",
         "caffeine"
       ],
-      "earliest": "2023-08-17",
+      "earliest": "2023-08-10",
       "latest": "2026-11-07",
+      "latest_q": "2026-11-03"
+    },
+    {
+      "slug": "farmers-only",
+      "f3_name": "Farmers Only",
+      "posts": 258,
+      "qs": 40,
+      "aos": [
+        "ad-astra",
+        "beehive"
+      ],
+      "earliest": "2023-08-17",
+      "latest": "2026-11-03",
       "latest_q": "2026-09-24"
     },
     {
