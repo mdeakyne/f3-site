@@ -37,6 +37,9 @@ class SlackDateParsingTests(unittest.TestCase):
     def test_two_digit_year_with_hyphens(self):
         self.assertEqual(parse_date("10-08-26 0530"), "2026-10-08")
 
+    def test_stray_space_around_separator(self):
+        self.assertEqual(parse_date("11/05/ 26 @0530"), "2026-11-05")
+
     def test_when_header_without_colon(self):
         message = """Backblast: Cindy 500
 When 10/06/26 0530
@@ -47,6 +50,19 @@ PAX: @Big Toe @Slump
         parsed = parse_message(message, ao_hint="beehive")
 
         self.assertEqual(parsed["date"], "2026-10-06")
+
+    def test_where_header_without_colon(self):
+        message = """Backblast: Stuff Happens
+Where <#C05L33U97L4>
+When 11/05/26 0530
+Q: @Farmers Only
+PAX: @404 @Van Gogh
+"""
+
+        parsed = parse_message(message, ao_hint="ad-astra")
+
+        self.assertEqual(parsed["ao"], "ad-astra")
+        self.assertNotIn("Where", parsed["body"])
 
 
 class SlackMarkdownFormattingTests(unittest.TestCase):

@@ -110,6 +110,9 @@ def parse_pax_line(line: str) -> list[str]:
 def parse_date(raw: str) -> str:
     """Parse various date formats into YYYY-MM-DD."""
     raw = raw.strip()
+    # Slack posts sometimes include a stray space around separators,
+    # e.g. "11/05/ 26".
+    raw = re.sub(r'\s*([/-])\s*', r'\1', raw)
     # MM/DD/YYYY
     m = re.search(r'(\d{1,2})/(\d{1,2})/(\d{4})', raw)
     if m:
@@ -192,9 +195,9 @@ def parse_message(text: str, ao_hint: str | None = None) -> dict:
             except ValueError:
                 pass
 
-        # AO / Where
-        elif re.match(r'\*?\*?where\s*:', stripped, re.IGNORECASE):
-            raw_ao = re.sub(r'\*?\*?where\s*:\s*', '', stripped, flags=re.IGNORECASE)
+        # AO / Where (the colon is sometimes omitted)
+        elif re.match(r'\*?\*?where\s*:?\s+', stripped, re.IGNORECASE):
+            raw_ao = re.sub(r'\*?\*?where\s*:?\s+', '', stripped, flags=re.IGNORECASE)
             raw_ao = re.sub(r'\*\*', '', raw_ao).strip()
             parsed_ao = parse_ao(raw_ao)
             if parsed_ao:

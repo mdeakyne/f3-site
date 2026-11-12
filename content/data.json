@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-09T19:19:34Z",
+  "generated_at": "2026-11-12T13:10:18Z",
   "counts": {
-    "backblasts": 290,
-    "pax": 63,
+    "backblasts": 292,
+    "pax": 64,
     "aos": 3,
     "since_year": "2023",
-    "latest_post": "2026-11-07"
+    "latest_post": "2026-11-10"
   },
   "aos": [
     {
@@ -25,7 +25,7 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 260,
+      "posts": 262,
       "qs": 73,
       "aos": [
         "ad-astra",
@@ -33,26 +33,26 @@
         "caffeine"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-11-07",
+      "latest": "2026-11-10",
       "latest_q": "2026-11-03"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 258,
-      "qs": 40,
+      "posts": 260,
+      "qs": 41,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-11-03",
-      "latest_q": "2026-09-24"
+      "latest": "2026-11-10",
+      "latest_q": "2026-11-05"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 216,
+      "posts": 218,
       "qs": 38,
       "aos": [
         "ad-astra",
@@ -60,39 +60,39 @@
         "caffeine"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-11-07",
+      "latest": "2026-11-10",
       "latest_q": "2026-10-20"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 178,
+      "posts": 180,
       "qs": 45,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-11-03",
+      "latest": "2026-11-10",
       "latest_q": "2026-10-29"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 113,
+      "posts": 115,
       "qs": 3,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-11-03",
+      "latest": "2026-11-10",
       "latest_q": "2026-09-10"
     },
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 95,
+      "posts": 96,
       "qs": 18,
       "aos": [
         "ad-astra",
@@ -100,7 +100,7 @@
         "caffeine"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-11-07",
+      "latest": "2026-11-10",
       "latest_q": "2026-11-07"
     },
     {
@@ -145,16 +145,16 @@
     {
       "slug": "casio",
       "f3_name": "Casio",
-      "posts": 58,
-      "qs": 4,
+      "posts": 60,
+      "qs": 5,
       "aos": [
         "ad-astra",
         "beehive",
         "caffeine"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-11-07",
-      "latest_q": "2026-10-08"
+      "latest": "2026-11-10",
+      "latest_q": "2026-11-10"
     },
     {
       "slug": "training-wheels",
@@ -256,6 +256,20 @@
       "latest_q": "2023-09-21"
     },
     {
+      "slug": "van-gogh",
+      "f3_name": "Van Gogh",
+      "posts": 13,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive",
+        "caffeine"
+      ],
+      "earliest": "2026-09-17",
+      "latest": "2026-11-10",
+      "latest_q": null
+    },
+    {
       "slug": "trainwreck",
       "f3_name": "Trainwreck",
       "posts": 12,
@@ -291,20 +305,6 @@
       ],
       "earliest": "2023-08-31",
       "latest": "2024-04-25",
-      "latest_q": null
-    },
-    {
-      "slug": "van-gogh",
-      "f3_name": "Van Gogh",
-      "posts": 11,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive",
-        "caffeine"
-      ],
-      "earliest": "2026-09-17",
-      "latest": "2026-11-07",
       "latest_q": null
     },
     {
@@ -455,18 +455,6 @@
       "latest_q": null
     },
     {
-      "slug": "blanks",
-      "f3_name": "Blanks",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-14",
-      "latest_q": null
-    },
-    {
       "slug": "captain-kirk",
       "f3_name": "Captain Kirk",
       "posts": 4,
@@ -476,6 +464,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-07",
+      "latest_q": null
+    },
+    {
+      "slug": "blanks",
+      "f3_name": "Blanks",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-14",
       "latest_q": null
     },
     {
@@ -666,6 +666,18 @@
       "latest_q": null
     },
     {
+      "slug": "littleceasar",
+      "f3_name": "LittleCeasar",
+      "posts": 2,
+      "qs": 0,
+      "aos": [
+        "beehive"
+      ],
+      "earliest": "2026-10-27",
+      "latest": "2026-11-10",
+      "latest_q": null
+    },
+    {
       "slug": "bumble",
       "f3_name": "Bumble",
       "posts": 1,
@@ -690,18 +702,6 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "long-game",
-      "f3_name": "Long Game",
-      "posts": 1,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-08-10",
-      "latest_q": null
-    },
-    {
       "slug": "lost-found",
       "f3_name": "Lost & Found",
       "posts": 1,
@@ -716,6 +716,18 @@
     {
       "slug": "loofah",
       "f3_name": "Loofah",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": null
+    },
+    {
+      "slug": "long-game",
+      "f3_name": "Long Game",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -848,12 +860,30 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-11-10-tabada",
+      "title": "Tabada",
+      "date": "2026-11-10",
+      "ao": "beehive",
+      "q": "Casio",
+      "total_pax": 9,
+      "fngs": 0
+    },
+    {
       "slug": "2026-11-07-caffeine-kickoff",
       "title": "Caffeine Kickoff",
       "date": "2026-11-07",
       "ao": "caffeine",
       "q": "Dizzy",
       "total_pax": 6,
+      "fngs": 0
+    },
+    {
+      "slug": "2026-11-05-stuff-happens",
+      "title": "Stuff Happens",
+      "date": "2026-11-05",
+      "ao": "ad-astra",
+      "q": "Farmers Only",
+      "total_pax": 7,
       "fngs": 0
     },
     {
@@ -914,24 +944,6 @@
       "slug": "2026-10-08-tabda-another-one",
       "title": "TABDA (Another one)",
       "date": "2026-10-08",
-      "ao": "ad-astra",
-      "q": "Casio",
-      "total_pax": 8,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-10-06-cindy-500",
-      "title": "Cindy 500",
-      "date": "2026-10-06",
-      "ao": "beehive",
-      "q": "Big Toe",
-      "total_pax": 8,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-10-01-tabda",
-      "title": "TABDA",
-      "date": "2026-10-01",
       "ao": "ad-astra",
       "q": "Casio",
       "total_pax": 8,

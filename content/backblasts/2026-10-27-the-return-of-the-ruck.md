@@ -14,6 +14,7 @@ pax:
 - Farmers Only
 - Van Gogh
 - Slump
+- LittleCeasar
 - Big Toe
 total_pax: 10
 fngs: 1
