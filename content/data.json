@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-12T13:10:18Z",
+  "generated_at": "2026-11-12T15:05:21Z",
   "counts": {
-    "backblasts": 292,
+    "backblasts": 293,
     "pax": 64,
     "aos": 3,
     "since_year": "2023",
-    "latest_post": "2026-11-10"
+    "latest_post": "2026-11-12"
   },
   "aos": [
     {
@@ -25,7 +25,7 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 262,
+      "posts": 263,
       "qs": 73,
       "aos": [
         "ad-astra",
@@ -33,66 +33,66 @@
         "caffeine"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-11-10",
+      "latest": "2026-11-12",
       "latest_q": "2026-11-03"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 260,
+      "posts": 261,
       "qs": 41,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-11-10",
+      "latest": "2026-11-12",
       "latest_q": "2026-11-05"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 218,
-      "qs": 38,
+      "posts": 219,
+      "qs": 39,
       "aos": [
         "ad-astra",
         "beehive",
         "caffeine"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-11-10",
-      "latest_q": "2026-10-20"
+      "latest": "2026-11-12",
+      "latest_q": "2026-11-12"
     },
     {
       "slug": "waco",
       "f3_name": "Waco",
-      "posts": 180,
+      "posts": 181,
       "qs": 45,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2024-05-02",
-      "latest": "2026-11-10",
+      "latest": "2026-11-12",
       "latest_q": "2026-10-29"
     },
     {
       "slug": "wreck-it",
       "f3_name": "Wreck It",
-      "posts": 115,
+      "posts": 116,
       "qs": 3,
       "aos": [
         "ad-astra",
         "beehive"
       ],
       "earliest": "2025-06-05",
-      "latest": "2026-11-10",
+      "latest": "2026-11-12",
       "latest_q": "2026-09-10"
     },
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 96,
+      "posts": 97,
       "qs": 18,
       "aos": [
         "ad-astra",
@@ -100,7 +100,7 @@
         "caffeine"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-11-10",
+      "latest": "2026-11-12",
       "latest_q": "2026-11-07"
     },
     {
@@ -130,6 +130,20 @@
       "latest_q": "2026-10-22"
     },
     {
+      "slug": "casio",
+      "f3_name": "Casio",
+      "posts": 61,
+      "qs": 5,
+      "aos": [
+        "ad-astra",
+        "beehive",
+        "caffeine"
+      ],
+      "earliest": "2026-02-24",
+      "latest": "2026-11-12",
+      "latest_q": "2026-11-10"
+    },
+    {
       "slug": "flute",
       "f3_name": "Flute",
       "posts": 60,
@@ -141,20 +155,6 @@
       "earliest": "2024-01-18",
       "latest": "2026-08-25",
       "latest_q": "2026-03-24"
-    },
-    {
-      "slug": "casio",
-      "f3_name": "Casio",
-      "posts": 60,
-      "qs": 5,
-      "aos": [
-        "ad-astra",
-        "beehive",
-        "caffeine"
-      ],
-      "earliest": "2026-02-24",
-      "latest": "2026-11-10",
-      "latest_q": "2026-11-10"
     },
     {
       "slug": "training-wheels",
@@ -244,6 +244,20 @@
       "latest_q": "2024-02-29"
     },
     {
+      "slug": "van-gogh",
+      "f3_name": "Van Gogh",
+      "posts": 14,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive",
+        "caffeine"
+      ],
+      "earliest": "2026-09-17",
+      "latest": "2026-11-12",
+      "latest_q": null
+    },
+    {
       "slug": "miz",
       "f3_name": "MIZ",
       "posts": 13,
@@ -254,20 +268,6 @@
       "earliest": "2023-08-10",
       "latest": "2024-01-01",
       "latest_q": "2023-09-21"
-    },
-    {
-      "slug": "van-gogh",
-      "f3_name": "Van Gogh",
-      "posts": 13,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive",
-        "caffeine"
-      ],
-      "earliest": "2026-09-17",
-      "latest": "2026-11-10",
-      "latest_q": null
     },
     {
       "slug": "trainwreck",
@@ -702,18 +702,6 @@
       "latest_q": "2026-03-19"
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
-      "posts": 1,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-08-10",
-      "latest_q": null
-    },
-    {
       "slug": "loofah",
       "f3_name": "Loofah",
       "posts": 1,
@@ -728,6 +716,18 @@
     {
       "slug": "long-game",
       "f3_name": "Long Game",
+      "posts": 1,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-08-10",
+      "latest_q": null
+    },
+    {
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -798,8 +798,8 @@
       "latest_q": null
     },
     {
-      "slug": "baldtire",
-      "f3_name": "Baldtire",
+      "slug": "clipless",
+      "f3_name": "Clipless",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -810,8 +810,8 @@
       "latest_q": null
     },
     {
-      "slug": "clipless",
-      "f3_name": "Clipless",
+      "slug": "baldtire",
+      "f3_name": "Baldtire",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -859,6 +859,15 @@
     }
   ],
   "latest_backblasts": [
+    {
+      "slug": "2026-11-12-ruddy-mysterious",
+      "title": "Ruddy Mysterious",
+      "date": "2026-11-12",
+      "ao": "ad-astra",
+      "q": "404",
+      "total_pax": 8,
+      "fngs": 0
+    },
     {
       "slug": "2026-11-10-tabada",
       "title": "Tabada",
@@ -938,15 +947,6 @@
       "ao": "ad-astra",
       "q": "Big Toe",
       "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-10-08-tabda-another-one",
-      "title": "TABDA (Another one)",
-      "date": "2026-10-08",
-      "ao": "ad-astra",
-      "q": "Casio",
-      "total_pax": 8,
       "fngs": 0
     }
   ]
