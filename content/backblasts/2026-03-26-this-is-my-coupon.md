@@ -1,7 +1,7 @@
 ---
-slug: 2026-03-19-this-is-my-coupon
+slug: 2026-03-26-this-is-my-coupon
 title: This is my Coupon
-date: '2026-03-19'
+date: '2026-03-26'
 ao: ad-astra
 q: Breakfast Pizza
 q_slug: breakfast-pizza
@@ -16,12 +16,12 @@ pax:
 - Casio
 total_pax: 9
 fngs: 0
-vault_path: 07 - F3/Backblasts/2026/2026-03-19-this-is-my-coupon.md
+vault_path: 07 - F3/Backblasts/2026/2026-03-26-this-is-my-coupon.md
 ---
 
 **Backblast:** This is my Coupon  
 **Where:** #ao-ad-astra  
-**When:** 03/19/2026  
+**When:** 03/26/2026\
 **Q:** @Breakfast Pizza  
 **PAX:** @404 @Big Toe @Dizzy @Farmers Only @wreckit @Dan
 

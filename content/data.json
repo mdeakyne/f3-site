@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-12T15:05:21Z",
+  "generated_at": "2026-11-18T22:09:47Z",
   "counts": {
-    "backblasts": 293,
+    "backblasts": 294,
     "pax": 64,
     "aos": 3,
     "since_year": "2023",
-    "latest_post": "2026-11-12"
+    "latest_post": "2026-11-14"
   },
   "aos": [
     {
@@ -25,28 +25,29 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 263,
-      "qs": 73,
+      "posts": 264,
+      "qs": 74,
       "aos": [
         "ad-astra",
         "beehive",
         "caffeine"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-11-12",
-      "latest_q": "2026-11-03"
+      "latest": "2026-11-14",
+      "latest_q": "2026-11-14"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 261,
+      "posts": 262,
       "qs": 41,
       "aos": [
         "ad-astra",
-        "beehive"
+        "beehive",
+        "caffeine"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-11-12",
+      "latest": "2026-11-14",
       "latest_q": "2026-11-05"
     },
     {
@@ -132,7 +133,7 @@
     {
       "slug": "casio",
       "f3_name": "Casio",
-      "posts": 61,
+      "posts": 62,
       "qs": 5,
       "aos": [
         "ad-astra",
@@ -140,7 +141,7 @@
         "caffeine"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-11-12",
+      "latest": "2026-11-14",
       "latest_q": "2026-11-10"
     },
     {
@@ -246,7 +247,7 @@
     {
       "slug": "van-gogh",
       "f3_name": "Van Gogh",
-      "posts": 14,
+      "posts": 15,
       "qs": 0,
       "aos": [
         "ad-astra",
@@ -254,7 +255,7 @@
         "caffeine"
       ],
       "earliest": "2026-09-17",
-      "latest": "2026-11-12",
+      "latest": "2026-11-14",
       "latest_q": null
     },
     {
@@ -455,18 +456,6 @@
       "latest_q": null
     },
     {
-      "slug": "captain-kirk",
-      "f3_name": "Captain Kirk",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra"
-      ],
-      "earliest": "2023-08-10",
-      "latest": "2023-09-07",
-      "latest_q": null
-    },
-    {
       "slug": "blanks",
       "f3_name": "Blanks",
       "posts": 4,
@@ -476,6 +465,18 @@
       ],
       "earliest": "2023-08-10",
       "latest": "2023-09-14",
+      "latest_q": null
+    },
+    {
+      "slug": "captain-kirk",
+      "f3_name": "Captain Kirk",
+      "posts": 4,
+      "qs": 0,
+      "aos": [
+        "ad-astra"
+      ],
+      "earliest": "2023-08-10",
+      "latest": "2023-09-07",
       "latest_q": null
     },
     {
@@ -697,13 +698,13 @@
       "aos": [
         "ad-astra"
       ],
-      "earliest": "2026-03-19",
-      "latest": "2026-03-19",
-      "latest_q": "2026-03-19"
+      "earliest": "2026-03-26",
+      "latest": "2026-03-26",
+      "latest_q": "2026-03-26"
     },
     {
-      "slug": "loofah",
-      "f3_name": "Loofah",
+      "slug": "lost-found",
+      "f3_name": "Lost & Found",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -726,8 +727,8 @@
       "latest_q": null
     },
     {
-      "slug": "lost-found",
-      "f3_name": "Lost & Found",
+      "slug": "loofah",
+      "f3_name": "Loofah",
       "posts": 1,
       "qs": 0,
       "aos": [
@@ -860,6 +861,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-11-14-again-and-again",
+      "title": "again and again",
+      "date": "2026-11-14",
+      "ao": "caffeine",
+      "q": "Big Toe",
+      "total_pax": 4,
+      "fngs": 0
+    },
+    {
       "slug": "2026-11-12-ruddy-mysterious",
       "title": "Ruddy Mysterious",
       "date": "2026-11-12",
@@ -937,15 +947,6 @@
       "date": "2026-10-20",
       "ao": "beehive",
       "q": "404",
-      "total_pax": 7,
-      "fngs": 0
-    },
-    {
-      "slug": "2026-10-15-what-goes-up-must-come-down",
-      "title": "What goes up must come down.",
-      "date": "2026-10-15",
-      "ao": "ad-astra",
-      "q": "Big Toe",
       "total_pax": 7,
       "fngs": 0
     }
