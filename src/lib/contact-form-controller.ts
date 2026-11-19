@@ -120,3 +120,16 @@ export function createContactFormController(
     },
   };
 }
+
+export function initAoChoices(form: HTMLFormElement, requestedAo: string | null) {
+  const aoChoices = [...form.querySelectorAll<HTMLInputElement>('input[name="ao"]')];
+  for (const choice of aoChoices) {
+    choice.checked = requestedAo === choice.value || requestedAo === choice.dataset.aoSlug;
+    choice.addEventListener('change', () => {
+      if (!choice.checked) return;
+      for (const other of aoChoices) {
+        if ((choice.value === 'all') !== (other.value === 'all')) other.checked = false;
+      }
+    });
+  }
+}

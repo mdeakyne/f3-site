@@ -33,6 +33,8 @@ async function invoke(
     secret?: string;
     siteverify?: unknown;
     siteverifyFailure?: Error;
+    aos?: string[];
+    members?: string;
   } = {},
 ) {
   const calls: FetchCall[] = [];
@@ -59,6 +61,10 @@ async function invoke(
 
   const form = new FormData();
   for (const [key, value] of Object.entries(fields)) form.set(key, value);
+  if (options.aos) {
+    form.delete('ao');
+    for (const ao of options.aos) form.append('ao', ao);
+  }
   const request = new Request('https://f3lawrence.com/api/contact', {
     method: 'POST',
     headers: { 'CF-Connecting-IP': '203.0.113.10' },
@@ -69,6 +75,7 @@ async function invoke(
     request,
     env: {
       SLACK_WEBHOOK_URL: SLACK_URL,
+      Q_SLACK_MEMBERS_JSON: options.members,
       TURNSTILE_SECRET_KEY: options.secret ?? 'test-secret',
     },
     waitUntil: () => {},
@@ -175,4 +182,32 @@ test('invalid contact fields are rejected before Turnstile or Slack', async () =
   assert.equal(result.response.status, 400);
   assert.equal(result.siteverifyCalls.length, 0);
   assert.equal(result.slackCalls.length, 0);
+});
+
+const memberDirectory = JSON.stringify({
+  'big-toe': 'U000000001',
+  '404': 'U000000002',
+  dizzy: 'U000000003',
+});
+
+for (const [aos, expected] of [
+  [['Ad Astra'], '<@U000000001>'],
+  [['Caffeine'], '<@U000000003>'],
+  [['Beehive', 'Caffeine', 'Beehive'], '<@U000000002>, <@U000000003>'],
+  [['all', 'Caffeine'], '<@U000000001>'],
+  [['Ad Astra', 'Beehive', 'Caffeine'], '<@U000000001>'],
+  [[], '<@U000000001>'],
+] as const) {
+  test(`routes ${aos.join(', ') || 'no preference'} to the right Site Qs`, async () => {
+    const result = await invoke(validFields(), { aos: [...aos], members: memberDirectory });
+    assert.equal(result.slackCalls.length, 1);
+    const { text } = JSON.parse(String(result.slackCalls[0].init?.body));
+    assert.ok(text.split('\n').includes(`*Site Q:* ${expected}`));
+  });
+}
+
+test('shows a name when the Site Q Slack member ID is absent', async () => {
+  const result = await invoke(validFields(), { aos: ['Caffeine'], members: '{}' });
+  const { text } = JSON.parse(String(result.slackCalls[0].init?.body));
+  assert.ok(text.split('\n').includes('*Site Q:* Dizzy'));
 });

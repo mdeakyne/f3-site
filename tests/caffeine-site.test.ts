@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
 import { JSDOM } from 'jsdom';
+import { initAoChoices } from '../src/lib/contact-form-controller.ts';
 import { initQForm } from '../src/lib/q-form-controller.ts';
 import { initQCalendar } from '../src/lib/q-calendar-controller.ts';
 
@@ -24,6 +25,7 @@ test('publishes Caffeine location details and an AO-specific RSVP link', () => {
   const html = page('locations');
 
   assert.match(html, /Caffeine/);
+  assert.match(html, /href="\/pax\/dizzy\/"[^>]*>Dizzy<\/a>/);
   assert.match(html, /Saturday\s+at 6:00 AM/);
   assert.match(html, /South parking lot of West Middle School/);
   assert.match(html, /Ruck Workout/);
@@ -35,7 +37,23 @@ test('offers Caffeine in RSVP and loads its Saturday signup choices from live av
   const contact = page('contact');
   const signup = page('signup');
 
-  assert.match(contact, /<option value="Caffeine">Caffeine<\/option>/);
+  const rsvp = new JSDOM(contact, {
+    url: 'http://localhost/contact/?ao=Caffeine',
+  });
+  try {
+    const form = rsvp.window.document.querySelector('form')!;
+    initAoChoices(form, new rsvp.window.URLSearchParams(rsvp.window.location.search).get('ao'));
+    const selections = () => new rsvp.window.FormData(form).getAll('ao');
+    assert.deepEqual(Array.from(selections()), ['Caffeine']);
+    form.querySelector<HTMLInputElement>('input[value="Beehive"]')!.click();
+    assert.deepEqual(Array.from(selections()), ['Beehive', 'Caffeine']);
+    form.querySelector<HTMLInputElement>('input[value="all"]')!.click();
+    assert.deepEqual(Array.from(selections()), ['all']);
+    form.querySelector<HTMLInputElement>('input[value="Ad Astra"]')!.click();
+    assert.deepEqual(Array.from(selections()), ['Ad Astra']);
+  } finally {
+    rsvp.window.close();
+  }
   assert.match(signup, /<option value="caffeine">Caffeine<\/option>/);
   const dom = new JSDOM(signup, { url: 'http://localhost/signup/?ao=caffeine&date=2026-11-07' });
   try {

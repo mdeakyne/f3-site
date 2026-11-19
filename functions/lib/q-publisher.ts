@@ -1,10 +1,10 @@
+import { escapeSlack, slackMemberLabel } from './slack-members.ts';
 import { AO_CATALOG } from '../../src/lib/q-catalog.ts';
 import { claimWindow, publicationTime } from '../../src/lib/q-dates.ts';
 import type { ClaimEnv, StoredClaim } from '../../src/lib/q-types.ts';
 
 type Outcome = 'posted' | 'failed' | 'skipped';
 type NoteClaim = Pick<StoredClaim, 'ao_slug' | 'event_date' | 'q_slug' | 'q_name'>;
-const escapeSlack = (value: string) => value.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const dateLabel = (date: string) => new Intl.DateTimeFormat('en-US', { timeZone:'America/Chicago', weekday:'long', month:'long', day:'numeric', year:'numeric' }).format(new Date(`${date}T12:00:00Z`));
 
 // Each incoming webhook is bound to one channel; the secret maps AO slugs to those URLs.
@@ -16,9 +16,7 @@ function webhookUrl(env: ClaimEnv, slug: string): string | null {
 }
 
 function qLabel(env: ClaimEnv, claim: { q_slug: string | null; q_name: string }): string {
-  let member: unknown;
-  try { const members = JSON.parse(env.Q_SLACK_MEMBERS_JSON ?? '{}'); member = claim.q_slug && members && typeof members === 'object' ? members[claim.q_slug] : undefined; } catch { /* Optional mappings fail closed to plain text. */ }
-  return typeof member === 'string' && /^[UW][A-Z0-9]{8,}$/.test(member) ? `<@${member}>` : escapeSlack(claim.q_name);
+  return slackMemberLabel(env.Q_SLACK_MEMBERS_JSON, claim.q_slug, claim.q_name);
 }
 
 function message(env: ClaimEnv, row: StoredClaim): { text: string; unfurl_links: false; unfurl_media: false } {

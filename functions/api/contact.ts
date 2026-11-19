@@ -1,3 +1,5 @@
+import { escapeSlack, slackMemberLabel } from '../lib/slack-members.ts';
+
 // Cloudflare Pages Function: POST /api/contact
 //
 // "Join F3 Lawrence" form. Posts the request into Slack (#admin) via an
@@ -12,7 +14,14 @@
 interface Env {
   SLACK_WEBHOOK_URL: string;
   TURNSTILE_SECRET_KEY: string;
+  Q_SLACK_MEMBERS_JSON?: string;
 }
+
+const SITE_QS = [
+  { ao: 'Ad Astra', slug: 'big-toe', name: 'Big Toe' },
+  { ao: 'Beehive', slug: '404', name: '404' },
+  { ao: 'Caffeine', slug: 'dizzy', name: 'Dizzy' },
+];
 
 const SITEVERIFY_URL = 'https://challenges.cloudflare.com/turnstile/v0/siteverify';
 const TURNSTILE_ACTION = 'join_f3';
@@ -29,7 +38,9 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
 
   const name = String(form.get('name') ?? '').trim();
   const reach = String(form.get('reach') ?? '').trim();
-  const ao = String(form.get('ao') ?? '').trim();
+  const choices = new Set(form.getAll('ao').map((value) => String(value).trim()));
+  const aos = SITE_QS.filter(({ ao }) => choices.has(ao));
+  const allSites = choices.has('all') || aos.length === SITE_QS.length;
   const message = String(form.get('message') ?? '').trim();
 
   if (!name) return json({ error: 'Name is required.' }, 400);
@@ -50,7 +61,14 @@ export const onRequestPost: PagesFunction<Env> = async (ctx) => {
     return json({ error: 'Verification failed. Please complete it again and retry.' }, 400);
   }
 
-  await postToSlack(env.SLACK_WEBHOOK_URL, { name, reach, ao, message });
+  const siteQs = allSites || aos.length === 0 ? [SITE_QS[0]] : aos;
+  const ao = allSites ? 'All sites' : aos.map((site) => site.ao).join(', ');
+  const mentions = siteQs.map(({ slug, name }) => {
+    const label = slackMemberLabel(env.Q_SLACK_MEMBERS_JSON, slug, name);
+    if (label === name) console.warn(`Missing or invalid Slack member ID in Q_SLACK_MEMBERS_JSON for ${slug}`);
+    return label;
+  });
+  await postToSlack(env.SLACK_WEBHOOK_URL, { name, reach, ao, message }, [...new Set(mentions)]);
   return json({ ok: true });
 };
 
@@ -116,14 +134,16 @@ function looksLikeBot(form: FormData): boolean {
 async function postToSlack(
   webhookUrl: string,
   s: { name: string; reach: string; ao: string; message: string },
+  mentions: string[],
 ): Promise<void> {
   if (!webhookUrl) throw new Error('Slack webhook not configured.');
   const lines = [
     `*New "Join F3 Lawrence" request* :muscle:`,
-    `*Name:* ${s.name}`,
-    `*Reach them via:* ${s.reach || '—'}`,
+    `*Name:* ${escapeSlack(s.name)}`,
+    `*Reach them via:* ${escapeSlack(s.reach) || '—'}`,
     `*Interested AO:* ${s.ao || 'no preference'}`,
-    `*Note:* ${s.message || '—'}`,
+    `*Site Q:* ${mentions.join(', ')}`,
+    `*Note:* ${escapeSlack(s.message) || '—'}`,
   ].join('\n');
 
   const res = await fetch(webhookUrl, {

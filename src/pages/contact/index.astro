@@ -12,7 +12,7 @@ import { site } from '../../lib/data';
         The fastest way in is to just show up. See the
         <a href="/locations/" class="text-accent-link underline">locations</a>.
         Want a heads-up first, or an invite to our Slack? Drop a note below and
-        <strong class="text-ink">Big Toe</strong> will reach out and get you connected.
+        an F3 leader will reach out and get you connected.
       </p>
     </header>
 
@@ -25,13 +25,19 @@ import { site } from '../../lib/data';
         <label for="contact-reach" class="font-mono text-xs uppercase text-muted block mb-1">How should we reach you? <span class="text-muted">(Slack, email, or phone)</span></label>
         <input id="contact-reach" type="text" name="reach" maxlength="200" class="w-full border border-rule bg-surface px-3 py-2 font-mono" />
       </div>
-      <div>
-        <label for="contact-ao" class="font-mono text-xs uppercase text-muted block mb-1">Which AO are you eyeing?</label>
-        <select id="contact-ao" name="ao" class="w-full border border-rule bg-surface px-3 py-2 font-mono">
-          <option value="">No preference</option>
-          {site.aos.map((a) => <option value={a.name}>{a.name}</option>)}
-        </select>
-      </div>
+      <fieldset>
+        <legend class="font-mono text-xs uppercase text-muted mb-2">Which AOs are you interested in?</legend>
+        <div class="flex flex-wrap gap-x-5 gap-y-2 font-mono">
+          {site.aos.map((ao) => (
+            <label class="inline-flex items-center gap-2">
+              <input type="checkbox" name="ao" value={ao.name} data-ao-slug={ao.slug} /> {ao.name}
+            </label>
+          ))}
+          <label class="inline-flex items-center gap-2">
+            <input type="checkbox" name="ao" value="all" /> All sites
+          </label>
+        </div>
+      </fieldset>
       <div>
         <label for="contact-message" class="font-mono text-xs uppercase text-muted block mb-1">Anything else? <span class="text-muted">(optional)</span></label>
         <textarea id="contact-message" name="message" rows="3" maxlength="1000" class="w-full border border-rule bg-surface px-3 py-2 font-mono"></textarea>
@@ -65,6 +71,7 @@ import { site } from '../../lib/data';
 <script>
   import {
     createContactFormController,
+    initAoChoices,
     selectTurnstileSiteKey,
     type ContactFormStatus,
   } from '../../lib/contact-form-controller';
@@ -111,10 +118,7 @@ import { site } from '../../lib/data';
     if (!form || !submit || !widget || !challengeStatus || !formStatus) return;
 
     const requestedAo = new URLSearchParams(window.location.search).get('ao');
-    const aoSelect = form.elements.namedItem('ao') as HTMLSelectElement;
-    if (requestedAo && Array.from(aoSelect.options).some((option) => option.value === requestedAo)) {
-      aoSelect.value = requestedAo;
-    }
+    initAoChoices(form, requestedAo);
 
     const loadedAt = form.elements.namedItem('loaded_at') as HTMLInputElement;
     const refreshLoadedAt = () => {
