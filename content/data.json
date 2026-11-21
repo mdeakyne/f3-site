@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-19T02:13:15Z",
+  "generated_at": "2026-11-21T14:17:21Z",
   "counts": {
-    "backblasts": 295,
+    "backblasts": 296,
     "pax": 64,
     "aos": 3,
     "since_year": "2023",
-    "latest_post": "2026-11-17"
+    "latest_post": "2026-11-21"
   },
   "aos": [
     {
@@ -25,21 +25,21 @@
     {
       "slug": "big-toe",
       "f3_name": "Big Toe",
-      "posts": 265,
-      "qs": 74,
+      "posts": 266,
+      "qs": 75,
       "aos": [
         "ad-astra",
         "beehive",
         "caffeine"
       ],
       "earliest": "2023-08-10",
-      "latest": "2026-11-17",
-      "latest_q": "2026-11-14"
+      "latest": "2026-11-21",
+      "latest_q": "2026-11-21"
     },
     {
       "slug": "farmers-only",
       "f3_name": "Farmers Only",
-      "posts": 263,
+      "posts": 264,
       "qs": 41,
       "aos": [
         "ad-astra",
@@ -47,13 +47,13 @@
         "caffeine"
       ],
       "earliest": "2023-08-17",
-      "latest": "2026-11-17",
+      "latest": "2026-11-21",
       "latest_q": "2026-11-05"
     },
     {
       "slug": "404",
       "f3_name": "404",
-      "posts": 220,
+      "posts": 221,
       "qs": 39,
       "aos": [
         "ad-astra",
@@ -61,7 +61,7 @@
         "caffeine"
       ],
       "earliest": "2024-02-29",
-      "latest": "2026-11-17",
+      "latest": "2026-11-21",
       "latest_q": "2026-11-12"
     },
     {
@@ -93,7 +93,7 @@
     {
       "slug": "dizzy",
       "f3_name": "Dizzy",
-      "posts": 97,
+      "posts": 98,
       "qs": 18,
       "aos": [
         "ad-astra",
@@ -101,7 +101,7 @@
         "caffeine"
       ],
       "earliest": "2025-04-03",
-      "latest": "2026-11-12",
+      "latest": "2026-11-21",
       "latest_q": "2026-11-07"
     },
     {
@@ -133,7 +133,7 @@
     {
       "slug": "casio",
       "f3_name": "Casio",
-      "posts": 63,
+      "posts": 64,
       "qs": 5,
       "aos": [
         "ad-astra",
@@ -141,7 +141,7 @@
         "caffeine"
       ],
       "earliest": "2026-02-24",
-      "latest": "2026-11-17",
+      "latest": "2026-11-21",
       "latest_q": "2026-11-10"
     },
     {
@@ -235,7 +235,7 @@
     {
       "slug": "van-gogh",
       "f3_name": "Van Gogh",
-      "posts": 16,
+      "posts": 17,
       "qs": 0,
       "aos": [
         "ad-astra",
@@ -243,7 +243,7 @@
         "caffeine"
       ],
       "earliest": "2026-09-17",
-      "latest": "2026-11-17",
+      "latest": "2026-11-21",
       "latest_q": null
     },
     {
@@ -456,6 +456,20 @@
       "latest_q": null
     },
     {
+      "slug": "locks",
+      "f3_name": "Locks",
+      "posts": 5,
+      "qs": 0,
+      "aos": [
+        "ad-astra",
+        "beehive",
+        "caffeine"
+      ],
+      "earliest": "2024-11-07",
+      "latest": "2026-11-21",
+      "latest_q": null
+    },
+    {
       "slug": "captain-kirk",
       "f3_name": "Captain Kirk",
       "posts": 4,
@@ -489,19 +503,6 @@
       ],
       "earliest": "2023-08-17",
       "latest": "2023-10-12",
-      "latest_q": null
-    },
-    {
-      "slug": "locks",
-      "f3_name": "Locks",
-      "posts": 4,
-      "qs": 0,
-      "aos": [
-        "ad-astra",
-        "beehive"
-      ],
-      "earliest": "2024-11-07",
-      "latest": "2024-12-12",
       "latest_q": null
     },
     {
@@ -861,6 +862,15 @@
   ],
   "latest_backblasts": [
     {
+      "slug": "2026-11-21-slow-it-down",
+      "title": "Slow it down",
+      "date": "2026-11-21",
+      "ao": "caffeine",
+      "q": "Big Toe",
+      "total_pax": 7,
+      "fngs": 0
+    },
+    {
       "slug": "2026-11-17-waco-s-greatest-hits-mashup",
       "title": "Waco\u2019s Greatest Hits Mashup",
       "date": "2026-11-17",
@@ -940,15 +950,6 @@
       "q": "Big Toe",
       "total_pax": 10,
       "fngs": 1
-    },
-    {
-      "slug": "2026-10-22-6-rounds-of-6",
-      "title": "6 rounds of 6",
-      "date": "2026-10-22",
-      "ao": "ad-astra",
-      "q": "Toto",
-      "total_pax": 8,
-      "fngs": 0
     }
   ]
 }
